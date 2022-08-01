@@ -2,7 +2,7 @@
 title: PHP
 description: 
 published: 1
-date: 2022-08-01T17:37:57.746Z
+date: 2022-08-01T17:39:28.190Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T17:08:09.616Z
@@ -10,9 +10,8 @@ dateCreated: 2022-08-01T17:08:09.616Z
 
 # On The Road To PHP 💪
 
-- [Notions de base *Toutes les bases pour comprendre le PHP*](/notion)
-- [Les Données *Mais que sont les données 🙄*](/data)
-- [Morbi vehicula aliquam *Third subtitle description here*](https://www.google.com)
+- [Notions de base *Toutes les bases pour comprendre le PHP*](/php/notion)
+- [Les Données *Mais que sont les données 🙄*](/php/data)
 {.links-list}
 
 
