@@ -2,7 +2,7 @@
 title: PHP
 description: 
 published: 1
-date: 2022-08-01T17:41:04.145Z
+date: 2022-08-01T21:48:26.609Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T17:08:09.616Z
@@ -11,6 +11,12 @@ dateCreated: 2022-08-01T17:08:09.616Z
 # On The Road To PHP 💪
 
 - [Notions de base *Toutes les bases pour comprendre le PHP*](/php/notion)
+- [Les Données *Mais que sont les données 🙄*](/php/data)
+- [Abordons les instructions *On s'instruit*](/php/data)
+- [Les tableaux *Comme dans excel*](/php/data)
+- [Les Données *Mais que sont les données 🙄*](/php/data)
+- [Les Données *Mais que sont les données 🙄*](/php/data)
+- [Les Données *Mais que sont les données 🙄*](/php/data)
 - [Les Données *Mais que sont les données 🙄*](/php/data)
 {.links-list}
 
