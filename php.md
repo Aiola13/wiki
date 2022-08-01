@@ -1,9 +1,9 @@
 ---
-title: 
-description: 
+title: PHP
+description: Ce qu'il y a à savoir sur le PHP
 published: 1
-date: 2022-08-01T22:27:49.734Z
-tags: 
+date: 2022-08-01T23:01:52.766Z
+tags: php, dev, code
 editor: markdown
 dateCreated: 2022-08-01T17:08:09.616Z
 ---
