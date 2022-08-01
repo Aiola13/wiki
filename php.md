@@ -2,7 +2,7 @@
 title: PHP
 description: 
 published: 1
-date: 2022-08-01T21:48:26.609Z
+date: 2022-08-01T21:50:24.780Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T17:08:09.616Z
@@ -12,29 +12,15 @@ dateCreated: 2022-08-01T17:08:09.616Z
 
 - [Notions de base *Toutes les bases pour comprendre le PHP*](/php/notion)
 - [Les Données *Mais que sont les données 🙄*](/php/data)
-- [Abordons les instructions *On s'instruit*](/php/data)
-- [Les tableaux *Comme dans excel*](/php/data)
-- [Les Données *Mais que sont les données 🙄*](/php/data)
-- [Les Données *Mais que sont les données 🙄*](/php/data)
-- [Les Données *Mais que sont les données 🙄*](/php/data)
-- [Les Données *Mais que sont les données 🙄*](/php/data)
+- [Abordons les instructions *On s'instruit*](/php/instructions)
+- [Les tableaux *Comme dans excel*](/php/table)
+- [Les Super Globales *Mais que sont les données 🙄*](/php/superglobal)
+- [Les fonctions *Mais que sont les données 🙄*](/php/functions)
+- [Les objets *Mais que sont les données 🙄*](/php/objects)
+- [Notions supplémentaires *++*](/php/plus)
 {.links-list}
 
 
-[Notions de base](./NotionDeBase.md)
-
-- Chapitre 0 : [Notions de base](./NotionDeBase.md)
-    
-- Chapitre 1 : [Les Données](./Data.md)
-    - Les types
-    - La déclaration
-
-- Chapitre 2 : [Abordons les instructions](./Instructions.md)
-    - Les expressions
-    - L'affectation
-    - Les appels
-    - Les structures de choix
-    - Les structures de répétition
 
 - Chapitre 3 : [Les tableaux](./Tableaux.md)
 - 
