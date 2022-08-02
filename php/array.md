@@ -2,7 +2,7 @@
 title: Arrays
 description: 
 published: 1
-date: 2022-08-02T16:15:31.342Z
+date: 2022-08-02T16:18:24.923Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-02T16:15:31.342Z
@@ -147,29 +147,9 @@ foreach($tDep as $dep => $tVille)
 }
 ```
 
-
-## Abbreviations
 ### Visuel {.tabset}
-#### Definition
-Transform abbreviation words into `<abbr>` tags for an expanding definition.
-
-#### Example
+#### Visuel
 ```
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
-The HTML specification
-is maintained by the W3C.
-```
-will result in
-
-```html
-<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification
-is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
-```
-<details>
-  <summary>Visuel</summary>
-  
-  ```
   Array
   {
     [13] => Array
@@ -198,14 +178,8 @@ is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
   }
   ```
 
-
-  
-</details>
-
-<details>
-  <summary>Résultat</summary>
-  
-  |                  |
+#### Résultat
+	|                  |
   | ---------------- |
   | **13**           |
   | Marseille        |
@@ -224,7 +198,7 @@ is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
   | Alès             |
   | Bagnols-sur-Cèze |
   | Beaucaire        |
-</details>
+will result in
 
 
 # Les tableaux Globaux
