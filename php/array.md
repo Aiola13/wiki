@@ -2,7 +2,7 @@
 title: Arrays
 description: 
 published: 1
-date: 2022-08-02T16:18:24.923Z
+date: 2022-08-02T16:18:37.614Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-02T16:15:31.342Z
@@ -198,8 +198,6 @@ foreach($tDep as $dep => $tVille)
   | Alès             |
   | Bagnols-sur-Cèze |
   | Beaucaire        |
-will result in
-
 
 # Les tableaux Globaux
 
