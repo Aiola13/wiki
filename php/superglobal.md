@@ -2,12 +2,13 @@
 title: Les super globales
 description: 
 published: 1
-date: 2022-08-02T16:24:00.893Z
+date: 2022-08-02T16:24:56.164Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-02T16:24:00.893Z
 ---
 
+# Tabset {.tabset}
 # Les Supers Globales
 
 Qu'est ce qu'une super globale ? 
