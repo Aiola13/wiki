@@ -2,7 +2,7 @@
 title: Instructions
 description: 
 published: 1
-date: 2022-08-02T16:03:05.107Z
+date: 2022-08-02T16:08:44.322Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-02T16:03:05.107Z
@@ -70,9 +70,7 @@ Le « . » (le point)
 
 ### Règles des priorités des expressions
 
-
-![mon image](<../resources/regles-priorite-operateurs_(Small).png>)
-
+![regles-priorite-operateurs_(small).png](/images/php/regles-priorite-operateurs_(small).png)
 
 # Boucles et Conditions
 
