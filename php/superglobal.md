@@ -2,13 +2,12 @@
 title: Les super globales
 description: 
 published: 1
-date: 2022-08-02T16:24:56.164Z
+date: 2022-08-02T16:25:50.898Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-02T16:24:00.893Z
 ---
 
-# Tabset {.tabset}
 # Les Supers Globales
 
 Qu'est ce qu'une super globale ? 
@@ -28,7 +27,8 @@ Re voici le tableau
 |  `$_FILES`  |          Les variables fournies par le protocole HTTP suite à un téléchargement           | $_FILES['fichier1']  |
 | `$_SESSION` |               Les variables enregistrées dans la session attachée au script               |  $_SESSION['var2']   |
 
-# GET
+# Tabset {.tabset}
+## GET
 
 Pour l'instant nous travaillons sur une seule et unique page "index.php". Mais vous ne vous êtes pas encore posée la question de comment pouvait-on trasmettre des informations à une autre page ? 
 
@@ -55,7 +55,7 @@ var_dump($_GET);
 ```
 ![get2.png](/images/php/get2.png)
 
-# POST 
+## POST 
 
 Ce tableau associatif permet également de passer des informations d'une page à l'autre sans avoir les données dans l'URL.
 
@@ -75,7 +75,7 @@ var_dump($_POST);
 ?>
 ```
 ![post.png](/images/php/post.png)
-# SESSION
+## SESSION
 
 Ce tableau associatif permet de garder des informations d'un internaute tout au long de son parcours sur votre site web.
 
@@ -99,7 +99,7 @@ var_dump($_SESSION_);
 ```
 ![session.png](/images/php/session.png)
 
-# COOKIE
+## COOKIE
 
 Ce tableau associatif permet de garder des informations d'un internaute tout au long de son parcours sur votre site web.
 
