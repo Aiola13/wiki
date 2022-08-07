@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2022-08-07T15:35:39.710Z
+date: 2022-08-07T16:14:00.932Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-07T15:35:39.710Z
@@ -13,16 +13,43 @@ dateCreated: 2022-08-07T15:35:39.710Z
 ## Transtypage : Règles de conversion
 **Le transtypage** (on parle aussi de **coercition**, de **cast** ou de **conversion de type**), et le fait de convertir une valeur d'un type (source) dans un autre (cible).
 
-Exemple : 
-    > Chaîne de caractères ➡ Nombres 
-    {.is-info}
+> Chaîne de caractères ➡ Nombres 
+
+Et oui, il est compliqué d'additionner Marcel et 5.1 😜
+
 ```php
 echo "3" + 1; //Affiche 4
 echo 1 + "3 petits cochons"; //Affiche 4
 echo 1 + "-1.3e3"; // Affiche -1299
 echo 1 + "marcel"; // Affiche 1
 ```
-    - Tous types ➡ Booléen
+
+Comme se passe le transtypage de certainnes données Marcel ? (Go allume le camion)
+
+> Tous types ➡ Booléen
+
+```php
+FALSE; //false
+NULL; //false
+$string = ""; //false
+$string = 0; //false
+$array = []; //false
+```
+
+> Les autres données seront donc vraies
+{.is-warning}
+
+
+> Tous types ➡ Chaîne de caractères
+```php
+echo true; //Affiche 1
+echo false; //Affiche "" (Et non le caractère 0)
+echo 10; //Affiche 10, représentation classique en base décimal
+```
+> La conversion sans fonctions spécifiques d'un tableau ou d'un objet en chaîne de caractères, provoquera une erreur en php.
+{.is-warning}
+
+<!-- Tous types ➡ Booléen
       - false : 
         - CONSTANTE FALSE et NULL
         - Chaîne vide ou contenant juste un zéro
@@ -36,22 +63,22 @@ echo 1 + "marcel"; // Affiche 1
           - true ➡ "1"
           - false ➡ "" (Et non le caractère 0)
       - Depuis un entier : représntation classique en base dic.
-      - Depuis un tableaux et objets : affichage du type Array ou Object
-
+      - Depuis un tableaux et objets : affichage du type Array ou Object -->
 
 ## Transtypage : Forcer une conversion
-    - En le spécifiant :
+
+- En le spécifiant (cast) :
 ```php
 $var = (int)"12"; //$var contient un nombre
 $var = (string)12; //$var contient un string
 ```
-    - en utilisant la fonction settype() :
+- en utilisant la fonction settype() :
 ```php
 $var = 12;
 settype($var, 'integer');
 settype($var, 'string');
 ```
-    - En utilisant les fonctions dédiées : 
+- En utilisant les fonctions dédiées : 
   - Pour les nombres : intval(...), floatval(...), doubleval(...)
   - Pour les chaînes de caractères : strval(...)
 ```php
@@ -59,7 +86,16 @@ $var = intval("12"); //$var contient le nombre 12
 $var = strval(12); //$var contient la chaîne "12"
 ```
 
+> Mais quelle est la meilleure méthode à utiliser me direz-vous ? 🤔
+
+Je vais vous laisser faire votre propres avis ;), en allant voir la documentation. 👿
+
+https://www.php.net/manual/fr/language.types.type-juggling.php
+
+
 ## Gestion des fichiers
+
+
 ## Sécurisation
 
 Pourquoi sécurisé ? 
