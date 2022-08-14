@@ -2,7 +2,7 @@
 title: Accueil
 description: Test
 published: 1
-date: 2022-08-14T08:23:36.457Z
+date: 2022-08-14T08:31:06.397Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -37,12 +37,15 @@ Toutes les contributions sont les bienvenues et passent par des pulls-requests/i
 
 Un grand merci à : 
 
-* IUT D'Arles
+* [Université du Québec à Chicoutimi (UQAC)](https://www.uqac.ca)
+	* M. François Lemieux [Directeur des programmes de cycles supérieurs en informatique]
+  * M. Bruno Bouchard
+* [IUT D'Arles](https://iut.univ-amu.fr/sites/arles)
   * M. Eric Remy
   * M. Gilles Gesquiere
   * M. Laurent Carmignac
   * M. Sébastien Thon
-* [Wikipedia](www.wikiwand.com/fr/Pseudo-code)
+* [Wikipedia](https://fr.wikipedia.org)
 * [Lycée Blaise Pascal - Clermont Ferrand](https://info.blaisepascal.fr/pseudo-code)
 * Lionel Cicala
 * [Anthony Gorski](https://github.com/GorskiAnthony)
