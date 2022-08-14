@@ -2,7 +2,7 @@
 title: Algorithmie
 description: 
 published: 1
-date: 2022-08-14T07:40:34.936Z
+date: 2022-08-14T07:56:45.237Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:40:34.936Z
@@ -15,6 +15,7 @@ dateCreated: 2022-08-14T07:40:34.936Z
 - [Les données *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/algorithmie/data)
 - [Abordons les instructions](/algorithmie/instructions)
 - [Les procédures et les fonctions *🐱‍🏍*](/algorithmie/process)
+- [Le tri](/algorithmie/tri)
 {.links-list}
 
 ---
