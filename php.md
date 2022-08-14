@@ -2,7 +2,7 @@
 title: PHP
 description: Ce qu'il y a à savoir sur le PHP
 published: 1
-date: 2022-08-02T16:10:03.677Z
+date: 2022-08-14T08:14:12.282Z
 tags: code, dev, php
 editor: markdown
 dateCreated: 2022-08-01T17:08:09.616Z
