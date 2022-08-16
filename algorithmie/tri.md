@@ -2,7 +2,7 @@
 title: Les algorithmes de tri
 description: 
 published: 1
-date: 2022-08-16T11:36:58.610Z
+date: 2022-08-16T11:41:54.530Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:57:34.585Z
@@ -84,7 +84,7 @@ Exemples :
 - $T1(n)=7=O(1)$
 - $T2(n)=12n+5=O(n)$
 - $T3(n)=4n2+2n+6=O(n2)$
-- $$T4(n)=2+(n−1)×5=O(n)$$
+- $T4(n)=2+(n−1)×5=O(n)$
 
 
 ### Classes de complexité
