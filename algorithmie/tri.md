@@ -2,7 +2,7 @@
 title: Les algorithmes de tri
 description: 
 published: 1
-date: 2022-08-16T12:53:40.673Z
+date: 2022-08-16T12:59:37.657Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:57:34.585Z
