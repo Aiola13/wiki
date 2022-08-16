@@ -2,7 +2,7 @@
 title: Les algorithmes de tri
 description: 
 published: 1
-date: 2022-08-14T07:57:34.585Z
+date: 2022-08-16T11:34:19.389Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:57:34.585Z
@@ -102,7 +102,7 @@ Exemples :
 |    $O(a^n)$     |   Exponentielle    |
 |     $O(n!)$     |    Factorielle     |
 
-
+<!--
 
 ### Algorithmes de complexité constante
 
@@ -170,3 +170,5 @@ Exemple de recherche dichotomique
 
 ## Tableau multidimentiennelle / Matrice
 ```
+
+-->
