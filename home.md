@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-08-16T11:08:03.526Z
+date: 2022-08-16T11:08:33.449Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -25,7 +25,8 @@ L'objectif ici :
 
 ## Outils && Pré-requis
 
-ATTENTION ... il nous faut une feuille et un crayon. 
+> ATTENTION ... il nous faut une feuille et un crayon.
+{.is-warning}
 
 Ah oui, et votre cerveau en état de fonctionner 😉 et un zeste de logique.
 
