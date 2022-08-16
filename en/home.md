@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: 1
-date: 2022-08-16T11:27:46.743Z
+date: 2022-08-16T11:29:04.227Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-16T11:27:46.743Z
@@ -18,7 +18,7 @@ dateCreated: 2022-08-16T11:27:46.743Z
 
 # Goal & Motivation
 
-Firt, I ceated all these documents as part of the courses given at GRETA.
+First, I ceated all these documents as part of the courses given at GRETA.
 
 The Objective :
 * Provides concepts in different computer domains
@@ -30,7 +30,7 @@ The Objective :
 
 And ... of course, your brain  and a bit of logic 😉 ! That's all.
 
-## Participate
+## Participation
 
 All contributions are welcome and go through pulls-requests/issues to keep track.
 Please make them in French (or English + French translation) to involve French speaking more easily.
