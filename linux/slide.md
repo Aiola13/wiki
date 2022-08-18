@@ -2,7 +2,7 @@
 title: Slide Unix
 description: 
 published: 1
-date: 2022-08-18T19:08:04.201Z
+date: 2022-08-18T19:08:48.205Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-18T18:34:47.723Z
