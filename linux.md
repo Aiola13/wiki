@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: 1
-date: 2022-08-18T18:14:25.808Z
+date: 2022-08-18T18:16:15.406Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-18T18:11:51.512Z
@@ -11,9 +11,9 @@ dateCreated: 2022-08-18T18:11:51.512Z
 > En cours de rédaction
 {.is-warning}
 
-# UNIX
-
+# On The Road To UNIX 💪
+## Plan de cours
+- [Slide du cours *Youhouuuu*](/linux/slide)
+{.links-list}
 
 [Lien vers](https://hedgedoc.monserveurprive.ovh/p/eYa8aaAQO#/)
-
-<iframe src="/cours/revealjs/index.html?source=php" frameborder="0" data-v-554519b4=""></iframe>
