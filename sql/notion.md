@@ -2,7 +2,7 @@
 title: Notions de base
 description: 
 published: 1
-date: 2022-08-20T16:08:22.049Z
+date: 2022-08-20T17:52:06.811Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-20T15:50:07.390Z
@@ -48,12 +48,30 @@ Qui est un langage de modélisation utiliser non seulement en SQL mais pour tout
 > Philosophi e qui peut permettre pour modéliser une BDD
 pour et contre
 
+Diagramme de classse > MPD > LDD
+La conception du diagramme de classe UML est une étape
+importante vers la création des BDD, mais il faut ensuite
+implémenter ce diagramme dans un SGBDR.
+Il existe deux étapes pour arriver à la création des tables à
+partir du diagramme de classe:
+BD
+Du MCD aux tables
+1. Création du Modèle Physique des Données (MPD);
+2. Création du script SQL de génération des tables à l'aide du
+Langage de Définition de Données (LDD);
+
+
+
+
 
 > Merise
 Qui est une méthode de modélisation
 > Méthode qu'il faut normalement suivre étape par étape.
 
+MCD > MLD
 
+
+Nous reviendrons dessus sur le chapitre suivant 
 
 ## Outils
 
