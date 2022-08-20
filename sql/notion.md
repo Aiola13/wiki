@@ -2,7 +2,7 @@
 title: Notions de base
 description: 
 published: 1
-date: 2022-08-20T17:52:06.811Z
+date: 2022-08-20T18:13:30.115Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-20T15:50:07.390Z
@@ -40,12 +40,20 @@ Il existe plusieurs types de base de données :
 
 ## Modélisation
 
-Il existe plusieurs façons de conceptualisation : 
+> Il est très important, qu'avant de se jeter tête baissée comme un bourrin dans un MOBA, de se poser et de réfléchir à comment on va créer notre base et agencer nos données.
+{.is-warning}
 
-> UML
-Qui est un langage de modélisation utiliser non seulement en SQL mais pour tout langage POO.
-> Diagramme peuvent être abordés de façon indépendante
-> Philosophi e qui peut permettre pour modéliser une BDD
+Pour cela, il existe plusieurs façons de conceptualiser une base de donnée : 
+
+### Le langage UML
+
+> l'**UML** (**Unified Modeling Language**) est un langage de modélisation utilisé pour décrire les traitements et les données d'un système non seulement en SQL mais pour tout langage POO.
+{.is-success}
+
+
+
+- Diagramme peuvent être abordés de façon indépendante
+- Philosophie qui peut permettre pour modéliser une BDD
 pour et contre
 
 Diagramme de classse > MPD > LDD
@@ -64,11 +72,19 @@ Langage de Définition de Données (LDD);
 
 
 
-> Merise
-Qui est une méthode de modélisation
-> Méthode qu'il faut normalement suivre étape par étape.
+### La méthode Merise
 
-MCD > MLD
+> MERISE est une méthode d'analyse et de conceptualisation.
+{.is-success}
+
+Il possède plusieurs modèles (étapes) pour modéliser des données : 
+- Modèle Conceptuel de Données (MCD) -> Abstrait
+- Modèle Logique de Données (MLD)
+- Mod-le Physique de Données (MPD) -> Script SQL
+
+> Méthode qu'il faut normalement suivre étape par étape.
+{.is-warning}
+
 
 
 Nous reviendrons dessus sur le chapitre suivant 
