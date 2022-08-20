@@ -2,7 +2,7 @@
 title: SQL
 description: 
 published: 1
-date: 2022-08-20T15:06:10.431Z
+date: 2022-08-20T15:21:37.904Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:14:55.137Z
