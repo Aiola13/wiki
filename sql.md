@@ -2,7 +2,7 @@
 title: SQL
 description: 
 published: 1
-date: 2022-08-20T14:13:35.928Z
+date: 2022-08-20T14:58:43.753Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:14:55.137Z
@@ -19,7 +19,7 @@ dateCreated: 2022-08-14T07:14:55.137Z
 {.links-list}
 
 
-# Kézako Michou ???
+<!--# Kézako Michou ???
 > La SQL (Structured Query Language) est un langage de programmation servant à exploiter des bases de données (BDD). 
 {.is-success}
 
@@ -47,4 +47,4 @@ Via clique gauche, vous retrouvez ces informations,
  - PHP : Les fichiers de configuration de l'interpréteur PHP
  - MySQL : Les fichiers de configuration concernant MySQL
 
-> PS : Lors de son utilisation sur un environnement professionnel, ne pas laisser les accès par défaut et créer des utilisateurs. 
+> PS : Lors de son utilisation sur un environnement professionnel, ne pas laisser les accès par défaut et créer des utilisateurs. -->
