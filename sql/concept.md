@@ -2,7 +2,7 @@
 title: Conceptualiser ses bases
 description: 
 published: 1
-date: 2022-08-21T21:57:38.146Z
+date: 2022-08-21T22:07:44.368Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-21T06:40:54.432Z
@@ -88,25 +88,31 @@ G .> AU : include
 ###### Diagramme de classes
 ```plantuml
 
-:Utilisateur: as A
-:Administrateur: as B
-A <|-- B
+left to right direction
+class Commandes  {
+  date : string
+  prepaye : boolean
+  nombre : integer
+  prix : float
+  envoyer()
+	terminer()
+}
 
-(Envoyer des courriels) as E
-(Gérer les comptes) as G
-(Authentification) as AU
+class Client {
+   nom : string
+   adresse : string
+   montantCredit() : int
+}
 
-A - E
-B - G
-E .> AU : include
-G .> AU : include
+Commandes "*" -- "1" Client : Association
+
 ```
 
 
 
-<!--### UML pour les Bases de données
+### UML pour les Bases de données
 
 Très utilisé pour facilité la conception de documents nécessaires au développement de logiciel orienté objet, nous allons nous concentrer sur 
 
 
-## La Méthode MERISE -->
+## La Méthode MERISE
