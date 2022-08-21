@@ -2,7 +2,7 @@
 title: Notions de base
 description: 
 published: 1
-date: 2022-08-20T18:13:30.115Z
+date: 2022-08-21T06:21:44.857Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-20T15:50:07.390Z
@@ -44,6 +44,8 @@ Il existe plusieurs types de base de données :
 {.is-warning}
 
 Pour cela, il existe plusieurs façons de conceptualiser une base de donnée : 
+- Le langage UML
+- La méthode MERISE
 
 ### Le langage UML
 
@@ -52,7 +54,7 @@ Pour cela, il existe plusieurs façons de conceptualiser une base de donnée :
 
 
 
-- Diagramme peuvent être abordés de façon indépendante
+<!--- Diagramme peuvent être abordés de façon indépendante
 - Philosophie qui peut permettre pour modéliser une BDD
 pour et contre
 
@@ -66,7 +68,7 @@ BD
 Du MCD aux tables
 1. Création du Modèle Physique des Données (MPD);
 2. Création du script SQL de génération des tables à l'aide du
-Langage de Définition de Données (LDD);
+Langage de Définition de Données (LDD); -->
 
 
 
@@ -80,7 +82,7 @@ Langage de Définition de Données (LDD);
 Il possède plusieurs modèles (étapes) pour modéliser des données : 
 - Modèle Conceptuel de Données (MCD) -> Abstrait
 - Modèle Logique de Données (MLD)
-- Mod-le Physique de Données (MPD) -> Script SQL
+- Modèle Physique de Données (MPD) -> Script SQL
 
 > Méthode qu'il faut normalement suivre étape par étape.
 {.is-warning}
