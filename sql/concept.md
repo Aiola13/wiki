@@ -2,7 +2,7 @@
 title: Conceptualiser ses bases
 description: 
 published: 1
-date: 2022-08-21T21:56:02.703Z
+date: 2022-08-21T21:57:08.085Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-21T06:40:54.432Z
@@ -68,8 +68,8 @@ L'UML permet de créer des diagrammes permettant de définir une application sel
 
 Exemples : 
 
-# Exemples {.tabset}
-## Diagramme de cas d'utilisation 
+##### Exemples {.tabset}
+###### Diagramme de cas d'utilisation 
 ```plantuml
 
 :Utilisateur: as A
@@ -85,7 +85,7 @@ B - G
 E .> AU : include
 G .> AU : include
 ```
-## Diagramme de classes
+###### Diagramme de classes
 ```plantuml
 
 :Utilisateur: as A
