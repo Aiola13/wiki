@@ -2,7 +2,7 @@
 title: Conceptualiser ses bases
 description: 
 published: 1
-date: 2022-08-22T06:16:30.891Z
+date: 2022-08-22T06:21:44.301Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-21T06:40:54.432Z
@@ -131,6 +131,12 @@ Commandes "*" -- "1" Client : Association
 
 
 ### UML pour les Bases de données
+
+Les données d'une BD représentent des faits, des activités ou des évènements de l'entreprise. C'est une mémoire et de ce fait elle est doit être : 
+- pertinent
+- fiable
+- cohérent
+- utilisable
 
 Très utilisé pour facilité la conception de documents nécessaires au développement de logiciel orienté objet, nous allons nous concentrer sur 
 
