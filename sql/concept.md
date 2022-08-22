@@ -2,7 +2,7 @@
 title: Conceptualiser ses bases
 description: 
 published: 1
-date: 2022-08-21T22:07:44.368Z
+date: 2022-08-22T06:16:30.891Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-21T06:40:54.432Z
@@ -47,10 +47,18 @@ Quelques exemples de modèles :
 
 ### Historique 
 
-En 1994, l'UML hérite de 3 méthodes  :
-- OMT de James Rumbaugh
-- OOD de Grady Booch
-- OOSE d'Ivar Jacobson
+Les premières méthodes d'analyse arrivent aux alentours des années 70 avec une découpe plutôt cartésienne (fonctionnelle et hiérarchique) d'un système.
+Puis dans les années 80, les méthodes se rapprco
+
+Et enfin, dans les années 90, l'émergence des méthodes objet, avec une question : 
+- Comment structurer un système sans centrer l'analyse uniquement sur les données ou uniquement sur les traitements (mais sur les deux) ?
+
+Plus de 50 méthodes objet sont apparues durant cette période (Booch, Classe-Relation, Fusion, HOOD, OMT, OOA, OOD, OOM ...) sans pour autant qu'il y en ait une qui s'impose.
+
+En 1994, une premier consensus, l'UML hérite de 3 méthodes  :
+- OMT de James Rumbaugh : Vue statiques, dynamiques et fonctionnelles d'un système (R&D de General Electric)
+- OOD de Grady Booch : Vue logiques et physiques du système
+- OOSE d'Ivar Jacobson : couvre tout le cycle de développement (R&D d'Ericsson) en se reposant sur l'analyse des besoins utilisateurs
 
 UML 1.0 est proposé et normalisé en janvier 1997 par l'OMG (Object Management Group). La dernière version, 2.5.1, date de décembre 2017.
 [https://www.omg.org/spec/UML/](https://www.omg.org/spec/UML/)
@@ -58,12 +66,24 @@ UML 1.0 est proposé et normalisé en janvier 1997 par l'OMG (Object Management 
 
 ### Les diagrammes UML
 
-L'UML permet de créer des diagrammes permettant de définir une application selon plusieurs points de vue (centrée sur les besoins des utilisateurs) : 
-- Vue Fonctionnel (diagramme des cas d'utilisation)
-- Vue Statique (diagrammes de classes, objets ...)
-- Vue Dynamique (diagrammes de séquence, états, activité, interaction ...)
-- Vue Implémentation (diagrammes de composants, déploiement ...)
-- ect ...
+L'UML permet de créer des diagrammes permettant de définir une application selon plusieurs points de vue :
+
+- Vue Statique (ou structurelles) :
+	- diagramme de classe 
+  - diagramme d'objets 
+  - diagramme de composants 
+  - diagramme de déploiement 
+  - diagramme de paquetage
+  - diagramme de structures composites
+- Vue Dynamique (ou comportementales) :
+	- diagramme de cas d'utilisation
+  - diagramme d'activités
+  - diagramme d'états-transitions
+  - diagrammes d'interaction
+  	- diagramme de séquence
+    - diagramme de communication
+    - diagramme global d'intéraction
+   	- diagramme de temps
 
 
 Exemples : 
