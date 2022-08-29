@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-08-16T11:08:33.449Z
+date: 2022-08-29T09:05:52.640Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -48,5 +48,6 @@ Un grand merci à :
   * M. Sébastien Thon
 * [Wikipedia](https://fr.wikipedia.org)
 * [Lycée Blaise Pascal - Clermont Ferrand](https://info.blaisepascal.fr/pseudo-code)
+* Loïc Pilet [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://fr.linkedin.com/in/loic-pilet)
+* Anthony Gorski [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/GorskiAnthony) [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
 * Lionel Cicala
-* [Anthony Gorski](https://github.com/GorskiAnthony)
