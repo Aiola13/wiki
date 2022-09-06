@@ -2,7 +2,7 @@
 title: Challenge 1 - Administration d'une distribution GNU/Linux
 description: Mise en situation Professionnelle
 published: 1
-date: 2022-09-06T22:09:11.412Z
+date: 2022-09-06T22:10:29.387Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T21:43:58.851Z
@@ -186,14 +186,16 @@ Ci-dessous, sa configuration d'installation :
 - Système : CentOS 7
 - Partitionnement
 	- Disque 1 – 20 GB
-| Partition Primaire 1 	| /boot 	| 500 MiB 	| xfs  	|
-|----------------------	|-------	|---------	|------	|
-| Partition Primaire 2 	| /     	| 9,8 GiB 	| xfs  	|
-| Partition Primaire 3 	| SWAP  	| 2 GiB   	| swap 	|
-| Partition Logique 1  	| /usr  	| 7,8 GiB 	| xfs  	|
+  | Partition Primaire 1 	| /boot 	| 500 MiB 	| xfs  	|
+  |----------------------	|-------	|---------	|------	|
+  | Partition Primaire 2 	| /     	| 9,8 GiB 	| xfs  	|
+  | Partition Primaire 3 	| SWAP  	| 2 GiB   	| swap 	|
+  | Partition Logique 1  	| /usr  	| 7,8 GiB 	| xfs  	|
+
 	- Disque 2 – 40 GB
-| LVM	| /home 	| 40 GiB 	| xfs  	|
-|----	|-------	|---------	|------	|
+  | LVM	| /home 	| 40 GiB 	| xfs  	|
+  |----	|-------	|---------	|------	|
+  
 - Identifiants
 |  	    | Mot de passe 	|
 |-------|-------------	|
