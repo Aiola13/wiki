@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: 1
-date: 2022-09-06T21:32:27.844Z
+date: 2022-09-06T21:34:28.837Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-18T18:11:51.512Z
@@ -16,7 +16,7 @@ dateCreated: 2022-08-18T18:11:51.512Z
 - [Slide du cours *Youhouuuu*](/linux/slide)
 {.links-list}
 
-- [Challenge 1 *Mise en situation professionelle*](/linux/slide)
+- [Challenge 1 *Mise en situation professionelle*](/linux/challenge1)
 {.links-list}
 
 [Lien vers](https://hedgedoc.monserveurprive.ovh/p/eYa8aaAQO#/)
