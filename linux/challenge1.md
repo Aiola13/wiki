@@ -1,8 +1,8 @@
 ---
-title: Challenge 1
-description: 
+title: Challenge 1 - Administration d'une distribution GNU/Linux
+description: Mise en situation Professionnelle
 published: 1
-date: 2022-09-06T21:43:58.851Z
+date: 2022-09-06T21:49:52.041Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T21:43:58.851Z
@@ -59,6 +59,12 @@ Les utilisateurs créés devront avoir les caractéristiques suivantes :
 
 Créer des comptes pour les utilisateurs François et Frédéric avec les caractéristiques suivantes :
 
-|François|Frédéric|
-|:--------:|:--------:|
-|
+|                      	| François                  	| Frédéric                                                          	|
+|----------------------	|---------------------------	|-------------------------------------------------------------------	|
+| Login                	| francois                  	| frederic                                                          	|
+| Mot de passe         	| password                  	| AchAngEr                                                          	|
+| Répertoire personnel 	| /home/francois            	| /home/fred                                                        	|
+| Shell à utiliser     	| bash                      	| bash                                                              	|
+| Groupe principal     	| users                     	| par défaut                                                        	|
+| Groupes secondaires  	| stagiaires, documentation 	| stagiaires, documentation                                         	|
+| Autres paramètres    	|                           	| Le mot de passe sera à changer à la première ouverture de session 	|
