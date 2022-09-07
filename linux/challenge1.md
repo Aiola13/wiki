@@ -2,7 +2,7 @@
 title: Challenge 1 - Administration d'une distribution GNU/Linux
 description: Mise en situation Professionnelle
 published: 1
-date: 2022-09-07T08:46:04.860Z
+date: 2022-09-07T08:48:54.281Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T21:43:58.851Z
@@ -14,21 +14,11 @@ dateCreated: 2022-09-06T21:43:58.851Z
 > Table des matières
 [1 Information système](#h-1-identifiants-de-connexion)
 [2 Créer des utilisateurs](#h-2-creation-de-comptes)
-2.1 Paramétrer l'environnement par défaut 
-2.2 Créer des comptes utilisateurs 
-3 Installer des applications 
-3.1 Mettre à jour le système 
-3.2 Installer des fonctionnalités 
-4 Gestion des disques et partitions 
-4.1 Partitionner manuellement 
-4.2 Préparer et mettre en service les partitions 
-5 Gestion des permissions et droits 
-5.1 Créer une structure de stockage pour les utilisateurs 
-6 Surveillance des serveurs
-6.1 Définir les commandes de supervision 
-6.2 Planifier une tache de supervision 
-7 Diagnostique et résolution de problèmes 
-7.1 Diagnostiquer et résoudre des dysfonctionnements 
+[3 Installer des applications](#h-3-installer-des-applications)
+[4 Gestion des disques et partitions](#h-4-gestion-des-disques-et-partitions)
+[5 Gestion des permissions et droits](#h-5-gestion-des-permissions-et-droits)
+[6 Surveillance des serveurs](#h-6-surveillance-des-permissions-et-droits)
+[7 Diagnostique et résolution de problèmes](#h-7-diagnostique-et-resolution-de-problemes)
 
 
 ## 1 - IDENTIFIANTS DE CONNEXION
