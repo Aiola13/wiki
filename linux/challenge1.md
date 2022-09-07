@@ -2,7 +2,7 @@
 title: Challenge 1 - Administration d'une distribution GNU/Linux
 description: Mise en situation Professionnelle
 published: 1
-date: 2022-09-06T22:10:29.387Z
+date: 2022-09-07T08:43:49.178Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T21:43:58.851Z
@@ -12,7 +12,7 @@ dateCreated: 2022-09-06T21:43:58.851Z
 
 
 > Table des matières
-1 Information système
+[1 Information système](#1)
 2 Créer des utilisateurs 
 2.1 Paramétrer l'environnement par défaut 
 2.2 Créer des comptes utilisateurs 
@@ -64,7 +64,7 @@ Créer des comptes pour les utilisateurs François et Frédéric avec les caract
 | Login                	| francois                  	| frederic                                                          	|
 | Mot de passe         	| password                  	| AchAngEr                                                          	|
 | Répertoire personnel 	| /home/francois            	| /home/fred                                                        	|
-| Shell à utiliser     	| bash                      	| bash                                                              	|
+| Shell à utiliser     	| zsh                      	| bash                                                              	|
 | Groupe principal     	| users                     	| par défaut                                                        	|
 | Groupes secondaires  	| stagiaires, documentation 	| stagiaires, documentation                                         	|
 | Autres paramètres    	|                           	| Le mot de passe sera à changer à la première ouverture de session 	|
