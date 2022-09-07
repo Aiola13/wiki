@@ -2,7 +2,7 @@
 title: Challenge 1 - Administration d'une distribution GNU/Linux
 description: Mise en situation Professionnelle
 published: 1
-date: 2022-09-07T08:44:35.992Z
+date: 2022-09-07T08:45:02.221Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T21:43:58.851Z
@@ -13,7 +13,7 @@ dateCreated: 2022-09-06T21:43:58.851Z
 
 > Table des matières
 [1 Information système](#1-identifiantsdeconnexion)
-2 Créer des utilisateurs 
+2 Créer des utilisateurs(#2-creationdecomptes)
 2.1 Paramétrer l'environnement par défaut 
 2.2 Créer des comptes utilisateurs 
 3 Installer des applications 
