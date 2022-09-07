@@ -2,7 +2,7 @@
 title: Challenge 1 - Administration d'une distribution GNU/Linux
 description: Mise en situation Professionnelle
 published: 1
-date: 2022-09-07T08:48:54.281Z
+date: 2022-09-07T16:13:15.619Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T21:43:58.851Z
@@ -22,7 +22,7 @@ dateCreated: 2022-09-06T21:43:58.851Z
 
 
 ## 1 - IDENTIFIANTS DE CONNEXION
-Vous avez à disposition une machine virtuelle LINUX - installation minimale.
+Vous avez à disposition une machine virtuelle DEBIAN - installation minimale.
 Login : "stag"
 Password: "iop"
 Login : "root"
@@ -42,7 +42,7 @@ Objectifs :
 Les utilisateurs créés devront avoir les caractéristiques suivantes : 
 - La commande `ping` fait 4 tests et quitte 
 - La commande `rm` sera interactive sauf pour l'utilisateur root 
-- La commande `vi` disposera des options suivantes : indentation automatique et affichage des numéros de ligne
+- La commande `vi` et/ou `nano` disposera des options suivantes : indentation automatique et affichage des numéros de ligne
 - Chaque nouvel utilisateur aura les répertoires **Mes documents** et **Modèles** dans son répertoire personnel
 
 ### 2.2 - CREER DES COMPTES UTILISATEURS
@@ -73,8 +73,7 @@ Objectifs :
 ### 3.1- METTRE A JOUR LE SYSTEME
 
 **Vérification et mise à jour de la liste des dépôts**
-En ligne de commande, vérifiez l'accès au dépôt CentOS interne.
-Configurez l'accès à la section Centos Plus et lister les paquets fournis dans cette section.
+En ligne de commande, vérifiez l'accès au dépôt DEBIAN interne.
 
 **Mettre à jour le système**
 Procédez à la mise à jour complète de votre système sans interaction avec vous. 
@@ -86,11 +85,11 @@ Procédez à la mise à jour complète de votre système sans interaction avec v
 1. Vérifier la présence des outils permettant une connexion SSH à distance sur le serveur. Les installer si nécessaire.
 Tester cette connexion depuis votre poste physique.
 
-2. Installer le groupe de paquets vous permettant d'avoir l'interface graphique par défaut de Centos 7. Vous utiliserez l’outil yum et ses commandes adaptées pour une installation manuelle du groupe de paquet.
+2. Installer le groupe de paquets vous permettant d'avoir l'interface graphique par défaut de DEBIAN. Vous utiliserez l’outil yum et ses commandes adaptées pour une installation manuelle du groupe de paquet.
 
 **Installer rsync**
 
-Installer à partir des sources la version de `rsync` disponible sur le partage `distrib`. Vous utiliserez le logiciel `winscp` (présent sur distrib) pour transférer les sources de `rsync` vers votre système Centos.
+Installer à partir des sources la version de `rsync` disponible sur le partage `distrib`. Vous utiliserez le logiciel `winscp` (présent sur distrib) pour transférer les sources de `rsync` vers votre système DEBIAN.
 
 > Le répertoire racine de l'installation de rsync sera /opt.
 {.is-warning}
