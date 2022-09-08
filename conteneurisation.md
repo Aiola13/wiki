@@ -2,7 +2,7 @@
 title: Conteneurisation
 description: 
 published: 1
-date: 2022-09-08T19:53:41.059Z
+date: 2022-09-08T19:55:31.034Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-08T11:15:53.493Z
