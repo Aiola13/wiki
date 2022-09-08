@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-08-29T09:05:52.640Z
+date: 2022-09-08T08:57:33.669Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -25,8 +25,24 @@ L'objectif ici :
 
 ## Outils && Pré-requis
 
-> ATTENTION ... il nous faut une feuille et un crayon.
+> ATTENTION ... il nous faut une feuille et un crayon. 🙄
 {.is-warning}
+
+|un éditeur de code            | [Visual Studio Code](https://code.visualstudio.com) |
+|:----------------------------- | --------------------------------------------------- |
+| un serveur web                | Apache                                              |
+| Un interpréteur de script PHP | Zend Engine                                         |
+| un serveur de base de donnée  | MySQL                                               |
+
+Nous avons de la chance ... 💡, Vous pouvez utiliser le logiciel qui regroupe :
+
+- un serveur web
+- un interpréteur de script PHP
+- un serveur de base de donnée 
+
+Qui s'appelle [WAMP](https://www.wampserver.com) pour windows. Ou les déclinaisons pour MAC (MAMPP) et Linux (LAMP)
+
+
 
 Ah oui, et votre cerveau en état de fonctionner 😉 et un zeste de logique.
 
