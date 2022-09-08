@@ -2,7 +2,7 @@
 title: Présentation
 description: 
 published: 1
-date: 2022-09-08T13:30:00.324Z
+date: 2022-09-08T14:44:37.459Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-08T13:30:00.323Z
@@ -26,6 +26,24 @@ Un conteneur, en informatique (bien sur), est un ensemble de processus qui sont 
 
 Avec ce système vous pouvez facilement déployer et dimensioner des applications dans n'importe quel environnement, avec l'assurance que l'application s'exécutera correctement et de la même manière.
 
+Un autre aspect très avantageux est leur isolation. Les conteneurs sont isolés de l'OS, ils partagent le même noyaux mais sont complétement indépendants les uns des autres que cela soit au niveau ressource qu'au niveau réseau.
 
+Vu qu'ils n'embarquent pas d'OS, les conteneurs sont également très légers en se basant sur les ressources déjà existantes sur l'OS hôte là ou les VMs classiques virtualisent un OS entier avec donc ses pilotes, des périphériques.
 
+![monolith_2-vm-vs-containers.78f841efba175556d82f64d1779eb8b725de398d.png](/images/conteneurisation/monolith_2-vm-vs-containers.78f841efba175556d82f64d1779eb8b725de398d.png)
 
+## Et Docker ?
+
+> **Build, Ship, and Run Any App, Anywhere**
+
+Cette phrase résume à elle seule la philosophie de *Docker*.
+
+Docker est un peu un "Hyperviseur" de conteneurs. Grâce à lui vous pourrez déploiyer et gérer très facilement vos applications.
+
+L'architecture de Dockeéest divisée en 3 parties : 
+- Docker_client
+Contient le Daemon de Docker, qui instencie un conteneur à partir d'une image.
+- Docker_host
+Est une application en CLI permettant la communication entre l'utilisateur et le daemon.
+- Registry
+Est un serveur qui permet de gérer le stockage, l'envoi, la récupération des images Docker.
