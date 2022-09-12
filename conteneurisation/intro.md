@@ -2,7 +2,7 @@
 title: Présentation
 description: 
 published: 1
-date: 2022-09-08T14:44:37.459Z
+date: 2022-09-12T10:24:55.407Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-08T13:30:00.323Z
@@ -41,9 +41,9 @@ Cette phrase résume à elle seule la philosophie de *Docker*.
 Docker est un peu un "Hyperviseur" de conteneurs. Grâce à lui vous pourrez déploiyer et gérer très facilement vos applications.
 
 L'architecture de Dockeéest divisée en 3 parties : 
-- Docker_client
+- **Docker_client**
 Contient le Daemon de Docker, qui instencie un conteneur à partir d'une image.
-- Docker_host
+- **Docker_host**
 Est une application en CLI permettant la communication entre l'utilisateur et le daemon.
-- Registry
+- **Registry**
 Est un serveur qui permet de gérer le stockage, l'envoi, la récupération des images Docker.
