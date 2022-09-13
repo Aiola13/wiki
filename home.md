@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-09-13T05:29:23.121Z
+date: 2022-09-13T05:43:34.736Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -57,13 +57,19 @@ Un grand merci à :
 * [Université du Québec à Chicoutimi (UQAC)](https://www.uqac.ca)
 	* M. François Lemieux [Directeur des programmes de cycles supérieurs en informatique]
   * M. Bruno Bouchard
+  * M. [Vincent Hubau](https://www.linkedin.com/in/vincent-hubau-25389038/?originalSubdomain=ca])
 * [IUT D'Arles](https://iut.univ-amu.fr/sites/arles)
   * M. Eric Remy
   * M. Gilles Gesquiere
   * M. Laurent Carmignac
   * M. Sébastien Thon
-* [Wikipedia](https://fr.wikipedia.org)
+* Greta et Indépendants 
+	* Loïc Pilet [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://fr.linkedin.com/in/loic-pilet)
+	* Anthony Gorski [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/GorskiAnthony) [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
+	* Lionel Cicala
+	* Béatrice Dupuy
+
+Ainsi qu'aux sources suivantes : 
 * [Lycée Blaise Pascal - Clermont Ferrand](https://info.blaisepascal.fr/pseudo-code)
-* Loïc Pilet [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://fr.linkedin.com/in/loic-pilet)
-* Anthony Gorski [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/GorskiAnthony) [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
-* Lionel Cicala
+* [Pierre Giraud](https://www.pierre-giraud.com)
+* [Wikipedia](https://fr.wikipedia.org)
