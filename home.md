@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-09-08T10:58:40.544Z
+date: 2022-09-13T05:29:23.121Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -21,7 +21,7 @@ dateCreated: 2022-08-01T15:49:56.337Z
 J'ai créé tout d'abord ces documents dans le cadre des cours donnés au GRETA et également dans le but que ces fiches puissent servir et aider quelqu'un !
 
 L'objectif ici :
-* Fournir des notions de base en algotithmie, en programmation et tout ce qui touche à l'informatique
+* Fournir des notions de base en algorithmie, en programmation et tout ce qui touche à l'informatique
 
 ## Outils && Pré-requis
 
