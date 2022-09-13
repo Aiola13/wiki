@@ -2,7 +2,7 @@
 title: Algorithmie
 description: 
 published: 1
-date: 2022-09-13T06:04:03.509Z
+date: 2022-09-13T06:05:48.075Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:40:34.936Z
@@ -15,8 +15,8 @@ dateCreated: 2022-08-14T07:40:34.936Z
 - [Les données *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/algorithmie/data)
 - [Abordons les instructions](/algorithmie/instructions)
 - [Les procédures et les fonctions *🐱‍🏍*](/algorithmie/process)
-- [Le tri](/algorithmie/tri)
-- [Compléxité d'un algorithme](/alhorithmie/complex)
+- [Le tri *parce qu'il faut bien ranger ;)*](/algorithmie/tri)
+- [Compléxité d'un algorithme *Oui, parce qu'un algo peut être plus ou moins complexe !*](/alhorithmie/complex)
 {.links-list}
 
 ## Mais finalement qu'est-ce que c'est ? 🤔
