@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: 1
-date: 2022-09-13T06:07:07.722Z
+date: 2022-09-13T06:07:53.163Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-18T18:11:51.512Z
