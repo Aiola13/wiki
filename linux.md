@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: 1
-date: 2022-09-07T08:50:26.665Z
+date: 2022-09-13T06:07:07.722Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-18T18:11:51.512Z
@@ -14,7 +14,5 @@ dateCreated: 2022-08-18T18:11:51.512Z
 # On The Road To UNIX 💪
 ## Plan de cours
 - [Slide du cours *Youhouuuu*](/linux/slide)
-{.links-list}
-
 - [Challenge 1 *Mise en situation professionelle*](/linux/challenge1)
 {.links-list}
