@@ -2,7 +2,7 @@
 title: Algorithmie
 description: 
 published: 1
-date: 2022-08-16T08:00:29.469Z
+date: 2022-09-13T06:04:03.509Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:40:34.936Z
@@ -16,6 +16,7 @@ dateCreated: 2022-08-14T07:40:34.936Z
 - [Abordons les instructions](/algorithmie/instructions)
 - [Les procédures et les fonctions *🐱‍🏍*](/algorithmie/process)
 - [Le tri](/algorithmie/tri)
+- [Compléxité d'un algorithme](/alhorithmie/complex)
 {.links-list}
 
 ## Mais finalement qu'est-ce que c'est ? 🤔
