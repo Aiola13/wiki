@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-09-13T05:45:23.176Z
+date: 2022-09-13T05:52:12.494Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -18,7 +18,7 @@ dateCreated: 2022-08-01T15:49:56.337Z
 
 # Objectif et Motivation
 
-J'ai créé tout d'abord ces documents dans le cadre des cours donnés au GRETA et également dans le but que ces fiches puissent servir et aider quelqu'un !
+J'ai créé tout d'abord ces documents et ce lab dans le cadre des cours donnés au GRETA et également dans le but que ces fiches puissent servir et aider quelqu'un !
 
 L'objectif ici :
 * Fournir des notions de base en algorithmie, en programmation et tout ce qui touche à l'informatique
@@ -74,3 +74,9 @@ Ainsi qu'aux sources suivantes :
 * [Lycée Blaise Pascal - Clermont Ferrand](https://info.blaisepascal.fr/pseudo-code)
 * [Pierre Giraud](https://www.pierre-giraud.com)
 * [Wikipedia](https://fr.wikipedia.org)
+
+# Le Lab
+> Ce Wiki est hebergé sur un serveur dédié OVH. Voici un schèma qui représente grossièrement le lab.
+{.is-success}
+
+![arch_serveur_ovh.drawio.png](/images/divers/arch_serveur_ovh.drawio.png)
