@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-09-13T05:43:34.736Z
+date: 2022-09-13T05:45:23.176Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -70,6 +70,7 @@ Un grand merci à :
 	* Béatrice Dupuy
 
 Ainsi qu'aux sources suivantes : 
+* [Mickael Asseline](https://ch.linkedin.com/in/mickael-asseline)
 * [Lycée Blaise Pascal - Clermont Ferrand](https://info.blaisepascal.fr/pseudo-code)
 * [Pierre Giraud](https://www.pierre-giraud.com)
 * [Wikipedia](https://fr.wikipedia.org)
