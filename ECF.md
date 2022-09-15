@@ -2,7 +2,7 @@
 title: ECF
 description: 
 published: 1
-date: 2022-09-14T21:54:24.370Z
+date: 2022-09-15T07:25:24.559Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T21:23:20.849Z
@@ -72,5 +72,7 @@ Définir et mettre en place les solutions pour répondre aux besoins suivants :
 2. Un répertoire **/data/depot** accessible en écriture pour tous les utilisateurs mais dans lequel seul l’utilisateur propriétaire du fichier pourra le supprimer
 
 Créer de nouveaux groupes et de nouveaux utilisateurs si nécessaire.
+
+## 5 - TEST
 
 Tester les paramétrages avec les différents types de comptes utilisateurs (administrateur, utilisateur ...).
