@@ -2,7 +2,7 @@
 title: ECF
 description: 
 published: 1
-date: 2022-09-15T07:36:35.079Z
+date: 2022-09-15T07:38:04.683Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T21:23:20.849Z
@@ -14,6 +14,12 @@ Objectifs :
 - Savoir gérer les comptes utilisateurs, les groupes et les fichiers
 - Configurer et utiliser les dépôts logiciels
 - Comprendre et modifier la configuration des droits
+
+Vous devrez, dans un document et étape par étape m'indiquer toutes les commandes effectuées dans cet ECF et à rendre ici : 
+
+[https://filebrowser.monserveurprive.ovh](https://filebrowser.monserveurprive.ovh)
+Login : "stag"
+password : "iop"
 
 ## 1 - IDENTIFIANTS DE CONNEXION
 Vous devez créer une machine virtuelle sous Debian [Lien vers l'iso](https://filebrowser.monserveurprive.ovh/share/Fhy8eXu1) - installation minimale, avec ces informations :
