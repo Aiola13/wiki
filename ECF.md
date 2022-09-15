@@ -2,7 +2,7 @@
 title: ECF
 description: 
 published: 1
-date: 2022-09-15T07:38:04.683Z
+date: 2022-09-15T07:59:21.555Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T21:23:20.849Z
@@ -40,7 +40,7 @@ Les utilisateurs créés devront avoir les caractéristiques suivantes :
 
 Créer les groupes suivants : **sshuser**, **ftpuser**
 
-Créer les utilisateurs pim, pam et poum avec les caractéristiques suivantes :
+Créer les utilisateurs Darth Vader et R2D2 avec les caractéristiques suivantes :
 |                      	| Darth Vader                 | R2D2                                                          			|
 |----------------------	|:---------------------------	|:-------------------------------------------------------------------	|
 | Login                	| vader                  			| rrdd                                                          			|
