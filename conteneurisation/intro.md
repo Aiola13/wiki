@@ -2,7 +2,7 @@
 title: Présentation
 description: 
 published: 1
-date: 2022-09-12T10:24:55.407Z
+date: 2022-09-25T07:16:26.196Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-08T13:30:00.323Z
@@ -32,9 +32,12 @@ Vu qu'ils n'embarquent pas d'OS, les conteneurs sont également très légers en
 
 ![monolith_2-vm-vs-containers.78f841efba175556d82f64d1779eb8b725de398d.png](/images/conteneurisation/monolith_2-vm-vs-containers.78f841efba175556d82f64d1779eb8b725de398d.png)
 
+- **VM** : Pour Simuler des machines (un CPU, RAM, GPU, des appels systèmes ...)
+- **Conteneur** : Un découpage dans un OS, pour séparer des ressources d'applications
+
 ## Et Docker ?
 
-> **Build, Ship, and Run Any App, Anywhere**
+> **Build it, Ship it, and Run Any App, Anywhere**
 
 Cette phrase résume à elle seule la philosophie de *Docker*.
 
