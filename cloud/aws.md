@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: 1
-date: 2022-09-27T22:54:16.615Z
+date: 2022-09-27T23:10:28.579Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-25T15:17:10.659Z
@@ -67,28 +67,38 @@ Maintenons explorons un peu les services proposés par EC2. Des services qui evo
 
 Cette page affiche la liste des serveurs EC2 qui tournent 
 
-![image.png](/images/cloud/image.png)
+![ec2_instance.png](/images/cloud/ec2_instance.png)
 
 ## Images
 
 Les AMI (pas les collègues) (Amazon Machine Image) contient les images de vos instances.
 Un peu comme l'utilisation de vos VM, on peut utiliser des images proposé par Amazon ou la communauté.
 
+
+![image.png](/images/cloud/image.png)
+
 ## Elastic Block Store
 
-Any content here will go into the third tab...
+Affiche les volumes (disques) utilisés par l'ensemble de vos serveurs ainsi que les instantanés (les sauvegardes).
 
+![ec2_ebs.png](/images/cloud/ec2_ebs.png))
 ## Réseau & Sécurité
 
-dzdzed
+- Les groupes de sécurité sont en quelques sortent les règles de pare-feu.
+
+- IP élastiques sont les IP statiques attribués à vos instances
+
+- Les paires de clés sont les clés RSA (publique et privée pour pouvoir se connecter en SSH)
+
+![ec2_network_security.png(/images/cloud/ec2_network_security.png
 
 ## Equilibrage de charge
 
-dzadazda
+L'équilibrage de charge permet, comme son nom indique, d'équilibrer la surchage d'un serveur vers d'autres serveurs.
 
 ## Auto Scaling
 
-fzdazazda
+L'auto scaling permet d'ajuster automatiquement le nombre de serveur à utiliser selon le trafic et les règles définies.
   
 
 #
