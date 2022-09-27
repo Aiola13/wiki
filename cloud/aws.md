@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: 1
-date: 2022-09-27T22:43:24.864Z
+date: 2022-09-27T22:48:49.928Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-25T15:17:10.659Z
@@ -58,6 +58,37 @@ Si vous souhaitez 2 serveurs au lieu de 1, allez y 😉 !
 1. La liste de toutes les ressources que vous utilisez actuellement.
 2. La possiblité de lancer une nouvelle instance.
 3. Toutes les options possibles avec EC2
+
+Maintenons explorons un peu les services proposés par EC2. Des services qui evoluent constament (vous connaissez Amazon 🙄)
+
+- Instances 
+
+
+# Tabs {.tabset}
+## Instances
+
+Cette page affiche la liste des serveurs EC2 qui tournent 
+
+## Images
+
+Any content here will go into the second tab...
+
+## Elastic Block Store
+
+Any content here will go into the third tab...
+
+## Réseau & Sécurité
+
+dzdzed
+
+## Equilibrage de charge
+
+dzadazda
+
+## Auto Scaling
+
+fzdazazda
+  
 
 ## RDS
 
