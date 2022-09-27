@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: 1
-date: 2022-09-27T23:12:07.105Z
+date: 2022-09-27T23:15:25.455Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-25T15:17:10.659Z
