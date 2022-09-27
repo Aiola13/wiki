@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: 1
-date: 2022-09-27T23:10:28.579Z
+date: 2022-09-27T23:12:07.105Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-25T15:17:10.659Z
@@ -75,7 +75,7 @@ Les AMI (pas les collègues) (Amazon Machine Image) contient les images de vos i
 Un peu comme l'utilisation de vos VM, on peut utiliser des images proposé par Amazon ou la communauté.
 
 
-![image.png](/images/cloud/image.png)
+![image.png](/images/cloud/ec2_ami.png)
 
 ## Elastic Block Store
 
@@ -90,7 +90,7 @@ Affiche les volumes (disques) utilisés par l'ensemble de vos serveurs ainsi que
 
 - Les paires de clés sont les clés RSA (publique et privée pour pouvoir se connecter en SSH)
 
-![ec2_network_security.png(/images/cloud/ec2_network_security.png
+![ec2_network_security.png](/images/cloud/ec2_network_security.png)
 
 ## Equilibrage de charge
 
