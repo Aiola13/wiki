@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: 1
-date: 2022-09-27T22:50:07.235Z
+date: 2022-09-27T22:54:16.615Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-25T15:17:10.659Z
@@ -67,9 +67,12 @@ Maintenons explorons un peu les services proposés par EC2. Des services qui evo
 
 Cette page affiche la liste des serveurs EC2 qui tournent 
 
+![image.png](/images/cloud/image.png)
+
 ## Images
 
-Any content here will go into the second tab...
+Les AMI (pas les collègues) (Amazon Machine Image) contient les images de vos instances.
+Un peu comme l'utilisation de vos VM, on peut utiliser des images proposé par Amazon ou la communauté.
 
 ## Elastic Block Store
 
