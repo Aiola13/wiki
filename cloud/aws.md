@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: 1
-date: 2022-09-27T22:48:49.928Z
+date: 2022-09-27T22:50:07.235Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-25T15:17:10.659Z
@@ -61,8 +61,6 @@ Si vous souhaitez 2 serveurs au lieu de 1, allez y 😉 !
 
 Maintenons explorons un peu les services proposés par EC2. Des services qui evoluent constament (vous connaissez Amazon 🙄)
 
-- Instances 
-
 
 # Tabs {.tabset}
 ## Instances
@@ -89,6 +87,8 @@ dzadazda
 
 fzdazazda
   
+
+#
 
 ## RDS
 
