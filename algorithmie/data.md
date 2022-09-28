@@ -2,7 +2,7 @@
 title: Les données
 description: 
 published: 1
-date: 2022-08-14T07:53:13.626Z
+date: 2022-09-28T19:23:32.813Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:53:13.626Z
@@ -12,25 +12,29 @@ dateCreated: 2022-08-14T07:53:13.626Z
 
 ## Les Variables
 
-Une variable est un identifiant qui permet de _mémoriser_ des valeurs.
+Une variable est un identifiant qui permet de **_mémoriser_** des valeurs.
 
 Une variable est définie par :
 
 - **son nom** : un identificateur
-- **sa portée** : les portions de code où elle est utilisable
 - **son type** : les valeurs qu'elle peut prendre
-- **sa classe** d'allocation : indique la zone mémoire où elle est stockée [Chapitre 0](./NotionDeBase.md)
 - **sa valeur** initiale
+- **sa portée** : les portions de code où elle est utilisable
+- **sa classe d'allocation** : indique la zone mémoire où elle est stockée
 
 ### Les types prédéfinis de variables
 
 Les différents types prédéfinis en langage algorithmique que nous utiliserons sont :
 
-- **ENTIER** nombres entiers signés ex : 42
-- **RÉEL** nombres flottants signés ex : 0.154
-- **BOOLÉEN** énumération définissant les données vrai et faux ex : vrai
-- **CARACTÈRE** caractère ANSI sur un octet ex : ‘a’
-- **CHAINE** chaîne de caractères ex : « lapin »
+
+|Type|Définition|Exemple|
+|:--:|:--------:|:-----:|
+|**ENTIER**|nombres entiers signés|`42`|
+|**RÉEL**|nombres flottants signés|`0.154`|
+|**BOOLÉEN**|énumération définissant les données vraies et fausses|`Vrai`|
+|**CARACTÈRE**|caractère ANSI codé sur un octet|`‘a’`|
+|**CHAINE**|chaîne de caractères|`"lapin"`|
+
 
 ### La déclaration des variables
 
@@ -41,8 +45,6 @@ Déclaration :
 ```
 VARIABLES variable1, variable2, variable3, ... : type
 ```
-
-<p align="right">(En anglais : VARIABLES)</p>
 
 - variables indicées ou tableaux
 
@@ -67,6 +69,8 @@ tableau[<indice1>;<indice2>; ...]
 ```
 
 ## Les constantes
+  
+Une constante est un identifiant dont la valeur, qui comme son nom indique, reste constante.
 
 Déclaration des constantes :
 
@@ -74,10 +78,9 @@ Déclaration des constantes :
 CONSTANTES MACONSTANTE, ... : type  ...
 ```
 
-<p align="right">(En anglais : CONSTANTS)</p>
-
-⛔ /!\ Une constante ne peut être modifiée dans l’algorithme.
-
+> ⛔ /!\ Une constante ne peut être modifiée dans l’algorithme.
+{.is-danger}
+  
 ---
 
 # Prêt pour la prochaine partie ? 😉 [C'est par ici](/algorithmie/instructions)
