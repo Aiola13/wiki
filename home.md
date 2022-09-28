@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2022-09-13T05:52:12.494Z
+date: 2022-09-28T08:04:07.148Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T15:49:56.337Z
@@ -76,7 +76,10 @@ Ainsi qu'aux sources suivantes :
 * [Wikipedia](https://fr.wikipedia.org)
 
 # Le Lab
-> Ce Wiki est hebergé sur un serveur dédié OVH. Voici un schèma qui représente grossièrement le lab.
+> Ce Wiki est hebergé sur un serveur dédié OVH. Voici un schèma qui représente grossièrement le lab. [^1]
 {.is-success}
 
+
 ![arch_serveur_ovh.drawio.png](/images/divers/arch_serveur_ovh.drawio.png)
+
+[^1]. Le port 22 n'est bien sûr pas le port utilisé par le lab ;)
