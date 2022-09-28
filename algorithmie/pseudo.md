@@ -2,7 +2,7 @@
 title: Un Pseudo-code
 description: 
 published: 1
-date: 2022-09-28T18:48:28.783Z
+date: 2022-09-28T19:05:15.885Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:52:08.185Z
@@ -73,13 +73,40 @@ Exemple, un identifiant contenant la largeur d'une image :
 > Les mots clés sont des mots utilisés pour construire les algorithmes, ils sont préféfinis. 
 {.is-warning}
 
-Liste des principaux mots clés du langage :
+Liste des principaux mots clés du langage et leurs équivalent en anglais:
 
-| ALGORITHME | PROCÉDURE | CONSTANTES | VARIABLES | DÉBUT | FIN | FONCTION | SI | ALORS SINON | POUR | TANT_QUE | JUSQU’À | RÉPÉTER | SELON | BOOLÉEN | ENTIER RÉEL | CARACTÈRE | OU | ET |
+|Français|Anglais|
+|:------:|:-----:|
+|ALGORITHME|ALGORITHM|
+|PROCÉDURE|PROCEDURE|
+|CONSTANTES|CONSTANTS|
+|VARIABLES|VARIABLES|
+|DÉBUT|BEGIN|
+|FIN|END|
+|FONCTION|ALGORITHM|
+|SI|IF|
+|ALORS|THEN|
+|SINON|ELSE|
+|POUR|FOR|
+|TANT QUE|WHILE|
+|RÉPÉTER|REPEAT|
+|JUSQU’À|UNTIL|
+|SELON|CASE|
+|BOOLÉEN|BOOLEAN|
+|ENTIER|INTEGER|
+|RÉEL|FLOAT|
+|CARACTÈRE|STRING|
+|OU|OR|
+|ET|AND|
+|ECRIRE ou AFFICHER|PRINT or DISPLAY|
+|LIRE|READ|
 
 ### Les symboles spéciaux
 
 Voici la liste des caractères spéciaux utilisés en Pseudo-Code :
+
+| ← | ^ | . | , | : | { } | [ ] | <= | >= | <> | = | + | - | \* | / | () | ` | 
+|---|---|---|---|---|-----|-----|----|----|----|---|---|---|----|--|---|----|
 
 ← ^ . , : { } [ ] <= >= <> = + – \* / ()`
 
@@ -88,11 +115,6 @@ Voici la liste des caractères spéciaux utilisés en Pseudo-Code :
 Pour aider à la compréhension, il faut ajouter des commentaires. Les blocs de commentaires seront délimités par les caractères // :
 
 `// un commentaire`
-
-
-<p align="right">(En anglais : ALGORITHM – BEGIN – END)</p>
-
-
 
 ---
 
