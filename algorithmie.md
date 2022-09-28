@@ -2,7 +2,7 @@
 title: Algorithmie
 description: 
 published: 1
-date: 2022-09-13T06:05:48.075Z
+date: 2022-09-28T18:10:00.725Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:40:34.936Z
@@ -10,7 +10,7 @@ dateCreated: 2022-08-14T07:40:34.936Z
 
 # On The Road To Algo 💪
 ## Plan de cours
-- [Notions de base *Vous allez devenir le nouveau PDG de Skynet*](/algorithmie/notion)
+<!--- [Notions de base *Vous allez devenir le nouveau PDG de Skynet*](/algorithmie/notion)-->
 - [Un Pseudo-Code *Pourquoi pseudo ? 🤔*](/algorithmie/pseudo)
 - [Les données *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/algorithmie/data)
 - [Abordons les instructions](/algorithmie/instructions)
