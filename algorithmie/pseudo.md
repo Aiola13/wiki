@@ -2,7 +2,7 @@
 title: Un Pseudo-code
 description: 
 published: 1
-date: 2022-09-28T19:05:38.609Z
+date: 2022-09-28T19:06:51.833Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:52:08.185Z
