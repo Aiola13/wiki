@@ -2,7 +2,7 @@
 title: Un Pseudo-code
 description: 
 published: 1
-date: 2022-09-28T19:05:15.885Z
+date: 2022-09-28T19:05:38.609Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:52:08.185Z
@@ -105,10 +105,9 @@ Liste des principaux mots clés du langage et leurs équivalent en anglais:
 
 Voici la liste des caractères spéciaux utilisés en Pseudo-Code :
 
-| ← | ^ | . | , | : | { } | [ ] | <= | >= | <> | = | + | - | \* | / | () | ` | 
+| ← | ^ | . | , | : | { } | [ ] | <= | >= | <> | = | + | - | \* | / | () | \` | 
 |---|---|---|---|---|-----|-----|----|----|----|---|---|---|----|--|---|----|
 
-← ^ . , : { } [ ] <= >= <> = + – \* / ()`
 
 ### Les commentaires
 
