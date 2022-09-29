@@ -2,13 +2,13 @@
 title: Mais c'est quoi un site internet ? 
 description: 
 published: 1
-date: 2022-09-29T21:41:17.324Z
+date: 2022-09-29T22:21:17.445Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-29T21:41:17.324Z
 ---
 
-# Mais c'est quoi un site internet ? 
+# Mais c'est quoi un site web ? 
 
 Un site internet (ou site web) c'est tout simplement un ensemble de pages accessible depuis un navigateur internet. 
 
@@ -25,6 +25,32 @@ Cette URL est associé à un nom de domaine qui permet de remplacer l'adresse IP
 - Le nom de domaine : est ce que l'on appelle un "masque", il permet de nommer humainement un site
 - L'extension : caractérise un site (origine géographique, fonction ...)
 
-# Comment on s'y rend sur internet ? 
+## Comment on s'y rend sur le web ? 
 
-Je suis sûr que vous avez l'habitude 😉.
+Je suis sûr que vous avez l'habitude 😉. Via un Navigateur.
+
+> Ne pas confondre **Web** et **Internet**.
+> Le premier fait partie intégrante d'Internet.
+> Quant au second est un ensemble qui comprend le Web, les courriels ....
+{.is-warning}
+
+
+![navigateur-cover-2.jpg](/images/html/navigateur-cover-2.jpg)
+
+Mais derrière les navigateurs web, ne se cachent pas qu'un monde et obscure peuplé de gens bizarre ! **Les développeurs !**
+
+
+![](https://jeu-bayrou.com/wp-content/uploads/2020/05/World-of-Warcraft-un-joueur-classique-termine-le-d%C3%A9fi-de.jpg =500x)
+
+## Le fonctionnement d'un site
+
+Les langages HTML et CSS sont la base de fonctionnement du web. Lorsque vous naviguez et demandez une page internet, derrière il existe tout un mécanisme.
+
+
+![](https://user.oc-static.com/files/339001_340000/339311.png)
+
+
+
+<!--Le langage HTML a été inventé par un certain Tim Berners-Lee en 1991…
+
+Tim Berners-Lee suit encore aujourd'hui avec attention l'évolution du Web. Il a créé le World Wide Web Consortium (W3C), qui définit les nouvelles versions des langages liés au Web. Il a par ailleurs créé plus récemment la World Wide Web Foundation, qui analyse et suit l'évolution du Web.-->
