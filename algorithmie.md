@@ -2,7 +2,7 @@
 title: Algorithmie
 description: 
 published: 1
-date: 2022-09-28T18:10:00.725Z
+date: 2022-09-29T22:25:02.585Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-14T07:40:34.936Z
@@ -17,6 +17,7 @@ dateCreated: 2022-08-14T07:40:34.936Z
 - [Les procédures et les fonctions *🐱‍🏍*](/algorithmie/process)
 - [Le tri *parce qu'il faut bien ranger ;)*](/algorithmie/tri)
 - [Compléxité d'un algorithme *Oui, parce qu'un algo peut être plus ou moins complexe !*](/alhorithmie/complex)
+- [Slide du cours *:computer:*](/linux/slide)
 {.links-list}
 
 ## Mais finalement qu'est-ce que c'est ? 🤔
