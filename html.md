@@ -2,7 +2,7 @@
 title: HTML
 description: 
 published: 1
-date: 2022-09-29T20:58:02.864Z
+date: 2022-10-01T19:32:50.347Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-29T20:49:51.788Z
@@ -10,7 +10,7 @@ dateCreated: 2022-09-29T20:49:51.788Z
 
 # On The Road To HTML 💪
 ## Plan de cours
-- [Mais c'est quoi un site intertet ?? *La Base de base*](/html/base)
+- [Mais c'est quoi un site internet ?? *La Base de base*](/html/base)
 - [Les outils *🔧*](/html/tools)
 - [La structure *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/html/structure)
 {.links-list}
