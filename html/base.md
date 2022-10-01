@@ -2,7 +2,7 @@
 title: Mais c'est quoi un site internet ? 
 description: 
 published: 1
-date: 2022-09-29T22:21:17.445Z
+date: 2022-10-01T20:15:48.841Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-29T21:41:17.324Z
@@ -35,19 +35,14 @@ Je suis sûr que vous avez l'habitude 😉. Via un Navigateur.
 {.is-warning}
 
 
-![navigateur-cover-2.jpg](/images/html/navigateur-cover-2.jpg)
+![navigateur-cover-3.png](/images/html/navigateur-cover-3.png)
 
 Mais derrière les navigateurs web, ne se cachent pas qu'un monde et obscure peuplé de gens bizarre ! **Les développeurs !**
 
 
-![](https://jeu-bayrou.com/wp-content/uploads/2020/05/World-of-Warcraft-un-joueur-classique-termine-le-d%C3%A9fi-de.jpg =500x)
-
 ## Le fonctionnement d'un site
 
 Les langages HTML et CSS sont la base de fonctionnement du web. Lorsque vous naviguez et demandez une page internet, derrière il existe tout un mécanisme.
-
-
-![](https://user.oc-static.com/files/339001_340000/339311.png)
 
 
 
