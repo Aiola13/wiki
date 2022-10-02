@@ -2,7 +2,7 @@
 title: L'entête
 description: 
 published: 1
-date: 2022-10-02T15:59:41.185Z
+date: 2022-10-02T16:11:42.942Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-02T15:59:41.185Z
@@ -45,9 +45,30 @@ Imaginons que nous créions un site à propos d'un gîtes ou d'une hauberge dans
 
 ![balise_title.png](/images/html/balise_title.png)
 
+## la balise `<link>`
 
 
 
-## meta
+## la balise `<meta>`
 
-La base
+Cette balise peut prendre différents attributs.
+
+
+|Attribut|Description|Valeur|
+|:----:|:---------:|:----:|
+|`<charset>`|Spécifie le type d'encodage de caractères à utiliser|
+|`<content>`| Vient spécifier deux attributs suivants|
+|`<http-equiv>`| Représente toutes les méta-données qui ne peuvent pas être utilisées avec les balises suivantes|
+|`<name>`| (❌ à ne pas utiliser) Elle permet de mettre du style directement dans votre page|
+
+
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
