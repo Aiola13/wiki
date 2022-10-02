@@ -2,7 +2,7 @@
 title: HTML
 description: 
 published: 1
-date: 2022-10-02T08:01:55.303Z
+date: 2022-10-02T14:40:14.938Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-29T20:49:51.788Z
@@ -11,7 +11,9 @@ dateCreated: 2022-09-29T20:49:51.788Z
 # On The Road To HTML 💪
 ## Plan de cours
 - [Mais c'est quoi un site internet ?? *La Base de base*](/html/base)
-- [La structure et les balises *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/html/structure)
+- [La structure *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/html/structure)
+- [L'entête *Tout est dans la tête*](/html/head)
+- [Le corps *À corps et à cris*](/html/body)
 - [Slide du cours *:computer:*](/html/slide)
 {.links-list}
 
