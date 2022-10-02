@@ -2,7 +2,7 @@
 title: HTML
 description: 
 published: 1
-date: 2022-10-02T07:58:03.582Z
+date: 2022-10-02T08:01:35.119Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-29T20:49:51.788Z
@@ -12,7 +12,7 @@ dateCreated: 2022-09-29T20:49:51.788Z
 ## Plan de cours
 - [Mais c'est quoi un site internet ?? *La Base de base*](/html/base)
 <!-- - [Les outils *🔧*](/html/tools) -->
-- [La structure *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/html/structure)
+- [La structure et les balises *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/html/structure)
 - [Slide du cours *:computer:*](/html/slide)
 {.links-list}
 
