@@ -2,7 +2,7 @@
 title: L'entête
 description: 
 published: 1
-date: 2022-10-02T16:11:42.942Z
+date: 2022-10-02T16:16:54.253Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-02T15:59:41.185Z
@@ -56,10 +56,10 @@ Cette balise peut prendre différents attributs.
 
 |Attribut|Description|Valeur|
 |:----:|:---------:|:----:|
-|`<charset>`|Spécifie le type d'encodage de caractères à utiliser|
-|`<content>`| Vient spécifier deux attributs suivants|
-|`<http-equiv>`| Représente toutes les méta-données qui ne peuvent pas être utilisées avec les balises suivantes|
-|`<name>`| (❌ à ne pas utiliser) Elle permet de mettre du style directement dans votre page|
+|`<charset>`|Spécifie le type d'encodage de caractères à utiliser|ex : UTF-8|
+|`<content>`| Vient spécifier deux attributs suivants| texte|
+|`<http-equiv>`| Fournit les "entêtes HTTP" |	content-security-policy, content-type, default-style, refresh|
+|`<name>`| Indique le nom de la méta |application-name, author, description, generator, keywords, viewport|
 
 
 
