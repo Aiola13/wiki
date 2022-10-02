@@ -2,7 +2,7 @@
 title: La Structure et les balises
 description: 
 published: 1
-date: 2022-10-02T08:47:35.253Z
+date: 2022-10-02T08:56:35.358Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-02T08:47:35.253Z
@@ -48,6 +48,26 @@ On peut comparer les attributs, aux options de la balise. Elles sont là pour co
 ```html
 <foo attribut="valeur"> 	Mon Texte 	</foo>
 ```
+
+## Structure générale d'une page HTML5
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  </body>
+</html>
+```
+
+> Les espaces avant certaines lignes permettent de rendre plus lisible le code. C'est ce qu'on appelle **l'indentation**.
+{.is-success}
 
 
 
