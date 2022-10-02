@@ -2,7 +2,7 @@
 title: L'entête
 description: 
 published: 1
-date: 2022-10-02T16:16:54.253Z
+date: 2022-10-02T16:40:49.248Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-02T15:59:41.185Z
@@ -47,12 +47,16 @@ Imaginons que nous créions un site à propos d'un gîtes ou d'une hauberge dans
 
 ## la balise `<link>`
 
+Cette balise a deux attributs très intéressant : `href` et `rel`.
+- `href` :  Contient le nom et l'emplacement du lien du document à insérer 
+- `rel` :  Contient le type de document à insérer
 
+```html
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico">
+```
 
 ## la balise `<meta>`
-
-Cette balise peut prendre différents attributs.
-
 
 |Attribut|Description|Valeur|
 |:----:|:---------:|:----:|
@@ -65,10 +69,33 @@ Cette balise peut prendre différents attributs.
 
 ```html
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="John Doe">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!-- Encodage des caractères, pour éviter les erreurs d'accents, de caractères spéciaux, etc ... -->
+  <meta name="description" content="Le site de moi, pour apprendre  ... "> <!-- C'est ce qui apparaît dans votre recherche google sous le nom du site -->
+  <meta name="keywords" content="HTML, Cours, Greta"> <!-- Etait utilisé par les moteurs de recherche pour connaître les thématiques de votre page -->
+  <meta name="author" content="John Doe"> <!-- Précise l'auteur de la page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet d'ajuster la largeur de la page par rapport à l'écran et définie le niveau de zoom initial -->
 </head>
 ```
+
+
+## les balisscript `<style>` et `<script>`
+
+Ces deux balises servent respectivement à insérer directement dans le document du CSS et du Javascript. Nous reviendrons dessus plus tard.
+
+```html
+<script>
+	document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<style>
+  h1 {color:red;}
+  p {color:blue;}
+</style>
+```
+
+
+---
+
+> Voici deux liens vers des documentations pour approfondir ce sujet : 
+> https://developer.mozilla.org/fr/docs/Web/HTML/Element
+> https://www.w3schools.com/tags/tag_head.asp
+{.is-success}
