@@ -2,7 +2,7 @@
 title: Mais c'est quoi un site internet ? 
 description: 
 published: 1
-date: 2022-10-02T07:57:25.709Z
+date: 2022-10-02T08:18:57.641Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-29T21:41:17.324Z
@@ -65,6 +65,8 @@ Les deux langages sont complémentaires et sont là pour faciliter le développe
 - HTML (HyperText Markup Language) : Son rôle est de gérer et organiser le contenu. Il contient le fond. C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page : du texte, des liens, des images…
 - CSS (Cascading Style Sheets, aussi appelées feuilles de style) : Son rôle est de gérer l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…), et donc la forme. Ce langage est venu compléter le HTML en 1996.
 
+
+![structure_html_css_javascript.png](/images/html/structure_html_css_javascript.png){.align-center}
 
 ## Historique
 
