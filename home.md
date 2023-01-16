@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue
 published: 1
-date: 2023-01-16T00:08:58.930Z
+date: 2023-01-16T00:32:29.785Z
 tags: accueil, bienvenue, home
 editor: markdown
 dateCreated: 2023-01-16T00:08:58.930Z
@@ -30,11 +30,14 @@ L'objectif ici :
 > ATTENTION ... il nous faut une feuille et un crayon. 🙄
 {.is-warning}
 
-|un éditeur de code            | [Visual Studio Code](https://code.visualstudio.com) |
+> Et suivant le cours : 
+
+|un éditeur de code            | [Visual Studio Code](https://code.visualstudio.com) ou [La suite JetBrains](https://www.jetbrains.com/fr-fr/)|
 |:----------------------------- | --------------------------------------------------- |
 | un serveur web                | Apache                                              |
-| Un interpréteur de script PHP | Zend Engine                                         |
+| un interpréteur de script PHP | Zend Engine                                         |
 | un serveur de base de donnée  | MySQL                                               |
+| un moteur de jeu  | [Unity](https://unity.com/fr)                                               |
 
 Nous avons de la chance ... 💡, Vous pouvez utiliser le logiciel qui regroupe :
 
@@ -42,7 +45,9 @@ Nous avons de la chance ... 💡, Vous pouvez utiliser le logiciel qui regroupe 
 - un interpréteur de script PHP
 - un serveur de base de donnée 
 
-Qui s'appelle [WAMP](https://www.wampserver.com) pour windows. Ou les déclinaisons pour MAC (MAMPP) et Linux (LAMP)
+Qui s'appelle [WAMP](https://www.wampserver.com) pour windows. Ou les déclinaisons pour MAC (MAMPP) et Linux (LAMP).
+
+Vous avez également le logiciel multi-plateforme XAMPP.
 
 
 
