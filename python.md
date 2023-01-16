@@ -2,7 +2,7 @@
 title: Python
 description: 
 published: 1
-date: 2023-01-16T10:29:56.262Z
+date: 2023-01-16T10:34:34.898Z
 tags: python
 editor: markdown
 dateCreated: 2023-01-16T10:29:56.262Z
@@ -12,5 +12,5 @@ dateCreated: 2023-01-16T10:29:56.262Z
 
 # Python, Fils de GAIA 🐍
 ## Plan de cours
-- [Notions de “base” *Pythie, l'oracle d'Apllon à Delphes*](/python/notion)
+- [Introduction *Pythie, l'oracle d'Apllon à Delphes*](/python/intro)
 {.links-list}
