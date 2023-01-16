@@ -2,7 +2,7 @@
 title: Algorithmie
 description: La conception d'un code
 published: 1
-date: 2023-01-16T00:21:44.775Z
+date: 2023-01-16T00:24:53.114Z
 tags: algo, algorithmie, code
 editor: markdown
 dateCreated: 2023-01-16T00:21:44.775Z
@@ -11,7 +11,7 @@ dateCreated: 2023-01-16T00:21:44.775Z
 # On The Road To Algo 💪
 ## Plan de cours
 <!--- [Notions de base *Vous allez devenir le nouveau PDG de Skynet*](/algorithmie/notion)-->
-- [Un Pseudo-Code *Pourquoi pseudo ? 🤔*](/algorithmie/pseudo)
+- [Un Pseudo-Code *Pourquoi pseudo ? 🤔*](/algorithmie/pseudocode)
 - [Les données *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/algorithmie/data)
 - [Abordons les instructions](/algorithmie/instructions)
 - [Les procédures et les fonctions *🐱‍🏍*](/algorithmie/process)
