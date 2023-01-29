@@ -2,8 +2,8 @@
 title: Introduction
 description: 
 published: 1
-date: 2023-01-16T11:45:51.296Z
-tags: introduction, intro
+date: 2023-01-29T20:28:37.999Z
+tags: intro, introduction
 editor: markdown
 dateCreated: 2023-01-16T11:45:51.296Z
 ---
@@ -107,3 +107,44 @@ Le triple chevron >>> est l'invite de commande (prompt en anglais) de l'interpr�
 Hello World
 ```
 
+## Les commentaires
+
+Tout ce qui suit le caractère # est ignoré par Python jusqu'à la fin de la ligne et est considéré comme un commentaire.
+
+Les commentaires doivent expliquer votre code dans un langage humain. 
+
+
+> Le croisillon, ou carré au Canada, est un signe typographique noté ‹ # › et souvent confondu avec le symbole musical dièse transcrit ‹ ♯ ›
+{.is-warning}
+
+
+```python
+# Votre premier commentaire en  Python.
+print("Hello world!")
+```
+
+## Bloc d'instructions et indentation
+
+En programmation, il est courant de répéter un certain nombre de choses ou d'exécuter plusieurs instructions si une condition est vraie, par exemple. 
+
+Pour indiquer cela, on décalera vers la droite ces deux instructions par rapport à la ligne précédente. 
+Ce décalage est appelé **indentation**, et l'ensemble des lignes indentées constitue **un bloc d'instructions**. En pratique, l'indentation en Python doit être homogène avec 4 espaces.
+
+```python
+for i in range(5):
+# les deux instructions suivantes sont indentées de la même manière
+# cela signifie qu'elles font partie du même bloc d'instructions
+    print("Bonjour")
+    print("Comment vas-tu?")
+print("Au revoir")
+```
+
+
+```python
+x = 5
+if x > 0:
+    print("x est positif")
+    print("x est plus grand que zéro")
+else:
+    print("x est négatif")
+```
