@@ -2,7 +2,7 @@
 title: Python
 description: 
 published: 1
-date: 2023-01-29T20:52:52.174Z
+date: 2023-01-29T20:53:48.521Z
 tags: python
 editor: markdown
 dateCreated: 2023-01-16T10:29:56.262Z
