@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T17:43:08.248Z
+date: 2023-01-30T17:53:47.392Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -96,6 +96,17 @@ https://www.php.net/manual/fr/language.types.type-juggling.php
 
 
 ## Include & Require
+
+> Les instructions **include** & **require** en PHP permet d'insérer le contenu d'un fichier PHP dans un autre fichier PHP avant son exécution par le serveur. 
+{.is-success}
+
+Les deux instructions sont indentiques, sauf en cas d'échec :
+
+- **include** génère un avertissement (*E_WARNING*) et le script continue (include_once)
+- **require** produira une erreur fatale (E_COMPILE_ERROR) et stoppera l'éxécution du script (require_once)
+
+
+
 
 ## Gestion des fichiers
 
