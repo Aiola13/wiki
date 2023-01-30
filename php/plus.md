@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T18:48:27.791Z
+date: 2023-01-30T23:14:15.462Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -146,6 +146,30 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 </body>
 </html> 
 ```
+
+### Définir vos propres fonctions de rappel
+
+```php
+<?php
+  function exclaim($str) {
+    return $str . "! ";
+  }
+
+  function ask($str) {
+    return $str . "? ";
+  }
+
+  function printFormatted($str, $format) {
+    // Appel de la fonction rappel $format 
+    echo $format($str);
+  }
+
+  // Passe "exclaim" & "ask" en tant que fonctions de rappel à printFormatted()
+  printFormatted("Hello world", "exclaim");
+  printFormatted("Hello world", "ask");
+?>
+```
+
 
 ## Fonctions de Rappel (Callback Functions)
 > 
