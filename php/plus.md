@@ -2,13 +2,13 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-18T21:15:11.409Z
+date: 2023-01-30T17:40:06.622Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
 ---
 
-# Les indispensables
+# Les notions supplémentaires indispensables
 
 ## Transtypage : Règles de conversion
 **Le transtypage** (on parle aussi de **coercition**, de **cast** ou de **conversion de type**), et le fait de convertir une valeur d'un type (source) dans un autre (cible).
