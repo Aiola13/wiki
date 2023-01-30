@@ -2,7 +2,7 @@
 title: Les super globales
 description: 
 published: 1
-date: 2023-01-30T18:31:58.730Z
+date: 2023-01-30T18:33:47.453Z
 tags: globales, php, super
 editor: markdown
 dateCreated: 2023-01-18T21:13:13.791Z
@@ -121,6 +121,7 @@ Ici le cookie portera le nom de **prenom**, aura la valeur **Loïc**, expirera d
 
 ```php
 <?php
+echo $_COOKIE["prenom"];
 var_dump($_COOKIE);
 ?>
 ```
