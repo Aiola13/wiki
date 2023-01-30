@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T17:40:06.622Z
+date: 2023-01-30T17:41:57.517Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -10,8 +10,10 @@ dateCreated: 2023-01-18T21:15:11.409Z
 
 # Les notions supplémentaires indispensables
 
-## Transtypage : Règles de conversion
+## Transtypage
 **Le transtypage** (on parle aussi de **coercition**, de **cast** ou de **conversion de type**), et le fait de convertir une valeur d'un type (source) dans un autre (cible).
+
+### Transtypage : Règles de conversion
 
 > Chaîne de caractères ➡ Nombres 
 
@@ -65,7 +67,7 @@ echo 10; //Affiche 10, représentation classique en base décimal
       - Depuis un entier : représntation classique en base dic.
       - Depuis un tableaux et objets : affichage du type Array ou Object -->
 
-## Transtypage : Forcer une conversion
+### Transtypage : Forcer une conversion
 
 - En le spécifiant (cast) :
 ```php
