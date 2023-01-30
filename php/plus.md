@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T18:13:45.865Z
+date: 2023-01-30T18:14:42.309Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -146,9 +146,6 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 </body>
 </html> 
 ```
-
-
-
 
 ## Gestion des fichiers
 
