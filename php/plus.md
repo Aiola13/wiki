@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T23:36:38.427Z
+date: 2023-01-30T23:48:18.058Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -237,7 +237,7 @@ echo readfile("webdictionary.txt");
 
 La fonction readfile() est utile si tout ce que vous voulez faire est d'ouvrir un fichier et de lire son contenu.
 
-### fopen() - Ouvrir un fichier
+### fopen() - Ouvrir|Créer un fichier
 
 > Une meilleure méthode pour ouvrir des fichiers est d'utiliser la fonction fopen(). Cette fonction vous donne plus d'options que la fonction readfile(). 
 {.is-success}
@@ -272,6 +272,19 @@ Le fichier peut être ouvert dans l'un des modes suivants :
 - a+ : Ouvre un fichier en lecture/écriture. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas.
 - x+ : Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà.
 
+
+
+> La fonction fopen() est également utilisée pour créer un fichier. C'est peut-être un peu confus, mais en PHP, un fichier est créé en utilisant la même fonction que celle utilisée pour ouvrir les fichiers.
+{.is-success}
+
+
+Si vous utilisez fopen() sur un fichier qui n'existe pas, il le créera, à condition que le fichier soit ouvert en écriture (w) ou en ajout (a).
+
+L'exemple ci-dessous crée un nouveau fichier appelé "testfile.txt". Le fichier sera créé dans le même répertoire que celui où se trouve le code PHP :
+<?php
+  $myfile = fopen("testfile.txt", "w") 
+?> 
+
 ### fread() - Lire un fichier ouvert
 
 > La fonction fread() lit depuis un fichier ouvert.
@@ -289,11 +302,98 @@ Le code PHP suivant lit le fichier "webdictionary.txt" jusqu'à la fin :
 
 ### fclose() - Fermer un fichier
 
+La fonction fclose() est utilisée pour fermer un fichier ouvert.
+
+C'est une bonne pratique de programmation que de fermer tous les fichiers après les avoir utilisés. Vous ne voulez pas qu'un fichier ouvert se balade sur votre serveur en consommant des ressources !
+
+La fonction fclose() requiert le nom du fichier (ou une variable qui contient le nom du fichier) que nous voulons fermer :
+<?php
+  $myfile = fopen("webdictionary.txt", "r");
+  // du code à exécuter....
+  fclose($myfile);
+?>
+
 ### fgets() - Lire une seule ligne
+
+La fonction fgets() est utilisée pour lire une seule ligne d'un fichier.
+
+L'exemple ci-dessous affiche la première ligne du fichier "webdictionary.txt" :
+<?php
+  $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+  echo fgets($myfile);
+  fclose($myfile);
+?> 
 
 ### feof() - Vérifier la fin du fichier
 
+La fonction feof() vérifie si la "fin du fichier" (EOF) a été atteinte.
+
+La fonction feof() est utile pour lire en boucle des données de longueur inconnue.
+
+L'exemple ci-dessous lit le fichier "webdictionary.txt" ligne par ligne, jusqu'à ce que la fin du fichier soit atteinte :
+<?php
+  $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+  // Affiche une ligne jusqu’à la fin du fichier
+  while(!feof($myfile)) {
+    echo fgets($myfile) . "<br>";
+  }
+  fclose($myfile);
+?> 
+
 ### getc() - Lire un seul caractère
+
+La fonction fgetc() est utilisée pour lire un seul caractère dans un fichier.
+
+L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractère, jusqu'à ce que la fin du fichier soit atteinte :
+<?php
+  $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+  // Output one character until end-of-file
+  while(!feof($myfile)) {
+    echo fgetc($myfile);
+  }
+  fclose($myfile);
+?> 
+
+### fwrite() - Écrire dans un fichier
+
+La fonction fwrite() est utilisée pour écrire dans un fichier.
+
+Le premier paramètre de fwrite() contient le nom du fichier à écrire et le second paramètre est la chaîne à écrire.
+
+L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé "newfile.txt" :
+<?php
+  $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+  $txt = "John Doe\n";
+  fwrite($myfile, $txt);
+  $txt = "Jane Doe\n";
+  fwrite($myfile, $txt);
+  fclose($myfile);
+?> 
+
+Remarquez que nous avons écrit deux fois dans le fichier "newfile.txt". Chaque fois que nous avons écrit dans le fichier, nous avons envoyé la chaîne $txt qui contenait d'abord "John Doe" et ensuite "Jane Doe". Après avoir fini d'écrire, nous avons fermé le fichier à l'aide de la fonction fclose().
+
+Si nous ouvrons le fichier "newfile.txt", il ressemblera à ceci :
+Jean Dupont
+Jane Doe
+Écrasement du contenu du fichier
+Maintenant que "newfile.txt" contient des données, nous pouvons montrer ce qui se passe lorsque nous ouvrons un fichier existant pour l'écrire. Toutes les données existantes seront EFFACÉES et nous commencerons avec un fichier vide.
+
+Dans l'exemple ci-dessous, nous ouvrons notre fichier existant "newfile.txt", et nous y écrivons de nouvelles données :
+<?php
+  $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+  $txt = "Mickey Mouse\n";
+  fwrite($myfile, $txt);
+  $txt = "Minnie Mouse\n";
+  fwrite($myfile, $txt);
+  fclose($myfile);
+?> 
+
+Si nous ouvrons maintenant le fichier "newfile.txt", John et Jane ont disparu, et seules les données que nous venons d'écrire sont présentes :
+Mickey Mouse
+Minnie Mouse
+
+
+
 
 ## Sécurisation
 
