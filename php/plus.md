@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T23:35:22.423Z
+date: 2023-01-30T23:36:38.427Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -273,6 +273,19 @@ Le fichier peut être ouvert dans l'un des modes suivants :
 - x+ : Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà.
 
 ### fread() - Lire un fichier ouvert
+
+> La fonction fread() lit depuis un fichier ouvert.
+{.is-success}
+
+Le premier paramètre de fread() contient le nom du fichier à lire et le second paramètre spécifie le nombre maximum d'octets à lire.
+
+Le code PHP suivant lit le fichier "webdictionary.txt" jusqu'à la fin :
+
+```php
+<?php
+    fread($myfile,filesize("webdictionary.txt"));
+?> 
+```
 
 ### fclose() - Fermer un fichier
 
