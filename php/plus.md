@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T18:43:15.666Z
+date: 2023-01-30T18:48:27.791Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -164,6 +164,17 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 
   $strings = ["apple", "orange", "banana", "coconut"];
   $lengths = array_map("my_callback", $strings);
+  print_r($lengths);
+?> 
+```
+
+> Depuis PHP 7, il est possible de passer des fonctions anonymes comme fonctions de rappel.
+{.is-warning}
+
+```php
+<?php
+  $strings = ["apple", "orange", "banana", "coconut"];
+  $lengths = array_map( function($item) { return strlen($item); } , $strings);
   print_r($lengths);
 ?> 
 ```
