@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T17:53:47.392Z
+date: 2023-01-30T18:13:45.865Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -100,10 +100,52 @@ https://www.php.net/manual/fr/language.types.type-juggling.php
 > Les instructions **include** & **require** en PHP permet d'insérer le contenu d'un fichier PHP dans un autre fichier PHP avant son exécution par le serveur. 
 {.is-success}
 
+L'avantage est que vous pouvez créer un fichier *d'en-tête*, *de pied de page*, ect... et les mettre à jour indépendamment des autres.
+
 Les deux instructions sont indentiques, sauf en cas d'échec :
 
 - **include** génère un avertissement (*E_WARNING*) et le script continue (include_once)
 - **require** produira une erreur fatale (E_COMPILE_ERROR) et stoppera l'éxécution du script (require_once)
+
+### Syntaxe
+
+```php
+include 'filename'; ou require 'filename';
+```
+
+### Exemple
+
+On veut inclure un fichier `vars.php` et notre pied de page standard appelé `footer.php` dans un autre fichier :
+
+
+```php
+<?php
+  $color = 'red';
+  $car = 'Ferrari';
+?>
+```
+
+```php
+<?php
+echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") . " The PHP Group</p></a>";
+?>
+```
+
+```php
+<html>
+<body>
+
+<h1>Welcome to my home page!</h1>
+<?php include 'vars.php';
+  		echo "I have a $color $car.";
+?>
+<p>Some text.</p>
+<p>Some more text.</p>
+<?php include_once 'footer.php';?>
+
+</body>
+</html> 
+```
 
 
 
