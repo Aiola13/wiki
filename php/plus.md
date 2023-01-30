@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T17:41:57.517Z
+date: 2023-01-30T17:43:08.248Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -94,6 +94,8 @@ Je vais vous laisser faire votre propres avis ;), en allant voir la documentatio
 
 https://www.php.net/manual/fr/language.types.type-juggling.php
 
+
+## Include & Require
 
 ## Gestion des fichiers
 
