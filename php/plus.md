@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T23:14:15.462Z
+date: 2023-01-30T23:23:21.669Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -147,30 +147,6 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 </html> 
 ```
 
-### Définir vos propres fonctions de rappel
-
-```php
-<?php
-  function exclaim($str) {
-    return $str . "! ";
-  }
-
-  function ask($str) {
-    return $str . "? ";
-  }
-
-  function printFormatted($str, $format) {
-    // Appel de la fonction rappel $format 
-    echo $format($str);
-  }
-
-  // Passe "exclaim" & "ask" en tant que fonctions de rappel à printFormatted()
-  printFormatted("Hello world", "exclaim");
-  printFormatted("Hello world", "ask");
-?>
-```
-
-
 ## Fonctions de Rappel (Callback Functions)
 > 
 > une fonction de rappel en PHP est une fonction qui peut être passée en argument à une autre fonction. Toute fonction existante peut être utilisée comme fonction de rappel. 
@@ -203,8 +179,50 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 ?> 
 ```
 
+### Définir vos propres fonctions de rappel
+
+```php
+<?php
+  function exclaim($str) {
+    return $str . "! ";
+  }
+
+  function ask($str) {
+    return $str . "? ";
+  }
+
+  function printFormatted($str, $format) {
+    // Appel de la fonction rappel $format 
+    echo $format($str);
+  }
+
+  // Passe "exclaim" & "ask" en tant que fonctions de rappel à printFormatted()
+  printFormatted("Hello world", "exclaim");
+  printFormatted("Hello world", "ask");
+?>
+```
+
+
 ## Gestion des fichiers
 
+> Soyez prudent lorsque vous manipulez des fichiers !
+> 
+> Vous pouvez faire beaucoup de dégâts si vous faites quelque chose de mal. Les erreurs les plus courantes sont : l'édition d'un mauvais fichier, le remplissage d'un disque dur avec des données inutiles et la suppression du contenu d'un fichier par accident.
+{.is-warning}
+
+### readfile() - Lire|Ouvrir un fichier
+
+### fopen() - Ouvrir un fichier
+
+### fread() - Lire un fichier ouvert
+
+### fclose() - Fermer un fichier
+
+### fgets() - Lire une seule ligne
+
+### feof() - Vérifier la fin du fichier
+
+### getc() - Lire un seul caractère
 
 ## Sécurisation
 
