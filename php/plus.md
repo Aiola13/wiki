@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T23:23:21.669Z
+date: 2023-01-30T23:35:22.423Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -212,7 +212,65 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 
 ### readfile() - Lire|Ouvrir un fichier
 
+> La fonction readfile() lit un fichier et l'écrit dans le tampon de sortie.
+{.is-success}
+
+
+Supposons que nous ayons un fichier texte appelé "webdictionary.txt", stocké sur le serveur, qui ressemble à ceci :
+
+```text
+AJAX = Asynchronous JavaScript and XML
+CSS = Cascading Style Sheets
+HTML = Hyper Text Markup Language
+PHP = PHP Hypertext Preprocessor
+SQL = Structured Query Language
+SVG = Scalable Vector Graphics
+XML = EXtensible Markup Language
+```
+
+Le code PHP pour lire le fichier et l'écrire dans le tampon de sortie est le suivant (la fonction readfile() renvoie le nombre d'octets lus en cas de succès) :
+```php
+<?php
+echo readfile("webdictionary.txt");
+?> 
+```
+
+La fonction readfile() est utile si tout ce que vous voulez faire est d'ouvrir un fichier et de lire son contenu.
+
 ### fopen() - Ouvrir un fichier
+
+> Une meilleure méthode pour ouvrir des fichiers est d'utiliser la fonction fopen(). Cette fonction vous donne plus d'options que la fonction readfile(). 
+{.is-success}
+
+Reprenons le fichier texte précédent, "webdictionary.txt"  : 
+
+```text
+AJAX = Asynchronous JavaScript and XML
+CSS = Cascading Style Sheets
+HTML = Hyper Text Markup Language
+PHP = PHP Hypertext Preprocessor
+SQL = Structured Query Language
+SVG = Scalable Vector Graphics
+XML = EXtensible Markup Language
+```
+
+Le premier paramètre de fopen() contient le nom du fichier à ouvrir et le second paramètre précise dans quel mode le fichier doit être ouvert. L'exemple suivant génère également un message si la fonction fopen() ne parvient pas à ouvrir le fichier spécifié :
+```text
+<?php
+	$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("webdictionary.txt"));
+fclose($myfile);
+?> 
+```
+Le fichier peut être ouvert dans l'un des modes suivants :
+- r : Ouvre un fichier en lecture seule. Le pointeur de fichier commence au début du fichier.
+- w : Ouvrir un fichier en écriture seulement. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur du fichier commence au début du fichier.
+- a : Ouvre un fichier en écriture seulement. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas.
+- x : Crée un nouveau fichier en écriture seulement. Retourne FALSE et une erreur si le fichier existe déjà.
+- r+ : Ouvre un fichier en lecture/écriture. Le pointeur de fichier commence au début du fichier.
+- w+ : Ouvre un fichier en lecture/écriture. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier.
+- a+ : Ouvre un fichier en lecture/écriture. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas.
+- x+ : Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà.
 
 ### fread() - Lire un fichier ouvert
 
