@@ -2,7 +2,7 @@
 title: Les super globales
 description: 
 published: 1
-date: 2023-01-30T18:28:04.860Z
+date: 2023-01-30T18:31:58.730Z
 tags: globales, php, super
 editor: markdown
 dateCreated: 2023-01-18T21:13:13.791Z
@@ -110,14 +110,14 @@ Cette magie est possible en injectant dans votre navigateur un petit fichier app
 ```php
 <?php
 // Toujours avant le html
-setcookie("prenom", "Loïc", time() + 60 * 60 * 24 * 30 * 12);
+setcookie("prenom", "Loïc", time() + 60 * 60 * 24 * 30 * 12, "/");
 // setcookie(name, value, expire, path, domain, secure, httponly);
 ?>
 
 <html>
 </html>
-...
 ```
+Ici le cookie portera le nom de **prenom**, aura la valeur **Loïc**, expirera dans un an, et sera disponible dans tout le site web.
 
 ```php
 <?php
