@@ -2,8 +2,8 @@
 title: Les super globales
 description: 
 published: 1
-date: 2023-01-18T21:13:13.791Z
-tags: php, super, globales
+date: 2023-01-30T18:28:04.860Z
+tags: globales, php, super
 editor: markdown
 dateCreated: 2023-01-18T21:13:13.791Z
 ---
@@ -26,7 +26,7 @@ Re voici le tableau
 |  `$_POST`   |       Les variables fournies au script via la chaîne de requête URL en méthode POST       |    $_POST['nom']     |
 |  `$_FILES`  |          Les variables fournies par le protocole HTTP suite à un téléchargement           | $_FILES['fichier1']  |
 | `$_SESSION` |               Les variables enregistrées dans la session attachée au script               |  $_SESSION['var2']   |
-
+| `$_COOKIE` | Les variables enregistrées dans le navigateur sous forme de petits fichiers | $_COOKIE['nom_cookie'] |
 # Tabset {.tabset}
 ## GET
 
@@ -101,12 +101,17 @@ var_dump($_SESSION_);
 
 ## COOKIE
 
-Ce tableau associatif permet de garder des informations d'un internaute tout au long de son parcours sur votre site web.
+![cookie.png](/images/php/cookie.png){.align-center}
+
+
+Ce tableau associatif permet de récupérer les informations d'un internaute tout au long de son parcours sur votre site web.
+Cette magie est possible en injectant dans votre navigateur un petit fichier appelé donc **cookie**.
 
 ```php
 <?php
 // Toujours avant le html
 setcookie("prenom", "Loïc", time() + 60 * 60 * 24 * 30 * 12);
+// setcookie(name, value, expire, path, domain, secure, httponly);
 ?>
 
 <html>
@@ -119,7 +124,6 @@ setcookie("prenom", "Loïc", time() + 60 * 60 * 24 * 30 * 12);
 var_dump($_COOKIE);
 ?>
 ```
-![cookie.png](/images/php/cookie.png)
 
 # Prêt pour la prochaine partie ? 😉 [C'est par ici](/php/functions)
 
