@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T18:14:42.309Z
+date: 2023-01-30T18:43:15.666Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -145,6 +145,27 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 
 </body>
 </html> 
+```
+
+## Fonctions de Rappel (Callback Functions)
+> 
+> une fonction de rappel en PHP est une fonction qui peut être passée en argument à une autre fonction. Toute fonction existante peut être utilisée comme fonction de rappel. 
+{.is-success}
+
+### exemple
+
+**`array_map`** utilise une fonction de rappel pour appliquer une transformation à chaque élément d'un tableau. Ici, la fonction de rappel nous permet de calculer la longueur de chaque chaîne du tableau.
+
+```php
+<?php
+  function my_callback($item) {
+    return strlen($item);
+  }
+
+  $strings = ["apple", "orange", "banana", "coconut"];
+  $lengths = array_map("my_callback", $strings);
+  print_r($lengths);
+?> 
 ```
 
 ## Gestion des fichiers
