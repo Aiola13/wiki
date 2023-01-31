@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-31T06:28:11.502Z
+date: 2023-01-31T06:34:43.925Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -395,7 +395,7 @@ Minnie Mouse
 
 
 
-## Sécurisation
+<!--## Sécurisation
 
 Pourquoi sécurisé ? 
 - l'être humain n'est pas infaillible
