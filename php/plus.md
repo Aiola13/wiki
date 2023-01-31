@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-31T00:19:18.333Z
+date: 2023-01-31T06:28:11.502Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -469,6 +469,63 @@ Beaucoup, beaucoup, beaucoup d'informations disponibles sur internet. En plus de
 - [Ingénierie sociale : _The Life of Death_](https://textslashplain.com/2017/01/14/the-line-of-death/)
 
 ---
+
+# Sécurité
+
+La sécurité, c'est bien. :+1:
+
+Mais la comprendre, c'est mieux ! :muscle:
+
+Voici les failles les plus communes : 
+
+- [Injection SQL](./details/injection_sql.md)
+- [Attaque par force brute (ou Brute Force)](./details/brute_force.md)
+- [Cross-Site Scripting (ou XSS)](./details/xss.md)
+- [Cross-Site Request Forgery (ou CSRF)](./details/csrf.md)
+
+Pour chacune de ces failles, on va d'abord se mettre dans la peau du pirate en tentant d'attaquer un site mal protégé, puis on verra comment se prémunir.
+
+
+## Notions générales de sécurité
+
+- Objectif de la sécurité informatique : empêcher les accès & comportements non-autorisés.
+- Il faut définir les comportements autorisés, et partir d'une base où tous les accès sont fermés, pour n'autoriser ensuite au cas-par-cas que les comportements autorisés (principe de la whitelist). Ne surtout pas travailler dans le sens inverse (tous accès ouverts par défaut et bloquer au cas-par-cas — principe de la blacklist).
+  - Exemple : bloquer l'accès à toutes les pages d'un site, sauf le formulaire de login, puis autoriser l'accès si login OK. Éventuellement laisser l'accès libre à certaines pages spécifiques et bien identifiées.
+- Un système sécurisé à 100% ça n'existe pas ! Partir du principe qu'il y aura toujours des [vulnérabilités](https://fr.wikipedia.org/wiki/Vuln%C3%A9rabilit%C3%A9_(informatique))/failles — c'est ce qu'on constate depuis qu'on s'intéresse au sujet et ça n'a pas de raisons de changer.
+- La sécurité, ce n'est pas que la lutte contre les intrusions, le vol ou la destruction de données. Un affichage malencontreux d'une donnée sensible peut-être désastreux (ex. affichage du mot de passe de ses clients « par hasard » dans une page mal conçue, ou rendue publique par erreur ; affichage du mot de passe, en clair, dans le mail de confirmation d'inscription ; etc.)
+- La sécurité doit être une activité multi-factorielle / multi-niveaux. Il y a des failles aussi bien sur la couche physique (ex. l'accès aux machines) que sur la partie serveur (vulnérabilités, bugs…), la partie cliente (navigateurs mal protégés, cybercafé, WiFi…), la couche « sociale » (menaces, extorsion, manipulation…) etc.
+
+## Déroulé-type d'une attaque
+
+En résumé :
+
+- l'attaquant se connecte sur un système auquel il n'est pas censé avoir accès
+- l'attaquant réalise sur ce système des opérations délictueuses : vol de données, destruction de données, etc.
+
+<details>
+<summary>Plus en détails</summary>
+
+- L'attaquant sélectionne une faille repérée sur le système ciblé.
+- 1ère charge – connexion : mise en place d'un canal de communication, adapté pour l'attaque, avec le système ciblé (par exemple, requête HTTP pour le web). Peut nécessiter de la part de l'attaquant de réaliser au préalable une [élévation de privilège](https://fr.wikipedia.org/wiki/%C3%89l%C3%A9vation_des_privil%C3%A8ges) grâce à une autre faille repérée en amont.
+- 2ème charge — intrusion (souvent, pour de l'observation, du vol de données…) : exploitation du canal de communication pour faire une mise en place de code malicieux. Possibilité de mise en place d'un proxy (programme relais spécifique, anodin en lui-même mais support du code malicieux, qui va permettre de brouiller les pistes).
+- 3ème charge – destruction (parfois, mais pas si souvent que ça car ne passe pas inaperçu !) : action destructive / prise de contrôle.
+
+La majorité des attaques s'arrêtent à la seconde charge, et continuent sur ce mode-là tant que l'attaque n'est pas repérée et se justifie.
+</details>
+
+<details>
+<summary>Exemple</summary>
+
+Un attaquant repère une faille XSS sur un site web (sélection), injecte un script JS avec mise en place d'un canal de communication AJAX voire WebSocket (1ère charge) ; le script est exécuté par le client d'une victime et transmet des informations sensibles (2ème charge).
+</details>
+
+Nous pouvons aussi allez voir la [Base](Base.md) de la sécurité.
+
+**Important**
+
+Ce n'est pas parce qu'on sait attaquer un site qu'il faut le faire !! Ça reste illégale !
+
+
 
 ### Faille XSS
 
