@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-30T23:48:18.058Z
+date: 2023-01-31T00:19:18.333Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -403,6 +403,72 @@ Pourquoi sécurisé ?
 - nous ne sommes pas toujours à jour ...
 
 Sécuriser les données est primordiale et indispensable. Il faut partir du constat : "Ne jamais faire confiance à l'utilisateur"
+
+## Principes de base de sécurité
+
+> **Commencer par là**, et oui, si j'ai pas les bases ça rien à rien.
+
+### La théorie
+
+- Règle simple pour estimer un risque : `risque = gravité x probabilité`.
+- Segmenter son code pour mieux gérer le facteur gravité. Et oui, si j'ai une app monolithique alors si j'ai une faille, toute mon app sera vulnérable alors que si mon app est distribuée alors c'est un peu plus sécurisé (mais au niveau de la probabilité ça augmente).
+- Pour minimiser la `probabilité` d'une attaque réussie, il faut mettre en place plusieurs couches de sécurité, complémentaires, notamment sur les parties où on a identifié que le facteur `gravité` est grand.
+- Certains risques ne peuvent pas être anticipés, il faudrait prévoir un bouton `arret d'urgence` pour pallier à un problème trop grand. Il vaut mieux une application éteinte, qu'une perte totale des données.
+
+
+### La pratique
+
+- Commencer par procéder à une analyse des risques. Je peux essayer d'`hacker` **mon** site avec les failles que je connais.
+- Couvrir les risques fondamentaux le plus tôt possible dans la phase de développement, faute de quoi ce ne sera pas fait au final. **Configurer tout ça dès les premiers jours**.
+- Prévoir un « système d'intégrité » c'est à dire, un mécanisme de sauvegarde et restauration, automatique si possible. Par exemple, export SQL quotidien pour la base de données. 
+
+
+## Grands axes de sécurité web
+
+- Éducation de ses utilisateurs.
+- Données récupérées de sources externes (protection contre les injections).
+
+![](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+
+- Hash de données (protection contre les attaques par dictionnaires).
+- ACL (protection contre les attaques par élévation de privilèges).
+- SSL/HTTPS (protection contre le vol de données sur le trafic réseau).
+- Protection par domaine ([CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS))
+- etc.
+
+Ces différents axes sont **complémentaires** ! C'est pas lui ou lui, mais lui ET lui.
+
+## Bonnes pratiques
+
+- Revue de sécurité (temps dédié à la fin des sprints, pendant les _code-reviews_…).
+- Tests spécifiques (intrusion, DDOS…).
+- Intégration, tout au long du processus de développement.
+
+
+## Référentiels de sécurité
+
+- [OWASP](https://www.owasp.org/)
+  - [Top 10 des vulnérabilités](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+  - [Fiches-pratique](https://github.com/OWASP/CheatSheetSeries)
+  - [Contrôles proactifs](https://www.owasp.org/index.php/OWASP_Proactive_Controls)
+  - [Standards de vérification](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
+- https://www.cert.ssi.gouv.fr/
+
+## Ressources
+
+### Sites de référence
+
+* https://www.hacksplaining.com/lessons
+
+### Lectures additionnelles
+
+Beaucoup, beaucoup, beaucoup d'informations disponibles sur internet. En plus des ressources ci-dessus, indispensables et déjà très fournies, voici une sélection très succinte et sujette à modification :
+
+- [_A quick introduction to web security_](https://medium.freecodecamp.org/a-quick-introduction-to-web-security-f90beaf4dd41)
+- [Série _How Browsers Work_](https://medium.freecodecamp.org/web-application-security-understanding-the-browser-5305ed2f1dac)
+- [Ingénierie sociale : _The Life of Death_](https://textslashplain.com/2017/01/14/the-line-of-death/)
+
+---
 
 ### Faille XSS
 
