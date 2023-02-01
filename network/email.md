@@ -2,7 +2,7 @@
 title: Protocole Email
 description: 
 published: 1
-date: 2023-02-01T01:24:48.816Z
+date: 2023-02-01T01:25:07.805Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -42,4 +42,3 @@ Subject: rue de Charonne
 Viens boire une Guiness ce soir
 au cafe de la plage
 
-ChatGPT Jan 30 Version. Free Research Preview. Our goal is to make AI systems more natural and safe to interact with. Your feedback will help us improve.
