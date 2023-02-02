@@ -1,19 +1,17 @@
 ---
-title: Le petit plus
-description: 
+title: Les notions supplémentaires indispensables
+description: Le petit plus
 published: 1
-date: 2023-02-02T06:14:14.200Z
+date: 2023-02-02T07:00:26.907Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
 ---
 
-# Les notions supplémentaires indispensables
-
-## Transtypage
+# Transtypage
 **Le transtypage** (on parle aussi de **coercition**, de **cast** ou de **conversion de type**), et le fait de convertir une valeur d'un type (source) dans un autre (cible).
 
-### Transtypage : Règles de conversion
+## Transtypage : Règles de conversion
 
 > Chaîne de caractères ➡ Nombres 
 
@@ -67,7 +65,7 @@ echo 10; //Affiche 10, représentation classique en base décimal
       - Depuis un entier : représntation classique en base dic.
       - Depuis un tableaux et objets : affichage du type Array ou Object -->
 
-### Transtypage : Forcer une conversion
+## Transtypage : Forcer une conversion
 
 - En le spécifiant (cast) :
 ```php
@@ -107,13 +105,13 @@ Les deux instructions sont indentiques, sauf en cas d'échec :
 - **include** génère un avertissement (*E_WARNING*) et le script continue (include_once)
 - **require** produira une erreur fatale (E_COMPILE_ERROR) et stoppera l'éxécution du script (require_once)
 
-### Syntaxe
+## Syntaxe
 
 ```php
 include 'filename'; ou require 'filename';
 ```
 
-### Exemple
+## Exemple
 
 On veut inclure un fichier `vars.php` et notre pied de page standard appelé `footer.php` dans un autre fichier :
 
@@ -147,12 +145,12 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 </html> 
 ```
 
-## Fonctions de Rappel (Callback Functions)
-> 
+# Fonctions de Rappel (Callback Functions)
+ 
 > une fonction de rappel en PHP est une fonction qui peut être passée en argument à une autre fonction. Toute fonction existante peut être utilisée comme fonction de rappel. 
 {.is-success}
 
-### exemple
+## exemple
 
 **`array_map`** utilise une fonction de rappel pour appliquer une transformation à chaque élément d'un tableau. Ici, la fonction de rappel nous permet de calculer la longueur de chaque chaîne du tableau.
 
@@ -179,7 +177,7 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 ?> 
 ```
 
-### Définir vos propres fonctions de rappel
+## Définir vos propres fonctions de rappel
 
 ```php
 <?php
@@ -203,14 +201,14 @@ echo "<a href=’https://www.php.net/’><p>Copyright &copy; 2001" . date("Y") .
 ```
 
 
-## Gestion des fichiers
+# Gestion des fichiers
 
 > Soyez prudent lorsque vous manipulez des fichiers !
 > 
 > Vous pouvez faire beaucoup de dégâts si vous faites quelque chose de mal. Les erreurs les plus courantes sont : l'édition d'un mauvais fichier, le remplissage d'un disque dur avec des données inutiles et la suppression du contenu d'un fichier par accident.
 {.is-warning}
 
-### readfile() - Lire|Ouvrir un fichier
+## readfile() - Lire|Ouvrir un fichier
 
 > La fonction readfile() lit un fichier et l'écrit dans le tampon de sortie.
 {.is-success}
@@ -237,7 +235,7 @@ echo readfile("webdictionary.txt");
 
 La fonction readfile() est utile si tout ce que vous voulez faire est d'ouvrir un fichier et de lire son contenu.
 
-### fopen() - Ouvrir|Créer un fichier
+## fopen() - Ouvrir|Créer un fichier
 
 > Une meilleure méthode pour ouvrir des fichiers est d'utiliser la fonction fopen(). Cette fonction vous donne plus d'options que la fonction readfile(). 
 {.is-success}
@@ -285,7 +283,7 @@ L'exemple ci-dessous crée un nouveau fichier appelé "testfile.txt". Le fichier
   $myfile = fopen("testfile.txt", "w") 
 ?> 
 
-### fread() - Lire un fichier ouvert
+## fread() - Lire un fichier ouvert
 
 > La fonction fread() lit depuis un fichier ouvert.
 {.is-success}
@@ -300,7 +298,7 @@ Le code PHP suivant lit le fichier "webdictionary.txt" jusqu'à la fin :
 ?> 
 ```
 
-### fclose() - Fermer un fichier
+## fclose() - Fermer un fichier
 
 La fonction fclose() est utilisée pour fermer un fichier ouvert.
 
@@ -313,7 +311,7 @@ La fonction fclose() requiert le nom du fichier (ou une variable qui contient le
   fclose($myfile);
 ?>
 
-### fgets() - Lire une seule ligne
+## fgets() - Lire une seule ligne
 
 La fonction fgets() est utilisée pour lire une seule ligne d'un fichier.
 
@@ -324,7 +322,7 @@ L'exemple ci-dessous affiche la première ligne du fichier "webdictionary.txt" :
   fclose($myfile);
 ?> 
 
-### feof() - Vérifier la fin du fichier
+## feof() - Vérifier la fin du fichier
 
 La fonction feof() vérifie si la "fin du fichier" (EOF) a été atteinte.
 
@@ -340,7 +338,7 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" ligne par ligne, jusqu'�
   fclose($myfile);
 ?> 
 
-### getc() - Lire un seul caractère
+## getc() - Lire un seul caractère
 
 La fonction fgetc() est utilisée pour lire un seul caractère dans un fichier.
 
@@ -354,7 +352,7 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractèr
   fclose($myfile);
 ?> 
 
-### fwrite() - Écrire dans un fichier
+## fwrite() - Écrire dans un fichier
 
 La fonction fwrite() est utilisée pour écrire dans un fichier.
 
@@ -392,6 +390,274 @@ Si nous ouvrons maintenant le fichier "newfile.txt", John et Jane ont disparu, e
 Mickey Mouse
 Minnie Mouse
 
+
+# Sécurisation & Failles
+
+La sécurité, c'est bien. :+1:
+
+Mais la comprendre, c'est mieux ! :muscle:
+
+Voici les failles les plus communes : 
+
+- [Injection SQL](./details/injection_sql.md)
+- [Attaque par force brute (ou Brute Force)](./details/brute_force.md)
+- [Cross-Site Scripting (ou XSS)](./details/xss.md)
+- [Cross-Site Request Forgery (ou CSRF)](./details/csrf.md)
+
+Pour chacune de ces failles, on va d'abord se mettre dans la peau du pirate en tentant d'attaquer un site mal protégé, puis on verra comment se prémunir.
+
+
+## Notions générales de sécurité
+
+- Objectif de la sécurité informatique : empêcher les accès & comportements non-autorisés.
+- Il faut définir les comportements autorisés, et partir d'une base où tous les accès sont fermés, pour n'autoriser ensuite au cas-par-cas que les comportements autorisés (principe de la whitelist). Ne surtout pas travailler dans le sens inverse (tous accès ouverts par défaut et bloquer au cas-par-cas — principe de la blacklist).
+  - Exemple : bloquer l'accès à toutes les pages d'un site, sauf le formulaire de login, puis autoriser l'accès si login OK. Éventuellement laisser l'accès libre à certaines pages spécifiques et bien identifiées.
+- Un système sécurisé à 100% ça n'existe pas ! Partir du principe qu'il y aura toujours des [vulnérabilités](https://fr.wikipedia.org/wiki/Vuln%C3%A9rabilit%C3%A9_(informatique))/failles — c'est ce qu'on constate depuis qu'on s'intéresse au sujet et ça n'a pas de raisons de changer.
+- La sécurité, ce n'est pas que la lutte contre les intrusions, le vol ou la destruction de données. Un affichage malencontreux d'une donnée sensible peut-être désastreux (ex. affichage du mot de passe de ses clients « par hasard » dans une page mal conçue, ou rendue publique par erreur ; affichage du mot de passe, en clair, dans le mail de confirmation d'inscription ; etc.)
+- La sécurité doit être une activité multi-factorielle / multi-niveaux. Il y a des failles aussi bien sur la couche physique (ex. l'accès aux machines) que sur la partie serveur (vulnérabilités, bugs…), la partie cliente (navigateurs mal protégés, cybercafé, WiFi…), la couche « sociale » (menaces, extorsion, manipulation…) etc.
+
+## Déroulé-type d'une attaque
+
+En résumé :
+
+- l'attaquant se connecte sur un système auquel il n'est pas censé avoir accès
+- l'attaquant réalise sur ce système des opérations délictueuses : vol de données, destruction de données, etc.
+
+<details>
+<summary>Plus en détails</summary>
+
+- L'attaquant sélectionne une faille repérée sur le système ciblé.
+- 1ère charge – connexion : mise en place d'un canal de communication, adapté pour l'attaque, avec le système ciblé (par exemple, requête HTTP pour le web). Peut nécessiter de la part de l'attaquant de réaliser au préalable une [élévation de privilège](https://fr.wikipedia.org/wiki/%C3%89l%C3%A9vation_des_privil%C3%A8ges) grâce à une autre faille repérée en amont.
+- 2ème charge — intrusion (souvent, pour de l'observation, du vol de données…) : exploitation du canal de communication pour faire une mise en place de code malicieux. Possibilité de mise en place d'un proxy (programme relais spécifique, anodin en lui-même mais support du code malicieux, qui va permettre de brouiller les pistes).
+- 3ème charge – destruction (parfois, mais pas si souvent que ça car ne passe pas inaperçu !) : action destructive / prise de contrôle.
+
+La majorité des attaques s'arrêtent à la seconde charge, et continuent sur ce mode-là tant que l'attaque n'est pas repérée et se justifie.
+</details>
+
+<details>
+<summary>Exemple</summary>
+
+Un attaquant repère une faille XSS sur un site web (sélection), injecte un script JS avec mise en place d'un canal de communication AJAX voire WebSocket (1ère charge) ; le script est exécuté par le client d'une victime et transmet des informations sensibles (2ème charge).
+</details>
+
+Nous pouvons aussi allez voir la [Base](Base.md) de la sécurité.
+
+**Important**
+
+Ce n'est pas parce qu'on sait attaquer un site qu'il faut le faire !! Ça reste illégale !
+
+---
+
+
+## Principes de base de sécurité
+
+> **Commencer par là**, et oui, si j'ai pas les bases ça rien à rien.
+
+### La théorie
+
+- Règle simple pour estimer un risque : `risque = gravité x probabilité`.
+- Segmenter son code pour mieux gérer le facteur gravité. Et oui, si j'ai une app monolithique alors si j'ai une faille, toute mon app sera vulnérable alors que si mon app est distribuée alors c'est un peu plus sécurisé (mais au niveau de la probabilité ça augmente).
+- Pour minimiser la `probabilité` d'une attaque réussie, il faut mettre en place plusieurs couches de sécurité, complémentaires, notamment sur les parties où on a identifié que le facteur `gravité` est grand.
+- Certains risques ne peuvent pas être anticipés, il faudrait prévoir un bouton `arret d'urgence` pour pallier à un problème trop grand. Il vaut mieux une application éteinte, qu'une perte totale des données.
+
+
+### La pratique
+
+- Commencer par procéder à une analyse des risques. Je peux essayer d'`hacker` **mon** site avec les failles que je connais.
+- Couvrir les risques fondamentaux le plus tôt possible dans la phase de développement, faute de quoi ce ne sera pas fait au final. **Configurer tout ça dès les premiers jours**.
+- Prévoir un « système d'intégrité » c'est à dire, un mécanisme de sauvegarde et restauration, automatique si possible. Par exemple, export SQL quotidien pour la base de données. 
+
+
+## Grands axes de sécurité web
+
+- Éducation de ses utilisateurs.
+- Données récupérées de sources externes (protection contre les injections).
+
+![](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+
+- Hash de données (protection contre les attaques par dictionnaires).
+- ACL (protection contre les attaques par élévation de privilèges).
+- SSL/HTTPS (protection contre le vol de données sur le trafic réseau).
+- Protection par domaine ([CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS))
+- etc.
+
+Ces différents axes sont **complémentaires** ! C'est pas lui ou lui, mais lui ET lui.
+
+## Bonnes pratiques
+
+- Revue de sécurité (temps dédié à la fin des sprints, pendant les _code-reviews_…).
+- Tests spécifiques (intrusion, DDOS…).
+- Intégration, tout au long du processus de développement.
+
+
+## Référentiels de sécurité
+
+- [OWASP](https://www.owasp.org/)
+  - [Top 10 des vulnérabilités](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+  - [Fiches-pratique](https://github.com/OWASP/CheatSheetSeries)
+  - [Contrôles proactifs](https://www.owasp.org/index.php/OWASP_Proactive_Controls)
+  - [Standards de vérification](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
+- https://www.cert.ssi.gouv.fr/
+
+## Ressources
+
+### Sites de référence
+
+* https://www.hacksplaining.com/lessons
+
+### Lectures additionnelles
+
+Beaucoup, beaucoup, beaucoup d'informations disponibles sur internet. En plus des ressources ci-dessus, indispensables et déjà très fournies, voici une sélection très succinte et sujette à modification :
+
+- [_A quick introduction to web security_](https://medium.freecodecamp.org/a-quick-introduction-to-web-security-f90beaf4dd41)
+- [Série _How Browsers Work_](https://medium.freecodecamp.org/web-application-security-understanding-the-browser-5305ed2f1dac)
+- [Ingénierie sociale : _The Life of Death_](https://textslashplain.com/2017/01/14/the-line-of-death/)
+
+---
+
+# Attaque par force brute
+
+## Le principe
+
+Tester tous les mots de passe possibles jusqu'à trouver le bon. Tout simplement.
+
+## L'attaque
+
+1. Trouver le pseudo ou l'email de notre victime. (pas si compliqué)
+
+2. Réaliser une requête vers le site qu'on attaque
+
+`https://lesite.com/login?pseudo=victime&password=aaa`
+
+3. Changer de pass et recommencer en boucle jusqu'à trouver le bon !
+
+Alors oui, à la main, c'est long. Mais on peut rapidement coder une boucle qui teste tout très vite. Un petit exemple en 50 lignes se trouve [ici](./exemple/brut_force.php).
+
+## Détails
+* Les formulaires de connexion sont la plupart du temps en POST. Pas grave, on a les outils pour faire des requêtes POST. [La doc là](https://www.php.net/manual/fr/book.curl.php), et [un exemple ici](https://stackoverflow.com/questions/5647461/how-do-i-send-a-post-request-with-php).
+
+* Pour trouver le nom des paramètres à envoyer au serveur, rien de plus simple, il suffit d'inspecter le contenu du formulaire dans un navigateur et de repérer les `name` des `input`.
+
+
+## Comment se défendre
+
+Avant toute chose, il faut dire que plus le mot de passe est long et compliqué, plus il sera difficile de le trouver. En tout cas, ça sera plus long.
+
+La première chose à faire est donc d'obliger ses utilisateurs à choisir un mot de passe suffisament solide. Selon la [recommandation de la CNIL](https://www.cnil.fr/fr/authentification-par-mot-de-passe-les-mesures-de-securite-elementaires), il faut : 
+- au moins 8 caractères
+- au moins une lettre majuscule
+- au moins une lettre minuscule
+- au moins un chiffre
+- au moins un caractère spécial 
+
+
+Ensuite on peut compter le nomdre d'essais erronés pour se connecter, et verouiller le compte après X essais infructueux ou trop proches dans le temps. Mais c'est à double tranchant ! Si un pirate s'amuse à faire des requêtes volontairement éronnées avec tous les pseudos possibles et imaginables, il peut bloquer les comptes de tous les utilisateurs et rendre le site complètement inaccessible !
+
+On peut imaginer alors de mettre en place la même chose, mais avec l'adresse IP. Mais c'est loin d'être évident à faire en PHP. On peut aussi utiliser des outils tel [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) qui scanne les logs du serveur et bannit les IP qui paraissent malicieuses.
+
+
+Enfin, on peut multiplier les étapes de validation d'un login, en rajoutant par exemple un CAPTCHA (pour s'assurer que c'est bien un humain et non un script qui tente de se log), ou une double authentification par email, SMS, ou tout autre système (2FA).
+
+---
+
+
+# Injections SQL
+
+## Le principe
+
+Exécuter toutes les requêtes qu'on veut dans la base de données de notre victime !
+
+**Note**: le principe de l'injection fonctionne aussi dans les bases NoSQL !
+
+## L'attaque
+
+1. Trouvez un site où la soumission d'un formulaire déclenche selon vous une requête SQL. Pas trop difficile, c'est presque toujours le cas ! Par exemple, un formulaire de connexion va faire une requête SQL pour vous retrouver dans la bdd...
+
+2. Au lieu de taper votre pseudo dans l'input, tapez plutôt une requête SQL. Ou un bout de requête SQL.
+
+3. Si vous avez de la chance, votre requête sera exécutée ! :smiling_imp:
+
+## L'attaque en détail
+
+1. Imaginez la requête SQL qui se cache derrière le formulaire. Dans notre exemple, la requête devrait ressembler à :
+```sql
+SELECT * FROM users WHERE username = 'pseudo';
+```
+où la valeur `pseudo` vient directement du formulaire.
+
+2. Maintenant, écrivez ceci dans le formulaire : 
+
+`'; DROP TABLE users; --`
+
+On se retrouve avec la requête suivante : 
+```sql
+SELECT * FROM users WHERE username = ''; DROP TABLE users; --
+```
+
+:boom: Catastrophe, les 2 parties de la requêtes vont s'exécuter, et la table `users` va être totalement supprimée !!
+
+## Comment se défendre
+
+Si on a réussi à effectuer cette attaque, c'est probablement parce que des développeurs ont fait l'erreur suivante :
+```php
+<?php
+// récupérer la valeur passée dans le formulaire
+$username = $_POST['login'];
+// puis construire la requête SQL en concaténant simplement la valeur récupérée
+$query = "SELECT * FROM users WHERE username= ' $username ' ";
+// exécuter la requête (et pleurer...)
+```
+
+Mais comment faire autrement ?
+
+#### À l'ancienne : échapper les chaines de caractères
+
+En utilisant des fonctions d'échappement (comme [addslashes en PHP](https://www.php.net/manual/fr/function.addslashes.php)), on force le serveur à considérer la valeur comme une seule chaîne de caractères.
+Ainsi, on peut faire : 
+```php
+// récupérer la valeur passée dans le formulaire
+$username = $_POST['login'];
+// échapper la valeur (= protéger les caractères spéciaux avec des \)
+$username = addslashes($username);
+// puis construire la requête SQL en concaténant simplement la valeur échappée
+$query = "SELECT * FROM users WHERE username= ' $username ' ";
+
+// l'exécution est un peu plus sécurisée
+```
+
+Si on essaye de passer notre valeur malicieuse ( `'; DROP TABLE users; --` ), elle sera considérée comme une chaine de caractères et non comme une instruction.
+
+#### La vraie bonne solution : en utilisant les requêtes préparées
+
+L'exemple suivant utilise PDO en PHP, mais le principe des requêtes préparées existe dans tous les langages !
+
+```php
+// récupérer la valeur passée dans le formulaire
+$username = $_POST['login'];
+
+// créer la requête avec un jeton (ou paramètre préparéé)
+$query = "SELECT * FROM users WHERE username = :username ";
+
+// on PREPARE la requête 
+$statement = $pdo->prepare($query);
+
+// Puis, avant d'exécuter la requête, on remplace les jetons par des valeurs qui seront automatiquement échappées
+$statement->bindValue(":username", $username );
+
+// Et enfin, on peut exécuter la requête en toute sécurité
+$statement->execute();
+```
+
+REMARQUE : avec PDO, on peut se passer de `bindValue` et passer directement les valeurs dans un tableau associatif en paramètre de `execute`, comme ceci :
+```php
+$statement = $pdo->prepare($query);
+
+$statement->execute([
+  ":username" => $username
+]);
+```
+
+---
 
 
 
