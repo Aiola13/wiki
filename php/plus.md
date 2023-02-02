@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:00:26.907Z
+date: 2023-02-02T07:01:17.201Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -655,6 +655,80 @@ $statement = $pdo->prepare($query);
 $statement->execute([
   ":username" => $username
 ]);
+```
+
+---
+
+# Cross Site Scripting (XSS)
+
+## Le principe
+
+Exécuter un script maison sur tous les navigateurs de tous les utilisateurs du site piraté.
+
+## L'attaque, version formulaire
+1. Trouvez un site web où un formulaire vous permet d'ajouter du contenu au site, ou de participer à celui-ci. Par exemple, Wikipédia, ou un formulaire de commentaire sous un article de blog.
+2. Écrivez des balises HTML dans les champs du formulaire. Par exemple, `<h1>hihihi</h1>`.
+3. Soumettez le formulaire. Votre "commentaire" sera alors sauvegardé en base de donnée.
+4. Rafraîchissez la page, et regardez si votre balise HTML est toujours là, et bien interprétée par le navigateur (ie le texte hihihi s'affiche en grand). Si oui, vous avez réussi une attaque XSS ! :boom:
+5. Vous pouvez maintenant passer à l'étape supérieure et injecter des balises `<script>` :imp:
+
+Tous les visiteurs qui affichent cette page subiront votre attaque.
+
+## Comment se défendre
+
+Avant de sauvegarder les données d'utilisateurs peu fiables en base de données, on doit utiliser la fonction [strip_tags](https://www.php.net/manual/fr/function.strip-tags.php) de PHP pour retirer toutes les balises HTML ! Concrètement :
+
+```php
+//en traitant un formulaire
+$username = strip_tags($_POST['username']);
+$comment  = strip_tags($_POST['comment']);
+//et ainsi de suite pour toutes les données !
+```
+
+En 2ème couche de protection, au moment de l'affichage, on doit transformer les balises en entités HTML avec la fonction PHP [htmlentities](https://www.php.net/manual/fr/function.htmlentities.php). Ceci aurait désactivé les balises. Concrètement :
+
+```php
+<div class="comment">
+    <div>Auteur : <?= htmlentities($username) ?></div>
+    <p><?= htmlentities($comment) ?></p>
+</div>
+```
+## L'attaque, version URL
+
+Les données d'un utilisateur peuvent provenir d'un formulaire, mais aussi directement depuis l'URL ! Il est donc possible de réaliser des attaques XSS (dites non-persistantes) en manipulant les paramètres des urls.
+
+Par exemple, en réalisant une recherche sur http://allocine.fr, on constate que le mot-clef saisi se retrouve dans l'URL ET est réaffiché dans la page. Une recherche de batman m'amène sur l'URL http://www.allocine.fr/recherche/?q=batman et mon terme de recherche m'est représenté.
+
+Que se passe-t-il si je modifie `?q=batman` par `?q=<h1>batman</h1>` dans la barre d'adresse ? Est-ce que batman s'affiche en grand sur la page ? Si oui, on a trouvé une faille ! Il ne reste qu'à remplacer le `<h1>` par un `<script>`, et c'est parti !
+
+Par exemple : `http://lesitecible.fr/search?q=<script>alert("piraté!")</script>`
+
+Malheureusement, ou plutôt _évidemment_, l'attaque échoue sur AlloCiné :wink:.
+
+> Mais d'ailleurs, est-ce que je ne suis pas en train de me hacker moi-même ? Quel est l'intérêt ?
+
+Bonne question ! Il n'y a que nous qui voyons l'attaque, puisqu'elle n'est pas sauvegardée en bdd !
+
+Mais si on on postait un lien comprenant notre attaque XSS sur un forum ? Quelque chose comme :
+
+```html
+<a href="http://lesitecible.fr/search?q=<script>alert('piraté!')</script>" >Voir des chatons mignons</a>
+```
+Les internautes qui cliqueraient dessus se retrouveraient sur le site victime, avec notre attaque XSS qui s'exécuterait!
+
+
+Alors bien sûr, une `alert` c'est pas bien méchant. Mais en JS, on a accès aux cookies, et on peut faire des requêtes en AJAX. Donc on peut voler des cookies et les envoyer vers un serveur perso. :exploding_head:
+
+## Comment se défendre
+
+Comme pour les XSS "version formulaire":
+- en utilisant  [strip_tags](https://www.php.net/manual/fr/function.strip-tags.php) lors de la récupération du mot-clef :
+```php
+$keyword = strip_tags($_GET['q']);
+```
+- et [htmlentities](https://www.php.net/manual/fr/function.htmlentities.php) au moment de l'affichage : 
+```php
+<h2><?= htmlentities($keyword) ?></h2>
 ```
 
 ---
