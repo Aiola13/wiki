@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:01:31.220Z
+date: 2023-02-02T07:03:53.037Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -391,7 +391,164 @@ Mickey Mouse
 Minnie Mouse
 
 
-# Sécurisation & Failles
+# Sécurisation
+
+Utiliser le chiffrement et les mécanismes de sécurité du Web
+Connaître les méthodes de chiffrement des mots de passe en PHP
+Introduction
+Il existe beaucoup de méthodes de cryptage. Cela peut aller des algorithmes de chiffrement (pouvant être décryptés avec l’algorithme et la clé adéquate) aux algorithmes de hachage. Ce sont plutôt ces derniers que l’on a tendance à utiliser aujourd’hui.
+
+Dans le cas général, le chiffrement utilise une clé. C’est une suite de lettres (ou une phrase) qui est connue des deux parties.
+
+Une fois que le pirate a obtenu l’accès direct à votre base de données (en contournant le serveur web), les données sensibles, stockées dans votre base sont accessibles directement, à moins 	que les données de la base ne soient protégées par la base. Chiffrer les données est une bonne solution pour réduire cette menace, mais très peu de bases de données offrent ce type de chiffrement.
+
+Il existe de nombreuses fonctions Php qui permettent de générer un algorithme permettant ainsi de chiffrer un mot de passe. Cependant, ces fonctions ont fini par devenir obsolètes avec le temps car leurs chiffrements ont fini par être découverts ! 	C’est le lot de toutes protections informatiques quelles qu'elles soient !
+
+Parmi ces fonctions, nous avons :
+    • crypt() : Hachage à sens unique (indéchiffrable)
+    • password_hash() :Crée une table de hachage pour un mot de passe
+    • sha1() : Calcule le sha1 d’une chaîne de caractères
+    • md5() : Calcule le md5 d’une chaîne
+  	
+L’utilisation de bcrypt(), qui est une fonction de hachage, reste la meilleure pratique actuellement acceptée pour le hachage des mots de passe, mais un grand nombre de développeurs utilisent encore des algorithmes plus anciens et plus faibles comme MD5 et SHA1.
+
+Certains développeurs n’utilisent même pas de sel lors du hachage. L’API de hachage de PHP, à partir de la version 5.5, favorise l’utilisation de bcrypt tout en cachant sa complexité, dans le but d’étendre son utilisation.
+
+Cette API de hachage de mot de passe expose quatre fonctions simples:
+    • password_hash() : utilisée pour hacher le mot de passe.
+    • password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
+    • password_needs_rehash() : utilisée lorsqu’un mot de passe doit être modifié.
+    • password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
+Les fonctions traditionnelles de hachage md5() et sha1()
+La fonction MD5
+La fonction md5() est une fonction intégrée en PHP qui est utilisée pour calculer le hachage MD5 d’une chaîne. Elle utilise, comme son nom l’indique, l’algorithme MD5 : Message-Digest de RSA Data Security, Inc. Pour calculer le hachage MD5 d’un fichier, on utilise la fonction md5_file().
+Exemple de hash avec md5()
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <?php
+    $str = "totoasticot";
+    $md5 = md5($str);
+    echo $md5;
+    // Affiche 0ed1b3eba9bca90289205ef70def99e0 
+  ?>
+  
+</body>
+</html>
+
+La variable $md5 contient alors une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 32 caractères, soit: 0ed1b3eba9bca90289205ef70def99e0.
+
+Il n’est pas recommandé d’utiliser cette fonction pour sécuriser les mots de passe, en raison de la nature rapide de cet algorithme de hachage.
+La fonction SHA1
+Syntaxe
+sha1 ( string $str [, bool $raw_output = FALSE ] ) : string
+
+str: La chaîne d’entrée.
+raw_output: Si le paramètre optionnel raw_output est passé à TRUE, le sha1 est retourné sous forme binaire brute avec une taille de 20 caractères, sinon, il est retourné sous la forme d’un nombre hexadécimal d'une taille de 40 caractères.
+Exemple de hash avec sha1()
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <?php
+    $str = "totoasticot";
+    $sha1 = sha1($str);
+    echo $sha1;
+    // Affiche d3659a03108f13ec762aeb16baf63e968d1cb647
+  ?>
+  
+</body>
+</html>
+
+La variable *$sha1* contient ici une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 40 caractères.
+
+Il n’est pas recommandé d’utiliser cette fonction pour sécuriser les mots de passe, en raison de la nature rapide de cet algorithme de hachage.
+Pourquoi les fonctions traditionnelles de hachage comme md5() et sha1() sont-elles inappropriées aux mots de passe ?
+Les algorithmes de hachage comme MD5, SHA1 et SHA256 sont destinés à être rapides et efficaces. Avec les équipements informatiques modernes, il est devenu facile d’attaquer par force brute la sortie de ces algorithmes pour retrouver la chaîne originale. C’est la raison pour laquelle de nombreux experts en sécurité considèrent ces algorithmes comme faibles et les déconseillent fortement pour hacher un mot de passe utilisateur.
+Les nouvelles fonctions de hachage
+La nouvelle API de hachage de mot de passe expose quatre fonctions simples:
+    • password_hash() : utilisée pour hacher le mot de passe.
+    • password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
+    • password_needs_rehash() :  utilisée lorsqu’un mot de passe doit être retravaillé. (On modifie son algorithme ou son hash).
+    • password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
+
+password_hash()
+La fonction password_hash() crypte dynamiquement une information et c’est la fonction recommandé pour le hachage des mots de passe. Lorsque vous devez hacher un mot de passe avec cette fonction, alimentez-le simplement dans la fonction et il renverra le hachage que vous pouvez stocker dans votre base de données.
+
+$hash = password_hash($password, PASSWORD_DEFAULT);
+Syntaxe
+string password_hash( string $password , integer $algo [, array $options ])
+
+    • password : Le mot de passe utilisateur.
+    • algo : Une constante de l’algorithme de mot de passe représentant l’algorithme à utiliser lors du hachage du mot de passe.
+    • options : Un tableau associatif contenant les options. Voir aussi les constantes de l’algorithme de mot de passe pour une documentation sur les options supportées pour chaque algorithme. Si omis, un salt aléatoire sera créé et le cost par défaut sera utilisé.
+
+Cette fonction reçoit toujours deux paramètres :
+    • la chaîne de caractère : dans notre cas, il s’agit du mot de passe
+    • l’option de hashage : nous avons trois options de hashage :
+        ◦ PASSWORD_DEFAULT : Utilisation de l'algorithme bcrypt (par défaut depuis PHP 5.5.0). Notez que cette constante est conçue pour changer dans le temps, au fur et à mesure que des algorithmes plus récents et plus forts sont ajoutés à PHP. Pour cette raison, la longueur du résultat issu de cet algorithme peut changer dans le temps, il est donc recommandé de stocker le résultat dans une colonne de la base de données qui peut contenir au moins 60 caractères (255 caractères peut être un très bon choix).
+        ◦ PASSWORD_BCRYPT : Utilisation de l'algorithme CRYPT_BLOWFISH pour créer la clé de hachage. Ceci va créer une clé de hachage standard crypt() utilisant l'identifiant "$2y$". Le résultat sera toujours une chaîne de 60 caractères, ou false si une erreur survient.
+        ◦ PASSWORD_ARGON2I - Utilise l'algorithme de hachage Argon2i pour créer le hachage. Cet algorithme est seulement disponible si PHP a été compilé avec le support d'Argon2 
+        ◦ PASSWORD_ARGON2ID - Utilise l'algorithme de hachage Argon2id pour créer le hachage. Cet algorithme est seulement disponible si PHP a été compilé avec le support d'Argon2 
+password_verify ()
+Vérifie que le hachage fourni correspond bien au mot de passe fourni. La fonction password_verify() prend un mot de passe ordinaire et la chaîne hachée comme ses deux arguments. Il retourne true si le hachage correspond au mot de passe spécifié.
+
+<!DOCTYPE html>
+<html>
+<body>
+  
+<?php
+  if (password_verify($password, $hash)) {
+      // Success!
+  }
+  else {
+      // Invalid credentials
+  }
+?>
+  
+</body>
+</html>
+Syntaxe
+password_verify ( string $password , string $hash ) : bool
+password_needs_rehash()
+Vérifie que le hachage fourni est conforme à l’algorithme et aux options spécifiées. Retourne true si le hachage doit être régénéré pour correspondre aux paramètres algo et options fournis, ou false sinon.
+<?php
+$password = 'rasmuslerdorf';
+$hash = '$2y$10$YCFsG6elYca568hBi2pZ0.3LDL5wjgxct1N8w/oLR/jfHsiQwCqTS';
+
+// Le paramètre cost peut évoluer avec le temps en fonction des améliorations matérielles.
+$options = array('cost' => 11);
+
+// Vérifions d'abord que le mot de passe correspond au hachage stocké
+if (password_verify($password, $hash)) {
+    // Le hachage correspond, on vérifie au cas où un nouvel algorithme de hachage serait disponible ou si le coût a été changé
+    if (password_needs_rehash($hash, PASSWORD_DEFAULT, $options)) {
+        // On crée un nouveau hachage afin de mettre à jour l'ancien
+        $newHash = password_hash($password, PASSWORD_DEFAULT, $options);
+    }
+    // On connecte l'utilisateur
+}
+?>
+password_get_info ()
+password_get_info() accepte un hachage et renvoie un tableau associatif de trois éléments:
+    • algo – une constante qui identifie un algorithme particulier
+    • algoName – le nom de l’algorithme utilisé
+    • options – diverses options utilisées lors de la génération du hachage
+
+
+
+
+
+
+
+
+
+---
+
+
+# Comprendre les failles
+
 
 La sécurité, c'est bien. :+1:
 
