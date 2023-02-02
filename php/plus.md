@@ -2,7 +2,7 @@
 title: Le petit plus
 description: 
 published: 1
-date: 2023-01-31T06:34:43.925Z
+date: 2023-02-02T06:14:14.200Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -479,7 +479,7 @@ Mais la comprendre, c'est mieux ! :muscle:
 Voici les failles les plus communes : 
 
 - [Injection SQL](./details/injection_sql.md)
-- [Attaque par force brute (ou Brute Force)](./details/brute_force.md)
+- [Attaque par force brute (ou Brute Force / Credential Stuffing)](./details/brute_force.md)
 - [Cross-Site Scripting (ou XSS)](./details/xss.md)
 - [Cross-Site Request Forgery (ou CSRF)](./details/csrf.md)
 
