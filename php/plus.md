@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:09:43.180Z
+date: 2023-02-02T07:09:54.035Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -504,7 +504,8 @@ Cette fonction reçoit toujours deux paramètres :
         ◦ PASSWORD_BCRYPT : Utilisation de l'algorithme CRYPT_BLOWFISH pour créer la clé de hachage. Ceci va créer une clé de hachage standard crypt() utilisant l'identifiant "$2y$". Le résultat sera toujours une chaîne de 60 caractères, ou false si une erreur survient.
         ◦ PASSWORD_ARGON2I - Utilise l'algorithme de hachage Argon2i pour créer le hachage. Cet algorithme est seulement disponible si PHP a été compilé avec le support d'Argon2 
         ◦ PASSWORD_ARGON2ID - Utilise l'algorithme de hachage Argon2id pour créer le hachage. Cet algorithme est seulement disponible si PHP a été compilé avec le support d'Argon2 
-password_verify ()
+
+### password_verify ()
 Vérifie que le hachage fourni correspond bien au mot de passe fourni. La fonction password_verify() prend un mot de passe ordinaire et la chaîne hachée comme ses deux arguments. Il retourne true si le hachage correspond au mot de passe spécifié.
 
 ```php
