@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:03:53.037Z
+date: 2023-02-02T07:09:43.180Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -393,10 +393,11 @@ Minnie Mouse
 
 # Sécurisation
 
-Utiliser le chiffrement et les mécanismes de sécurité du Web
-Connaître les méthodes de chiffrement des mots de passe en PHP
-Introduction
-Il existe beaucoup de méthodes de cryptage. Cela peut aller des algorithmes de chiffrement (pouvant être décryptés avec l’algorithme et la clé adéquate) aux algorithmes de hachage. Ce sont plutôt ces derniers que l’on a tendance à utiliser aujourd’hui.
+## Introduction
+
+> Il existe beaucoup de méthodes de cryptage. Cela peut aller des algorithmes de chiffrement (pouvant être décryptés avec l’algorithme et la clé adéquate) aux algorithmes de hachage. Ce sont plutôt ces derniers que l’on a tendance à utiliser aujourd’hui.
+{.is-success}
+
 
 Dans le cas général, le chiffrement utilise une clé. C’est une suite de lettres (ou une phrase) qui est connue des deux parties.
 
@@ -419,10 +420,15 @@ Cette API de hachage de mot de passe expose quatre fonctions simples:
     • password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
     • password_needs_rehash() : utilisée lorsqu’un mot de passe doit être modifié.
     • password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
-Les fonctions traditionnelles de hachage md5() et sha1()
-La fonction MD5
+    
+    
+## Les fonctions traditionnelles de hachage md5() et sha1()
+
+### La fonction MD5
 La fonction md5() est une fonction intégrée en PHP qui est utilisée pour calculer le hachage MD5 d’une chaîne. Elle utilise, comme son nom l’indique, l’algorithme MD5 : Message-Digest de RSA Data Security, Inc. Pour calculer le hachage MD5 d’un fichier, on utilise la fonction md5_file().
-Exemple de hash avec md5()
+
+#### Exemple de hash avec md5()
+```php
 <!DOCTYPE html>
 <html>
 <body>
@@ -436,17 +442,23 @@ Exemple de hash avec md5()
   
 </body>
 </html>
+```
 
 La variable $md5 contient alors une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 32 caractères, soit: 0ed1b3eba9bca90289205ef70def99e0.
 
 Il n’est pas recommandé d’utiliser cette fonction pour sécuriser les mots de passe, en raison de la nature rapide de cet algorithme de hachage.
-La fonction SHA1
-Syntaxe
+
+### La fonction SHA1
+#### Syntaxe
+```
 sha1 ( string $str [, bool $raw_output = FALSE ] ) : string
+```
 
 str: La chaîne d’entrée.
 raw_output: Si le paramètre optionnel raw_output est passé à TRUE, le sha1 est retourné sous forme binaire brute avec une taille de 20 caractères, sinon, il est retourné sous la forme d’un nombre hexadécimal d'une taille de 40 caractères.
-Exemple de hash avec sha1()
+
+#### Exemple de hash avec sha1()
+```php
 <!DOCTYPE html>
 <html>
 <body>
@@ -460,6 +472,7 @@ Exemple de hash avec sha1()
   
 </body>
 </html>
+```
 
 La variable *$sha1* contient ici une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 40 caractères.
 
@@ -494,6 +507,7 @@ Cette fonction reçoit toujours deux paramètres :
 password_verify ()
 Vérifie que le hachage fourni correspond bien au mot de passe fourni. La fonction password_verify() prend un mot de passe ordinaire et la chaîne hachée comme ses deux arguments. Il retourne true si le hachage correspond au mot de passe spécifié.
 
+```php
 <!DOCTYPE html>
 <html>
 <body>
@@ -506,13 +520,17 @@ Vérifie que le hachage fourni correspond bien au mot de passe fourni. La foncti
       // Invalid credentials
   }
 ?>
-  
 </body>
 </html>
-Syntaxe
-password_verify ( string $password , string $hash ) : bool
-password_needs_rehash()
+```
+
+#### Syntaxe
+```password_verify ( string $password , string $hash ) : bool```
+
+### password_needs_rehash()
 Vérifie que le hachage fourni est conforme à l’algorithme et aux options spécifiées. Retourne true si le hachage doit être régénéré pour correspondre aux paramètres algo et options fournis, ou false sinon.
+
+```php
 <?php
 $password = 'rasmuslerdorf';
 $hash = '$2y$10$YCFsG6elYca568hBi2pZ0.3LDL5wjgxct1N8w/oLR/jfHsiQwCqTS';
@@ -530,6 +548,8 @@ if (password_verify($password, $hash)) {
     // On connecte l'utilisateur
 }
 ?>
+```
+
 password_get_info ()
 password_get_info() accepte un hachage et renvoie un tableau associatif de trois éléments:
     • algo – une constante qui identifie un algorithme particulier
