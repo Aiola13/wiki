@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:11:37.619Z
+date: 2023-02-02T07:12:09.536Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -479,7 +479,8 @@ La variable *$sha1* contient ici une chaîne unique, composée de caractères he
 Il n’est pas recommandé d’utiliser cette fonction pour sécuriser les mots de passe, en raison de la nature rapide de cet algorithme de hachage.
 Pourquoi les fonctions traditionnelles de hachage comme md5() et sha1() sont-elles inappropriées aux mots de passe ?
 Les algorithmes de hachage comme MD5, SHA1 et SHA256 sont destinés à être rapides et efficaces. Avec les équipements informatiques modernes, il est devenu facile d’attaquer par force brute la sortie de ces algorithmes pour retrouver la chaîne originale. C’est la raison pour laquelle de nombreux experts en sécurité considèrent ces algorithmes comme faibles et les déconseillent fortement pour hacher un mot de passe utilisateur.
-Les nouvelles fonctions de hachage
+
+## Les nouvelles fonctions de hachage
 La nouvelle API de hachage de mot de passe expose quatre fonctions simples:
     • password_hash() : utilisée pour hacher le mot de passe.
     • password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
