@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:09:54.035Z
+date: 2023-02-02T07:11:37.619Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -486,12 +486,18 @@ La nouvelle API de hachage de mot de passe expose quatre fonctions simples:
     • password_needs_rehash() :  utilisée lorsqu’un mot de passe doit être retravaillé. (On modifie son algorithme ou son hash).
     • password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
 
-password_hash()
+### password_hash()
 La fonction password_hash() crypte dynamiquement une information et c’est la fonction recommandé pour le hachage des mots de passe. Lorsque vous devez hacher un mot de passe avec cette fonction, alimentez-le simplement dans la fonction et il renverra le hachage que vous pouvez stocker dans votre base de données.
 
+```
 $hash = password_hash($password, PASSWORD_DEFAULT);
-Syntaxe
+```
+
+#### Syntaxe
+
+```
 string password_hash( string $password , integer $algo [, array $options ])
+```
 
     • password : Le mot de passe utilisateur.
     • algo : Une constante de l’algorithme de mot de passe représentant l’algorithme à utiliser lors du hachage du mot de passe.
