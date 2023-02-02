@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:01:17.201Z
+date: 2023-02-02T07:01:31.220Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -730,6 +730,80 @@ $keyword = strip_tags($_GET['q']);
 ```php
 <h2><?= htmlentities($keyword) ?></h2>
 ```
+
+---
+
+# Cross-Site Request Forgery (CSRF)
+
+_ciseurf_, pour les intimes.
+
+## Le principe
+
+Exploiter la session d'une victime connectée au site cible pour exécuter des actions.
+
+## L'attaque
+
+1. Trouvez un site mal protégé, avec des formulaires sensibles en GET par exemple.
+2. Assurez-vous que votre victime est connectée sur le site.
+3. Envoyez à votre victime, par email par exemple, un lien dans ce genre : 
+```html
+<a href="http://www.site-mal-protege.com/change-password.php?newpass=tiguidou">Voir des chatons mignons</a>
+```
+4. Si la victime clique sur le lien, vous avez changé son mot de passe. :boom: Vous pouvez donc vous connecter à sa place.
+
+WHAT? et oui! quand l'utilisateur a cliqué sur votre lien, son navigateur s'est ouvert, et a chargé l'url demandé _en envoyant tous les cookies qui concernent le site_. Or ces cookies sont justement ce qui maintient votre victime connectée au service. 
+
+Vue du serveur, la requête vient donc d'un utilisateur tout à fait valide ! Si en plus, votre victime est admin du site, c'est la grosse fiesta !
+
+_L'exemple de scénario avec le changement de mot de passe n'est qu'un exemple. On aurait pu poster un message en son nom, supprimer son compte, déclencher un achat, ou un virement bancaire ! Nimporte quel form peut potentiellement être soumis ainsi !_
+
+## La fouille avant l'attaque
+
+1. Comment trouver les failles? 
+    - Essayez tous les formulaires et surveillez les url et l'onglet network de l'inspecteur
+    - Testez les requêtes paramétrées dont la structure est évidente, par exemple `http://api.sitevictime.fr/user/10/delete`.
+2. Comment s'assurer que la victime est connectée?
+    - Le plus simple, c'est de lui demander :wink:. Contacter un admin pour une modif par exemple. A priori il va se connecter au site pour vérifier ce que vous dites.
+
+## Comment se défendre
+
+Avant d'effectuer des actions sensibles, on doit s'assurer que c'est bien l'utilisateur qui a rempli le formulaire, bien au chaud sur notre site.
+
+Voici la seule méthode fiable pour s'en assurer : 
+
+1. Avant l'affichage du formulaire, générer une chaîne aléatoire impossible à deviner (avec [random_bytes](https://www.php.net/manual/fr/function.random-bytes.php) en PHP). Cette chaîne est souvent appelée token, ou jeton.
+
+2. Stocker cette chaîne dans la session de l'utilisateur : `$_SESSION['token'] = $token;`
+
+3. Placer ce token en valeur d'un input caché du formulaire : 
+```php
+<form action="action.php">
+    <input type="text" name="data">
+    
+    <!-- Notre token ! -->
+    <input type="hidden" name="token" value="<?= $token ?>">
+    
+    <button>OK !</button>
+</form>
+```
+4. Lorsque le formulaire est soumis, s'assurer que le token reçu (du formulaire) correspond bien à celui stocké en session.
+    1. Si oui, vous savez que c'est bien votre site qui a affiché ce formulaire, et vous pouvez procéder à l'action.
+    2. Sinon, hop hop hop ! on arrête tout, et on affiche une erreur !
+
+
+#### Et maintenant, il fait quoi le pirate ?
+
+Comment construire le lien malicieux ?
+```
+<a href="http://www.site-mal-protege.com/change-password.php?newpass=tiguidou&token=?????">Voir des chatons mignons</a>
+```
+
+Impossible de connaitre la valeur du token. Et de toute façon, si l'utilisateur n'est pas allé lui-même sur le formulaire, il n'y a même pas de token dans la session ! Allez, rentre chez toi, pirate ! Tu as échoué ! :muscle:
+
+#### Du coup, on en met partout?
+Oui. On devrait mettre des "jetons anti-CSRF" (ou juste "_jeton ciseurf_" par abus de langage) dans **TOUS** les formulaires.
+
+Heureusement, la plupart des frameworks, dans tous les langages, incluent un système de jetons CSRF, soit par défaut (c'est le cas de [Symfony](https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms) et [Laravel](https://laravel.com/docs/master/csrf)) soit comme plugin (comme dans [Express](https://www.npmjs.com/package/csurf) ).
 
 ---
 
