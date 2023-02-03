@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:48:23.939Z
+date: 2023-02-03T13:16:38.327Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -436,28 +436,25 @@ Minnie Mouse
 Cela peut aller des **algorithmes de chiffrement** (et non cryptage) (pouvant être décryptés avec l’algorithme et la clé adéquate) aux algorithmes de hachage qui ne sont pas réversible. Ce sont plutôt ces derniers que l’on a tendance à utiliser aujourd’hui.
 {.is-success}
 
+Dans le cas général, le chiffrement utilise une clé de chiffrement pour protéger les données. Cette clé et une suite de lettres (ou une phrase) qui est connue des deux parties.
 
-Dans le cas général, le chiffrement utilise une clé de chiffrement. C’est une suite de lettres (ou une phrase) qui est connue des deux parties.
+Si un pirate accède à la base de données, les données peuvent être facilement accessibles, sauf si elles sont chiffrées. Le chiffrement est une bonne solution, mais peu de bases de données proposent ce type de chiffrement.
 
-Une fois que le pirate a obtenu l’accès direct à votre base de données (en contournant le serveur web), les données sensibles, stockées dans votre base sont accessibles directement, à moins que les données de la base ne soient protégées par la base. Chiffrer les données est une bonne solution pour réduire cette menace, mais très peu de bases de données offrent ce type de chiffrement.
+Il existe plusieurs fonctions en PHP pour chiffrer les mots de passe, mais certaines deviennent obsolètes car leurs algorithmes ont fini par être déchiffrés. C’est le lot de toutes protections informatiques quelles qu'elles soient !
 
-Il existe de nombreuses fonctions Php qui permettent de générer un algorithme permettant ainsi de chiffrer un mot de passe. Cependant, ces fonctions ont fini par devenir obsolètes avec le temps car leurs chiffrements ont fini par être découverts ! 	C’est le lot de toutes protections informatiques quelles qu'elles soient !
+La meilleure pratique actuelle pour le chiffrement est le hachage de mots de passe en utlisant la fonction bcrypt basée sur l'algorithme de chiffrement Blowfish, mais certains développeurs utilisent toujours des algorithmes plus anciens et moins sécurisés, comme MD5 et SHA1.
 
 Parmi ces fonctions, nous avons :
-    • crypt() : Hachage à sens unique (indéchiffrable)
-    • password_hash() :Crée une table de hachage pour un mot de passe
-    • sha1() : Calcule le sha1 d’une chaîne de caractères
-    • md5() : Calcule le md5 d’une chaîne
-  	
-L’utilisation de bcrypt(), qui est une fonction de hachage, reste la meilleure pratique actuellement acceptée pour le hachage des mots de passe, mais un grand nombre de développeurs utilisent encore des algorithmes plus anciens et plus faibles comme MD5 et SHA1.
+- crypt() : Hachage à sens unique (indéchiffrable)
+- password_hash() :Crée une table de hachage pour un mot de passe
+- sha1() : Calcule le sha1 d’une chaîne de caractères
+- md5() : Calcule le md5 d’une chaîne
 
-Certains développeurs n’utilisent même pas de sel lors du hachage. L’API de hachage de PHP, à partir de la version 5.5, favorise l’utilisation de bcrypt tout en cachant sa complexité, dans le but d’étendre son utilisation.
-
-Cette API de hachage de mot de passe expose quatre fonctions simples:
-    • password_hash() : utilisée pour hacher le mot de passe.
-    • password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
-    • password_needs_rehash() : utilisée lorsqu’un mot de passe doit être modifié.
-    • password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
+L'API de hachage PHP (> version 5.5) encourage l'utilisation de bcrypt. Cette API propose 4 fonctions pour hacher, vérifier, modifier et obtenir des informations sur le mot de passe :
+- password_hash() : utilisée pour hacher le mot de passe.
+- password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
+- password_needs_rehash() : utilisée lorsqu’un mot de passe doit être modifié.
+- password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
     
     
 ## Les fonctions traditionnelles de hachage md5() et sha1()
