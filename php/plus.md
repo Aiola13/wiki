@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:12:10.201Z
+date: 2023-02-03T12:20:02.840Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -345,6 +345,8 @@ L'exemple ci-dessous affiche la première ligne du fichier "webdictionary.txt" :
 
 
 L'exemple ci-dessous lit le fichier "webdictionary.txt" ligne par ligne, jusqu'à ce que la fin du fichier soit atteinte :
+
+```php
 <?php
   $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
   // Affiche une ligne jusqu’à la fin du fichier
@@ -353,12 +355,16 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" ligne par ligne, jusqu'�
   }
   fclose($myfile);
 ?> 
+```
 
 ## getc() - Lire un seul caractère
 
-La fonction fgetc() est utilisée pour lire un seul caractère dans un fichier.
+> La fonction fgetc() est utilisée pour lire un seul caractère dans un fichier.
+> 
+{.is-success}
 
 L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractère, jusqu'à ce que la fin du fichier soit atteinte :
+```php
 <?php
   $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
   // Output one character until end-of-file
@@ -366,15 +372,20 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractèr
     echo fgetc($myfile);
   }
   fclose($myfile);
-?> 
+?>
+```
 
 ## fwrite() - Écrire dans un fichier
 
-La fonction fwrite() est utilisée pour écrire dans un fichier.
+> La fonction fwrite() est utilisée pour écrire dans un fichier.
+> 
+{.is-success}
 
 Le premier paramètre de fwrite() contient le nom du fichier à écrire et le second paramètre est la chaîne à écrire.
 
 L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé "newfile.txt" :
+
+```php
 <?php
   $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
   $txt = "John Doe\n";
@@ -383,16 +394,22 @@ L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé "newfi
   fwrite($myfile, $txt);
   fclose($myfile);
 ?> 
+```
 
 Remarquez que nous avons écrit deux fois dans le fichier "newfile.txt". Chaque fois que nous avons écrit dans le fichier, nous avons envoyé la chaîne $txt qui contenait d'abord "John Doe" et ensuite "Jane Doe". Après avoir fini d'écrire, nous avons fermé le fichier à l'aide de la fonction fclose().
 
 Si nous ouvrons le fichier "newfile.txt", il ressemblera à ceci :
 Jean Dupont
 Jane Doe
-Écrasement du contenu du fichier
+
+
+## Écrasement du contenu du fichier
+
 Maintenant que "newfile.txt" contient des données, nous pouvons montrer ce qui se passe lorsque nous ouvrons un fichier existant pour l'écrire. Toutes les données existantes seront EFFACÉES et nous commencerons avec un fichier vide.
 
 Dans l'exemple ci-dessous, nous ouvrons notre fichier existant "newfile.txt", et nous y écrivons de nouvelles données :
+
+```php
 <?php
   $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
   $txt = "Mickey Mouse\n";
@@ -401,6 +418,7 @@ Dans l'exemple ci-dessous, nous ouvrons notre fichier existant "newfile.txt", et
   fwrite($myfile, $txt);
   fclose($myfile);
 ?> 
+```
 
 Si nous ouvrons maintenant le fichier "newfile.txt", John et Jane ont disparu, et seules les données que nous venons d'écrire sont présentes :
 Mickey Mouse
