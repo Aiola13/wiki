@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:07:08.668Z
+date: 2023-02-03T12:08:29.246Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -278,13 +278,17 @@ Le fichier peut être ouvert dans l'un des modes suivants :
 > La fonction fopen() est également utilisée pour créer un fichier. C'est peut-être un peu confus, mais en PHP, un fichier est créé en utilisant la même fonction que celle utilisée pour ouvrir les fichiers.
 {.is-success}
 
+> 
+> Si vous utilisez fopen() sur un fichier qui n'existe pas, il le créera, à condition que le fichier soit ouvert en écriture (w) ou en ajout (a).
+{.is-warning}
 
-Si vous utilisez fopen() sur un fichier qui n'existe pas, il le créera, à condition que le fichier soit ouvert en écriture (w) ou en ajout (a).
 
 L'exemple ci-dessous crée un nouveau fichier appelé "testfile.txt". Le fichier sera créé dans le même répertoire que celui où se trouve le code PHP :
+```php
 <?php
   $myfile = fopen("testfile.txt", "w") 
 ?> 
+```
 
 ## fread() - Lire un fichier ouvert
 
