@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:11:07.318Z
+date: 2023-02-03T12:12:10.201Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -324,20 +324,25 @@ La fonction fclose() requiert le nom du fichier (ou une variable qui contient le
 
 ## fgets() - Lire une seule ligne
 
-La fonction fgets() est utilisée pour lire une seule ligne d'un fichier.
+> La fonction fgets() est utilisée pour lire une seule ligne d'un fichier.
+{.is-success}
+
 
 L'exemple ci-dessous affiche la première ligne du fichier "webdictionary.txt" :
+```php
 <?php
   $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
   echo fgets($myfile);
   fclose($myfile);
 ?> 
+```
 
 ## feof() - Vérifier la fin du fichier
+> 
+> La fonction feof() vérifie si la "fin du fichier" (EOF) a été atteinte.
+> Elle est utile pour lire en boucle des données de longueur inconnue.
+{.is-success}
 
-La fonction feof() vérifie si la "fin du fichier" (EOF) a été atteinte.
-
-La fonction feof() est utile pour lire en boucle des données de longueur inconnue.
 
 L'exemple ci-dessous lit le fichier "webdictionary.txt" ligne par ligne, jusqu'à ce que la fin du fichier soit atteinte :
 <?php
