@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:08:29.246Z
+date: 2023-02-03T12:11:07.318Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -278,7 +278,6 @@ Le fichier peut être ouvert dans l'un des modes suivants :
 > La fonction fopen() est également utilisée pour créer un fichier. C'est peut-être un peu confus, mais en PHP, un fichier est créé en utilisant la même fonction que celle utilisée pour ouvrir les fichiers.
 {.is-success}
 
-> 
 > Si vous utilisez fopen() sur un fichier qui n'existe pas, il le créera, à condition que le fichier soit ouvert en écriture (w) ou en ajout (a).
 {.is-warning}
 
@@ -307,16 +306,21 @@ Le code PHP suivant lit le fichier "webdictionary.txt" jusqu'à la fin :
 
 ## fclose() - Fermer un fichier
 
-La fonction fclose() est utilisée pour fermer un fichier ouvert.
+> La fonction fclose() est utilisée pour fermer un fichier ouvert.
+{.is-success}
+
 
 C'est une bonne pratique de programmation que de fermer tous les fichiers après les avoir utilisés. Vous ne voulez pas qu'un fichier ouvert se balade sur votre serveur en consommant des ressources !
 
 La fonction fclose() requiert le nom du fichier (ou une variable qui contient le nom du fichier) que nous voulons fermer :
+
+```php
 <?php
   $myfile = fopen("webdictionary.txt", "r");
   // du code à exécuter....
   fclose($myfile);
 ?>
+```
 
 ## fgets() - Lire une seule ligne
 
