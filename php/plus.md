@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-02T07:12:09.536Z
+date: 2023-02-03T12:07:08.668Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -261,14 +261,17 @@ fclose($myfile);
 ?> 
 ```
 Le fichier peut être ouvert dans l'un des modes suivants :
-- r : Ouvre un fichier en lecture seule. Le pointeur de fichier commence au début du fichier.
-- w : Ouvrir un fichier en écriture seulement. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur du fichier commence au début du fichier.
-- a : Ouvre un fichier en écriture seulement. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas.
-- x : Crée un nouveau fichier en écriture seulement. Retourne FALSE et une erreur si le fichier existe déjà.
-- r+ : Ouvre un fichier en lecture/écriture. Le pointeur de fichier commence au début du fichier.
-- w+ : Ouvre un fichier en lecture/écriture. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier.
-- a+ : Ouvre un fichier en lecture/écriture. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas.
-- x+ : Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà.
+
+| Mode | Description |
+|------|:-------------|
+| r | Ouvre un fichier en lecture seule. Le pointeur de fichier commence au début du fichier. |
+| w | Ouvre un fichier en écriture seulement. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur du fichier commence au début du fichier. |
+| a | Ouvre un fichier en écriture seulement. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas. |
+| x | Crée un nouveau fichier en écriture seulement. Retourne FALSE et une erreur si le fichier existe déjà. |
+| r+ | Ouvre un fichier en lecture/écriture. Le pointeur de fichier commence au début du fichier. |
+| w+ | Ouvre un fichier en lecture/écriture. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier. |
+| a+ | Ouvre un fichier en lecture/écriture. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas. |
+| x+ | Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà. |
 
 
 
