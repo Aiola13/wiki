@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:20:02.840Z
+date: 2023-02-03T12:45:58.107Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -429,7 +429,11 @@ Minnie Mouse
 
 ## Introduction
 
-> Il existe beaucoup de méthodes de cryptage. Cela peut aller des algorithmes de chiffrement (pouvant être décryptés avec l’algorithme et la clé adéquate) aux algorithmes de hachage. Ce sont plutôt ces derniers que l’on a tendance à utiliser aujourd’hui.
+> Depuis tout temps l'être humain a voulu sécuriser les échanges, de l'antiquité au monde moderne, c'est ce que l'on appelle la **cryptographie**.
+{.is-info}
+
+> Il existe beaucoup de méthodes de cryptage. 
+Cela peut aller des **algorithmes de chiffrement** (et non cryptage) (pouvant être décryptés avec l’algorithme et la clé adéquate) aux algorithmes de hachage qui ne sont pas réversible. Ce sont plutôt ces derniers que l’on a tendance à utiliser aujourd’hui.
 {.is-success}
 
 
