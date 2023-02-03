@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T12:45:58.107Z
+date: 2023-02-03T12:48:23.939Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -437,9 +437,9 @@ Cela peut aller des **algorithmes de chiffrement** (et non cryptage) (pouvant ê
 {.is-success}
 
 
-Dans le cas général, le chiffrement utilise une clé. C’est une suite de lettres (ou une phrase) qui est connue des deux parties.
+Dans le cas général, le chiffrement utilise une clé de chiffrement. C’est une suite de lettres (ou une phrase) qui est connue des deux parties.
 
-Une fois que le pirate a obtenu l’accès direct à votre base de données (en contournant le serveur web), les données sensibles, stockées dans votre base sont accessibles directement, à moins 	que les données de la base ne soient protégées par la base. Chiffrer les données est une bonne solution pour réduire cette menace, mais très peu de bases de données offrent ce type de chiffrement.
+Une fois que le pirate a obtenu l’accès direct à votre base de données (en contournant le serveur web), les données sensibles, stockées dans votre base sont accessibles directement, à moins que les données de la base ne soient protégées par la base. Chiffrer les données est une bonne solution pour réduire cette menace, mais très peu de bases de données offrent ce type de chiffrement.
 
 Il existe de nombreuses fonctions Php qui permettent de générer un algorithme permettant ainsi de chiffrer un mot de passe. Cependant, ces fonctions ont fini par devenir obsolètes avec le temps car leurs chiffrements ont fini par être découverts ! 	C’est le lot de toutes protections informatiques quelles qu'elles soient !
 
