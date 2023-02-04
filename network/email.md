@@ -2,13 +2,25 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-04T10:36:03.377Z
+date: 2023-02-04T10:49:35.587Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
 ---
 
-# Introduction
+# Mais c’est quoi un protocole ? 
+
+> Un protocole en informatique, c'est un ensemble de règles et de conventions que les ordinateurs doivent suivre pour pouvoir se parler et travailler ensemble sans se disputer 😡. C'est comme si vous étiez à une soirée et que tout le monde se mettait d'accord sur le fait de ne parler que dans une langue étrangère pour s'amuser. Les ordinateurs, eux, se mettent d'accord sur le protocole pour s'assurer que toutes les communications soient claires et efficaces.
+{.is-success}
+
+# Les protocoles du courrier électronique
+
+|Protocole|Description|
+| --- | :--- |
+|**SMTP**|C'est le protocole de transport, il s'occupe aussi du format de l’entête, de ses champs ainsi que des adresses électronique|
+|**MIME**|C'est le standard de formatage du corps des messages|
+|**POP**||
+|**IMAP**||
 
 <!--
 SMTP protocole de transport
