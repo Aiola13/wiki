@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-03T13:16:38.327Z
+date: 2023-02-04T09:41:35.529Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -479,7 +479,7 @@ La fonction md5() est une fonction intégrée en PHP qui est utilisée pour calc
 </html>
 ```
 
-La variable $md5 contient alors une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 32 caractères, soit: 0ed1b3eba9bca90289205ef70def99e0.
+La variable $md5 contient alors une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 32 caractères, soit: **0ed1b3eba9bca90289205ef70def99e0.**
 
 Il n’est pas recommandé d’utiliser cette fonction pour sécuriser les mots de passe, en raison de la nature rapide de cet algorithme de hachage.
 
