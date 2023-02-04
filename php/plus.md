@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-04T09:49:46.544Z
+date: 2023-02-04T09:54:34.384Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -542,7 +542,7 @@ string password_hash( string $password , integer $algo [, array $options ])
 
 - password : Le mot de passe utilisateur.
 - algo de Hashage : Une constante de l’algorithme de mot de passe représentant l’algorithme à utiliser lors du hachage du mot de passe.
-	- PASSWORD_DEFAULT : Utilisation de l'algorithme bcrypt (par défaut depuis PHP 5.5.0). Notez que cette constante est conçue pour changer dans le temps, au fur et à mesure que des algorithmes plus récents et plus forts sont ajoutés à PHP. Pour cette raison, la longueur du résultat issu de cet algorithme peut changer dans le temps, il est donc recommandé de stocker le résultat dans une colonne de la base de données qui peut contenir au moins 60 caractères (255 caractères peut être un très bon choix).
+	- PASSWORD_DEFAULT : Utilisation de l'algorithme bcrypt (par défaut depuis PHP 5.5.0). Cette constante pourra changer dans le temps. Il est aussi recommandé de stocker le résultat dans une base de données, dans une colonne contenant 60 caractères.
 	- PASSWORD_BCRYPT : Utilisation de l'algorithme CRYPT_BLOWFISH pour créer la clé de hachage. Ceci va créer une clé de hachage standard crypt() utilisant l'identifiant "$2y$". Le résultat sera toujours une chaîne de 60 caractères, ou false si une erreur survient.
 	- PASSWORD_ARGON2I - Utilise l'algorithme de hachage Argon2i pour créer le hachage. Cet algorithme est seulement disponible si PHP a été compilé avec le support d'Argon2 
 	- PASSWORD_ARGON2ID - Utilise l'algorithme de hachage Argon2id pour créer le hachage. Cet algorithme est seulement disponible si PHP a été compilé avec le support d'Argon2 
