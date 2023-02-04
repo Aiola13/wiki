@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-04T09:54:34.384Z
+date: 2023-02-04T09:55:33.124Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -596,16 +596,9 @@ if (password_verify($password, $hash)) {
 
 password_get_info ()
 password_get_info() accepte un hachage et renvoie un tableau associatif de trois éléments:
-    • algo – une constante qui identifie un algorithme particulier
-    • algoName – le nom de l’algorithme utilisé
-    • options – diverses options utilisées lors de la génération du hachage
-
-
-
-
-
-
-
+- algo – une constante qui identifie un algorithme particulier
+- algoName – le nom de l’algorithme utilisé
+- options – diverses options utilisées lors de la génération du hachage
 
 
 ---
