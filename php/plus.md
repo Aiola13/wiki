@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-04T09:55:33.124Z
+date: 2023-02-04T09:56:33.592Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -613,8 +613,8 @@ Mais la comprendre, c'est mieux ! :muscle:
 
 Voici les failles les plus communes : 
 
-- [Injection SQL](./details/injection_sql.md)
-- [Attaque par force brute (ou Brute Force)](./details/brute_force.md)
+- [Injection SQL](#injection)
+- [Attaque par force brute (ou Brute Force)](#Attaque par force brute)
 - [Cross-Site Scripting (ou XSS)](./details/xss.md)
 - [Cross-Site Request Forgery (ou CSRF)](./details/csrf.md)
 
