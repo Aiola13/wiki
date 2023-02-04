@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-04T09:56:33.592Z
+date: 2023-02-04T10:02:19.294Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -613,9 +613,9 @@ Mais la comprendre, c'est mieux ! :muscle:
 
 Voici les failles les plus communes : 
 
-- [Injection SQL](#injection)
-- [Attaque par force brute (ou Brute Force)](#Attaque par force brute)
-- [Cross-Site Scripting (ou XSS)](./details/xss.md)
+- [Injection SQL](#injections-sql)
+- [Attaque par force brute (ou Brute Force)](#attaque-par-force-brute)
+- [Cross-Site Scripting (ou XSS)](#cross-site-scripting (XSS))
 - [Cross-Site Request Forgery (ou CSRF)](./details/csrf.md)
 
 Pour chacune de ces failles, on va d'abord se mettre dans la peau du pirate en tentant d'attaquer un site mal protégé, puis on verra comment se prémunir.
@@ -729,7 +729,7 @@ Beaucoup, beaucoup, beaucoup d'informations disponibles sur internet. En plus de
 
 ---
 
-# Attaque par force brute
+# Attaque par force brute 
 
 ## Le principe
 
