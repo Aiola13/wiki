@@ -2,15 +2,17 @@
 title: Protocole Email
 description: 
 published: 1
-date: 2023-02-01T01:25:07.805Z
+date: 2023-02-04T10:34:33.386Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
 ---
 
-# Protocole du courrier électronique
+# Protocoles du courrier électronique
 
 
+
+<!--
 SMTP protocole de transport
 
 Format de l’entête et des champs des adresses électroniques, utilise le standard MIME pour le formatage du corps des messages.
@@ -42,3 +44,4 @@ Subject: rue de Charonne
 Viens boire une Guiness ce soir
 au cafe de la plage
 
+-->
