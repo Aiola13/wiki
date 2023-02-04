@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-04T09:41:35.529Z
+date: 2023-02-04T09:46:06.202Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -512,15 +512,20 @@ raw_output: Si le paramètre optionnel raw_output est passé à TRUE, le sha1 es
 La variable *$sha1* contient ici une chaîne unique, composée de caractères hexadécimaux et d’une longueur de 40 caractères.
 
 Il n’est pas recommandé d’utiliser cette fonction pour sécuriser les mots de passe, en raison de la nature rapide de cet algorithme de hachage.
-Pourquoi les fonctions traditionnelles de hachage comme md5() et sha1() sont-elles inappropriées aux mots de passe ?
-Les algorithmes de hachage comme MD5, SHA1 et SHA256 sont destinés à être rapides et efficaces. Avec les équipements informatiques modernes, il est devenu facile d’attaquer par force brute la sortie de ces algorithmes pour retrouver la chaîne originale. C’est la raison pour laquelle de nombreux experts en sécurité considèrent ces algorithmes comme faibles et les déconseillent fortement pour hacher un mot de passe utilisateur.
+
+## Pourquoi les fonctions traditionnelles de hachage comme md5() et sha1() sont-elles inappropriées aux mots de passe ?
+
+Les algorithmes de hachage comme **MD5**, **SHA1** et **SHA256** sont destinés à être rapides et efficaces. Avec les équipements informatiques modernes, il est devenu facile d’attaquer par force brute la sortie de ces algorithmes pour retrouver la chaîne originale. C’est la raison pour laquelle de nombreux experts en sécurité considèrent ces algorithmes comme faibles et les déconseillent fortement pour hacher un mot de passe utilisateur.
 
 ## Les nouvelles fonctions de hachage
 La nouvelle API de hachage de mot de passe expose quatre fonctions simples:
-    • password_hash() : utilisée pour hacher le mot de passe.
-    • password_verify() : utilisée pour vérifier un mot de passe par rapport à son hachage.
-    • password_needs_rehash() :  utilisée lorsqu’un mot de passe doit être retravaillé. (On modifie son algorithme ou son hash).
-    • password_get_info() : renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage.
+| Fonction | Description |
+| --- | :--- |
+| **password_hash()** | Utilisée pour hacher le mot de passe. |
+| **password_verify()** | Utilisée pour vérifier un mot de passe par rapport à son hachage. |
+| **password_needs_rehash()** | Utilisée lorsqu’un mot de passe doit être retravaillé. (On modifie son algorithme ou son hash). |
+| **password_get_info()** | Renvoie le nom de l’algorithme de hachage et diverses options utilisées lors du hachage. |
+
 
 ### password_hash()
 La fonction password_hash() crypte dynamiquement une information et c’est la fonction recommandé pour le hachage des mots de passe. Lorsque vous devez hacher un mot de passe avec cette fonction, alimentez-le simplement dans la fonction et il renverra le hachage que vous pouvez stocker dans votre base de données.
