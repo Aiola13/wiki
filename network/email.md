@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-04T10:49:35.587Z
+date: 2023-02-05T15:29:21.413Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -18,9 +18,9 @@ dateCreated: 2023-01-31T23:11:52.729Z
 |Protocole|Description|
 | --- | :--- |
 |**SMTP**|C'est le protocole de transport, il s'occupe aussi du format de l’entête, de ses champs ainsi que des adresses électronique|
-|**MIME**|C'est le standard de formatage du corps des messages|
-|**POP**||
-|**IMAP**||
+|**MIME**|C'est le standard de formatage du corps des messages et des fichiers|
+|**POP**|C'est un protocole de réception des messages|
+|**IMAP**|C'est un protocole de réception des messages|
 
 <!--
 SMTP protocole de transport
