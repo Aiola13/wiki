@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T22:36:45.453Z
+date: 2023-02-05T22:45:21.806Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -41,8 +41,60 @@ Par exemple :
 - Interface Texte
 - Webmail (via un navigateur)
 
+## Agent de Transfert de Courriel (Mail Tranfert Agent)
 
-## 
+> Un Agent de transfert de Courriel (MTA) 
+{.is-success}
+
+MTA - 
+
+- Agit comme un centre de tri postal. Il décide en fonction de l’adresse du destinataire si ce courrier doit être envoyé à un qutre centre de tri ou s’il doit être donné au facteur pour distribution local.
+
+
+- Chaque MTA est composé de deux agents :
+    - Agent de routage des messages : détermine le chemin du message en fonction de l'adresse du destinataire.
+    - Agent de transport des messages : reçoit un message et un chemin, et le transporte à l'endroit indiqué via le protocole SMTP (sur TCP/IP).
+
+
+L'agent de transport des messages ne prend donc pas de décision de routage. Elle lui est indiquée par l'agent de routage qui lui transmet le message et le chemin.
+
+---
+
+## MDA - Agents Délivreurs de Courriel
+
+- Il joue le rôle de facteur
+- Il distribue les courriers dans le réseau local, ce qui revient à remettre physiquement le courrier entrant dans les boîtes aux lettres des destinataires.
+- Il ne prend aucune décision de routage.
+<!--- Comme MDA, on peut citer « /bin/mail » ou « procmail -->
+
+
+---
+
+## Mémoire de messages
+
+- Boîte aux lettres (ou mailbox) : fichier texte.
+- Sur les systèmes Unix, c’est un fichier dans /var/spool/mail/login ou encore dans /var/mail/login.
+- Dans un tel fichier, tout nouveau message débute par une ligne From (sans caractère « : »). Cette ligne sert à délimiter les différents message
+
+---
+
+## Boite aux lettres
+
+Endroit où le message doit être déposé :
+- Identifie en quelque sorte le destinataire du message
+- L'adresse de la boîte aux lettres est une chaîne de caractères ASCII (sauf "@", "<", ">", "," , ";", etc) : local-part>@<domain
+    - Ex : letoutpuissan@paradis.pa - La partie locale est traitée localement
+- Le domaine doit être de type FQDN : "Fully qualified domain name"
+
+<!-- La notation entre crochets
+ Ex : Bernard Cousin <bcousin@ifsic.univ-rennes1.fr> -->
+- Historiquement on faisait du "source routing", on indiquait la liste des serveurs de messagerie par lesquels passer pour parvenir au destinataire (il n'y avait pas de DNS).
+- Liste de diffusion (nom d'une liste de boites aux lettres)
+    - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
+inutilement le contenu du message
+
+
+
 <!--
 SMTP protocole de transport
 
