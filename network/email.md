@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T22:22:56.223Z
+date: 2023-02-05T22:28:56.293Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -31,8 +31,16 @@ dateCreated: 2023-01-31T23:11:52.729Z
 
 ## Agent Utilisateur de Couriel (Mail User Agent)
 
-> Un Agent Utilisateur de Courriel (MUA) représente le logiciel de messagerie utilisé. 
+> Un Agent Utilisateur de Courriel (MUA) représente le logiciel de messagerie utilisé.
 {.is-success}
+
+Par exemple :
+- la fonction **mail** sous les systènes Unix mais ne traite pas le format MIME
+- Netscape/Mozilla Thunderbird
+- Outlook
+- Interface Texte
+- Webmail (via un navigateur)
+
 <!--
 SMTP protocole de transport
 
