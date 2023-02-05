@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:41:15.385Z
+date: 2023-02-05T23:46:36.319Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -77,21 +77,24 @@ L'agent de transport des messages ne prend donc pas de décision de routage. Ell
 
 ## Boite aux lettres
 
+<!--
 Endroit où le message doit être déposé :
 - Identifie en quelque sorte le destinataire du message
 - L'adresse de la boîte aux lettres est une chaîne de caractères ASCII (sauf "@", "<", ">", "," , ";", etc) : <local-part>@<domain>
     - Ex : letoutpuissan@paradis.pa - La partie locale est traitée localement
 - Le domaine doit être de type FQDN : "Fully qualified domain name"
-
-
 - Historiquement on faisait du "source routing", on indiquait la liste des serveurs de messagerie par lesquels passer pour parvenir au destinataire (il n'y avait pas de DNS).
 - Liste de diffusion (nom d'une liste de boites aux lettres)
-    - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
-inutilement le contenu du message
+  - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
+inutilement le contenu du message -->
+
+---
 
 # Architecture
 
 ![architecture-systeme-messagerie-electronique.jpg](/images/network/email/architecture-systeme-messagerie-electronique.jpg){.align-center}
+  
+# dwdw
 
 <!--
 SMTP protocole de transport
