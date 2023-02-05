@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:38:30.997Z
+date: 2023-02-05T23:38:49.850Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -83,8 +83,7 @@ Endroit où le message doit être déposé :
     - Ex : letoutpuissan@paradis.pa - La partie locale est traitée localement
 - Le domaine doit être de type FQDN : "Fully qualified domain name"
 
-<!-- La notation entre crochets
- Ex : Bernard Cousin <bcousin@ifsic.univ-rennes1.fr> -->
+
 - Historiquement on faisait du "source routing", on indiquait la liste des serveurs de messagerie par lesquels passer pour parvenir au destinataire (il n'y avait pas de DNS).
 - Liste de diffusion (nom d'une liste de boites aux lettres)
     - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
