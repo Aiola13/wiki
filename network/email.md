@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:20:41.899Z
+date: 2023-02-05T23:20:56.144Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -67,7 +67,6 @@ L'agent de transport des messages ne prend donc pas de décision de routage. Ell
 {.is-success}
 
 > Ce logiciel gére le filtrage des courriels, la supprésion des spams (antispams) et les virus (antivirus). Mais il intervient également dans la gestion des problèmes comme un disque plein ou bien une corruption de la boîte aux lettres et signaler au MTA toute erreur dans la distribution.
-> 
 {.is-info}
 
 
