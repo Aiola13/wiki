@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:38:49.850Z
+date: 2023-02-05T23:41:15.385Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -79,7 +79,7 @@ L'agent de transport des messages ne prend donc pas de décision de routage. Ell
 
 Endroit où le message doit être déposé :
 - Identifie en quelque sorte le destinataire du message
-- L'adresse de la boîte aux lettres est une chaîne de caractères ASCII (sauf "@", "<", ">", "," , ";", etc) : local-part>@<domain
+- L'adresse de la boîte aux lettres est une chaîne de caractères ASCII (sauf "@", "<", ">", "," , ";", etc) : <local-part>@<domain>
     - Ex : letoutpuissan@paradis.pa - La partie locale est traitée localement
 - Le domaine doit être de type FQDN : "Fully qualified domain name"
 
