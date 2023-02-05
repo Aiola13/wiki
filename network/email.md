@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T22:50:32.275Z
+date: 2023-02-05T23:07:01.434Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -43,12 +43,12 @@ Par exemple :
 
 ## Agent de Transfert de Courriel (Message TranfertAgent)
 
-> Un Agent de transfert de Courriel (MTA) 
+> Un Agent de transfert de Courriel (MTA) est un logiciel faisant partie intégrante d'un serveur de transmission de messagerie (SMTP) et qui s'occupe de transmettre le message au destinataire.
 {.is-success}
 
-MTA - 
 
-- Agit comme un centre de tri postal. Il décide en fonction de l’adresse du destinataire si ce courrier doit être envoyé à un qutre centre de tri ou s’il doit être donné au facteur pour distribution local.
+> Il agit comme un centre de tri postal. Il décide en fonction de l’adresse du destinataire si ce courrier doit être envoyé à un autre centre de tri ou s’il doit être donné au facteur pour distribution local.
+{.is-info}
 
 
 - Chaque MTA est composé de deux agents :
@@ -60,7 +60,11 @@ L'agent de transport des messages ne prend donc pas de décision de routage. Ell
 
 ---
 
-## MDA - Agents Délivreurs de Courriel
+## Agent Délivreurs de Courriel (Mail Delivery Agent) 
+
+
+> Un Agent Délivreurs de Courriel (MDA) est un logiciel faisant partie intégrante d'un serveur de transmission de messagerie (SMTP) et qui s'occupe de transmettre le message au destinataire.
+{.is-success}
 
 - Il joue le rôle de facteur
 - Il distribue les courriers dans le réseau local, ce qui revient à remettre physiquement le courrier entrant dans les boîtes aux lettres des destinataires.
