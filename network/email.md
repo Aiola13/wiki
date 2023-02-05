@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:28:40.884Z
+date: 2023-02-05T23:38:30.997Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -21,6 +21,10 @@ dateCreated: 2023-01-31T23:11:52.729Z
 |**MIME**|C'est le standard de formatage du corps des messages et des fichiers|
 |**POP**|C'est un protocole de réception des messages|
 |**IMAP**|C'est un protocole de réception des messages|
+
+# Architecture générale
+
+![protocol-min.png](/images/network/email/protocol-min.png){.align-center}
 
 # Parlons définitions
 
@@ -86,7 +90,9 @@ Endroit où le message doit être déposé :
     - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
 inutilement le contenu du message
 
+# Architecture
 
+![architecture-systeme-messagerie-electronique.jpg](/images/network/email/architecture-systeme-messagerie-electronique.jpg){.align-center}
 
 <!--
 SMTP protocole de transport
