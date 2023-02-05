@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T22:16:56.481Z
+date: 2023-02-05T22:22:56.223Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -31,7 +31,8 @@ dateCreated: 2023-01-31T23:11:52.729Z
 
 ## Agent Utilisateur de Couriel (Mail User Agent)
 
-Si on reprends
+> Un Agent Utilisateur de Courriel (MUA) représente le logiciel de messagerie utilisé. 
+{.is-success}
 <!--
 SMTP protocole de transport
 
