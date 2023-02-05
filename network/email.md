@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:09:46.108Z
+date: 2023-02-05T23:20:41.899Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -63,13 +63,12 @@ L'agent de transport des messages ne prend donc pas de décision de routage. Ell
 ## Agent Délivreurs de Courriel (Mail Delivery Agent) 
 
 
-> Un Agent Délivreurs de Courriel (MDA) est un logiciel faisant partie intégrante d'un serveur de transmission de messagerie (SMTP) et qui s'occupe de transmettre le message au destinataire.
+> Un Agent Délivreurs de Courriel (MDA) est un logiciel qui est chargé de livrer le courriel dans la boite aux lettres du destinataire. 
 {.is-success}
 
-- Il joue le rôle de facteur
-- Il distribue les courriers dans le réseau local, ce qui revient à remettre physiquement le courrier entrant dans les boîtes aux lettres des destinataires.
-- Il ne prend aucune décision de routage.
-<!--- Comme MDA, on peut citer « /bin/mail » ou « procmail -->
+> Ce logiciel gére le filtrage des courriels, la supprésion des spams (antispams) et les virus (antivirus). Mais il intervient également dans la gestion des problèmes comme un disque plein ou bien une corruption de la boîte aux lettres et signaler au MTA toute erreur dans la distribution.
+> 
+{.is-info}
 
 
 ---
