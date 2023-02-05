@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T22:45:21.806Z
+date: 2023-02-05T22:50:32.275Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -41,7 +41,7 @@ Par exemple :
 - Interface Texte
 - Webmail (via un navigateur)
 
-## Agent de Transfert de Courriel (Mail Tranfert Agent)
+## Agent de Transfert de Courriel (Message TranfertAgent)
 
 > Un Agent de transfert de Courriel (MTA) 
 {.is-success}
