@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T15:35:07.546Z
+date: 2023-02-05T22:16:17.972Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -24,18 +24,14 @@ dateCreated: 2023-01-31T23:11:52.729Z
 
 # Parlons définitions
 
-## Un Agent Utilisateur (User Agent)
+## Agent Utilisateur (User Agent)
 
-Un agent utilisateur (UA) est une information échangée entre une application cliente (représentant l'utilisateur) et une application serveur. Cette information échangée sous forme de chaîne de caractères dans l'entête d'une requête HTTP, pernet de donner plusieurs informations à propos de l'application cliente telle que
+> Un agent utilisateur (UA) est une application cliente. Cette application s'identifie à d'autres applications en échangeant une information sous forme de chaîne de caractères dans l'entête d'une requête HTTP, pernettant de donner plusieurs informations à propos de l'application cliente telle que le type de périphérique, adresse IP, système d'exploitation, navigateur, résolution, langue, adresse email originelle, serveur smtp ... 
+{.is-success}
 
+## Agent Utilisateur de Couriel (Mail User Agent)
 
-• Une interface entre l’utilisateur et l’application
-« réseau »
-• HTTP : Navigateur – netscape/mozilla
-• SMTP : Mail User Agent - MUA - eudora, outlook
-• video : Stream video
-• audio : real player, media player
-
+Si on reprends
 <!--
 SMTP protocole de transport
 
