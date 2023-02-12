@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-12T15:27:47.757Z
+date: 2023-02-12T15:32:00.856Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -339,7 +339,7 @@ L'exemple ci-dessous affiche la première ligne du fichier "webdictionary.txt" :
 ```
 
 ## feof() - Vérifier la fin du fichier
-> 
+
 > La fonction feof() vérifie si la "fin du fichier" (EOF) a été atteinte.
 > Elle est utile pour lire en boucle des données de longueur inconnue.
 {.is-success}
@@ -379,7 +379,6 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractèr
 ## fwrite() - Écrire dans un fichier
 
 > La fonction fwrite() est utilisée pour écrire dans un fichier.
-> 
 {.is-success}
 
 Le premier paramètre de fwrite() contient le nom du fichier à écrire et le second paramètre est la chaîne à écrire.
