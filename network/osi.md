@@ -2,7 +2,7 @@
 title: Le modèle OSI
 description: 
 published: 1
-date: 2023-02-12T15:05:11.413Z
+date: 2023-02-12T15:06:58.081Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-10T22:23:48.843Z
