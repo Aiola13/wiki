@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-12T15:35:29.513Z
+date: 2023-02-12T15:35:53.658Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -400,9 +400,10 @@ L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé "newfi
 Ici il a été écrit deux fois dans le fichier "newfile.txt". Chaque fois, il a été envoyé la chaîne $txt qui contenait d'abord "John Doe" et ensuite "Jane Doe". Après avoir fini d'écrire, le fichier a été fermé à l'aide de la fonction fclose().
 
 Le fichier "newfile.txt" contient maintenant ceci :
+```txt
 Jean Dupont
 Jane Doe
-
+```
 
 ## Écrasement du contenu du fichier
 
