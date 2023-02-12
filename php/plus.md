@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-12T15:32:00.856Z
+date: 2023-02-12T15:35:29.513Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -361,7 +361,6 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" ligne par ligne, jusqu'�
 ## getc() - Lire un seul caractère
 
 > La fonction fgetc() est utilisée pour lire un seul caractère dans un fichier.
-> 
 {.is-success}
 
 L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractère, jusqu'à ce que la fin du fichier soit atteinte :
@@ -381,7 +380,9 @@ L'exemple ci-dessous lit le fichier "webdictionary.txt" caractère par caractèr
 > La fonction fwrite() est utilisée pour écrire dans un fichier.
 {.is-success}
 
-Le premier paramètre de fwrite() contient le nom du fichier à écrire et le second paramètre est la chaîne à écrire.
+> Le premier paramètre de fwrite() contient le nom du fichier à écrire et le second paramètre est la chaîne à écrire.
+{.is-info}
+
 
 L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé "newfile.txt" :
 
@@ -396,9 +397,9 @@ L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé "newfi
 ?> 
 ```
 
-Remarquez que nous avons écrit deux fois dans le fichier "newfile.txt". Chaque fois que nous avons écrit dans le fichier, nous avons envoyé la chaîne $txt qui contenait d'abord "John Doe" et ensuite "Jane Doe". Après avoir fini d'écrire, nous avons fermé le fichier à l'aide de la fonction fclose().
+Ici il a été écrit deux fois dans le fichier "newfile.txt". Chaque fois, il a été envoyé la chaîne $txt qui contenait d'abord "John Doe" et ensuite "Jane Doe". Après avoir fini d'écrire, le fichier a été fermé à l'aide de la fonction fclose().
 
-Si nous ouvrons le fichier "newfile.txt", il ressemblera à ceci :
+Le fichier "newfile.txt" contient maintenant ceci :
 Jean Dupont
 Jane Doe
 
