@@ -2,7 +2,7 @@
 title: Le modèle OSI
 description: 
 published: 1
-date: 2023-02-12T14:51:26.650Z
+date: 2023-02-12T15:05:11.413Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-10T22:23:48.843Z
@@ -34,6 +34,16 @@ Le principe du modèle OSI est de cadrer le protocole TCP/IP. Il est basé sur 7
 
 # Les couches
 ## Couche 7 - La couche d'Application
+
+Cette couche fait l’interface entre l’homme et la machine. 
+
+Par exemple, votre navigateur (firefox, safari,chrome…), votre client de messsagerie (outlook, thunderbird…) sont des applications qui transfèrent des messages / des informations via la couche 7.
+
+Lorsqu'un message est reçu sur le logiciel client, c'est la couche application qui le présente à l'utilisateur.
+
+Les protocoles d'application comprennent le SMTP (Simple Mail Transfer Protocol) et le HTTP, qui est le protocole de communication entre les navigateurs et les serveurs Web.
+
+
 
 ## Couche 6 - La couche de Présentation
 
