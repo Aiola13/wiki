@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: Le petit plus
 published: 1
-date: 2023-02-04T10:02:19.294Z
+date: 2023-02-12T15:27:47.757Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-18T21:15:11.409Z
@@ -253,7 +253,8 @@ XML = EXtensible Markup Language
 ```
 
 Le premier paramètre de fopen() contient le nom du fichier à ouvrir et le second paramètre précise dans quel mode le fichier doit être ouvert. L'exemple suivant génère également un message si la fonction fopen() ne parvient pas à ouvrir le fichier spécifié :
-```text
+
+```php
 <?php
 	$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
 echo fread($myfile,filesize("webdictionary.txt"));
@@ -264,14 +265,14 @@ Le fichier peut être ouvert dans l'un des modes suivants :
 
 | Mode | Description |
 |------|:-------------|
-| r | Ouvre un fichier en lecture seule. Le pointeur de fichier commence au début du fichier. |
-| w | Ouvre un fichier en écriture seulement. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur du fichier commence au début du fichier. |
-| a | Ouvre un fichier en écriture seulement. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas. |
-| x | Crée un nouveau fichier en écriture seulement. Retourne FALSE et une erreur si le fichier existe déjà. |
-| r+ | Ouvre un fichier en lecture/écriture. Le pointeur de fichier commence au début du fichier. |
-| w+ | Ouvre un fichier en lecture/écriture. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier. |
-| a+ | Ouvre un fichier en lecture/écriture. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas. |
-| x+ | Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà. |
+| **r** | Ouvre un fichier en lecture seule. Le pointeur de fichier commence au début du fichier. |
+| **w** | Ouvre un fichier en écriture seulement. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur du fichier commence au début du fichier. |
+| **a** | Ouvre un fichier en écriture seulement. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas. |
+| **x** | Crée un nouveau fichier en écriture seulement. Retourne FALSE et une erreur si le fichier existe déjà. |
+| **r+** | Ouvre un fichier en lecture/écriture. Le pointeur de fichier commence au début du fichier. |
+| **w+** | Ouvre un fichier en lecture/écriture. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier. |
+| **a+** | Ouvre un fichier en lecture/écriture. Les données existantes dans le fichier sont préservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas. |
+| **x+** | Crée un nouveau fichier en lecture/écriture. Renvoie FALSE et une erreur si le fichier existe déjà. |
 
 
 
