@@ -2,7 +2,7 @@
 title: Introduction
 description: 
 published: 1
-date: 2023-02-13T15:31:07.056Z
+date: 2023-02-13T15:31:36.828Z
 tags: intro, introduction
 editor: markdown
 dateCreated: 2023-01-16T11:45:51.296Z
@@ -46,7 +46,7 @@ Pourquoi Python :
 {.is-success}
 
 
-> Miniconda est un installateur minimal gratuit pour conda développé par **Anaconda®**. Cette version contient Python et tous les paquets dont il dépend, et un petit nombre d'autres paquets utiles, incluant pip, zlib et quelques autres. Vous pouvez utiliser la commande conda install pour installer plus de 720 paquets conda supplémentaires depuis le dépôt d'Anaconda.
+> Miniconda est un installateur minimal gratuit et un gestionnaire de paquet pour conda développé par **Anaconda®**. Cette version contient Python et tous les paquets dont il dépend, et un petit nombre d'autres paquets utiles, incluant pip, zlib et quelques autres. Vous pouvez utiliser la commande conda install pour installer plus de 720 paquets conda supplémentaires depuis le dépôt d'Anaconda.
 {.is-info}
 
 
