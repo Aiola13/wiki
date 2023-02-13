@@ -2,7 +2,7 @@
 title: Introduction
 description: 
 published: 1
-date: 2023-01-29T20:28:37.999Z
+date: 2023-02-13T15:31:07.056Z
 tags: intro, introduction
 editor: markdown
 dateCreated: 2023-01-16T11:45:51.296Z
@@ -42,13 +42,19 @@ Pourquoi Python :
 
 ## Installation et configuration de Python
 
-> ICI
+> Pour l'installation sur Windows vous pouvez passer par l'installateur officiel via le site [python.org](https://python.org), ou en utilisant la distribution [Miniconda](https://docs.conda.io/en/latest/miniconda.html) qui intégre tout le nécessaire pour l'utilisation de Python.
+{.is-success}
+
+
+> Miniconda est un installateur minimal gratuit pour conda développé par **Anaconda®**. Cette version contient Python et tous les paquets dont il dépend, et un petit nombre d'autres paquets utiles, incluant pip, zlib et quelques autres. Vous pouvez utiliser la commande conda install pour installer plus de 720 paquets conda supplémentaires depuis le dépôt d'Anaconda.
+{.is-info}
+
 
 Résumé : 
 - Linux : Inclus
 - OSX : Inclus
 - Windows : Installation sur python.org
-- Windows 10 & 11 : Fais parti de WSL 🎉
+- Windows 10 & 11 : Fais parti de WSL (Windows Subsystem Linux)🎉 
 - Intégré sur les cartes type Raspberry Pi, Banana Pi…
 
 
