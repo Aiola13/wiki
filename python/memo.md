@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2023-02-16T23:58:27.349Z
+date: 2023-02-17T00:02:59.187Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T23:58:27.349Z
@@ -148,6 +148,7 @@ Les assertions permettent d’expliciter et de vérifier des suppositions faites
 | `S = { "a", "b", 3 }` | Ensemble (éléments unique, désordonné) |
 | `D = { "a": 2, "b": 4 }` | Dictionnaire (ensemble de clé-valeurs, avec clés uniques) |
 | `T = (1,2,3)` | Tuple (suite d’élément non-mutables) |
+
 
 | Syntaxe | Description |
 | --- | --- |
