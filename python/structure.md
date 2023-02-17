@@ -2,7 +2,7 @@
 title: Les structures de données
 description: 
 published: 1
-date: 2023-02-17T07:22:09.021Z
+date: 2023-02-17T13:18:52.091Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-17T07:07:50.843Z
@@ -133,14 +133,14 @@ for animal in animaux_favoris:
    if animal.startswith("c"):
 
       # Je l'ajoute à la liste
-      animaux_starting_with_d.append(animal)
+      animaux_starting_with_c.append(animal)
 ```
 
 
 À la fin, `animaux_starting_with_c` contient:
 
 ```python
-["girafe"]
+["chenille"]
 ```
 
 
