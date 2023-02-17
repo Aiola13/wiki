@@ -2,7 +2,7 @@
 title: Les structures de données
 description: 
 published: 1
-date: 2023-02-17T07:07:50.843Z
+date: 2023-02-17T07:22:09.021Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-17T07:07:50.843Z
@@ -378,62 +378,100 @@ def factorielle():
 
 ### Ex Structures de données
 
-1 : Écrire une fonction qui retourne le plus grand élément d'une liste (ou d'un set) de nombres, et une autre fonction qui retourne le plus petit. Par exemple, `plus_grand([5, 9, 12, 6, -1, 4])` retournera 12.
+0 : Écrire une fonction qui retourne le plus grand élément d'une liste (ou d'un set) de nombres, et une autre fonction qui retourne le plus petit. Par exemple, `plus_grand([5, 9, 12, 6, -1, 4])` retournera 12.
 
 ```python
-assert plus_grand([5, 9, 12, 6, -1, 4]) == 12
-assert plus_grand([-6, -19, -2]) == -2
-assert plus_petit([5, 9, 12, 6, -1, 4]) == -1
-assert plus_petit([-6, -19, -2]) == -19
+plus_grand([5, 9, 12, 6, -1, 4]) == 12
+plus_grand([-6, -19, -2]) == -2
+plus_petit([5, 9, 12, 6, -1, 4]) == -1
+plus_petit([-6, -19, -2]) == -19
 ```
 
-2 : Écrire une fonction qui retourne le mot le plus long parmis une liste de mot donnée en argument.
+1 : Écrire une fonction qui retourne le mot le plus long parmis une liste de mot donnée en argument.
 
 ```python
-assert plus_long(["Paris", "Amsterdam", "Londres"]) == "Amsterdam"
-assert plus_long(["Choucroute", "Pizza", "Tarte flambée"]) == "Tarte flambée"
+plus_long(["Paris", "Amsterdam", "Londres"]) == "Amsterdam"
+plus_long(["Choucroute", "Pizza", "Tarte flambée"]) == "Tarte flambée"
 ```
 
-7.3 : Écrire une fonction qui calcule la somme d'une liste de nombres.
+2 : Écrire une fonction qui calcule la somme d'une liste de nombres.
 
 ```python
-assert somme([3, 4, 5]) == 12
-assert somme([0, 7, -3]) == 4
+somme([3, 4, 5]) == 12
+somme([0, 7, -3]) == 4
 ```
 
-7.4 : Écrire une fonction qui prends en argument un chemin de fichier comme "/usr/bin/toto.py" et extrait le nom du fichier, c'est à dire "toto". On pourra utiliser la méthode `chaine.split(caractere)` des chaînes de caractère.
+3 : Écrire une fonction qui retourne seulement les entiers pairs d'une liste
 
-7.5.1 : Récuperer le dictionnaire d'exemple auprès du formateur (example_dict.py) et boucler sur ce dictionnaire pour afficher quelque chose comme:
+4 : Constituez une liste semaine contenant les 7 jours de la semaine. 
+
+- À partir de cette liste, comment récupérez-vous seulement les 5 premiers jours de la semaine d'une part, et ceux du week-end d'autre part ? Utilisez pour cela l'indiçage. 
+
+- Cherchez un autre moyen pour arriver au même résultat (en utilisant un autre indiçage). 
+
+- Trouvez deux manières pour accéder au dernier jour de la semaine. 
+
+- Inversez les jours de la semaine en une commande. 
+
+
+5 : Créez 4 listes hiver, printemps, ete et automne contenant les mois correspondants à ces saisons. Créez ensuite une liste saisons contenant les listes hiver, printemps, ete et automne. Prévoyez ce que renvoient les instructions suivantes, puis vérifiez-le dans l'interpréteur : 
+
+- saisons[2] 
+
+- saisons[1][0] 
+
+- saisons[1:2] 
+
+- saisons[:][1]. Comment expliquez-vous ce dernier résultat ? 
+
+6 : Affichez la table de multiplication par 9 en une seule commande avec les instructions range() et list(). 
+
+7: Répondez à la question suivante en une seule commande. Combien y a-t-il de nombres pairs dans l'intervalle [2, 10000] inclus ? 
+
+8 : Soit la liste de nombres [8, 3, 12.5, 45, 25.5, 52, 1]. Triez les nombres de cette liste par ordre croissant, sans utiliser la fonction sort(). Les fonctions et méthodes min(), .append() et .remove() vous seront utiles. 
+
+9 : Soit la liste de nombres liste = [5, 1, 1, 2, 5, 6, 3, 4, 4, 4, 2]. 
+
+À partir de liste, créez une nouvelle liste sans les doublons, triez-la et affichez-la. 
+
+10 : Trouvez le nombre mystère qui répond aux conditions suivantes : 
+
+- Il est composé de 3 chiffres. 
+- Il est strictement inférieur à 300. 
+- Il est pair. 
+- Deux de ses chiffres sont identiques. 
+- La somme de ses chiffres est égale à 7. 
+
+On vous propose d'employer une méthode dite « brute force », c'est-à-dire d'utiliser une boucle et à chaque itération de tester les différentes conditions. 
+
+
+11 : Voici le début du triangle de Pascal : 
+
+```
+1 
+1 1 
+1 2 1 
+1 3 3 1 
+1 4 6 4 1 
+1 5 10 10 5 1 
+[...] 
+```
+
+Déduisez comment une ligne est construite à partir de la précédente. Par exemple, à partir de la ligne 2 (1 1), construisez la ligne suivante (ligne 3 : 1 2 1) et ainsi de suite. 
+
+Implémentez cette construction en Python. Généralisez à l'aide d'une boucle. 
+
+11 : Utilisez le dictionnaire `example_dict` et boucler sur ce dictionnaire pour afficher quelque chose comme:
 
 ```python
 Sebastian est né.e en 1979
 Barclay est né.e en 2000
 Vivien est né.e en 1955
-...
-```
-```
+
 example_dict=[{'name': 'Sebastian', 'email': 'Donec.felis.orci@consectetueripsumnunc.edu', 'country': '1979'}, {'name': 'Barclay', 'email': 'aliquet.metus.urna@neceleifend.co.uk', 'country': '2000'}, {'name': 'Vivien', 'email': 'pharetra@a.com', 'country': '1955'}, {'name': 'Britanney', 'email': 'eu.tellus.Phasellus@arcuvelquam.ca', 'country': '1961'}, {'name': 'Reese', 'email': 'tortor.dictum.eu@egestasSed.ca', 'country': '1951'}, {'name': 'Keegan', 'email': 'libero.nec@cursuset.co.uk', 'country': '1998'}, {'name': 'Ezekiel', 'email': 'tempus.mauris.erat@aclibero.org', 'country': '1951'}, {'name': 'Odessa', 'email': 'massa.Quisque.porttitor@felis.net', 'country': '1925'}, {'name': 'Elijah', 'email': 'luctus.vulputate.nisi@nunc.com', 'country': '1963'}, {'name': 'Hilel', 'email': 'lectus.pede.et@aliquetsem.ca', 'country': '1982'}, {'name': 'Callie', 'email': 'et.euismod.et@aliquetmagnaa.net', 'country': '1984'}, {'name': 'India', 'email': 'Duis.sit.amet@Phaselluslibero.com', 'country': '1938'}, {'name': 'Lane', 'email': 'amet@turpis.ca', 'country': '1922'}, {'name': 'Alexis', 'email': 'sagittis.placerat@nibhdolor.net', 'country': '1927'}, {'name': 'Micah', 'email': 'lorem.eget.mollis@SeddictumProin.com', 'country': '1914'}, {'name': 'Rigel', 'email': 'sollicitudin@eratinconsectetuer.org', 'country': '1941'}, {'name': 'Avram', 'email': 'tincidunt.vehicula@vulputate.org', 'country': '1919'}, {'name': 'Dieter', 'email': 'ornare.lectus.justo@Integeridmagna.org', 'country': '1937'}, {'name': 'Sarah', 'email': 'cubilia.Curae.Phasellus@non.net', 'country': '1946'}, {'name': 'Graham', 'email': 'elit.Curabitur.sed@maurisIntegersem.edu', 'country': '1931'}, {'name': 'Daquan', 'email': 'fermentum.convallis.ligula@porttitorinterdum.co.uk', 'country': '1934'}, {'name': 'Nell', 'email': 'purus@lectusconvallisest.org', 'country': '1997'}, {'name': 'Ocean', 'email': 'ut@Nuncquisarcu.net', 'country': '2006'}, {'name': 'Cruz', 'email': 'Aenean.euismod.mauris@idmollisnec.edu', 'country': '1950'}, {'name': 'Hyacinth', 'email': 'amet@Nunc.edu', 'country': '1929'}]
 ```
 
-7.5.2 : Transformer le programme précédent pour n'afficher que les personnes ayant une adresse mail finissant par `.edu`.
+12 : Transformer le programme précédent pour n'afficher que les personnes ayant une adresse mail finissant par `.edu`.
 
-7.6 : Ecrire une fonction `compte_lettres` qui prends en argument une (grande) chaîne de caractère et retourne un dictionnaire avec un compte des occurences des lettres. Par exemple `compte_lettres("hello")` retournera `{"h":1, "l": 2, "o": 1, "e":1 }`. Utiliser cette fonction sur Lorem Ipsum ("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt [...]")
+13 : Ecrire une fonction `compte_lettres` qui prends en argument une (grande) chaîne de caractère et retourne un dictionnaire avec un compte des occurences des lettres. Par exemple `compte_lettres("hello")` retournera `{"h":1, "l": 2, "o": 1, "e":1 }`. Utiliser cette fonction sur Lorem Ipsum ("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt [...]")
 
-7.7 : Écrire une fonction qui retourne seulement les entiers pairs d'une liste
-
-7.8 : Écrire une fonction qui permet de trier une liste (ou un set) d'entiers
-
-7.9 : En une seule ligne de code, générer la matrice suivante :
-
-```python
-[ [ 0, 1, 2, 3,  4  ],
-  [ 0, 2, 4, 6,  8  ],
-  [ 0, 3, 6, 9,  12 ],
-  [ 0, 4, 8, 12, 16 ] ]
-```
-
-7.10 : Réécrire la fonction `somme` du 8.2, mais cette fois sans utiliser de variable intermédiaire (utiliser la récursivité)
-
-7.11 : Ecrire un générateur `carre()` qui genere la suite 1, 4, 9, 16, ... Utiliser ce générateur pour afficher les carrés jusqu'à ce qu'une valeur dépasse 200.
-
-7.12 : Ecrire un générateur `fibonnaci` qui genere la suite de fibonnaci 0, 1, 1, 2, 3, 5, 8, ... Utiliser ce générateur pour afficher les valeurs jusqu'à ce qu'elles dépassent 500.
