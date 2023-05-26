@@ -1,16 +1,14 @@
 ---
-title: Le Cloud
+title: Qu’est-ce que le NUAGE ?
 description: 
 published: 1
-date: 2023-05-26T10:22:02.629Z
+date: 2023-05-26T10:38:09.528Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-26T10:10:28.893Z
 ---
 
-# Qu'est-ce que le NUAGE ?
-
-## Introduction
+# Introduction
 
 > Cloud, Cloud ... On en entend beaucoup parlé mais chez moi il fait beau pourtant 🤔
 
@@ -36,7 +34,7 @@ Prenons un exemple, lors des "Black Friday", nous avons un pic de consommation d
 Tout simplement, aucune des deux, on peut tout simplement moduler nos ressources, et c'est là tout l'avantage du Cloud.
 Donc le Cloud Computing correspond à l'accès à des ressources, des services informatiques par rapport à la demande.
 
-## Le Cloud Computing
+# Le Cloud Computing
 
 Tout d'abord comment reconnaît-on un Cloud ?
 Le National Institute of Standards and Technology (NIST), aux États-Unis, a défini cinq caractéristiques claires qui font d'un cloud, un cloud : 
@@ -53,7 +51,7 @@ L’élisticité représente la capacité du système à s’adapter aux demande
 Sécuriser le service par une détection immédiate d’une surcharge ou inversement, si l’une de ces conditions est vérifié, c’est à l’elasticité de prendre en charge cela.
 
 
-## Les Types (modèles) de cloud
+# Les Types (modèles) de cloud
 
 - **IaaS** (Infrastructure as a Service)
 Un prestataire vous fournit un accès à tout ou partie de son infrastructure technique.
@@ -72,7 +70,7 @@ Le prestataire fournit l'accès à l'écosystème d'un logiciel sous forme de se
 
 ![offres_cloud.png](/images/cloud/offres_cloud.png)
 
-## En résumé
+# En résumé
 
 La force :
 - La force du cloud est : "Modularité et Flexibilité"
