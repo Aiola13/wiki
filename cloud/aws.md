@@ -1,15 +1,14 @@
 ---
-title: Amazon Web Service
+title: Amazon Web Service | AWS
 description: 
 published: 1
-date: 2023-05-26T10:36:38.102Z
+date: 2023-05-26T10:40:18.404Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-26T10:36:38.102Z
 ---
 
-# AWS
-## Amazon Web Service
+# Amazon Web Service
 Comment définir AWS ?
 
 On pourrait commencer par dire qu’AWS est une plateforme de services cloud issue d’Amazon qui a fait ses débuts en 2006, l’idée principale fut d’isoler les différentes parties d’une infrastructure sous forme de composants pour l’OS.
@@ -31,12 +30,12 @@ Permet de gérer ses réseaux privés.
 Permet de gérer les règles d'accès à votre AWS.
 - Et bien d'autres ...
 
-## Matryoshka Doll - Articulation d'AWS
+# Matryoshka Doll - Articulation d'AWS
 
 ![matryoshka-doll-png.png](/images/cloud/matryoshka-doll-png.png =50%x)
 
 ![aws_schema.png](/images/cloud/aws_schema.png)
-## Prenons en main AWS
+# Prenons en main AWS
 
 > AWS est gratuit la première année de votre inscription avec de nombreux services.
 
@@ -45,7 +44,7 @@ Permet de gérer les règles d'accès à votre AWS.
 
 ![list_service.png](/images/cloud/list_service.png)
 
-## EC2
+# EC2
 
 > En cours de rédaction
 {.is-warning}
@@ -103,11 +102,11 @@ L'auto scaling permet d'ajuster automatiquement le nombre de serveur à utiliser
 
 #
 
-## RDS
+# RDS
 
 > En cours de rédaction
 {.is-warning}
 
-## S3
+# S3
 > En cours de rédaction
 {.is-warning}
