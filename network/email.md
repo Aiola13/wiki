@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T09:07:33.888Z
+date: 2023-08-28T09:12:09.836Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -121,18 +121,6 @@ La boîte aux lettres est une localisation de stockage où les e-mails d'un util
   - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
 inutilement le contenu du message -->
 
----
-
-## Processus 
-
-Un processus typique d'envoi d'e-mail se déroulerait comme suit:
-
-L'utilisateur compose un e-mail dans son MUA (par exemple, Thunderbird).
-Une fois l'e-mail envoyé, il est transmis au MTA du serveur d'envoi (par exemple, Postfix).
-Le MTA route l'e-mail à travers Internet vers le MTA du serveur de destination.
-À l'arrivée, le MDA (par exemple, Dovecot) du serveur de réception prend le relais et dépose l'e-mail dans la boîte de réception de l'utilisateur final.
-L'utilisateur récupère et lit l'e-mail via son MUA.
-Ce processus garantit que les e-mails sont correctement acheminés à travers les nombreux systèmes et protocoles qui composent l'infrastructure de messagerie d'Internet.
 
 ---
 
@@ -140,7 +128,20 @@ Ce processus garantit que les e-mails sont correctement acheminés à travers le
 
 ![architecture-systeme-messagerie-electronique.jpg](/images/network/email/architecture-systeme-messagerie-electronique.jpg){.align-center}
   
-# dwdw
+---
+
+# Processus 
+
+Un processus typique d'envoi d'e-mail se déroulerait comme suit:
+
+- L'utilisateur compose un e-mail dans son MUA (par exemple, Thunderbird).
+- Une fois l'e-mail envoyé, il est transmis au MTA du serveur d'envoi (par exemple, Postfix).
+- Le MTA route l'e-mail à travers Internet vers le MTA du serveur de destination.
+- À l'arrivée, le MDA (par exemple, Dovecot) du serveur de réception prend le relais et dépose l'e-mail dans la boîte de réception de l'utilisateur final.
+- L'utilisateur récupère et lit l'e-mail via son MUA.
+
+ Ce processus garantit que les e-mails sont correctement acheminés à travers les nombreux systèmes et protocoles qui composent l'infrastructure de messagerie d'Internet.
+
 
 <!--
 SMTP protocole de transport
