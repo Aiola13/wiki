@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T10:16:34.661Z
+date: 2023-08-28T10:28:12.026Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -160,6 +160,21 @@ Commandes SMTP de base : HELO, MAIL FROM, RCPT TO, DATA, QUIT.
 Format des e-mails : Entêtes et corps.
 MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
   
+## Comment communiquer avec le serveur SMTP ?
+  
+Format général d'une commande
+ Une ligne de caractères ASCII (terminé par les 2 caractères <CRLF>)
+ La ligne commence par un mot clef qui définit le type de la commande
+ Certaines commandes sont optionnelles (cf. ESMTP)
+ Cela peut être négocié lors de l'établissement
+ Exemple:
+ HELO <serveur> <CRLF>
+ Remarque : insensible aux majuscules/minuscules
+ Temporisateur :
+ Par défaut 2 à 10 minutes en fonction des commandes
+ Compatible avec la durée des temporisateurs de TCP
+  
+## Commandes
   
 | **Commande**  | **Syntaxe**                                  | **Fonction**                                                                                    |
 |---------------|----------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -181,7 +196,32 @@ MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour 
 | **TURN**      |                                              | Echange les rôles entre le client et le serveur                                                 |
 | **X\.\.\.**   |                                              | Commande étendue définie localement                                                             |
 
+## Code Retour
   
+| **Code** | **Signification**                                                           |
+|----------|-----------------------------------------------------------------------------|
+| **250**  | Service action completed                                                    |
+| **421**  | <domain> Service not available                                              |
+| **221**  | <domain> Service closing                                                    |
+| **220**  | <domain> Service ready                                                      |
+| **214**  | Help message                                                                |
+| **211**  | System status                                                               |
+| **504**  | Parmeter not implemented                                                    |
+| **502**  | bad sequence of commands                                                    |
+| **501**  | Parameter syntax error                                                      |
+| **500**  | Syntax error                                                                |
+| **251**  | User not local; will forward to <forward\-path>                             |
+| **252**  | Cannot VRFY user, but will accept message and attempt delivery              |
+| **450**  | Requested mail action not taken: mailbox busy                               |
+| **550**  | Requested action not taken: mailbox not found, no access for policy reasons |
+| **451**  | Requested action aborted: error in processing                               |
+| **551**  | User not local; please try <forward\-path>                                  |
+| **452**  | Requested action not taken: insufficient system storage                     |
+| **552**  | Requested mail action aborted: exceeded storage allocation                  |
+| **354**  | Start mail input; end with <CRLF>\.<CRLF>                                   |
+| **554**  | Transaction failed                                   |  
+  
+---
 
 Format de l’entête et des champs des adresses électroniques, utilise le standard MIME pour le formatage du corps des messages.
 POP3 protocole de réception
