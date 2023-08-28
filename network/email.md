@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T10:28:12.026Z
+date: 2023-08-28T10:29:26.473Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -196,7 +196,7 @@ Format général d'une commande
 | **TURN**      |                                              | Echange les rôles entre le client et le serveur                                                 |
 | **X\.\.\.**   |                                              | Commande étendue définie localement                                                             |
 
-## Code Retour
+## Réponse SMTP
   
 | **Code** | **Signification**                                                           |
 |----------|-----------------------------------------------------------------------------|
