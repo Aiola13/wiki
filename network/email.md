@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T11:08:44.289Z
+date: 2023-08-28T11:14:54.782Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -154,8 +154,8 @@ Port standard : 25 (d'autres ports comme 587 sont aussi utilisés dans certains 
 
 La connexion ou session SMTP s'établit en suivant un protocole précis pour assurer la transmission d'emails :
   
-# Tabs {.tabset}
-## Simplifié
+## Tabs {.tabset}
+### Simplifié
 
 1. **Connexion**: 
    - Le client se connecte au serveur SMTP sur le port 25 (non sécurisé) ou 587 (sécurisé).
@@ -175,7 +175,7 @@ La connexion ou session SMTP s'établit en suivant un protocole précis pour ass
    - Le client envoie `QUIT` pour terminer la connexion.
    - Le serveur confirme la déconnexion.
 
-## Compléte
+### Compléte
 
 1. **Établissement de la connexion TCP**:
    - Le client établit une connexion TCP avec le serveur SMTP sur le port 25, qui est le port par défaut pour la communication non sécurisée. Pour une communication sécurisée, le port 587 est souvent utilisé.
@@ -201,7 +201,7 @@ La connexion ou session SMTP s'établit en suivant un protocole précis pour ass
    - Après avoir envoyé le courriel, le client envoie la commande `QUIT` pour terminer la session.
    - Le serveur confirme la fin de la session avec un code `221`.
 
-## Exemple
+### Exemple
   
 ```telnet
 Étape 1: Connexion au serveur SMTP
@@ -287,11 +287,9 @@ Commande utilisateur: QUIT
 Réponse du serveur:
 221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
 ```
-
-
----
   
-
+## HALLO
+  
 2.3. Transmission des messages
 
 Format des e-mails : Entêtes et corps.
