@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T11:03:31.469Z
+date: 2023-08-28T11:08:44.289Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -157,7 +157,23 @@ La connexion ou session SMTP s'établit en suivant un protocole précis pour ass
 # Tabs {.tabset}
 ## Simplifié
 
-Any content here will go into the first tab...
+1. **Connexion**: 
+   - Le client se connecte au serveur SMTP sur le port 25 (non sécurisé) ou 587 (sécurisé).
+2. **Salutation**: 
+   - Le client envoie `HELO` ou `EHLO` pour se présenter.
+3. **Sécurité (si nécessaire)**: 
+   - Le client demande `STARTTLS` pour sécuriser la connexion.
+   - Le serveur accepte, et la connexion devient chiffrée.
+4. **Authentification**: 
+   - Le client fournit son nom d'utilisateur et son mot de passe.
+   - Le serveur vérifie et confirme si l'authentification est réussie.
+5. **Envoi de l'e-mail**: 
+   - Le client indique l'expéditeur (`MAIL FROM:`) et le destinataire (`RCPT TO:`).
+   - Le client envoie le contenu de l'e-mail avec `DATA` et termine avec un point (`.`).
+   - Le serveur confirme la réception.
+6. **Fin de la session**: 
+   - Le client envoie `QUIT` pour terminer la connexion.
+   - Le serveur confirme la déconnexion.
 
 ## Compléte
 
@@ -185,10 +201,97 @@ Any content here will go into the first tab...
    - Après avoir envoyé le courriel, le client envoie la commande `QUIT` pour terminer la session.
    - Le serveur confirme la fin de la session avec un code `221`.
 
-### COUCOU
+## Exemple
+  
+```telnet
+Étape 1: Connexion au serveur SMTP
+Commande utilisateur: telnet smtp.gmail.com 587
+
+Réponse du serveur: 
+220 smtp.gmail.com ESMTP x123sm2131234pfa.123 - gsmtp
+
+---
+
+Étape 2: Salutation (HELO/EHLO)
+Commande utilisateur: EHLO mondomaine.com
+
+Réponse du serveur:
+250-smtp.gmail.com at your service
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+---
+
+Étape 3: Mise en place d'une connexion sécurisée (optionnel pour certains serveurs, mais nécessaire pour Gmail)
+Commande utilisateur: STARTTLS
+
+Réponse du serveur:
+220 2.0.0 Ready to start TLS
+
+(Note: À ce stade, la communication sera chiffrée, donc les commandes telnet en clair ne fonctionneront plus. Pour de vraies interactions, un client devrait passer à une connexion sécurisée.)
+
+---
+
+Étape 4: Authentification
+(Note: Puisque la connexion est sécurisée, les commandes sont simplifiées pour l'illustration. Dans une vraie situation, l'utilisateur aurait à fournir des informations d'authentification encodées en base64.)
+Commande utilisateur: AUTH LOGIN
+
+Réponse du serveur:
+334 VXNlcm5hbWU6
+
+Commande utilisateur: [Votre nom d'utilisateur encodé en base64]
+
+Réponse du serveur:
+334 UGFzc3dvcmQ6
+
+Commande utilisateur: [Votre mot de passe encodé en base64]
+
+Réponse du serveur:
+235 2.7.0 Accepted
+
+---
+
+Étape 5: Envoi de l'e-mail
+Commande utilisateur: MAIL FROM:<votre@email.com>
+
+Réponse du serveur:
+250 2.1.0 OK x123sm2131234pfa.123 - gsmtp
+
+Commande utilisateur: RCPT TO:<destinataire@email.com>
+
+Réponse du serveur:
+250 2.1.5 OK x123sm2131234pfa.123 - gsmtp
+
+Commande utilisateur: DATA
+
+Réponse du serveur:
+354  Go ahead x123sm2131234pfa.123 - gsmtp
+
+Commande utilisateur:
+Subject: Test via Telnet
+
+Ceci est un test.
+
+.
+
+---
+
+Étape 6: Quitter la session SMTP
+Commande utilisateur: QUIT
+
+Réponse du serveur:
+221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
+```
+
+
 ---
   
-Commandes SMTP de base : HELO, MAIL FROM, RCPT TO, DATA, QUIT.
+
 2.3. Transmission des messages
 
 Format des e-mails : Entêtes et corps.
