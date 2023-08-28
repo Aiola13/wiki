@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T11:24:36.143Z
+date: 2023-08-28T11:48:39.231Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -301,9 +301,22 @@ Réponse du serveur:
 221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
 ```
   
-## Transmission des messages
+## Transmission des messages et Format des courriels - emails [RFC 822 : 1982]
 
-Format des e-mails : Entêtes et corps.
+Un courriel se compose de deux parties: l'entête et le corps.
+
+Exemple de format d'un courriel:
+
+```makefile
+
+From: cook@caramel.vn
+To: eat@kangourous.co.au
+Subject: rue de Charonne
+
+Viens boire une Guiness ce soir
+au cafe de la plage
+```
+
 MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
   
   
@@ -354,38 +367,69 @@ MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour 
 | **354**  | Start mail input; end with <CRLF>\.<CRLF>                                   |
 | **554**  | Transaction failed                                   |  
   
----
+<!--## Encapsulation d’un message
 
-
-# SMTP (Simple Mail Transfer Protocol) [RFC 821 : 1982]
-## Encapsulation d’un message
-
-Les messages de l'application (SMTP, POP, IMAP) sont encapsulés en segments TCP, qui sont ensuite encapsulés en paquets IP, puis en trames Ethernet, et finalement en bits sur la couche physique. La notion de couches est importante dans la pile TCP/IP.
-
-## Exemple d'une session SMTP
-
-Session SMTP comprenant l'ouverture, la fermeture, et la transmission d'un message (sans les entêtes).
-
-## Requêtes et réponses SMTP
-
-Commandes du client: HELO, MAIL FROM, RCPT TO, DATA, QUIT.
-Réponses du serveur (exemple): <no> <texte en clair>.
+Les messages de l'application (SMTP, POP, IMAP) sont encapsulés en segments TCP, qui sont ensuite encapsulés en paquets IP, puis en trames Ethernet, et finalement en bits sur la couche physique. La notion de couches est importante dans la pile TCP/IP.-->
 
   
-## Format des courriels - emails [RFC 822 : 1982]
+# MIME | Multipurpose Internet Mail Extensions [RFC 2045-2046 : 1996]
+  
+Le MIME, acronyme de **Multipurpose Internet Mail Extensions**, est une norme qui a été développée dans le but d'étendre les capacités des e-mails pour permettre le transport de contenus autres que du texte brut ASCII, comme des fichiers binaires, des images et des caractères non-ASCII. 
 
-Un courriel se compose de deux parties: l'entête et le corps.
+Avant l'introduction de MIME, les e-mails étaient limités à des caractères ASCII simples, ce qui rendait difficile le transfert d'autres types de données.
 
-Exemple de format d'un courriel:
+Voici quelques points clés concernant MIME:
 
-```makefile
+1. **Types et sous-types**: MIME introduit le concept de types et de sous-types pour définir la nature des données. Par exemple, une image JPEG serait typée comme `image/jpeg`, où `image` est le type et `jpeg` est le sous-type.
 
-From: cook@caramel.vn
-To: eat@kangourous.co.au
-Subject: rue de Charonne
+2. **Encodage des données binaires**: Étant donné que les systèmes de messagerie traditionnels étaient conçus pour transporter du texte, MIME a introduit plusieurs méthodes pour encoder des données binaires en texte, afin qu'elles puissent être transportées par des systèmes de messagerie. L'encodage le plus courant est "base64".
 
-Viens boire une Guiness ce soir
-au cafe de la plage
+3. **En-têtes MIME**: Pour indiquer qu'un e-mail utilise MIME, et pour fournir d'autres métadonnées (comme le type de contenu et l'encodage), des en-têtes MIME sont ajoutés à l'e-mail. Des en-têtes tels que `Content-Type` et `Content-Transfer-Encoding` sont couramment utilisés.
+
+4. **Multi-part MIME**: Permet d'envoyer des messages composés de plusieurs parties, chacune avec son propre type de contenu. Ceci est souvent utilisé pour les e-mails contenant à la fois une version texte et une version HTML du même message, ou pour les e-mails avec des pièces jointes. Chaque partie est séparée par une "frontière" (boundary) définie.
+
+5. **Extensions**: MIME a été étendu pour être utilisé au-delà des e-mails. Par exemple, le protocole HTTP utilise également des en-têtes MIME pour spécifier le type de données retournées par un serveur web.
+
+6. **Caractères non-ASCII**: MIME permet également d'encoder des caractères non-ASCII pour qu'ils puissent être transportés de manière sécurisée. Cela permet, par exemple, d'envoyer des e-mails en différentes langues et scripts.
+
+Un exemple simple de contenu MIME multi-parties serait :
+
+```plaintext
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="frontiere"
+
+--frontiere
+Content-Type: text/plain
+
+Ceci est la partie texte de l'e-mail.
+
+--frontiere
+Content-Type: image/jpeg [types/sous-types; paramètres
+optionnels]
+Content-Transfer-Encoding: base64 [Spécifie le codage]
+
+[Réel contenu encodé en base64 de l'image]
+
+--frontiere--
 ```
+
+## Exemple d'encocage
+
+- 8bits:
+Viens boire une Guiness ce soir
+au café de la plage
+- base64
+VmllbnMgYm9pcmUgdW5lIEd1aW5lc3MgY2U
+gc29pciBhdSBjYWbpIGRlIGxhIHBsYWdlDQ
   
--->
+## Tableau MIME
+  
+| **Type**    | **Sous\-Type** | **Description** |
+|-------------|----------------|-----------------|
+| text        | plain, html    | Sans format, Document HTML   |
+| image       | jpeg, png, gif |                 |
+| video       | mpeg, webm     |                 |
+| application | octet\-stream  |  Document en binaire               |
+| message     | external\-body |                 |
+| multipart   | mixed          |                 |
+
