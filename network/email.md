@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-02-05T23:46:36.319Z
+date: 2023-08-28T09:07:33.888Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -17,7 +17,7 @@ dateCreated: 2023-01-31T23:11:52.729Z
 
 |Protocole|Description|
 | --- | :--- |
-|**SMTP**|C'est le protocole de transport, il s'occupe aussi du format de l’entête, de ses champs ainsi que des adresses électronique|
+|**SMTP**|C'est le protocole de transport/d'envoi, il s'occupe aussi du format de l’entête, de ses champs ainsi que des adresses électronique|
 |**MIME**|C'est le standard de formatage du corps des messages et des fichiers|
 |**POP**|C'est un protocole de réception des messages|
 |**IMAP**|C'est un protocole de réception des messages|
@@ -25,6 +25,32 @@ dateCreated: 2023-01-31T23:11:52.729Z
 # Architecture générale
 
 ![protocol-min.png](/images/network/email/protocol-min.png){.align-center}
+
+# Histoire & évolution de la messagerie
+
+La messagerie électronique, souvent appelée email, a vu le jour dans les années 1960. Cependant, c'est dans les années 1970, avec l'apparition du protocole SMTP (Simple Mail Transfer Protocol), qu'elle s'est véritablement standardisée.
+
+- Années 1960 : Les premières formes de communication électronique ont été développées pour les réseaux internes des universités et des institutions.
+- Années 1970 : Ray Tomlinson introduit l'usage du symbole "@" pour séparer le nom d'utilisateur du nom de la machine, une norme qui est encore utilisée aujourd'hui.
+- Années 1980-1990 : Avec la démocratisation d'Internet, l'email devient un outil de communication essentiel pour les entreprises et le grand public.
+- Années 2000 à aujourd'hui : L'évolution de la mobilité et des smartphones a permis un accès permanent à la messagerie électronique, rendant l'email encore plus intégré à notre quotidien.
+
+# Avantages et inconvénients
+Avantages :
+
+Rapidité : Les emails sont livrés presque instantanément, permettant une communication rapide à travers le monde.
+
+Coût : Envoyer un email est généralement gratuit ou très peu coûteux, surtout en comparaison avec d'anciennes méthodes comme le fax ou la poste traditionnelle.
+
+Flexibilité : Les emails peuvent être consultés de n'importe où et à tout moment, surtout avec l'avènement des smartphones et des tablettes.
+
+Inconvénients :
+
+Sécurité : Les emails peuvent être la cible de phishing, de logiciels malveillants et d'autres formes de cyberattaques.
+
+Surcharge d'informations : Avec la facilité d'envoi, de nombreuses personnes reçoivent une quantité écrasante d'emails chaque jour, ce qui peut conduire à des informations importantes noyées dans un flot de messages non désirés.
+
+Dépendance technologique : Bien que l'accès à l'email soit omniprésent, une panne de serveur, une perte de connexion ou un dysfonctionnement matériel peuvent interrompre l'accès.
 
 # Parlons définitions
 
@@ -43,11 +69,12 @@ Par exemple :
 - Netscape/Mozilla Thunderbird
 - Outlook
 - Interface Texte
-- Webmail (via un navigateur)
+- Webmail (via un navigateur) (Gmail)
 
-## Agent de Transfert de Courriel (Message TranfertAgent)
+## Agent de Transfert de Courriel (Message Tranfert Agent)
 
-> Un Agent de transfert de Courriel (MTA) est un logiciel faisant partie intégrante d'un serveur de transmission de messagerie (SMTP) et qui s'occupe de transmettre le message au destinataire.
+
+> Un Agent de transfert de Courriel (MTA) est le composant (logiciel)  faisant partie intégrante d'un serveur de transmission de messagerie (SMTP) et qui s'occupe de transmettre, transférer et router le message au destinataire. Lorsque vous envoyez un e-mail, votre MUA le transmet à un MTA pour qu'il soit délivré. Le MTA prend ensuite le relais pour s'assurer que le message est correctement routé vers le serveur de destination.
 {.is-success}
 
 
@@ -62,10 +89,12 @@ Par exemple :
 
 L'agent de transport des messages ne prend donc pas de décision de routage. Elle lui est indiquée par l'agent de routage qui lui transmet le message et le chemin.
 
+par exemple : 
+- Postfix, Sendmail et Exim sont des exemples de logiciels MTA.
+
 ---
 
 ## Agent Délivreurs de Courriel (Mail Delivery Agent) 
-
 
 > Un Agent Délivreurs de Courriel (MDA) est un logiciel qui est chargé de livrer le courriel dans la boite aux lettres du destinataire. 
 {.is-success}
@@ -73,20 +102,37 @@ L'agent de transport des messages ne prend donc pas de décision de routage. Ell
 > Ce logiciel gére le filtrage des courriels, la supprésion des spams (antispams) et les virus (antivirus). Mais il intervient également dans la gestion des problèmes comme un disque plein ou bien une corruption de la boîte aux lettres et signaler au MTA toute erreur dans la distribution.
 {.is-info}
 
+par exemple : 
+- Dovecot est souvent utilisé comme MDA, en particulier en combinaison avec des MTA comme Postfix.
+
 ---
 
 ## Boite aux lettres
 
-<!--
-Endroit où le message doit être déposé :
+La boîte aux lettres est une localisation de stockage où les e-mails d'un utilisateur sont déposés et conservés.
+
 - Identifie en quelque sorte le destinataire du message
 - L'adresse de la boîte aux lettres est une chaîne de caractères ASCII (sauf "@", "<", ">", "," , ";", etc) : <local-part>@<domain>
     - Ex : letoutpuissan@paradis.pa - La partie locale est traitée localement
-- Le domaine doit être de type FQDN : "Fully qualified domain name"
+- Le domaine doit être de type FQDN : "Fully qualified domain name" (mail.exemple.com)
 - Historiquement on faisait du "source routing", on indiquait la liste des serveurs de messagerie par lesquels passer pour parvenir au destinataire (il n'y avait pas de DNS).
+<!--  
 - Liste de diffusion (nom d'une liste de boites aux lettres)
   - Permet d'envoyer un message à plusieurs destinataires sans dupliquer
 inutilement le contenu du message -->
+
+---
+
+## Processus 
+
+Un processus typique d'envoi d'e-mail se déroulerait comme suit:
+
+L'utilisateur compose un e-mail dans son MUA (par exemple, Thunderbird).
+Une fois l'e-mail envoyé, il est transmis au MTA du serveur d'envoi (par exemple, Postfix).
+Le MTA route l'e-mail à travers Internet vers le MTA du serveur de destination.
+À l'arrivée, le MDA (par exemple, Dovecot) du serveur de réception prend le relais et dépose l'e-mail dans la boîte de réception de l'utilisateur final.
+L'utilisateur récupère et lit l'e-mail via son MUA.
+Ce processus garantit que les e-mails sont correctement acheminés à travers les nombreux systèmes et protocoles qui composent l'infrastructure de messagerie d'Internet.
 
 ---
 
