@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T10:29:26.473Z
+date: 2023-08-28T11:03:31.469Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -144,16 +144,50 @@ Un processus typique d'envoi d'e-mail se déroulerait comme suit:
 
 ---
 
-# SMTP | protocole de transport
+# SMTP | (Simple Mail Transfer Protocol) [RFC 821 : 1982]
   
 Un protocole de communication utilisé pour transférer les e-mails entre les serveurs et, éventuellement, vers le client final.
-Histoire : Contexte de l'émergence du SMTP dans les premiers jours d'Internet.
 
 Port standard : 25 (d'autres ports comme 587 sont aussi utilisés dans certains contextes)
-Serveurs MX (Mail Exchange) : Serveurs dédiés à la réception des messages SMTP.
 
-  Sessions SMTP
-Processus d'établissement d'une connexion.
+## Commnent s'établit une connexion/session SMTP ?
+
+La connexion ou session SMTP s'établit en suivant un protocole précis pour assurer la transmission d'emails :
+  
+# Tabs {.tabset}
+## Simplifié
+
+Any content here will go into the first tab...
+
+## Compléte
+
+1. **Établissement de la connexion TCP**:
+   - Le client établit une connexion TCP avec le serveur SMTP sur le port 25, qui est le port par défaut pour la communication non sécurisée. Pour une communication sécurisée, le port 587 est souvent utilisé.
+2. **Salutation**:
+   - Une fois la connexion TCP établie, le serveur envoie un code de réponse `220` indiquant qu'il est prêt à accepter les commandes.
+   - Le client envoie une commande `HELO` ou `EHLO` pour se présenter au serveur. La commande `EHLO` est une version étendue de `HELO` et est préférée dans les communications modernes.
+   - Le serveur répond avec un code `250` et énumère souvent les fonctionnalités qu'il prend en charge.
+3. **Négociation de sécurité (si nécessaire)**:
+   - Si la connexion doit être sécurisée, le client demande à passer en mode sécurisé avec la commande `STARTTLS`.
+   - Le serveur accepte avec un code `220`, et le client et le serveur négocient alors une connexion chiffrée.
+4. **Authentification**:
+   - Pour envoyer des emails via un serveur SMTP qui nécessite une authentification, le client doit fournir des informations d'identité.
+   - Le client envoie la commande `AUTH`, suivie de la méthode d'authentification, comme `LOGIN` ou `PLAIN`.
+   - Le serveur demande alors le nom d'utilisateur et le mot de passe, généralement sous forme encodée en base64.
+   - Si l'authentification réussit, le serveur envoie un code `235` pour signifier l'acceptation.
+5. **Transmission de l'e-mail**:
+   - Le client indique l'expéditeur de l'e-mail avec la commande `MAIL FROM:<adresse-email>`. Le serveur répond généralement avec un code `250` s'il accepte.
+   - Le client indique le destinataire de l'e-mail avec la commande `RCPT TO:<adresse-email>`. Le serveur confirme de la même manière.
+   - Pour envoyer le corps de l'e-mail, le client utilise la commande `DATA`. Le serveur répond avec un code `354` pour signifier qu'il est prêt à recevoir les données.
+   - Le client envoie alors le contenu de l'e-mail, suivi d'une ligne contenant uniquement un point (`.`) pour signifier la fin du contenu.
+   - Si tout se passe bien, le serveur envoie un code `250` pour confirmer la réception.
+6. **Terminer la session**:
+   - Après avoir envoyé le courriel, le client envoie la commande `QUIT` pour terminer la session.
+   - Le serveur confirme la fin de la session avec un code `221`.
+
+### COUCOU
+---
+  
 Commandes SMTP de base : HELO, MAIL FROM, RCPT TO, DATA, QUIT.
 2.3. Transmission des messages
 
@@ -223,27 +257,29 @@ Format général d'une commande
   
 ---
 
-Format de l’entête et des champs des adresses électroniques, utilise le standard MIME pour le formatage du corps des messages.
-POP3 protocole de réception
-IMAP protocole de réception, gestion de courrier ou des news dans des dossiers
-SMTP (Simple Mail Transfer Protocol) [RFC 821 : 1982]
-Encapsulation d’un message
+
+# SMTP (Simple Mail Transfer Protocol) [RFC 821 : 1982]
+## Encapsulation d’un message
 
 Les messages de l'application (SMTP, POP, IMAP) sont encapsulés en segments TCP, qui sont ensuite encapsulés en paquets IP, puis en trames Ethernet, et finalement en bits sur la couche physique. La notion de couches est importante dans la pile TCP/IP.
-Exemple d'une session SMTP
+
+## Exemple d'une session SMTP
 
 Session SMTP comprenant l'ouverture, la fermeture, et la transmission d'un message (sans les entêtes).
-Requêtes et réponses SMTP
+
+## Requêtes et réponses SMTP
 
 Commandes du client: HELO, MAIL FROM, RCPT TO, DATA, QUIT.
 Réponses du serveur (exemple): <no> <texte en clair>.
-Format des courriels - emails [RFC 822 : 1982]
+
+  
+## Format des courriels - emails [RFC 822 : 1982]
 
 Un courriel se compose de deux parties: l'entête et le corps.
 
 Exemple de format d'un courriel:
 
-makefile
+```makefile
 
 From: cook@caramel.vn
 To: eat@kangourous.co.au
@@ -251,5 +287,6 @@ Subject: rue de Charonne
 
 Viens boire une Guiness ce soir
 au cafe de la plage
-
+```
+  
 -->
