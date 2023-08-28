@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T11:14:54.782Z
+date: 2023-08-28T11:24:36.143Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -152,8 +152,21 @@ Port standard : 25 (d'autres ports comme 587 sont aussi utilisés dans certains 
 
 ## Commnent s'établit une connexion/session SMTP ?
 
-La connexion ou session SMTP s'établit en suivant un protocole précis pour assurer la transmission d'emails :
+La connexion ou session SMTP s'établit en suivant un protocole précis et une suite de commandes pour assurer la transmission d'emails en utilisant le protocole de communication `TELNET`.
+
+### Format général d'une commande
+ - Une ligne de caractères ASCII (terminé par les 2 caractères <CRLF>)
+ - La ligne commence par un mot clef qui définit le type de la commande
+ - Certaines commandes sont optionnelles
+ - Cela peut être négocié lors de l'établissement
+ - Exemple: `HELO <serveur> <CRLF>`
+>  Remarque : insensible aux majuscules/minuscules
+>  Temporisateur :
+>  Par défaut 2 à 10 minutes en fonction des commandes
+{.is-info}
+
   
+### Etapes
 ## Tabs {.tabset}
 ### Simplifié
 
@@ -288,26 +301,11 @@ Réponse du serveur:
 221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
 ```
   
-## HALLO
-  
-2.3. Transmission des messages
+## Transmission des messages
 
 Format des e-mails : Entêtes et corps.
 MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
   
-## Comment communiquer avec le serveur SMTP ?
-  
-Format général d'une commande
- Une ligne de caractères ASCII (terminé par les 2 caractères <CRLF>)
- La ligne commence par un mot clef qui définit le type de la commande
- Certaines commandes sont optionnelles (cf. ESMTP)
- Cela peut être négocié lors de l'établissement
- Exemple:
- HELO <serveur> <CRLF>
- Remarque : insensible aux majuscules/minuscules
- Temporisateur :
- Par défaut 2 à 10 minutes en fonction des commandes
- Compatible avec la durée des temporisateurs de TCP
   
 ## Commandes
   
