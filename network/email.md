@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T11:48:39.231Z
+date: 2023-08-28T12:32:11.979Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -430,6 +430,9 @@ gc29pciBhdSBjYWbpIGRlIGxhIHBsYWdlDQ
 | image       | jpeg, png, gif |                 |
 | video       | mpeg, webm     |                 |
 | application | octet\-stream  |  Document en binaire               |
-| message     | external\-body |                 |
-| multipart   | mixed          |                 |
+| message     | external\-body |   Message sera téléchargé à la demande              |
+| multipart   | mixed          |  parties dans des formats divers               |
+
+>   Pour aller voir plus loin : https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+{.is-info}
 
