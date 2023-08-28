@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T09:12:09.836Z
+date: 2023-08-28T10:16:34.661Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -142,9 +142,46 @@ Un processus typique d'envoi d'e-mail se déroulerait comme suit:
 
  Ce processus garantit que les e-mails sont correctement acheminés à travers les nombreux systèmes et protocoles qui composent l'infrastructure de messagerie d'Internet.
 
+---
 
-<!--
-SMTP protocole de transport
+# SMTP | protocole de transport
+  
+Un protocole de communication utilisé pour transférer les e-mails entre les serveurs et, éventuellement, vers le client final.
+Histoire : Contexte de l'émergence du SMTP dans les premiers jours d'Internet.
+
+Port standard : 25 (d'autres ports comme 587 sont aussi utilisés dans certains contextes)
+Serveurs MX (Mail Exchange) : Serveurs dédiés à la réception des messages SMTP.
+
+  Sessions SMTP
+Processus d'établissement d'une connexion.
+Commandes SMTP de base : HELO, MAIL FROM, RCPT TO, DATA, QUIT.
+2.3. Transmission des messages
+
+Format des e-mails : Entêtes et corps.
+MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
+  
+  
+| **Commande**  | **Syntaxe**                                  | **Fonction**                                                                                    |
+|---------------|----------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **EHLO**      | EHLO <domain> \[<SP> <add\-param>\]          | Demande d'établissement d'une session de messagerie SMTP avec le serveur du domaine cité        |
+| **MAIL FROM** | MAIL FROM: <exp\-path> \[<SP> <add\-param>\] | Demande d'un envoi d'un message, Identification de l'expéditeur \(le chemin vers l'expéditeur\) |
+| **RCPT TO**   | RCPT TO: <dest\-path> \[<SP> <add\-param>\]  | Demande d'un envoi d'un message, Identification de l'expéditeur \(le chemin vers l'expéditeur\) |
+| **DATA**      | DATA                                         | Délimite le début du message                                                                    |
+| **\.**        | \.                                           | Délimite la fin du message                                                                      |
+| **QUIT**      | QUIT                                         | Demande de libération de la session                                                             |
+| **RESET**     | RESET                                        | Annulation des commandes précédentes \(d'envoi d'un message, par ex\.\)                         |
+| **HELP**      | HELP \[<string>\]                            | Le serveur retourne des informations utiles                                                     |
+| **HELO**      | HELO <domain>                                | Demande d'établissement d'une session de messagerie avec commandes \(obsolète\)                 |
+| **NOOP**      |                                              | "No operation"                                                                                  |
+| **SEND**      | SEND FROM <exp\-path>                        | Envoi d'un message au terminal \(obsolète\)                                                     |
+| **SOML**      | SOML FROM <exp\-path>                        | Envoi du message au terminal sinon au serveur responsable de la BAL \(obsolète\)                |
+| **SAML**      | SAML FROM <exp\-path>                        | Envoi du message au terminal et au serveur responsable de la BAL \(obsolète\)                   |
+| **VRFY**      | VRFY <string>                                | Vérification de la chaîne de caractères                                                         |
+| **EXPN**      | EXPN <string>                                | Expansion de la chaîne de caractères                                                            |
+| **TURN**      |                                              | Echange les rôles entre le client et le serveur                                                 |
+| **X\.\.\.**   |                                              | Commande étendue définie localement                                                             |
+
+  
 
 Format de l’entête et des champs des adresses électroniques, utilise le standard MIME pour le formatage du corps des messages.
 POP3 protocole de réception
