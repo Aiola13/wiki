@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-28T12:32:11.979Z
+date: 2023-08-29T04:23:13.408Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -301,25 +301,6 @@ Réponse du serveur:
 221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
 ```
   
-## Transmission des messages et Format des courriels - emails [RFC 822 : 1982]
-
-Un courriel se compose de deux parties: l'entête et le corps.
-
-Exemple de format d'un courriel:
-
-```makefile
-
-From: cook@caramel.vn
-To: eat@kangourous.co.au
-Subject: rue de Charonne
-
-Viens boire une Guiness ce soir
-au cafe de la plage
-```
-
-MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
-  
-  
 ## Commandes
   
 | **Commande**  | **Syntaxe**                                  | **Fonction**                                                                                    |
@@ -371,6 +352,37 @@ MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour 
 
 Les messages de l'application (SMTP, POP, IMAP) sont encapsulés en segments TCP, qui sont ensuite encapsulés en paquets IP, puis en trames Ethernet, et finalement en bits sur la couche physique. La notion de couches est importante dans la pile TCP/IP.-->
 
+ ## Transmission des messages et Format des courriels - emails [RFC 822 : 1982]
+
+Un courriel se compose de deux parties: l'entête et le corps.
+
+Exemple de format d'un courriel:
+
+```makefile
+
+From: cook@caramel.vn
+To: eat@kangourous.co.au
+Subject: rue de Charonne
+
+Viens boire une Guiness ce soir
+au cafe de la plage
+```
+  
+```makefile
+Delivered-To: gerard.florin@cnam.fr
+Date: Thu, 21 Mar 2023 15:15:39 +0100
+From: Cook <cook@caramel.vn>
+Organization: Kangoo
+X-Accept-Language: fr
+MIME-Version: 1.0
+To: eat@kangourous.co.au
+Cc: TRAVERSON Bruno <Bruno.Traverson@der.edfgdf.fr>
+Subject: Un premier retour sur le modèle  
+```
+
+MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
+  
+  
   
 # MIME | Multipurpose Internet Mail Extensions [RFC 2045-2046 : 1996]
   
