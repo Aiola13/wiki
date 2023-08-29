@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-29T04:25:45.223Z
+date: 2023-08-29T04:26:57.236Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -322,7 +322,8 @@ Réponse du serveur:
 | **EXPN**      | EXPN <string>                                | Expansion de la chaîne de caractères                                                            |
 | **TURN**      |                                              | Echange les rôles entre le client et le serveur                                                 |
 | **X\.\.\.**   |                                              | Commande étendue définie localement                                                             |
-
+{.dense}
+  
 ### Réponse SMTP
   
 | **Code** | **Signification**                                                           |
@@ -347,6 +348,7 @@ Réponse du serveur:
 | **552**  | Requested mail action aborted: exceeded storage allocation                  |
 | **354**  | Start mail input; end with <CRLF>\.<CRLF>                                   |
 | **554**  | Transaction failed                                   |  
+{.dense}
   
 <!--## Encapsulation d’un message
 
