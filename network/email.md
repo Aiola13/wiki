@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-29T04:26:57.236Z
+date: 2023-08-29T04:29:27.378Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -354,11 +354,14 @@ Réponse du serveur:
 
 Les messages de l'application (SMTP, POP, IMAP) sont encapsulés en segments TCP, qui sont ensuite encapsulés en paquets IP, puis en trames Ethernet, et finalement en bits sur la couche physique. La notion de couches est importante dans la pile TCP/IP.-->
 
- ## Transmission des messages et Format des courriels - emails [RFC 822 : 1982]
+## Transmission des messages et Format des courriels - emails [RFC 822 : 1982]
 
 Un courriel se compose de deux parties: l'entête et le corps.
 
 Exemple de format d'un courriel:
+
+## Tabs {.tabset}
+### Exemple 1
 
 ```makefile
 
@@ -369,7 +372,9 @@ Subject: rue de Charonne
 Viens boire une Guiness ce soir
 au cafe de la plage
 ```
-  
+
+### Exemple 2
+
 ```makefile
 Delivered-To: gerard.florin@cnam.fr
 Date: Thu, 21 Mar 2023 15:15:39 +0100
@@ -381,12 +386,12 @@ To: eat@kangourous.co.au
 Cc: TRAVERSON Bruno <Bruno.Traverson@der.edfgdf.fr>
 Subject: Un premier retour sur le modèle  
 ```
-
-MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc.
   
   
   
 # MIME | Multipurpose Internet Mail Extensions [RFC 2045-2046 : 1996]
+  
+<!-- MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc. -->
   
 Le MIME, acronyme de **Multipurpose Internet Mail Extensions**, est une norme qui a été développée dans le but d'étendre les capacités des e-mails pour permettre le transport de contenus autres que du texte brut ASCII, comme des fichiers binaires, des images et des caractères non-ASCII. 
 
@@ -446,6 +451,7 @@ gc29pciBhdSBjYWbpIGRlIGxhIHBsYWdlDQ
 | application | octet\-stream  |  Document en binaire               |
 | message     | external\-body |   Message sera téléchargé à la demande              |
 | multipart   | mixed          |  parties dans des formats divers               |
+{.dense}
 
 >   Pour aller voir plus loin : https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
 {.is-info}
