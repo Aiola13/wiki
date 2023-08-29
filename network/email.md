@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-29T04:23:13.408Z
+date: 2023-08-29T04:25:45.223Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -300,8 +300,8 @@ Commande utilisateur: QUIT
 Réponse du serveur:
 221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
 ```
-  
-## Commandes
+## Tabs {.tabset}
+### Commandes
   
 | **Commande**  | **Syntaxe**                                  | **Fonction**                                                                                    |
 |---------------|----------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -323,7 +323,7 @@ Réponse du serveur:
 | **TURN**      |                                              | Echange les rôles entre le client et le serveur                                                 |
 | **X\.\.\.**   |                                              | Commande étendue définie localement                                                             |
 
-## Réponse SMTP
+### Réponse SMTP
   
 | **Code** | **Signification**                                                           |
 |----------|-----------------------------------------------------------------------------|
