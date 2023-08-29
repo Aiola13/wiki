@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-29T04:29:27.378Z
+date: 2023-08-29T04:34:52.359Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -376,15 +376,15 @@ au cafe de la plage
 ### Exemple 2
 
 ```makefile
-Delivered-To: gerard.florin@cnam.fr
+Delivered-To: hello@kangourous.co.au
 Date: Thu, 21 Mar 2023 15:15:39 +0100
 From: Cook <cook@caramel.vn>
 Organization: Kangoo
 X-Accept-Language: fr
 MIME-Version: 1.0
 To: eat@kangourous.co.au
-Cc: TRAVERSON Bruno <Bruno.Traverson@der.edfgdf.fr>
-Subject: Un premier retour sur le modèle  
+Cc: ALBANESE Anthony  <anthony.albanese@gov.au>
+Subject: rue de Charonne
 ```
   
   
