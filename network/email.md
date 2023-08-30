@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-29T04:34:52.359Z
+date: 2023-08-30T12:59:41.537Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -300,6 +300,85 @@ Commande utilisateur: QUIT
 Réponse du serveur:
 221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
 ```
+
+### Exemple 2
+Installer OPENSSL : slproweb.com/products/Win32OpenSSL.html
+  
+```telnet
+Étape 1: Connexion au serveur SMTP
+Commande utilisateur: .\openssl s_client -starttls smtp -connect smtp-mail.outlook.com:587
+
+Réponse du serveur: 
+220 smtp-mail.outlook.com ESMTP x123sm2131234pfa.123 - gsmtp
+
+---
+
+Étape 2: Salutation (HELO/EHLO)
+Commande utilisateur: EHLO outlook.com
+
+Réponse du serveur:
+250-smtp-mail.outlook.com at your service
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+---
+
+Étape 3: Authentification
+(Note: Puisque la connexion est sécurisée, les commandes sont simplifiées pour l'illustration. Dans une vraie situation, l'utilisateur aurait à fournir des informations d'authentification encodées en base64.)
+Commande utilisateur: AUTH LOGIN
+
+Réponse du serveur:
+334 VXNlcm5hbWU6
+
+Commande utilisateur: [Votre nom d'utilisateur encodé en base64]
+
+Réponse du serveur:
+334 UGFzc3dvcmQ6
+
+Commande utilisateur: [Votre mot de passe encodé en base64]
+
+Réponse du serveur:
+235 2.7.0 Accepted
+
+---
+
+Étape 4: Envoi de l'e-mail
+Commande utilisateur: MAIL FROM:<votre@email.com>
+
+Réponse du serveur:
+250 2.1.0 OK x123sm2131234pfa.123 - gsmtp
+
+Commande utilisateur: RCPT TO:<destinataire@email.com>
+
+Réponse du serveur:
+250 2.1.5 OK x123sm2131234pfa.123 - gsmtp
+
+Commande utilisateur: DATA
+
+Réponse du serveur:
+354  Go ahead x123sm2131234pfa.123 - gsmtp
+
+Commande utilisateur:
+Subject: Test via Telnet
+
+Ceci est un test.
+
+.
+
+---
+
+Étape 5: Quitter la session SMTP
+Commande utilisateur: QUIT
+
+Réponse du serveur:
+221 2.0.0 closing connection x123sm2131234pfa.123 - gsmtp
+```
+  
 ## Tabs {.tabset}
 ### Commandes
   
