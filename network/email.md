@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-30T12:59:41.537Z
+date: 2023-08-30T13:00:34.937Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -303,6 +303,7 @@ Réponse du serveur:
 
 ### Exemple 2
 Installer OPENSSL : slproweb.com/products/Win32OpenSSL.html
+Puis via PowerShell ou le cmd, vous placer dans le dossier OpenSSL
   
 ```telnet
 Étape 1: Connexion au serveur SMTP
