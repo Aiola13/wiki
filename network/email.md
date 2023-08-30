@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-30T13:05:02.371Z
+date: 2023-08-30T13:36:05.133Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -304,6 +304,7 @@ Réponse du serveur:
 ### Exemple 2
 Installer OPENSSL : slproweb.com/products/Win32OpenSSL.html
 Puis via PowerShell ou le cmd, vous placer dans le dossier OpenSSL
+Ou via winget avec la commande : `winget install ShiningLight.OpenSSL`
   
 ```telnet
 Étape 1: Connexion au serveur SMTP
