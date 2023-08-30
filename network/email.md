@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2023-08-30T13:00:34.937Z
+date: 2023-08-30T13:05:02.371Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -307,7 +307,7 @@ Puis via PowerShell ou le cmd, vous placer dans le dossier OpenSSL
   
 ```telnet
 Étape 1: Connexion au serveur SMTP
-Commande utilisateur: .\openssl s_client -starttls smtp -connect smtp-mail.outlook.com:587
+Commande utilisateur: .\openssl s_client -starttls smtp -connect smtp-mail.outlook.com:587 -ign_eof
 
 Réponse du serveur: 
 220 smtp-mail.outlook.com ESMTP x123sm2131234pfa.123 - gsmtp
