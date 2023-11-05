@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T14:23:49.293Z
+date: 2023-11-05T14:28:07.566Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -95,6 +95,27 @@ Dans d'autres langages (en C par exemple), il faut coder ces différentes étape
 True / False  # Booléen                        / bool
 None          # ... "rien" / aucun (similar à `null` dans d'autres langages)
 ```
+
+# Conversion de type
+
+> La conversion de type, souvent appelée "cast" ou "transtypage", consiste à changer le type d'une variable ou d'une valeur en un autre type.
+{.is-success}
+
+> Python est un langage à typage dynamique, ce qui signifie que le type des variables est déterminé à l'exécution et non à l'avance. Cependant, Python est aussi fortement typé, ce qui implique que le type d'une variable est important et que Python ne convertira pas automatiquement les types de manière inattendue.
+{.is-warning}
+
+
+```python
+int("3")      -> 3
+str(3)        -> "3"
+float(3)      -> 3.0
+int(3.14)     -> 3
+str(3.14)     -> "3.14"
+float("3.14") -> 3.14
+int(True)     -> 1
+int("trois")  -> Erreur / Exception
+```
+
 # Nommage
 
 > En Python, les noms de variables peuvent être composés de lettres majuscules (A-Z), minuscules (a-z), chiffres (0-9) et du caractère souligné (_). 
