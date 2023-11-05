@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2023-02-17T00:02:59.187Z
+date: 2023-11-05T11:04:25.881Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T23:58:27.349Z
@@ -139,6 +139,23 @@ Les assertions permettent d’expliciter et de vérifier des suppositions faites
 | `while condition` | Répète un jeu d’instruction tant que `condition` est vraie |
 | `break` | Quitte immédiatement une boucle |
 | `continue` | Passe immédiatement à l’itération suivante d’une boucle |
+
+```python
+# Exemple avec une liste
+for fruit in ['pomme', 'banane', 'mangue']:
+    print(fruit)
+
+# Exemple avec la fonction range()
+for i in range(5):  # Itère de 0 à 4
+    print(i)
+    
+# Exemple avec une condition
+i = 0
+while i < 5:
+    print(i)
+    i += 1  # Très important d'incrémenter i pour éviter une boucle infinie
+```
+
 
 ### Structures de données
 
