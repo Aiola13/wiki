@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2023-11-05T11:04:25.881Z
+date: 2023-11-05T11:06:30.598Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T23:58:27.349Z
@@ -177,6 +177,37 @@ while i < 5:
 | `L.insert(i, e)` | Insère `e` à la position `i` dans la liste `L` |
 | `chaine.join(L)` | Produit une string à partir de `L` en intercallant la string `chaine` entre les elements |
 
+```python
+# Création et manipulation de listes
+L = ["a", 2, 3.14]  # Création d'une liste
+print(L[1])          # Accède au deuxième élément de la liste, résultat: 2
+L[1] = "b"           # Remplacement du deuxième élément
+L.append(4)          # Ajout d'un élément à la fin de la liste
+print(L)             # Affiche la liste modifiée
+
+# Création et manipulation d'ensembles
+S = {"a", "b", 3}    # Création d'un ensemble
+S.add("c")           # Ajout d'un élément à l'ensemble
+print(S)             # Affiche l'ensemble, l'ordre des éléments peut varier
+
+# Création et manipulation de dictionnaires
+D = {"a": 2, "b": 4} # Création d'un dictionnaire
+D["c"] = 6           # Ajout d'une nouvelle paire clé-valeur
+print(D["a"])        # Accède à la valeur associée à la clé "a", résultat: 2
+print(D)             # Affiche le dictionnaire
+
+# Création et manipulation de tuples
+T = (1, 2, 3)        # Création d'un tuple
+print(T[0])          # Accède au premier élément du tuple, résultat: 1
+# T[0] = 4           # Cela produirait une erreur car les tuples sont immuables
+
+# Utilisation de la méthode join sur une liste
+chaine = "-"
+L = ["a", "b", "c"]
+resultat = chaine.join(L)  # Résultat: "a-b-c"
+print(resultat)
+
+```
 ### Fichiers
 
 Ouvrir et lire un fichier :
