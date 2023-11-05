@@ -2,7 +2,7 @@
 title: Les instructions
 description: 
 published: 1
-date: 2023-11-05T14:15:38.293Z
+date: 2023-11-05T14:18:00.601Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-05T13:57:42.448Z
@@ -22,10 +22,20 @@ dateCreated: 2023-11-05T13:57:42.448Z
 |  `*`  |            Multiplication             |
 |  `/`  |               Division                |
 |  `%`  | Modulo (reste de la division entière) |
+|  `**`  | Exposant |
+
+```python
+2 + 3   # Addition
+2 - 3   # Soustraction
+2 * 3   # Multiplication
+2 / 3   # Division
+2 % 3   # Modulo
+2 ** 3  # Exponentiation
+```
 
 ### La concaténation de chaînes
 
-Le « . » (le point)
+Le « + »
 
 ### Les opérateurs logiques (et binaires)
 
