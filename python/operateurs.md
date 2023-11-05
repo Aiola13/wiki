@@ -2,7 +2,7 @@
 title: Les instructions
 description: 
 published: 1
-date: 2023-11-05T14:18:36.576Z
+date: 2023-11-05T14:22:28.202Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-05T13:57:42.448Z
@@ -36,6 +36,18 @@ dateCreated: 2023-11-05T13:57:42.448Z
 ### La concaténation de chaînes
 
 Le « + »
+
+```python
+# Déclaration de deux chaînes de caractères
+premiere_chaine = "Bonjour, "
+deuxieme_chaine = "le monde!"
+
+# Concaténation des chaînes
+chaine_concatenee = premiere_chaine + deuxieme_chaine
+
+# Affichage du résultat
+print(chaine_concatenee)
+```
 
 ### Les opérateurs logiques (et binaires)
 
@@ -80,10 +92,10 @@ Le « + »
 ![regles-priorite-operateurs_(small).png](/images/php/regles-priorite-operateurs_(small).png)
 
 
-Ex.1.1 Calculs dans l’interpréteur
+# Ex.1.1 Calculs dans l’interpréteur
 À l’aide de python, calculer le résultat des opérations suivantes :
-567×72
-33⁴
-98.2/6
-((7×9)⁴)/6
+- 567×72
+- 33⁴
+- 98.2/6
+- ((7×9)⁴)/6
 vrai et non (faux ou non vrai)
