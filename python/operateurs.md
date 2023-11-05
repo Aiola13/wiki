@@ -2,7 +2,7 @@
 title: Les instructions
 description: 
 published: 1
-date: 2023-11-05T14:22:28.202Z
+date: 2023-11-05T14:22:35.700Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-05T13:57:42.448Z
@@ -98,4 +98,4 @@ print(chaine_concatenee)
 - 33⁴
 - 98.2/6
 - ((7×9)⁴)/6
-vrai et non (faux ou non vrai)
+- vrai et non (faux ou non vrai)
