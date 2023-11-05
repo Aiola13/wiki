@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T11:27:06.872Z
+date: 2023-11-05T11:29:11.644Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -29,6 +29,7 @@ print(reponse)
 > Pour l'ordinateur, il s'agit en fait d'une adresse, c'est-à-dire d'une zone particulière de la mémoire, où une valeur est stockée.
 {.is-info}
 
+Pour notre exemple ci-dessus
 ![memory2.png](/images/python/memory2.png)
 
 ![schema_memoire_ram_avec_donnees.jpg](/images/python/schema_memoire_ram_avec_donnees.jpg){.align-center}
@@ -42,9 +43,16 @@ En Python, la déclaration d'une variable et son initialisation (cad la premièr
 ```
 
 Précision de la ligne 1 : 
-- Python a « deviné » que la variable était un entier. On dit que Python est un langage au typage dynamique.
+- Déclaration implicite, Python a « deviné » que la variable était un entier. On dit que Python est un langage au typage dynamique.
 - Python a alloué (réservé) l'espace en mémoire pour y accueillir un entier. Chaque type de variable prend plus ou moins d'espace en mémoire. Python a aussi fait en sorte qu'on puisse retrouver la variable sous le nom x.
 - Enfin, Python a assigné la valeur 2 à la variable x.
+
+```python
+x = 42     # déclare (implicitement) une variable et assigne une valeur
+x = 3.14   # ré-assigne la variable avec une autre valeur
+y = x + 2  # déclare une autre variable y, à partir du contenu de x
+print(y)   # affichage du contenu de y
+```
 
 Dans d'autres langages (en C par exemple), il faut coder ces différentes étapes une par une. Python étant un langage dit de haut niveau, la simple instruction x = 2 a suffi à réaliser les 3 étapes en une fois !
 
