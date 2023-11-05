@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T11:29:11.644Z
+date: 2023-11-05T11:34:30.350Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -75,4 +75,28 @@ Dans d'autres langages (en C par exemple), il faut coder ces différentes étape
 >>> d
 'lion'
 
+```
+
+# Nommage
+
+> En Python, les noms de variables peuvent être composés de lettres majuscules (A-Z), minuscules (a-z), chiffres (0-9) et du caractère souligné (_). 
+{.is-success}
+
+> Cependant, il est important de se rappeler que Python distingue les majuscules des minuscules, ce qui signifie que "toto" et "Toto" seraient considérés comme deux variables distinctes. De plus, un nom de variable ne doit jamais commencer par un chiffre.
+{.is-warning}
+
+
+```python 
+# Exemple de variables valides
+mon_nom = "John"
+age_du_capitaine = 52
+_nombre2 = 300
+
+# Exemples de sensibilité à la casse
+Toto = "Un prénom"
+toto = "Un autre prénom différent de Toto"
+
+# Exemples de noms de variables invalides (ils ne seront pas exécutés)
+# 2nombre = 500  # Cela va provoquer une erreur car ça commence par un chiffre
+# mon-nom = "John"  # Cela va provoquer une erreur car il contient un tiret
 ```
