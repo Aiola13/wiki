@@ -2,16 +2,13 @@
 title: Les instructions
 description: 
 published: 1
-date: 2023-11-05T13:57:42.448Z
+date: 2023-11-05T14:15:38.293Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-05T13:57:42.448Z
 ---
 
 # Les instructions
-
-Pour plus d'informations, Merci de vous rendre dans le _ComprendreAlgorithmique_.
-Ici ce ne sera qu'un simple rappel avec les spécificités du PHP.
 
 ## Les opérateurs :
 
