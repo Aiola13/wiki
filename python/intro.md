@@ -2,7 +2,7 @@
 title: Introduction
 description: 
 published: 1
-date: 2023-02-13T15:31:36.828Z
+date: 2023-11-05T10:52:31.577Z
 tags: intro, introduction
 editor: markdown
 dateCreated: 2023-01-16T11:45:51.296Z
@@ -35,9 +35,9 @@ Pourquoi Python :
 - Il est **multi-plateforme**, il fonctionne sur la quasi totalité des systèmes d'exploitations (Windows, Mac OS X, Linux, Android ...) et machines (Raspberry Pi jusqu'aux supercalculateurs)
 - Il est **gratuit** et **Open Source**. Vous pouvez l'installer sur autant d'ordinateurs que vous voulez (même sur votre téléphone !)
 - C'est un **langage de haut niveau**. Il demande relativement peu de connaissance sur le fonctionnement d'un ordinateur pour être utilisé
-- C'est un **langage interprété**. Un script Python n'a pas besoin d'être compilé pour être exécuté, contrairement à des langages comme le C ou le C++
+- C'est un **langage interprété**. Un script Python n'a pas besoin d'être compilé pour être exécuté, contrairement à des langages comme le C ou le C++. Donc très utile pour le prototypage rapide
 - Il est **orienté objet**. C'est-à-dire qu'il est possible de concevoir en Python des entités qui miment celles du monde réel (un atome, un personnage etc.)
-- Il est relativement **simple** à prendre en main
+- Il est relativement **simple** à prendre en main avec un syntaxe légère et flexible (typage dynamique)
 - Il est très utilisé !!! (Google, NSA, Youtube, Netflix, NASA ...)
 
 ## Installation et configuration de Python
