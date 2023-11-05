@@ -2,7 +2,7 @@
 title: Python
 description: 
 published: 1
-date: 2023-01-29T20:54:03.044Z
+date: 2023-11-05T10:59:46.005Z
 tags: python
 editor: markdown
 dateCreated: 2023-01-16T10:29:56.262Z
@@ -14,4 +14,5 @@ dateCreated: 2023-01-16T10:29:56.262Z
 ## Plan de cours
 - [Introduction *Pythie, l'oracle d'Apllon à Delphes*](/python/intro)
 - [Les variables *Les messagers de Zeus ⚡*](/python/variables)
+- [Mémo *Juste un mémo sur le python*](/python/memo)
 {.links-list}
