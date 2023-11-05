@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T11:41:39.324Z
+date: 2023-11-05T14:23:49.293Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -88,7 +88,13 @@ Dans d'autres langages (en C par exemple), il faut coder ces différentes étape
 | Dictionnaire (dict)| Paires clé-valeur            | `{'nom': 'Alice', 'age': 30}`|
 | Ensemble (set)     | Ensemble de valeurs uniques  | `{1, 2.3, 'python'}`       |
 
-
+```python
+42            # Entier / integer               / int
+3.1415        # Réel                           / float
+"Marius"        # Chaîne de caractère (string)   / str
+True / False  # Booléen                        / bool
+None          # ... "rien" / aucun (similar à `null` dans d'autres langages)
+```
 # Nommage
 
 > En Python, les noms de variables peuvent être composés de lettres majuscules (A-Z), minuscules (a-z), chiffres (0-9) et du caractère souligné (_). 
