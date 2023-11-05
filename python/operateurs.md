@@ -2,7 +2,7 @@
 title: Les instructions
 description: 
 published: 1
-date: 2023-11-05T14:18:00.601Z
+date: 2023-11-05T14:18:36.576Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-05T13:57:42.448Z
