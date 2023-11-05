@@ -2,11 +2,22 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-02-13T19:04:08.369Z
+date: 2023-11-05T11:25:19.322Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
 ---
+
+```python
+message = "Je connais la réponse à l'univers, la vie et le reste"
+reponse = 6 * 7
+
+print(message)
+print(reponse)
+```
+
+![sorcery.jpg](/images/python/sorcery.jpg)
+
 
 # Définition
 
