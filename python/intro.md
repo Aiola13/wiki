@@ -2,7 +2,7 @@
 title: Introduction
 description: 
 published: 1
-date: 2023-11-05T10:52:31.577Z
+date: 2023-11-05T11:17:34.296Z
 tags: intro, introduction
 editor: markdown
 dateCreated: 2023-01-16T11:45:51.296Z
@@ -42,7 +42,7 @@ Pourquoi Python :
 
 ## Installation et configuration de Python
 
-> Pour l'installation sur Windows vous pouvez passer par l'installateur officiel via le site [python.org](https://python.org), ou en utilisant la distribution [Miniconda](https://docs.conda.io/en/latest/miniconda.html) qui intégre tout le nécessaire pour l'utilisation de Python.
+> Pour l'installation sur Windows vous pouvez passer par l'installateur officiel via le site [python.org](https://python.org), via un gestionnaire de paquet tel que [Chocolatey](https://chocolatey.org) ou [Winget](https://github.com/microsoft/winget-cli), ou encore en utilisant la distribution [Miniconda](https://docs.conda.io/en/latest/miniconda.html) qui intégre tout le nécessaire pour l'utilisation de Python.
 {.is-success}
 
 
@@ -52,11 +52,12 @@ Pourquoi Python :
 
 Résumé : 
 - Linux : Inclus
-- OSX : Inclus
+- OSX : Inclus (à mettre à jour depuis python.org ou via homebrew)
 - Windows : Installation sur python.org
 - Windows 10 & 11 : Fais parti de WSL (Windows Subsystem Linux)🎉 
 - Intégré sur les cartes type Raspberry Pi, Banana Pi…
 
+Généralement il faut lancer python3 explicitement ! (et non python car sinon cela lance python2) pour utiliser python3.
 
 ## Introduction au shell
 
@@ -73,18 +74,20 @@ Un shell possède toujours une invite de commande, c'est-à-dire un message qui 
 
 Par exemple, si on vous demande de lancer l'instruction suivante :
 ```python
-$ python
+$ python3
 ```
 
-il faudra taper seulement python sans le $ ni l'espace après le $.
+il faudra taper seulement python3 sans le $ ni l'espace après le $.
 
 ## Êtes-vous prêt à vous faire piquer ? Premier contact !
 
 Le Python est un langage interprété, c'est-à-dire que chaque ligne de code est lue puis interprétée afin d'être exécutée par l'ordinateur. 
 
+### En interactif
+
 Pour Windows :
 ```python
-PS C:\Users\Lisa> python
+PS C:\Users\Lisa> python3
 Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -93,7 +96,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Pour Unix : 
 ```python
 Lisa@LISA:~
-$ python
+$ python3
 Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
