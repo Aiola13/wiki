@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T11:36:25.357Z
+date: 2023-11-05T11:41:39.324Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -76,6 +76,18 @@ Dans d'autres langages (en C par exemple), il faut coder ces différentes étape
 'lion'
 
 ```
+
+| Type               | Nom                          | Exemple                    |
+|--------------------|------------------------------|----------------------------|
+| Entier       | int, integer                | `42`, `-7`                 |
+| Flottant (Réel)   | Nombre à virgule flottante, float   | `3.14`, `-0.001`           |
+| Chaîne (str)       | Chaîne de caractères, string, str       | `"Bonjour"`, `'Python'`    |
+| Booléen (bool)     | Valeur de vérité, bool, boolean            | `True`, `False`            |
+| Liste (list)       | Collection modifiable        | `[1, 'deux', 3.0]`         |
+| Tuple (tuple)      | Collection immuable          | `(1, 'deux', 3.0)`         |
+| Dictionnaire (dict)| Paires clé-valeur            | `{'nom': 'Alice', 'age': 30}`|
+| Ensemble (set)     | Ensemble de valeurs uniques  | `{1, 2.3, 'python'}`       |
+
 
 # Nommage
 
