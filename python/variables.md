@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T14:28:07.566Z
+date: 2023-11-05T14:31:46.161Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -101,7 +101,7 @@ None          # ... "rien" / aucun (similar à `null` dans d'autres langages)
 > La conversion de type, souvent appelée "cast" ou "transtypage", consiste à changer le type d'une variable ou d'une valeur en un autre type.
 {.is-success}
 
-> Python est un langage à typage dynamique, ce qui signifie que le type des variables est déterminé à l'exécution et non à l'avance. Cependant, Python est aussi fortement typé, ce qui implique que le type d'une variable est important et que Python ne convertira pas automatiquement les types de manière inattendue.
+> Python est un langage à typage dynamique, ce qui signifie que le type des variables est déterminé à l'exécution et non à l'avance. Cependant, Python est aussi fortement typé, ce qui implique que le type d'une variable est important et que Python ne convertira pas automatiquement les types de manière inattendue (conversion explicite vs implicite)
 {.is-warning}
 
 
@@ -140,9 +140,20 @@ toto = "Un autre prénom différent de Toto"
 # mon-nom = "John"  # Cela va provoquer une erreur car il contient un tiret
 ```
 
+# Interactivité basique
+
+Dans un terminal il est possible de demander une information à l’utilisateur avec `input(“message”).
+
+```python
+reponse = input("Combien font 6 fois 7 ?")
+```
+
+> ce que renvoie input() est une chaîne de caractère !
+{.is-warning}
 
 
+# Résumé
 
--Caractères autorisés : caractères alphanumériques (a-zA-Z0-9) et _.
--Les noms sont sensibles à la casse : toto n’est pas la même chose que Toto!
--(Sans commencer par un chiffre)
+- Caractères autorisés : caractères alphanumériques (a-zA-Z0-9) et _.
+- Les noms sont sensibles à la casse : toto n’est pas la même chose que Toto!
+- (Sans commencer par un chiffre)
