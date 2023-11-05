@@ -2,7 +2,7 @@
 title: Les variables
 description: 
 published: 1
-date: 2023-11-05T11:34:30.350Z
+date: 2023-11-05T11:36:25.357Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T19:04:08.369Z
@@ -59,10 +59,10 @@ Dans d'autres langages (en C par exemple), il faut coder ces différentes étape
 # Les types de variables
 
 ```python=
->>> y = 3.14
+>>> y = 3.14 # Réel | Float
 >>> y
 3.14
->>> a = "bonjour"
+>>> a = "bonjour" # Chaîne de caractères | String
 >>> a
 'bonjour'
 >>> b = 'salut'
@@ -100,3 +100,10 @@ toto = "Un autre prénom différent de Toto"
 # 2nombre = 500  # Cela va provoquer une erreur car ça commence par un chiffre
 # mon-nom = "John"  # Cela va provoquer une erreur car il contient un tiret
 ```
+
+
+
+
+-Caractères autorisés : caractères alphanumériques (a-zA-Z0-9) et _.
+-Les noms sont sensibles à la casse : toto n’est pas la même chose que Toto!
+-(Sans commencer par un chiffre)
