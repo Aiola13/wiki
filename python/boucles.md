@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T20:51:39.970Z
+date: 2023-11-06T20:53:20.273Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -48,7 +48,7 @@ while i < 5:  # La boucle s'exécute tant que i est inférieur à 5
 
 ### Définition
 
-`while <condition>` : Continue à exécuter un bloc de code tant qu'une condition est vraie. . C’est une boucle simple qui teste à chaque tour (avec une sorte de if) si on doit continuer de boucler.
+`for ...` : Utilisée pour parcourir les éléments d'une séquence (comme une liste, un tuple ou une chaîne de caractères) dans l'ordre où ils apparaissent.
 
 
 ### Syntaxe
@@ -63,7 +63,6 @@ while condition:
 
 
 ### Exemple
-
 
 ```python
 i = 0
