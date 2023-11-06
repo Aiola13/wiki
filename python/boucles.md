@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T20:55:16.471Z
+date: 2023-11-06T20:56:01.381Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -63,6 +63,13 @@ for element in sequence:
 
 
 ### Exemple
+
+```python
+ma_liste = [7, 2, -5, 4]
+
+for entier in ma_liste:
+    print(entier)
+```
 
 ```python
 for i in range(5):  # i prendra les valeurs de 0 à 4
