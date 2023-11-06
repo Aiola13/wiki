@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:49:04.289Z
+date: 2023-11-06T21:51:36.117Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -147,7 +147,24 @@ somme = ajouter_deux_nombres(3, 4)
 print(somme)  # Cela va afficher 7
 ```
 
+# Éléments de syntaxe
 
+## Les arguments
+
+## Les variables locales
+
+## Le return
+
+
+
+
+
+
+
+
+
+
+---
 
 La fonction ajouter_deux_nombres prend deux arguments, les ajoute, et retourne la somme. Vous n'avez pas besoin de savoir comment elle calcule la somme, tout ce qui compte c'est qu'elle vous donne le bon résultat.
 
