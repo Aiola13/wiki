@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:44:31.874Z
+date: 2023-11-06T21:45:09.068Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -112,6 +112,8 @@ def volume_cylindre(rayon, hauteur):
 V1 = volume_cylindre(6, 4)   # -> A4 vaut (environ) 452
 ```
 
+
+# Comment écrire une fonction
 
 ```python
 
