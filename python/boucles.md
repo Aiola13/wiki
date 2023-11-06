@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T21:15:41.615Z
+date: 2023-11-06T21:16:39.261Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
