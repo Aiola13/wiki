@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T21:07:24.678Z
+date: 2023-11-06T21:15:41.615Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -119,3 +119,17 @@ for i in range(0,10):
 
 # Notion d'itérateur
 
+## Définition
+
+Un itérateur en Python est un objet qui permet de parcourir un conteneur, notamment des structures de données telles que les listes, tuples, dictionnaires et ensembles. C'est une abstraction qui prend en charge le protocole d'itération, qui consiste en les méthodes __iter__() et __next__().
+
+La méthode __iter__() est appelée sur l'objet conteneur pour obtenir un itérateur de celui-ci.
+La méthode __next__() est appelée sur l'itérateur pour obtenir le prochain élément du conteneur. Lorsqu'il n'y a plus d'éléments à parcourir, __next__() déclenche une exception StopIteration pour signaler la fin de l'itération.
+
+Les itérateurs sont utilisés implicitement par les boucles for pour réaliser des itérations sur des collections sans avoir besoin de connaître la structure sous-jacente ni la manière dont les éléments sont stockés ou liés entre eux.
+
+## Métaphore
+
+Imaginons une boîte de chocolats avec des compartiments. Chaque compartiment contient un chocolat différent. Vous voulez les goûter tous, mais vous ne savez pas combien il y en a ni comment ils sont organisés à l'intérieur.
+
+Un itérateur serait comme un ami qui connaît parfaitement la boîte. Vous lui dites simplement "donne-moi le prochain chocolat", et il sait exactement où mettre la main pour vous en offrir un nouveau, jusqu'à ce qu'il n'y en ait plus. Vous n'avez pas besoin de savoir combien de compartiments il y a ni où ils se trouvent; votre ami s'occupe de tout. En Python, la boucle for joue le rôle de cet ami, parcourant chaque élément de la collection sans que vous ayez à gérer les détails.
