@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T20:53:20.273Z
+date: 2023-11-06T20:55:16.471Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -54,20 +54,17 @@ while i < 5:  # La boucle s'exécute tant que i est inférieur à 5
 ### Syntaxe
 
 ```python
-while condition:
-    # Bloc de code à exécuter tant que la condition est vraie
+for element in sequence:
+    # Bloc de code à exécuter pour chaque élément
 ```
 
-> Avant chaque tour de boucle, Python évalue la condition. Si elle est True, le code sous la boucle est exécuté. Si elle est False, la boucle s'arrête.
+> Chaque fois que la boucle tourne, element prend la valeur du prochain élément dans sequence, et le bloc de code sous la boucle est exécuté.
 {.is-info}
 
 
 ### Exemple
 
 ```python
-i = 0
-while i < 5:  # La boucle s'exécute tant que i est inférieur à 5
+for i in range(5):  # i prendra les valeurs de 0 à 4
     print(i)
-    i += 1  # Très important d'ajouter une opération qui change la condition
-
 ```
