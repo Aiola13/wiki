@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:46:18.490Z
+date: 2023-11-06T21:47:26.387Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -125,6 +125,20 @@ V1 = volume_cylindre(6, 4)   # -> A4 vaut (environ) 452
 def ajouter_deux_nombres(nombre1, nombre2):
 ```
 
-```python
+## Corps de la fonction
 
+> Ensuite, vous écrivez le corps de la fonction : ce qu'elle doit faire avec ces arguments. Ici, nous voulons ajouter deux nombres.
+{.is-success}
+
+
+```python
+    resultat = nombre1 + nombre2
+    return resultat
 ```
+
+## Utilisation de la fonction
+
+> Après avoir défini la fonction, vous pouvez l'utiliser autant de fois que vous le souhaitez en l'appelant par son nom et en lui passant des arguments.
+> 
+{.is-success}
+
