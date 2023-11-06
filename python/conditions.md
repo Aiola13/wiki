@@ -2,7 +2,7 @@
 title: Instructions conditionnelles
 description: 
 published: 1
-date: 2023-11-06T20:33:12.192Z
+date: 2023-11-06T20:34:07.027Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:32:54.403Z
@@ -10,9 +10,11 @@ dateCreated: 2023-11-06T20:32:54.403Z
 
 # Les instructions conditionnelles (Structures alternatives)
 
+## Définition
 > Les instructions conditionnelles, souvent appelées "conditions", sont comme des embranchements sur une route pour un programme : elles permettent à votre code de prendre des décisions. En Python, ces décisions se basent sur la vérité ou la fausseté d'une expression, ce qu'on appelle une condition.
 {.is-success}
 
+## Syntaxe générale
 
 La structure la plus basique d'une condition en Python utilise le mot-clé if. Voici comment cela fonctionne :
 
