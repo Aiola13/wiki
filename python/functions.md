@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:45:09.068Z
+date: 2023-11-06T21:46:18.490Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -114,6 +114,16 @@ V1 = volume_cylindre(6, 4)   # -> A4 vaut (environ) 452
 
 
 # Comment écrire une fonction
+
+## Définition de la fonction
+
+> Vous commencez par définir votre fonction avec le mot-clé **def**, suivi du nom de la fonction et des parenthèses qui peuvent contenir des arguments.
+{.is-success}
+
+
+```python
+def ajouter_deux_nombres(nombre1, nombre2):
+```
 
 ```python
 
