@@ -2,19 +2,17 @@
 title: Instructions conditionnelles
 description: 
 published: 1
-date: 2023-11-06T20:34:07.027Z
+date: 2023-11-06T20:40:30.893Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:32:54.403Z
 ---
 
-# Les instructions conditionnelles (Structures alternatives)
-
-## Définition
+# Définition
 > Les instructions conditionnelles, souvent appelées "conditions", sont comme des embranchements sur une route pour un programme : elles permettent à votre code de prendre des décisions. En Python, ces décisions se basent sur la vérité ou la fausseté d'une expression, ce qu'on appelle une condition.
 {.is-success}
 
-## Syntaxe générale
+# Syntaxe générale
 
 La structure la plus basique d'une condition en Python utilise le mot-clé if. Voici comment cela fonctionne :
 
@@ -51,7 +49,7 @@ else:
 > Vous pouvez ajouter autant de elif que nécessaire entre if et else.
 {.is-warning}
 
-## Exemple
+# Exemple
 
 ```python
 age = 18
@@ -62,6 +60,50 @@ elif age == 18:
 else:
     print("Vous êtes majeur.")
 ```
+
+
+# Lien avec les booléens
+
+> Les conditions comme age < 18 sont en fait transformées en booléen lorsque la ligne est interprétée.
+{.is-info}
+
+```python
+a_est_egal_a_18 = ( age == 18)
+
+if age_est_egal_a_18:
+    [...]
+else:
+    [...]
+```
+
+# Écrire des conditions
+
+```python
+angle == pi      # Égalité
+angle != pi      # Différence
+angle > pi       # Supérieur
+angle >= pi      # Supérieur ou égal
+angle < pi       # Inférieur
+angle <= pi      # Inférieur ou égal
+```
+
+# Combiner des conditions
+
+```python
+x = 2
+
+print("x > 0:", x > 0) # vrai
+print("x > 0 and x == 2:", x > 0 and x == 2) # vrai et vrai donne vrai
+print("x > 0 and x == 1:", x > 0 and x == 2) # vrai et faux donne faux
+print("x > 0 or x == 1:", x > 0 or x == 1) # vrai ou faux donne vrai
+print("not x == 1:", not x == 1) # non faux donne vrai
+print("x > 0 or not x == 1:", x > 0 or not x == 1) # vrai ou (non faux) donne vrai ou vrai donne vrai
+```
+
+# Conditions “avancées”
+
+Ecriture en cours
+
 
 
 
