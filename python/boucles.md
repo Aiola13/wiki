@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T21:02:36.390Z
+date: 2023-11-06T21:07:24.678Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -80,3 +80,42 @@ for entier in ma_liste:
 for i in range(5):  # i prendra les valeurs de 0 à 4
     print(i)
 ```
+
+# Mots-clés continue et break
+
+## Définition
+
+> **continue** permet de passer immédiatement à l’itération suivante
+{.is-success}
+
+
+> **break** permet de sortir immédiatement de la boucle
+{.is-success}
+
+## Exemple
+
+```python
+for i in range(0,10):
+    if i % 2 == 0:
+        continue
+
+    print("En ce moment, i vaut " + str(i))
+```
+> Affiche le message seulement pour les nombres impairs
+{.is-warning}
+
+---
+
+```python
+for i in range(0,10):
+    if i == 7:
+        break
+
+    print("En ce moment, i vaut " + str(i))
+```
+
+> Affiche le message pour 0 à 6
+{.is-warning}
+
+# Notion d'itérateur
+
