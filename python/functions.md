@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:47:26.387Z
+date: 2023-11-06T21:47:58.987Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -142,3 +142,7 @@ def ajouter_deux_nombres(nombre1, nombre2):
 > 
 {.is-success}
 
+```python
+somme = ajouter_deux_nombres(3, 4)
+print(somme)  # Cela va afficher 7
+```
