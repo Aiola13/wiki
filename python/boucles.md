@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T20:44:31.757Z
+date: 2023-11-06T20:51:19.896Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -17,6 +17,32 @@ dateCreated: 2023-11-06T20:43:13.915Z
 
 ## La boucle `while`
 
+### Définition
 
+`while <condition>` : Continue à exécuter un bloc de code tant qu'une condition est vraie. . C’est une boucle simple qui teste à chaque tour (avec une sorte de if) si on doit continuer de boucler.
+
+
+### Syntaxe
+
+```python
+while condition:
+    # Bloc de code à exécuter tant que la condition est vraie
+```
+
+> Avant chaque tour de boucle, Python évalue la condition. Si elle est True, le code sous la boucle est exécuté. Si elle est False, la boucle s'arrête.
+{.is-info}
+
+
+### Exemple
+
+
+```python
+i = 0
+while i < 5:  # La boucle s'exécute tant que i est inférieur à 5
+    print(i)
+    i += 1  # Très important d'ajouter une opération qui change la condition
+
+```
+ 
 ## La boucle `for`
 
