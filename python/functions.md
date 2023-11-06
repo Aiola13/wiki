@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:27:03.487Z
+date: 2023-11-06T21:40:44.545Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -33,3 +33,10 @@ def ma_fonction(arg1, arg2):
 ```
 
 ![fonction.png](/images/python/fonction.png){.align-center}
+
+On peut ensuite utiliser la fonction avec les arguments souhaitées et récupérer le resultat :
+
+```python
+mon_resultat = ma_fonction("pikachu", "bulbizarre")
+autre_resultat = ma_fonction("salameche", "roucoups")
+```
