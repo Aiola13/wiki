@@ -2,7 +2,7 @@
 title: Les conditions itératives
 description: 
 published: 1
-date: 2023-11-06T20:56:01.381Z
+date: 2023-11-06T21:02:36.390Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:43:13.915Z
@@ -48,7 +48,12 @@ while i < 5:  # La boucle s'exécute tant que i est inférieur à 5
 
 ### Définition
 
-`for ...` : Utilisée pour parcourir les éléments d'une séquence (comme une liste, un tuple ou une chaîne de caractères) dans l'ordre où ils apparaissent.
+`for ...` : Utilisée pour parcourir les éléments d'une séquence (comme une liste, un tuple ou une chaîne de caractères) dans l'ordre où ils apparaissent. 
+
+> Elle s'adapte parfaitement aux données grâce à la notion d'itérateur (expliqué plus tard)
+> On peut traduire la boucle Python for element in collection: en français par “Pour chaque élément de ma collection répéter …”. Nous avons donc besoin d’une “collection” (en fait un iterateur) pour l’utiliser.
+{.is-info}
+
 
 
 ### Syntaxe
