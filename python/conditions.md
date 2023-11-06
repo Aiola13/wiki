@@ -2,7 +2,7 @@
 title: Instructions conditionnelles
 description: 
 published: 1
-date: 2023-11-06T20:32:54.403Z
+date: 2023-11-06T20:33:12.192Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T20:32:54.403Z
@@ -58,7 +58,8 @@ if age < 18:
 elif age == 18:
     print("Vous venez de devenir majeur.")
 else:
-    print("Vous êtes majeur.")````
+    print("Vous êtes majeur.")
+```
 
 
 
