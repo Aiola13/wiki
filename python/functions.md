@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-06T21:40:44.545Z
+date: 2023-11-06T21:44:31.874Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -39,4 +39,80 @@ On peut ensuite utiliser la fonction avec les arguments souhaitées et récupér
 ```python
 mon_resultat = ma_fonction("pikachu", "bulbizarre")
 autre_resultat = ma_fonction("salameche", "roucoups")
+```
+
+# Exemples
+
+## Calculs mathématiques
+```python
+sqrt(2)        -> 1.41421 (environ)
+cos(3.1415)    -> -1 (environ)
+```
+
+## Générer ou aller chercher des données
+
+```python
+nom_du_departement(67)        -> "Bas-rhin"
+temperature_actuelle("Lyon")  -> Va chercher une info sur internet et renvoie 12.5
+```
+
+## Convertir, formatter, filtrer, trier des données …
+
+```python
+int("3.14")                     -> 3
+normalize_url("toto.com/pwet/") -> https://toto.com/pwet
+sorted(liste_de_prenoms)     -> renvoie la liste triée alphabétiquement
+```
+
+## **Afficher / demander des données **
+
+```python
+print("un message")
+input("donne moi un chiffre entre 1 et 10 ?")
+```
+
+# Exemple concret
+
+```python
+def aire_triangle(base, hauteur):
+    return base * hauteur / 2
+
+A1 = aire_triangle(3, 5)      # -> A1 vaut 15 !
+A2 = aire_triangle(4, 2)      # -> A2 vaut 8 !
+```
+
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+
+A3 = aire_disque(6)           # -> A3 vaut (environ) 113 !
+```
+
+```python
+def aire_triangle(base, hauteur):
+    return base * hauteur / 2
+
+A1 = aire_triangle(3, 5)      # -> A1 vaut 7.5 !
+A2 = aire_triangle(4, 2)      # -> A2 vaut 8 !
+```
+
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+
+A3 = aire_disque(6)           # -> A3 vaut (environ) 113
+```
+
+```python
+def volume_cylindre(rayon, hauteur):
+    return hauteur * aire_disque(rayon)
+
+V1 = volume_cylindre(6, 4)   # -> A4 vaut (environ) 452
+```
+
+
+```python
+
 ```
