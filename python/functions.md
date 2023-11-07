@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:09:46.920Z
+date: 2023-11-07T10:11:45.725Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -191,6 +191,27 @@ def aire_disque(rayon):
 
 ## Erreur classique : Utiliser print au lieu de return
 
+# Tabs {.tabset}
+## > Ici, rien ne s'affiche
+{.is-danger}
+
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+
+A = aire_disque(6)      # A vaut bien quelque chose
+                        # mais nous ne demandons pas de l'afficher ...
+```
+
+## Second Tab
+
+Any content here will go into the second tab...
+
+## Third Tab
+
+Any content here will go into the third tab...
+
 > Ici, rien ne s'affiche
 {.is-danger}
 
@@ -230,7 +251,6 @@ def aire_disque(rayon):
 A = aire_disque(6)   # Stocker le résultat dans A
 print(A)             # Demander d'afficher A dans la console
 ```
-> 
 
 ---
 
