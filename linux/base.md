@@ -2,7 +2,7 @@
 title: Introduction aux systèmes
 description: 
 published: 1
-date: 2023-11-07T17:29:17.926Z
+date: 2023-11-07T17:32:11.544Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-07T17:03:25.442Z
@@ -58,6 +58,10 @@ Il permet de :
 
 # Comparatif "simple"
 
+<table><thead><tr><th></th><th>+</th><th>-</th></tr></thead><tbody><tr><td>Unix</td><td>- stabilité <br>- multi-plateformes <br>- communauté ouverte <br>- rapide et sûr <br>- fonctionnement modulaire</td><td><br>- complexe d'accès <br>- peu "médiatique" et multimédia</td></tr><tr><td>Windows</td><td>- stable (de plus en plus) <br>- sûr (Windows 2000) <br>- beaucoup d'applications dans tous les domaines</td><td>- monopole d'entreprise <br>- conception fermée <br>- demandeur de ressources</td></tr><tr><td>MacOS</td><td>- stable <br>- facile d'accès <br>- très "Design"</td><td>- faibles méthodes de sécurité <br>- "peu" d'applications <br>- peu de plateforme (ARM M1 ou Intel) <br>- coûteux</td></tr></tbody></table>
+
+
+<!--
 | OS      | Avantages                                           | Inconvénients                           |
 |---------|-----------------------------------------------------|-----------------------------------------|
 | Unix    | - Stabilité                                         | - Complexe d'accès                       |
@@ -72,3 +76,4 @@ Il permet de :
 |         | - Facile d'accès                                    | - "Peu" d'applications                   |
 |         | - Très "Design"                                     | - Peu de plateforme (ARM M1 ou Intel)    |
 |         |                                                     | - Coûteux                                |
+-->
