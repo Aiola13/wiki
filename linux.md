@@ -1,8 +1,8 @@
 ---
-title: Linux
+title: Systèmes
 description: 
 published: 1
-date: 2023-11-07T16:37:27.332Z
+date: 2023-11-07T16:37:41.319Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-07T16:35:06.320Z
