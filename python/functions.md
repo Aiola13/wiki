@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:04:03.962Z
+date: 2023-11-07T10:09:05.437Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -165,14 +165,59 @@ def aire_disque(rayon):
 
 ## Les variables locales
 
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    # [ ... ]
+```
+
+- Les variables créées dans la fonction sont locales: elles n’ont de sens qu’a l’intérieur de la fonction
+- Ceci dit, cela ne m’empêche pas d’avoir des variables aussi nommées rayon ou rayon_carree dans une autre fonction ou dans la portée globale (mais ce ne sont pas les mêmes entités)
+
+
 ## Le return
 
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+```
+
+- return permet de récupérer le résultat de la fonction
+- C’est ce qui donne du sens à A = aire_disque(6) (il y a effectivement un résultat à mettre dans A)
+- Si une fonction n’a pas de return, elle renvoie None
+- return quitte immédiatement la fonction
 
 
+## Erreur classique : Utiliser print au lieu de return
+
+> Ici, rien ne s'affiche
+{.is-danger}
+
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+
+A = aire_disque(6)      # A vaut bien quelque chose
+                        # mais nous ne demandons pas de l'afficher ...
+```
+
+> Solution naïve : remplacer le return par un print
+{.is-danger}
+
+> A part dans quelques cas, comme pour débugguer
+{.is-info}
 
 
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    print(3.1415 * rayon_carree)    # Affiche le résultat dans la console
 
-
+A = aire_disque(6)   # Mais maintenant A vaut None
+                     # car la fonction n'a pas utilisé `return`
+```
 
 
 
