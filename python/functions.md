@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:03:26.221Z
+date: 2023-11-07T10:04:03.962Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -159,7 +159,7 @@ def aire_disque(rayon):
 ```
 
 - Une fonction est un traitement générique. On ne connait pas à l’avance la valeur précise qu’aura un argument, et généralement on appelle la fonction pleins de fois avec des arguments différents…
-- En définissant la fonction, on travaille donc avec un argument “abstrait” nommé rayon
+- En définissant la fonction, on travaille donc avec un argument “abstrait” nommé ici rayon
 - Le nom rayon en tant qu’argument de la fonction n’a de sens qu’a l’intérieur de cette fonction !
 - En utilisant la fonction, on fourni la valeur pour rayon, par exemple: aire_disque(6).
 
