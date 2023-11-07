@@ -2,7 +2,7 @@
 title: Introduction aux systèmes
 description: 
 published: 1
-date: 2023-11-07T17:03:25.442Z
+date: 2023-11-07T17:08:19.082Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-07T17:03:25.442Z
@@ -31,7 +31,25 @@ Il permet de :
 
 # Vision générale d'un système
 
+![1-bus-system.55601589.png](/images/linux/1-bus-system.55601589.png)
+
 # Quelques Systèmes
+
+# Tabs {.tabset}
+## UNIX(S)
+
+- stations de travail, miniordinateurs et mainframes, supercalculateurs
+- recherche, enseignement, fortes charges (serveurs, calculs, bases de données, gros volume de transactions, … )
+
+## Windows
+
+- ordinateur de bureau, familiaux et serveurs ;
+- bureautique, internet, multimedia, jeux, ...
+
+## MacOS
+
+- ordinateur de bureau et familiaux
+- bureautique, multimédia
 
 # Historique des principaux systèmes
 
