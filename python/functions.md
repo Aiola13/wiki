@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:09:05.437Z
+date: 2023-11-07T10:09:46.920Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -219,7 +219,18 @@ A = aire_disque(6)   # Mais maintenant A vaut None
                      # car la fonction n'a pas utilisé `return`
 ```
 
+> Solution que l'on préférera
+{.is-success}
 
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+
+A = aire_disque(6)   # Stocker le résultat dans A
+print(A)             # Demander d'afficher A dans la console
+```
+> 
 
 ---
 
