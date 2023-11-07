@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:26:34.634Z
+date: 2023-11-07T10:28:40.475Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
