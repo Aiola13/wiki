@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:25:49.637Z
+date: 2023-11-07T10:26:34.634Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -241,7 +241,7 @@ print(A)             # Demander d'afficher A dans la console
 # Exercice
 
 Ex.3 Fonctions
-3.1 Écrire une fonction annee_naissance qui prends en argument un age et retourne l’année de naissance (+/- 1) sachant que nous sommes en <div id="annee-courante"> </div>. Par exemple, annee_naissance(29) retounera l’entier 1990.
+3.1 Écrire une fonction annee_naissance qui prends en argument un age et retourne l’année de naissance (+/- 1) sachant que nous sommes en <div id="annee-courante"></div>. Par exemple, annee_naissance(29) retounera l’entier 1990.
 
 3.2
 
