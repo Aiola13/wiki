@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:11:45.725Z
+date: 2023-11-07T10:13:51.674Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -192,7 +192,9 @@ def aire_disque(rayon):
 ## Erreur classique : Utiliser print au lieu de return
 
 # Tabs {.tabset}
-## > Ici, rien ne s'affiche
+## Ici, rien ne s'affiche
+
+> Ici, rien ne s'affiche
 {.is-danger}
 
 ```python
@@ -204,13 +206,38 @@ A = aire_disque(6)      # A vaut bien quelque chose
                         # mais nous ne demandons pas de l'afficher ...
 ```
 
-## Second Tab
+## Solution naïve 
 
-Any content here will go into the second tab...
+> Solution naïve : remplacer le return par un print
+{.is-danger}
 
-## Third Tab
+> A part dans quelques cas, comme pour débugguer
+{.is-info}
 
-Any content here will go into the third tab...
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    print(3.1415 * rayon_carree)    # Affiche le résultat dans la console
+
+A = aire_disque(6)   # Mais maintenant A vaut None
+                     # car la fonction n'a pas utilisé `return`
+```
+
+## Solution
+
+> Solution que l'on préférera
+{.is-success}
+
+```python
+def aire_disque(rayon):
+    rayon_carree = rayon ** 2
+    return 3.1415 * rayon_carree
+
+A = aire_disque(6)   # Stocker le résultat dans A
+print(A)             # Demander d'afficher A dans la console
+```
+
+---
 
 > Ici, rien ne s'affiche
 {.is-danger}
