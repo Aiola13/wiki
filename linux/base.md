@@ -2,7 +2,7 @@
 title: Introduction aux systèmes
 description: 
 published: 1
-date: 2023-11-07T17:08:19.082Z
+date: 2023-11-07T17:29:17.926Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-07T17:03:25.442Z
@@ -50,7 +50,25 @@ Il permet de :
 
 - ordinateur de bureau et familiaux
 - bureautique, multimédia
+- User Friendly
 
 # Historique des principaux systèmes
 
+![chronologie-des-systèmes.67422f54.png](/images/linux/chronologie-des-systèmes.67422f54.png){.align-center}
+
 # Comparatif "simple"
+
+| OS      | Avantages                                           | Inconvénients                           |
+|---------|-----------------------------------------------------|-----------------------------------------|
+| Unix    | - Stabilité                                         | - Complexe d'accès                       |
+|         | - Multi-plateformes                                 | - Peu "médiatique" et multimédia        |
+|         | - Communauté ouverte                                |                                         |
+|         | - Rapide et sûr                                     |                                         |
+|         | - Fonctionnement modulaire                          |                                         |
+| Windows | - Stable (de plus en plus)                          | - Monopole d'entreprise                  |
+|         | - Sûr (Windows 2000)                                | - Conception fermée                      |
+|         | - Beaucoup d'applications dans tous les domaines    | - Demande de ressources                  |
+| MacOS   | - Stable                                            | - Faibles méthodes de sécurité           |
+|         | - Facile d'accès                                    | - "Peu" d'applications                   |
+|         | - Très "Design"                                     | - Peu de plateforme (ARM M1 ou Intel)    |
+|         |                                                     | - Coûteux                                |
