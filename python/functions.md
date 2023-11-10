@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-07T10:37:56.333Z
+date: 2023-11-10T09:09:50.851Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -238,26 +238,14 @@ print(A)             # Demander d'afficher A dans la console
 ```
 
 
-# Exercice
+# Exercice sur les fonctions
 
-Ex.3 Fonctions
-3.1 Écrire une fonction annee_naissance qui prends en argument un age et retourne l’année de naissance (+/- 1) sachant que nous sommes en 2024. Par exemple, annee_naissance(33) retounera l’entier 1991.
+- 1 - Écrire une fonction annee_naissance qui prends en argument un age et retourne l’année de naissance (+/- 1) sachant que nous sommes en 2024. Par exemple, annee_naissance(33) retounera l’entier 1991.
 
-3.2
-
-Ecrire une fonction centrer prend en argument une chaîne de caractère, et retourne une nouvelle chaîne centrée sur 40 caractères. Par exemple print(centrer("Python")) affichera :
+- 2 - Ecrire une fonction centrer prend en argument une chaîne de caractère, et retourne une nouvelle chaîne centrée sur 40 caractères. Par exemple print(centrer("Python")) affichera :
+```
 |                Python                |
-Ajouter un argument optionnel pour gérer la largeur au lieu du 40 “codé en dur”. Par exemple print(centrer("Python", 20)) affichera :
-|      Python      |
-Créer une fonction encadrer qui utilise la fonction centrer pour produire un texte centré et encadré avec des ####. Par exemple, print(encadrer("Python", 20)) affichera :
-####################
-|      Python      |
-####################
+```
 
----
 
-<!--La fonction ajouter_deux_nombres prend deux arguments, les ajoute, et retourne la somme. Vous n'avez pas besoin de savoir comment elle calcule la somme, tout ce qui compte c'est qu'elle vous donne le bon résultat.
 
-C'est comme commander un café dans un café : vous dites au barista ce que vous voulez (vous "appelez la fonction" avec des "arguments"), et vous obtenez un café (le "résultat").
-
-Les fonctions sont très utiles car elles vous permettent de réutiliser du code sans avoir à le réécrire à chaque fois, ce qui rend votre code plus propre, plus facile à lire, et moins sujet aux erreurs. -->
