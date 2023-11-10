@@ -2,7 +2,7 @@
 title: Les fonctions
 description: 
 published: 1
-date: 2023-11-10T09:09:50.851Z
+date: 2023-11-10T09:10:45.031Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T21:27:03.487Z
@@ -246,6 +246,8 @@ print(A)             # Demander d'afficher A dans la console
 ```
 |                Python                |
 ```
+
+		\- 2.1
 
 
 
