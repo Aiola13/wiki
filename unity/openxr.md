@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:38:01.074Z
+date: 2023-11-26T13:46:55.322Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -79,21 +79,27 @@ dateCreated: 2023-11-26T11:23:40.707Z
 | Maintenez la touche Maj gauche | Maintenez le clic droit | Maintenez la barre d'espace | G    | Appuyer sur le clic gauche | B                | N                 |
 
 
-## 3.1 Concepts Clés
-- Action Manifest
-- Action
-- Grabbing
+## 3.2 Grabbing
 
-## 3.2 Mise en Place
-1. Créer un Action Manifest
-2. Configurer les Interactions
-3. Programmer le Grabbing
+> Le terme "grabbing" en réalité virtuelle (VR) se réfère à l'action de saisir ou de tenir des objets virtuels à l'aide de contrôleurs VR. Cette interaction est fondamentale dans les expériences VR car elle permet aux utilisateurs d'interagir de manière naturelle et intuitive avec l'environnement virtuel, simulant l'acte de saisir des objets dans le monde réel.
+{.is-success}
 
-## 3.3 Exemple de Script
-```csharp
-using UnityEngine;
-using UnityEngine.XR.OpenXR.Input;
 
-public class GrabScript : MonoBehaviour {
-    // Votre code ici
-} 
+1. Ajouter un Collider
+	- Pour que l'objet soit saisissable, il doit avoir un Collider (par exemple, un BoxCollider ou SphereCollider). Assurez-vous que le Collider englobe la forme de l'objet de manière appropriée.
+  - dans l'inspector > Add Component > Collider
+
+2. Ajout du XR Grab Interactable
+	- Ce composant permet à l'objet d'être reconnu comme saisissable par le système d'interaction XR.
+	- dans l'inspector > Add Component > XR Grab Interatable
+Ajout du XR Grab Interactable :
+
+Sélectionnez l'objet dans votre scène Unity que vous voulez rendre saisissable.
+Dans l'inspecteur, cliquez sur "Add Component".
+Recherchez et ajoutez le composant "XR Grab Interactable". Ce composant permet à l'objet d'être reconnu comme saisissable par le système d'interaction XR.
+Configurer le Comportement de Grabbing :
+
+Dans les propriétés du composant "XR Grab Interactable", vous pouvez configurer plusieurs options telles que la précision du grabbing, la réponse physique de l'objet lorsqu'il est saisi, et d'autres comportements interactifs.
+Ajouter des Colliders :
+
+Pour que l'objet soit saisissable, il doit avoir un Collider (par exemple, un BoxCollider ou SphereCollider). Assurez-vous que le Collider englobe la forme de l'objet de manière appropriée.
