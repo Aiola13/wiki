@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:54:27.642Z
+date: 2023-11-26T14:12:32.878Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -84,22 +84,47 @@ dateCreated: 2023-11-26T11:23:40.707Z
 > Le terme "grabbing" en réalité virtuelle (VR) se réfère à l'action de saisir ou de tenir des objets virtuels à l'aide de contrôleurs VR. Cette interaction est fondamentale dans les expériences VR car elle permet aux utilisateurs d'interagir de manière naturelle et intuitive avec l'environnement virtuel, simulant l'acte de saisir des objets dans le monde réel.
 {.is-success}
 
+1. Sélectionnez l'objet dans votre scène Unity que vous voulez rendre saisissable.
 
-1. Ajouter un Collider
+2. Ajouter un Collider
 	- Pour que l'objet soit saisissable, il doit avoir un Collider (par exemple, un BoxCollider ou SphereCollider). Assurez-vous que le Collider englobe la forme de l'objet de manière appropriée.
   - dans l'inspector > Add Component > Collider
 
-2. Ajout du XR Grab Interactable
+3. Ajout du XR Grab Interactable
 	- Ce composant permet à l'objet d'être reconnu comme saisissable par le système d'interaction XR.
 	- dans l'inspector > Add Component > XR Grab Interactable
   
 ![openxr-08.png](/images/videogames/unity/openxr/openxr-08.png)
 
-3. Cnfigurer le Comportement de Grabbing
+4. Configurer le Comportement de Grabbing
 	- Dans les propriétés du composant "XR Grab Interactable", vous pouvez configurer plusieurs options telles que la précision du grabbing, la réponse physique de l'objet lorsqu'il est saisi, et d'autres comportements interactifs.
 
 ![openxr-09.png](/images/videogames/unity/openxr/openxr-09.png)
 
 ## 3.3 Snapping 
 
+> Le terme "snapping" en réalité virtuelle (VR), désigne le processus par lequel un objet se positionne automatiquement dans un endroit spécifique ou adopte une orientation déterminée lorsqu'il est approché d'un certain point ou d'un autre objet. Cette fonctionnalité est souvent utilisée pour faciliter les interactions en VR, comme placer un objet à un emplacement précis avec une orientation correcte, ce qui peut être difficile à faire manuellement en raison des limitations de la perception de la profondeur en VR.
+Le snapping est particulièrement utile pour des tâches comme assembler des pièces dans un puzzle VR, accrocher des outils sur un support, ou insérer un objet dans un emplacement précis.
+{.is-success}
 
+
+Un "XR Socket Interactor" est un composant dans Unity utilisé dans le développement de jeux VR pour implémenter la fonctionnalité de snapping. Il agit comme une sorte de "docking station" pour les objets interactifs.
+
+À quoi ça sert ?
+Le XR Socket Interactor est utilisé pour créer un point où des objets interactifs (généralement équipés de composants XR Grab Interactable) peuvent être "accrochés" ou "encastrés". Lorsqu'un objet interactif approche suffisamment d'un socket interactor, il peut se fixer automatiquement à ce point, souvent en s'alignant ou en s'ajustant pour s'adapter de manière précise.
+
+
+1. Choisissez l'objet dans votre scène Unity où vous souhaitez ajouter le socket interactor. Cet objet sera le point d'ancrage pour les objets interactifs.
+2. Ajouter un Collider (Trigger) :
+	- Un Collider est nécessaire pour que le Socket Interactor détecte quand un objet interactif est à proximité. Assurez-vous que le Collider est configuré pour englober la zone souhaitée pour le snapping et cocher la case Trigger.
+3. Ajouter le Composant XR Socket Interactor 
+	- Avec l'objet sélectionné, allez dans l'inspecteur et cliquez sur "Add Component".
+	- Recherchez et ajoutez le composant "XR Socket Interactor".
+4. Configurer le Socket Interactor :
+	- Dans les paramètres du XR Socket Interactor, vous pouvez définir diverses options comme la distance à laquelle le snapping se déclenche, les conditions sous lesquelles un objet peut se fixer, et d'autres comportements de snapping.
+
+
+Un Collider est nécessaire pour que le Socket Interactor détecte quand un objet interactif est à proximité. Assurez-vous que le Collider est configuré pour englober la zone souhaitée pour le snapping.
+Tests et Ajustements :
+
+Testez le comportement en VR. Approchez un objet interactif du socket interactor et observez si le snapping se produit comme prévu. Ajustez les paramètres au besoin pour optimiser l'expérience utilisateur.
