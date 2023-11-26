@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T12:29:57.465Z
+date: 2023-11-26T12:32:57.918Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -30,6 +30,10 @@ dateCreated: 2023-11-26T11:23:40.707Z
 
 1. Créer un Nouveau Projet Unity :  
 	- Ouvrez Unity Hub et créez un nouveau projet 3D.
+  
+![openxr-1.jpg](/images/videogames/unity/openxr/openxr-01.png)
+
+
 2. Installer le XR Plugin Management :
 	- Allez dans Window > Package Manager.
 	- Recherchez et installez XR Plugin Management.
