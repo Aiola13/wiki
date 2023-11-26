@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:22:39.135Z
+date: 2023-11-26T13:23:09.131Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -70,7 +70,7 @@ dateCreated: 2023-11-26T11:23:40.707Z
 ![openxr-03.png](/images/videogames/unity/openxr/openxr-03.png =70%x)
 
 
-# 3. Utilisation d'OpenXR pour le Grabbing en VR
+# 3. Utilisation d'OpenXR
 
 ## 3.1 Concepts Clés
 - Action Manifest
