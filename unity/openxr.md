@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T14:14:19.232Z
+date: 2023-11-26T14:14:29.937Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -106,13 +106,6 @@ dateCreated: 2023-11-26T11:23:40.707Z
 > Le terme "snapping" en réalité virtuelle (VR), désigne le processus par lequel un objet se positionne automatiquement dans un endroit spécifique ou adopte une orientation déterminée lorsqu'il est approché d'un certain point ou d'un autre objet. Cette fonctionnalité est souvent utilisée pour faciliter les interactions en VR, comme placer un objet à un emplacement précis avec une orientation correcte, ce qui peut être difficile à faire manuellement en raison des limitations de la perception de la profondeur en VR.
 Le snapping est particulièrement utile pour des tâches comme assembler des pièces dans un puzzle VR, accrocher des outils sur un support, ou insérer un objet dans un emplacement précis.
 {.is-success}
-
-
-Un "XR Socket Interactor" est un composant dans Unity utilisé dans le développement de jeux VR pour implémenter la fonctionnalité de snapping. Il agit comme une sorte de "docking station" pour les objets interactifs.
-
-À quoi ça sert ?
-Le XR Socket Interactor est utilisé pour créer un point où des objets interactifs (généralement équipés de composants XR Grab Interactable) peuvent être "accrochés" ou "encastrés". Lorsqu'un objet interactif approche suffisamment d'un socket interactor, il peut se fixer automatiquement à ce point, souvent en s'alignant ou en s'ajustant pour s'adapter de manière précise.
-
 
 1. Choisissez l'objet dans votre scène Unity où vous souhaitez ajouter le socket interactor. Cet objet sera le point d'ancrage pour les objets interactifs.
 2. Ajouter un Collider (Trigger) :
