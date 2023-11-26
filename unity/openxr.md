@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:53:24.739Z
+date: 2023-11-26T13:54:11.554Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -99,3 +99,7 @@ dateCreated: 2023-11-26T11:23:40.707Z
 	- Dans les propriétés du composant "XR Grab Interactable", vous pouvez configurer plusieurs options telles que la précision du grabbing, la réponse physique de l'objet lorsqu'il est saisi, et d'autres comportements interactifs.
 
 ![openxr-09.png](/images/videogames/unity/openxr/openxr-09.png)
+
+## 3.3 Snapping 
+
+
