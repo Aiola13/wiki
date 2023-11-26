@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:23:09.131Z
+date: 2023-11-26T13:35:53.708Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -72,6 +72,20 @@ dateCreated: 2023-11-26T11:23:40.707Z
 
 # 3. Utilisation d'OpenXR
 
+## 3.1 Activer les dispositifs
+
+| Contrôleur gauche | Casque | Contrôleur droit | Grab | Trigger | Bouton Principal | Bouton Secondaire |
+|-------------------|--------|------------------|------|---------|------------------|-------------------|
+|         |          |           |            |                 |
+|         |          |           |            |                 |
+|         |          |           |            |                 |
+
+|Contrôleur gauche|Maintenez la touche Maj gauche|
+|Casque|Maintenez le clic droit|
+|Contrôleur droit|Maintenez la barre d'espace
+|Grab : 
+
+
 ## 3.1 Concepts Clés
 - Action Manifest
 - Action
@@ -89,4 +103,4 @@ using UnityEngine.XR.OpenXR.Input;
 
 public class GrabScript : MonoBehaviour {
     // Votre code ici
-}
+} 
