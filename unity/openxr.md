@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:06:08.690Z
+date: 2023-11-26T13:14:23.253Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -46,15 +46,18 @@ dateCreated: 2023-11-26T11:23:40.707Z
 	- Cochez OpenXR sous votre plateforme cible (par exemple, PC, Mac & Linux Standalone).
 	- Dans l'onglet OpenXR, assurez-vous que les fonctionnalités requises sont activées.
   
+ ![openxr-04.png](/images/videogames/unity/openxr/openxr-04.png)
   
 4. Validation de l'Installation : 
-	- Créez un environnement de test simple pour vérifier que tout fonctionne correctement.
+	- Créez un environnement de test simple (un scene par exemple) pour vérifier que tout fonctionne correctement.
+  - Insérer dans la hierachy via la vue project : **XR Device Simulator**, **XR Intreaction Setup**.
+  - Supprimer la **Main Camera**
   
   
 > Si jamais vous avez des erreurs dans la console implicant l'asset **Meta Gaze Adapter**, veuillez le supprimer.
 {.is-warning}
 
-![openxr-03.png](/images/videogames/unity/openxr/openxr-03.png=50%x)
+![openxr-03.png](/images/videogames/unity/openxr/openxr-03.png =70%x)
 
 
 # 3. Utilisation d'OpenXR pour le Grabbing en VR
