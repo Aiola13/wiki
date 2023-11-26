@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T12:53:07.350Z
+date: 2023-11-26T12:53:48.402Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -38,7 +38,7 @@ dateCreated: 2023-11-26T11:23:40.707Z
 	- Allez dans Window > Package Manager.
 	- Recherchez et installez XR Plugin Management.
   
-  ![openxr-02.png](/images/videogames/unity/openxr/openxr-02.png)
+![openxr-02.png](/images/videogames/unity/openxr/openxr-02.png)
 
 3. Configurer OpenXR :
 	- Dans Project Settings, allez dans XR Plugin Management.
