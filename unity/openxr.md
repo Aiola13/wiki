@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:52:57.502Z
+date: 2023-11-26T13:53:24.739Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -91,7 +91,7 @@ dateCreated: 2023-11-26T11:23:40.707Z
 
 2. Ajout du XR Grab Interactable
 	- Ce composant permet à l'objet d'être reconnu comme saisissable par le système d'interaction XR.
-	- dans l'inspector > Add Component > XR Grab Interatable
+	- dans l'inspector > Add Component > XR Grab Interactable
   
 ![openxr-08.png](/images/videogames/unity/openxr/openxr-08.png)
 
@@ -99,8 +99,3 @@ dateCreated: 2023-11-26T11:23:40.707Z
 	- Dans les propriétés du composant "XR Grab Interactable", vous pouvez configurer plusieurs options telles que la précision du grabbing, la réponse physique de l'objet lorsqu'il est saisi, et d'autres comportements interactifs.
 
 ![openxr-09.png](/images/videogames/unity/openxr/openxr-09.png)
-
-Dans les propriétés du composant "XR Grab Interactable", vous pouvez configurer plusieurs options telles que la précision du grabbing, la réponse physique de l'objet lorsqu'il est saisi, et d'autres comportements interactifs.
-Ajouter des Colliders :
-
-Pour que l'objet soit saisissable, il doit avoir un Collider (par exemple, un BoxCollider ou SphereCollider). Assurez-vous que le Collider englobe la forme de l'objet de manière appropriée.
