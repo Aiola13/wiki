@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T14:13:29.626Z
+date: 2023-11-26T14:14:19.232Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -118,6 +118,7 @@ Le XR Socket Interactor est utilisé pour créer un point où des objets interac
 2. Ajouter un Collider (Trigger) :
 	- Un Collider est nécessaire pour que le Socket Interactor détecte quand un objet interactif est à proximité. Assurez-vous que le Collider est configuré pour englober la zone souhaitée pour le snapping et cocher la case Trigger.
 3. Ajouter le Composant XR Socket Interactor 
+	- Il agit comme une sorte de "docking station" pour les objets interactifs. C'est un point où des objets interactifs (généralement équipés de composants XR Grab Interactable) peuvent être "accrochés" ou "encastrés". Lorsqu'un objet interactif approche suffisamment d'un socket interactor, il peut se fixer automatiquement à ce point, souvent en s'alignant ou en s'ajustant pour s'adapter de manière précise.
 	- Avec l'objet sélectionné, allez dans l'inspecteur et cliquez sur "Add Component".
 	- Recherchez et ajoutez le composant "XR Socket Interactor".
 4. Configurer le Socket Interactor :
