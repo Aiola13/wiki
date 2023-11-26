@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:54:11.554Z
+date: 2023-11-26T13:54:27.642Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -46,7 +46,7 @@ dateCreated: 2023-11-26T11:23:40.707Z
 	- Cochez OpenXR sous votre plateforme cible (par exemple, PC, Mac & Linux Standalone).
 	- Dans l'onglet OpenXR, assurez-vous que les fonctionnalités requises sont activées.
   
- ![openxr-04.png](/images/videogames/unity/openxr/openxr-04.png)
+![openxr-04.png](/images/videogames/unity/openxr/openxr-04.png)
   
 4. Validation de l'Installation : 
 	- Créez un environnement de test simple (un scene par exemple) pour vérifier que tout fonctionne correctement.
