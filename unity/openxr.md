@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T12:21:45.663Z
+date: 2023-11-26T12:25:02.236Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -16,20 +16,26 @@ dateCreated: 2023-11-26T11:23:40.707Z
 
 
 ## 1.2 Pourquoi utiliser OpenXR en développement VR ?
-- Intercompatibilité
-- Futur-Proofing
-- Communauté et Support
+- Intercompatibilité : OpenXR permet à vos applications de fonctionner sur une multitude de dispositifs VR sans avoir besoin de réécrire votre code pour chaque appareil spécifique.
+- Futur-Proofing : En utilisant une norme ouverte, vous vous préparez pour les futures évolutions technologiques en VR.
+- Communauté et Support : Bénéficiez d'une large communauté et du soutien de l'industrie.
 
 # 2. Installation d'OpenXR dans un projet Unity
 
 ## 2.1 Prérequis
 - Unity version 2020.3 LTS ou supérieure
 - Un dispositif VR compatible (Oculus Quest 1\|2\|3, HTX vive, ect ...)
-|
+
 ## 2.2 Étapes d'Installation
-1. Créer un Nouveau Projet Unity
-2. Installer le XR Plugin Management
-3. Configurer OpenXR
+
+1. Créer un Nouveau Projet Unity :  Ouvrez Unity Hub et créez un nouveau projet 3D.
+2. Installer le XR Plugin Management :
+	- Allez dans Window > Package Manager.
+	- Recherchez et installez XR Plugin Management.
+3. Configurer OpenXR :
+	- Dans Project Settings, allez dans XR Plugin Management.
+	- Cochez OpenXR sous votre plateforme cible (par exemple, PC, Mac & Linux Standalone).
+	- Dans l'onglet OpenXR, assurez-vous que les fonctionnalités requises sont activées.
 4. Validation de l'Installation
 
 # 3. Utilisation d'OpenXR pour le Grabbing en VR
