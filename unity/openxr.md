@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T14:12:32.878Z
+date: 2023-11-26T14:13:29.626Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -122,9 +122,3 @@ Le XR Socket Interactor est utilisé pour créer un point où des objets interac
 	- Recherchez et ajoutez le composant "XR Socket Interactor".
 4. Configurer le Socket Interactor :
 	- Dans les paramètres du XR Socket Interactor, vous pouvez définir diverses options comme la distance à laquelle le snapping se déclenche, les conditions sous lesquelles un objet peut se fixer, et d'autres comportements de snapping.
-
-
-Un Collider est nécessaire pour que le Socket Interactor détecte quand un objet interactif est à proximité. Assurez-vous que le Collider est configuré pour englober la zone souhaitée pour le snapping.
-Tests et Ajustements :
-
-Testez le comportement en VR. Approchez un objet interactif du socket interactor et observez si le snapping se produit comme prévu. Ajustez les paramètres au besoin pour optimiser l'expérience utilisateur.
