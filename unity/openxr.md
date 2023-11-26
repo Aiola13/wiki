@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:35:53.708Z
+date: 2023-11-26T13:38:01.074Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -74,16 +74,9 @@ dateCreated: 2023-11-26T11:23:40.707Z
 
 ## 3.1 Activer les dispositifs
 
-| Contrôleur gauche | Casque | Contrôleur droit | Grab | Trigger | Bouton Principal | Bouton Secondaire |
-|-------------------|--------|------------------|------|---------|------------------|-------------------|
-|         |          |           |            |                 |
-|         |          |           |            |                 |
-|         |          |           |            |                 |
-
-|Contrôleur gauche|Maintenez la touche Maj gauche|
-|Casque|Maintenez le clic droit|
-|Contrôleur droit|Maintenez la barre d'espace
-|Grab : 
+| Contrôleur gauche              | Casque                  | Contrôleur droit            | Grab | Trigger                    | Bouton Principal | Bouton Secondaire |
+|--------------------------------|-------------------------|-----------------------------|------|----------------------------|------------------|-------------------|
+| Maintenez la touche Maj gauche | Maintenez le clic droit | Maintenez la barre d'espace | G    | Appuyer sur le clic gauche | B                | N                 |
 
 
 ## 3.1 Concepts Clés
