@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T14:14:29.937Z
+date: 2023-11-26T14:16:09.784Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -116,3 +116,6 @@ Le snapping est particulièrement utile pour des tâches comme assembler des pi�
 	- Recherchez et ajoutez le composant "XR Socket Interactor".
 4. Configurer le Socket Interactor :
 	- Dans les paramètres du XR Socket Interactor, vous pouvez définir diverses options comme la distance à laquelle le snapping se déclenche, les conditions sous lesquelles un objet peut se fixer, et d'autres comportements de snapping.
+
+
+![openxr-10.gif](/images/videogames/unity/openxr/openxr-10.gif)
