@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T12:25:02.236Z
+date: 2023-11-26T12:26:15.289Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -28,7 +28,8 @@ dateCreated: 2023-11-26T11:23:40.707Z
 
 ## 2.2 Étapes d'Installation
 
-1. Créer un Nouveau Projet Unity :  Ouvrez Unity Hub et créez un nouveau projet 3D.
+1. Créer un Nouveau Projet Unity :  
+	- Ouvrez Unity Hub et créez un nouveau projet 3D.
 2. Installer le XR Plugin Management :
 	- Allez dans Window > Package Manager.
 	- Recherchez et installez XR Plugin Management.
@@ -36,7 +37,8 @@ dateCreated: 2023-11-26T11:23:40.707Z
 	- Dans Project Settings, allez dans XR Plugin Management.
 	- Cochez OpenXR sous votre plateforme cible (par exemple, PC, Mac & Linux Standalone).
 	- Dans l'onglet OpenXR, assurez-vous que les fonctionnalités requises sont activées.
-4. Validation de l'Installation
+4. Validation de l'Installation : 
+	- Créez un environnement de test simple pour vérifier que tout fonctionne correctement.
 
 # 3. Utilisation d'OpenXR pour le Grabbing en VR
 
