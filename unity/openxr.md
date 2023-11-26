@@ -2,7 +2,7 @@
 title: Réalité Virtuelle | OpenXR
 description: 
 published: 1
-date: 2023-11-26T13:20:03.594Z
+date: 2023-11-26T13:22:39.135Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T11:23:40.707Z
@@ -56,6 +56,13 @@ dateCreated: 2023-11-26T11:23:40.707Z
   |Hierarchy|XR Device Simulator|XR Interaction Setup|
   |
  |![openxr-05.png](/images/videogames/unity/openxr/openxr-05.png)|![openxr-06.png](/images/videogames/unity/openxr/openxr-06.png)|![openxr-07.png](/images/videogames/unity/openxr/openxr-07.png)|
+  
+
+> **XR Device Simulator** permet de se déplacer et d'intéragir grâce au clavier sans avoir de casque VR.
+{.is-success}
+
+> **XR Interaction Setup** permet de placer tous les éléments nécéssaire au fonctionnement de la VR dans la scène (dont la caméra).
+{.is-success}
   
 > Si jamais vous avez des erreurs dans la console implicant l'asset **Meta Gaze Adapter**, veuillez le supprimer.
 {.is-warning}
