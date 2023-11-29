@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T06:48:30.591Z
+date: 2023-11-29T06:48:49.212Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
