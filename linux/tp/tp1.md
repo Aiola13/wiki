@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T07:13:14.170Z
+date: 2023-11-29T07:18:01.143Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -145,6 +145,30 @@ les dernières lignes du fichier)
 
 ## 7. Processus
 
+* 7.1 - Lancer sleep 30 , puis mettre la commande en arrière-plan. Vérifier avec jobs qu'elle continue de s'executer, et qu'elle finie bien par se terminer.
+* 7.2 - Même chose, mais en remettant la commande en avant-plan avec qu'elle ne se termine.
+* 7.3 - Lancer sleep 30 directement en arrière plan (avec & ) puis tuez le processus avant
+qu'il ne se termine
+* 7.4 - Lancer encore sleep 30 dans un terminal, puis regarder depuis un autre terminal avec
+une commande comme ps que le processus est bien là
+* 7.5 - Identifiez ainsi quel processus (son parent) corresponds au shell qui a lancé le sleep 30
+* 7.6 - Connaissant le PID de ce shell, tenter de tuer le shell gentillement (ou brutalement si il
+résiste)
+* 7.7 - Lancez une session screen puis une commande longue dans cette session, comme par
+exemple sleep 30 . Détachez la session puis ré-attachez-la depuis un autre tty.
+* 7.8 - Dans une autre console, identifiez via ps le PID de la session screen et tentez de tuer
+ce processus.
+* 7.9 - Identifiez avec top le processus consommant en ce moment le plus de CPU, et celui
+consommant le plus de mémoire
+* 7.10 - Lancer la commande openssl speed -multi 4 - puis refaite le test
+* 7.11 - Tout en laissant openssl speed -multi 4 s'executer, lancer la commande ls
+/bin/ avec la priorité la plus faible possible. Que se passe-t-il ?
+* 7.12 - Réduisez drastiquement "à chaud" la priorité de la commande openssl speed -multi
+4 en train de s'executer. Si vous relancer ls /bin/ toujours avec la priorité la plus basse,
+comment la situation évolue-t-elle ?
+* 7.13 - Comment pouvez-vous tuer d'un seul coup tous les processus openssl ?
+
+<!--
 *   7.1 - Lancer `sleep 30`, puis mettre la commande en arrière-plan. Vérifier avec `jobs` qu'elle continue de s'executer, et qu'elle finie bien par se terminer.
     
 *   7.2 - Même chose, mais en remettant la commande en avant-plan avec qu'elle ne se termine.
@@ -165,4 +189,4 @@ les dernières lignes du fichier)
     
 *   7.12 - Lancez une session screen puis une commande longue dans cette session, comme par exemple `sleep 30`. Détachez la session puis ré-attachez-la depuis un autre tty.
     
-*   7.13 - Dans une autre console, identifiez via `ps` le PID de la session screen et tentez de tuer ce processus.
+*   7.13 - Dans une autre console, identifiez via `ps` le PID de la session screen et tentez de tuer ce processus. -->
