@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T07:10:36.944Z
+date: 2023-11-29T07:13:14.170Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -126,7 +126,7 @@ dateCreated: 2023-11-08T09:48:25.249Z
 *   6.2 - Créez un fichier `private` et supprimer toutes les permissions dessus
 *   6.3 - Ajoutez successivement à `private` le droit de lecture au propriétaire, le droit d'écriture au groupe et au proprietaire, et les droits d'execution pour tout le monde.
 *   6.4 - Resupprimez toutes les permissions de `private`
-*   6.5 - Remettez les mêmes permissions qu'avant mais avec une seule commande
+*   6.5 - Remettez les mêmes permissions qu'avant mais avec une seule commande en utilisant la notation octale
 *   6.6 - Modifier les permissions de votre répertoire personnel pour que seul vous ayez le droit d'écriture et de traverse (x) dessus
 *   6.7 - Interdisez à tous les "autres" utilisateurs de fouiller et modifier les fichier dans `~/documents`, avec une seule commande qui aura un effet récursif
 *   6.8 - Créez un répertoire personnel pour `r2d2`
@@ -135,6 +135,13 @@ dateCreated: 2023-11-08T09:48:25.249Z
 *   6.11 - Créez des fichier `beep.wav`, `boop.wav` et `blop.wav` que seul `r2d2` peut executer.
 *   6.12 - Êtes-vous capable de créer un dossier qui contient des fichiers qu'il est possible de lire, mais pas de lister ?
 *   6.13 - En tant qu'utilisateur `padawan`, arrivez-vous à donner un de vos fichier à `r2d2` ?
+
+<!--
+Depuis un shell en tant que r2d2 , validez que vous êtes en mesure de faire des
+commandes avec sudo . Constatez aussi que les commandes executées avec sudo sont
+logguées dans le ficher /var/log/auth.log (on pourra utiliser tail pour afficher seulement
+les dernières lignes du fichier)
+-->
 
 ## 7. Processus
 
