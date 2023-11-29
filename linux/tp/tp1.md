@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T07:27:31.246Z
+date: 2023-11-29T07:57:43.321Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -15,7 +15,7 @@ dateCreated: 2023-11-08T09:48:25.249Z
 
 *   Utiliser Virtualbox ou VM Ware
 *   Créer une machine virtuelle
-*   choisissez comme type Linux / Debian (64 bit)
+*   choisissez comme type Linux / Debian (64 bit) ou Ubuntu ou Linux Mint
     *   2048 Mo de RAM devraient suffir
     *   au moment de spécifier le disque dur virtuel, utiliser l'image Debian
 *   Démarrer la machine
