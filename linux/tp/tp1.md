@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T06:48:49.212Z
+date: 2023-11-29T06:49:58.713Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -48,7 +48,7 @@ dateCreated: 2023-11-08T09:48:25.249Z
 *   3.6 - Lancer `sleep 30` et arrêter l'execution de la commande avant qu'elle ne se termine.
 *   3.7 - Lister successivement et le plus rapidement possible le contenu des dossier `/usr`, `/usr/share`, `/usr/share/man` et `/usr/share/man/man1` grâce à \[Tab\] et ↑.
 *   3.8 - Se renseigner sur ce que font `date` et `cal`
-*   3.9 - Afficher le calendrier pour l'année 2019, puis juste le mois de Février 2019
+*   3.9 - Afficher le calendrier pour l'année 2023, puis juste le mois de Février 2023
 *   3.10 - Se renseigner sur ce que fait la commande `free`, et interpreter la sortie de `free -h`
 *   3.11 - Se renseigner sur ce que fait la commande `ping` et interpreter la sortie de `ping 8.8.8.8`
 
