@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-08T09:48:25.249Z
+date: 2023-11-29T06:48:30.591Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -15,7 +15,7 @@ dateCreated: 2023-11-08T09:48:25.249Z
 
 *   Utiliser Virtualbox ou VM Ware
 *   Créer une machine virtuelle
-*   choisissez comme type Linux / Debian 10.x (64 bit)
+*   choisissez comme type Linux / Debian (64 bit)
     *   2048 Mo de RAM devraient suffir
     *   au moment de spécifier le disque dur virtuel, utiliser l'image Debian
 *   Démarrer la machine
@@ -23,7 +23,7 @@ dateCreated: 2023-11-08T09:48:25.249Z
 ## 1. Démarrer et se logguer
 
 *   Observer le démarrage de la machine
-*   Se logger (pour les plus téméraires, se logger depuis le tty - Ctrl+Alt+F...)
+*   Se logger (pour les plus téméraires, se logger depuis le tty  (TeleTYpewriter) - Ctrl+Alt+F...)
     *   Ouvrer un terminal
     *   Attention, il se peut que le clavier soit configuré en quwerty
 
