@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T06:49:58.713Z
+date: 2023-11-29T06:54:18.476Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -72,35 +72,36 @@ dateCreated: 2023-11-08T09:48:25.249Z
     
 *   4.3 - Vérifiez que le contenu de ces fichiers a bien été modifié avec `cat`.
     
-*   4.4 - Affichez le contenu du fichier `/etc/os-release`
-    
 *   4.4 - Aller dans `~/documents/notes_a_propos_des_commandes` puis, _en utilisant uniquement des chemins relatifs_ et en vous aidant de la touche \[Tab\], déplacez-vous successivement vers :
     
     *   `~/documents/img`
     *   `/usr/share/doc/`
     *   `~/.nano`
     *   `~/documents/img`
-*   4.5 - Affichez le contenu de `/etc/motd` et `/etc/login.defs`
     
-*   4.6 - En utilisant `less`, checher `LOGIN_TIMEOUT` dans le fichier `/etc/login.defs`. Même chose, mais cette fois en utilisant `nano`.
+*   4.5 - Créez le fichier `dracaufeu.jpg` dans le dossier `~/documents/notes_a_propos_des_commandes/`... Vous réalisez ensuite que vous auriez voulu mettre ce fichier dans `~/documents/img` ! Utilisez alors la commande `mv` pour déplacer `dracaufeu.jpg` vers le bon dossier.
     
-*   4.7 - Combien de ligne fait le fichier `/etc/login.defs` ?
+*   4.6 - Renommez `~/documents/img` en `~/documents/pokemons`
+
+*   4.7 - Affichez le contenu du fichier `/etc/os-release`
+
+*   4.8 - Affichez le contenu de `/etc/motd` et `/etc/login.defs`
     
-*   4.8 - Créez le fichier `dracaufeu.jpg` dans le dossier `~/documents/notes_a_propos_des_commandes/`... Vous réalisez ensuite que vous auriez voulu mettre ce fichier dans `~/documents/img` ! Utilisez alors la commande `mv` pour déplacer `dracaufeu.jpg` vers le bon dossier.
+*   4.9- En utilisant `less`, checher `LOGIN_TIMEOUT` dans le fichier `/etc/login.defs`. Même chose, mais cette fois en utilisant `nano`.
     
-*   4.9 - Renommez `~/documents/img` en `~/documents/pokemons`
+*   4.10 - Combien de ligne fait le fichier `/etc/login.defs` ?
     
-*   4.10 - Créez un nouveau dossier `~/mybins` et copiez dedans les fichier `/bin/ls` et `/bin/pwd`.
+*   4.11 - Créez un nouveau dossier `~/mybins` et copiez dedans les fichier `/bin/ls` et `/bin/pwd`.
     
-*   4.11 - Créez un dossier `~/bkp/` et créer une copie de `~/documents/notes_a_propos_des_commandes` qui s'apelle `~/bkp/cmd_bkp`
+*   4.12 - Créez un dossier `~/bkp/` et créer une copie de `~/documents/notes_a_propos_des_commandes` qui s'apelle `~/bkp/cmd_bkp`
     
-*   4.12 - Supprimez `~/bkp/cmd_bkp/pwd.txt`
+*   4.13 - Supprimez `~/bkp/cmd_bkp/pwd.txt`
     
-*   4.13 - Supprimez tout le dossier `~/bkp/` récursivement
+*   4.14 - Supprimez tout le dossier `~/bkp/` récursivement
     
-*   4.14 - Tentez de supprimer `/etc/passwd` (en tant que `padawan` !)
+*   4.15 - Tentez de supprimer `/etc/passwd` (en tant que `padawan` !)
     
-*   4.15 - Inspectez les sorties de `df -h` et `lsblk`
+*   4.16 - Inspectez les sorties de `df -h` et `lsblk`
     
 
 ## 5. Utilisateurs et groupes
