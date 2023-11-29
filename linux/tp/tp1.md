@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T07:57:43.321Z
+date: 2023-11-29T15:12:21.171Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -118,7 +118,8 @@ dateCreated: 2023-11-08T09:48:25.249Z
 *   5.8 - Vérifiez que les infos de `r2d2` sont bien dans `/etc/passwd` et `/etc/shadow`
 *   5.9 - Que se passe-t-il si vous définissez `/bin/false` comme shell par défaut pour `r2d2` ?
 * 	5.10 - En inspectant le contenu de `/etc/sudoers` , pouvez-vous donnez le droit à `r2d2` d'utiliser sudo ?
-*		5.10 - Depuis un shell en tant que `r2d2` , validez que vous êtes en mesure de faire des commandes avec sudo . Constatez aussi que les commandes executées avec sudo sont logguées dans le ficher `/var/log/auth.log` (on pourra utiliser `tail` pour afficher seulement les dernières lignes du fichier)
+
+*		5.11 - Depuis un shell en tant que `r2d2` , validez que vous êtes en mesure de faire des commandes avec sudo . Constatez aussi que les commandes executées avec sudo sont logguées dans le ficher `/var/log/auth.log` (on pourra utiliser `tail` pour afficher seulement les dernières lignes du fichier)
 
 ## 6. Permissions
 
