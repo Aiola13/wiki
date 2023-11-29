@@ -2,7 +2,7 @@
 title: TP1
 description: 
 published: 1
-date: 2023-11-29T06:54:18.476Z
+date: 2023-11-29T06:56:30.863Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-08T09:48:25.249Z
@@ -116,7 +116,7 @@ dateCreated: 2023-11-08T09:48:25.249Z
 *   5.8 - Vérifiez que les infos de `r2d2` sont bien dans `/etc/passwd` et `/etc/shadow`
 *   5.9 - Que se passe-t-il si vous définissez `/bin/false` comme shell par défaut pour `r2d2` ?
 
-### [#](#_6-permissions) 6. Permissions
+## 6. Permissions
 
 *   6.1 - Créez un fichier `xwing.conf` que seul vous et votre groupe pouvez lire
 *   6.2 - Créez un fichier `private` et supprimer toutes les permissions dessus
