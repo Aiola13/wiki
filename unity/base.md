@@ -2,7 +2,7 @@
 title: Unity, qu'est-ce donc ?
 description: 
 published: 1
-date: 2023-11-26T20:44:57.916Z
+date: 2023-12-01T14:32:41.649Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T16:42:50.559Z
@@ -29,9 +29,9 @@ dateCreated: 2023-11-26T16:42:50.559Z
 
 # Histoire
 
-Unity Software Inc. est une société de développement de logiciels de jeux vidéo basée à San Francisco. Elle a été fondée au Danemark en 2004 sous le nom d'Over the Edge Entertainment et a changé de nom en 2007.
-Nicholas Francis, CCO; Joachim Ante, CTO; David Helgason, CEO
-Gooball
+> L'Aventure Commence en **2004**, lorsque trois amis et développeurs, **David Helgason** (CEO), **Joachim Ante** (CTO) et **Nicholas Francis** (CCO), se réunissent dans un appartement à Copenhague avec comme objectif initial de développer leur propre jeu : **Gooball**. Ils se rendent compte que les outils disponibles à l'époque ne répondraient pas à leurs besoins. C'est alors qu'ils ont décidé de créer leur propre **moteur de jeu** sous le nom **d'Over the Edge Entertainment**, un outil qui permettrait aux développeurs de créer facilement des jeux sophistiqués. La société change de nom en 2007 sous **Unity Software Inc.**
+{.is-success}
+
 
 ![gooball.webp](/images/videogames/unity/gooball.webp)
 
@@ -44,7 +44,7 @@ Gooball
 
 ![unity-01.png](/images/videogames/unity/unity-01.png)
  
-Pour l’installer, il suffit de se rendre sur le site officiel de Unity et de créer un compte avec une licence personnel. 
+Pour l’installer, il suffit de se rendre sur le site officiel de Unity et de créer un compte avec une licence personnel ou étudiante (pour avoir quelques avantages). 
 Download : https://unity3d.com/fr/get-unity/download
 Account : https://id.unity.com/account/new
 
