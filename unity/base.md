@@ -2,7 +2,7 @@
 title: Unity, qu'est-ce donc ?
 description: 
 published: 1
-date: 2023-12-01T14:52:24.259Z
+date: 2023-12-01T14:58:20.265Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T16:42:50.559Z
@@ -48,8 +48,24 @@ dateCreated: 2023-11-26T16:42:50.559Z
 
 **2009** - Support du PC avec DirectX 3D
 
+**2010** - Conférence internationale (Unite) annuelle à Montréal : 170 000 Développeurs présent avec annonce de la création de l'Asset Store (Achat d'objet 3D)
+
+**2011** : Achat de la compagnie Mecanim : Ajout d'animations simples directement dans le moteur grâce au système Mecanim
+
+**2013** : Unity a été conçu dès le départ pour la 3D, Unity 4.3 permet de faire rapidement des jeux 2D
+ 
 **Années Suivantes** - Expansion et Innovation : Unity s'élargit pour supporter de multiples plateformes et s'introduit dans des domaines comme la réalité augmentée et la réalité virtuelle.
 
-**Présent* *- Unity dans l'Industrie : Devenu un outil essentiel pour les développeurs de jeux, de réalité augmentée/virtuelle et d'animations.
+**Présent** 
+- jeux 2D et 3D
+- système de particules pour effets spéciaux
+- système de texte UI
+- programmation avec langage C# (sharp)
+- supporte 27 plateformes (MacOS, Windows, Linux, iOS, Android, WebGL, PlayStation, Xbox One, Wii, etc.)
+- services cloud: Unity Ads, Unity Analytics, Unity Cloud Build, Unity Multiplayer
+- c’est la plateforme la plus utilisée dans le monde (ou plus pour longtemps)
+
+# Quelques jeux développer avec Unity
+
 
 
