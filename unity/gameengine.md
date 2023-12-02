@@ -2,7 +2,7 @@
 title: Les concepts du moteur Unity
 description: 
 published: 1
-date: 2023-12-02T14:09:20.065Z
+date: 2023-12-02T14:12:12.687Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-01T14:49:53.794Z
