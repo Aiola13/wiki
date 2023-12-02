@@ -2,7 +2,7 @@
 title: Unity, qu'est-ce donc ?
 description: 
 published: 1
-date: 2023-12-01T15:07:05.086Z
+date: 2023-12-02T13:56:18.697Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-26T16:42:50.559Z
@@ -67,6 +67,6 @@ dateCreated: 2023-11-26T16:42:50.559Z
 
 # Quelques jeux développer avec Unity
 
-| ![cuphead.jpg](/images/videogames/unity/cuphead.jpg)  | ![oddworld.png](/images/videogames/unity/oddworld.png) | ![superhot.jpg](/images/videogames/unity/superhot.jpg =500x) |
+| Cuphead (MHDR)  | Oddworld Soulstorm (Oddworld Inhabitants)  | SuperHot (SH Team) |
 |---|---|---|
-
+| ![cuphead.jpg](/images/videogames/unity/cuphead.jpg)  | ![oddworld.png](/images/videogames/unity/oddworld.png) | ![superhot.jpg](/images/videogames/unity/superhot.jpg =500x) |
