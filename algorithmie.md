@@ -2,7 +2,7 @@
 title: Algorithmie
 description: La conception d'un code
 published: 1
-date: 2024-01-04T18:37:36.595Z
+date: 2024-01-04T19:01:38.034Z
 tags: algo, algorithmie, code
 editor: markdown
 dateCreated: 2023-01-16T00:21:44.775Z
@@ -43,7 +43,8 @@ exemple : Cuisiner un CheeseCake 🤤🤤🤤
 
 Les ordinateurs fonctionnent grâce à la manipulation de bits, l'unité de base de l'information en informatique. Chaque bit est un 0 ou un 1, représentant un état off ou on. Cette simplicité permet de construire des systèmes complexes.
 
-### Codage des nombres en binaire
+
+<!-- ### Codage des nombres en binaire
 
 Numération de position : Explique le système décimal couramment utilisé et introduit le concept de base, crucial pour comprendre le binaire (base 2) et l'hexadécimal (base 16).
 Binaire : Décrit comment les nombres sont représentés en utilisant uniquement des 0 et des 1.
@@ -63,7 +64,7 @@ Fréquence d'échantillonnage et Profondeur de bits : Explique comment ces param
 
 Pixels et Résolution : Présente le concept de pixel comme le plus petit élément d'une image et explique comment la résolution affecte la qualité de l'image.
 Couleurs RVB : Discute de la manière dont les couleurs sont représentées numériquement en utilisant une combinaison de rouge, vert et bleu pour créer une gamme de couleurs.
-En intégrant ce résumé dans un cours, les étudiants bénéficieront d'une vue d'ensemble claire et précise du fonctionnement et de l'importance du codage dans le monde numérique. Cela fournira une base solide pour comprendre comment les ordinateurs interprètent et traitent divers types de données.
+En intégrant ce résumé dans un cours, les étudiants bénéficieront d'une vue d'ensemble claire et précise du fonctionnement et de l'importance du codage dans le monde numérique. Cela fournira une base solide pour comprendre comment les ordinateurs interprètent et traitent divers types de données. -->
 
 # Maintenant que vous en savez plus, Commençons ! 😁
 
