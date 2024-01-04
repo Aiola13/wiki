@@ -2,7 +2,7 @@
 title: Algorithmie
 description: La conception d'un code
 published: 1
-date: 2023-01-18T21:20:19.778Z
+date: 2024-01-04T18:18:37.348Z
 tags: algo, algorithmie, code
 editor: markdown
 dateCreated: 2023-01-16T00:21:44.775Z
@@ -18,6 +18,8 @@ dateCreated: 2023-01-16T00:21:44.775Z
 - [Le tri *parce qu'il faut bien ranger ;)*](/algorithmie/tri)
 - [Compléxité d'un algorithme *Oui, parce qu'un algo peut être plus ou moins complexe !*](/alhorithmie/complex)
 - [Slide du cours *:computer:*](/algorithmie/slide)
+{.links-list}
+- [Exercices *:banana:*](/algorithmie/exercices)
 {.links-list}
 
 ## Mais finalement qu'est-ce que c'est ? 🤔
