@@ -2,7 +2,7 @@
 title: Aide Mémoire
 description: 
 published: 1
-date: 2024-01-09T22:36:43.027Z
+date: 2024-01-09T22:37:49.102Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-09T22:36:23.516Z
