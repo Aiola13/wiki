@@ -2,7 +2,7 @@
 title: Aide Mémoire
 description: 
 published: 1
-date: 2024-01-09T22:36:23.516Z
+date: 2024-01-09T22:36:43.027Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-09T22:36:23.516Z
@@ -17,13 +17,13 @@ Aide mémoire sur les balises HTML. Vous retrouverez dans cet aide mémoire les 
 
 <details>
   <summary>Table des matières</summary>
-  <li> La structure d'une page </li>
-<li> Exemple</li>
-<li> L'entête : head</li>
-<li> Le corps : body</li>
-<li> Les Attributs</li>
-<li> Allons plus loin : La sémantique</li>
-<li> Activer le responsive</li>
+    <li> La structure d'une page </li>
+    <li> Exemple</li>
+    <li> L'entête : head</li>
+    <li> Le corps : body</li>
+    <li> Les Attributs</li>
+    <li> Allons plus loin : La sémantique</li>
+    <li> Activer le responsive</li>
 </details>
 
 
