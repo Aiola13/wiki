@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-12T09:50:25.903Z
+date: 2024-06-12T13:23:36.205Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -131,6 +131,13 @@ sudo ifdown vmbr1
 sudo ifup vmbr1
 
 ## Configuration des disques
+
+fdisk --help pour demander l'aide et la liste des commandes
+fdisk -l pour lister les partitions et disques
+
+fdisk /dev/sdbx pour les informations sur un disque en particulier
+
+
 
 
 
