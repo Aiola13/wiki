@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-10T14:14:23.045Z
+date: 2024-06-12T09:50:25.903Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -129,6 +129,12 @@ post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 22000 -j DNAT --
 
 sudo ifdown vmbr1
 sudo ifup vmbr1
+
+## Configuration des disques
+
+
+
+
 <!-- Installation d'un Serveur Dédié chez OVH avec Proxmox et OpenMediaVault
 Cette procédure décrit les étapes nécessaires pour installer un serveur dédié chez OVH, y configurer Proxmox pour la gestion des machines virtuelles (VM), et créer une machine virtuelle sous OpenMediaVault (OMV) pour la gestion du stockage et des services courants tels que Jellyfin et Wiki.js, exécutés dans des conteneurs Docker. Un reverse proxy (swag) sera également configuré pour faciliter l'accès aux services via des sous-domaines.
 
