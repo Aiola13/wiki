@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-12T13:23:36.205Z
+date: 2024-06-13T14:02:15.447Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -137,6 +137,10 @@ fdisk -l pour lister les partitions et disques
 
 fdisk /dev/sdbx pour les informations sur un disque en particulier
 
+ensuite n pour créer une partition
+P pour primary et laisser par défaut
+
+en suite w pour valider l'écriture
 
 
 
