@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-14T07:26:21.672Z
+date: 2024-06-14T07:45:08.168Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -196,7 +196,7 @@ mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sd[abc]
 
 mdadm --detail /dev/md0
 
- cat /proc/mdstat
+cat /proc/mdstat
 
 
 
