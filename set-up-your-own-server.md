@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-14T07:45:08.168Z
+date: 2024-06-14T14:53:32.900Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -213,6 +213,15 @@ Une fois dans les informations du disque sélectionner :
 - Acceptez les valeurs par défaut pour le début et la fin de la partition.
 - Tapez t pour changer le type de partition, et entrez fd pour définir le type à "Linux RAID autodetect".
 - Tapez w pour écrire les modifications et quitter.
+
+
+
+
+## Ajout d'un administrateur et des utilisateurs
+
+### Qu'est-ce que PAM (Pluggable Authentication Module) ?
+
+PAM est la méthode d'authentification native de linux. Elle permet entre autre de pouvoir recuillir toutes sortes d'information à propos d'un tuilisateur mais également de rajouter cet utilisateur à la gestion du PVE.
 
 
 <!-- Installation d'un Serveur Dédié chez OVH avec Proxmox et OpenMediaVault
