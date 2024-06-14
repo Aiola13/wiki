@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-13T14:02:15.447Z
+date: 2024-06-14T07:18:41.932Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -130,20 +130,83 @@ post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 22000 -j DNAT --
 sudo ifdown vmbr1
 sudo ifup vmbr1
 
-## Configuration des disques
+## Configuration des disques LVM (Logical Volume Manager)
 
-fdisk --help pour demander l'aide et la liste des commandes
-fdisk -l pour lister les partitions et disques
-
-fdisk /dev/sdbx pour les informations sur un disque en particulier
-
-ensuite n pour créer une partition
-P pour primary et laisser par défaut
-
-en suite w pour valider l'écriture
+> LVM, ou Gestionnaire de Volumes Logiques, est une technologie de gestion de stockage pour les systèmes d'exploitation Linux. Elle permet aux administrateurs système de regrouper et de gérer l'espace disque de manière plus flexible que les partitions classiques.
+{.is-success}
 
 
+![lvm.png](/images/divers/lvm.png)
 
+### Effacer les disques (facultatif mais recommandé)
+
+> Si les disques contiennent des données précédentes, il est conseillé de les effacer pour éviter tout conflit.
+{.is-warning}
+
+```bash
+sgdisk --zap-all /dev/sdX
+```
+
+### Préparer les disques
+
+Pour identifier les disques utilisez la commande : 
+
+```
+fdisk
+```
+ou
+```
+lsblk
+```
+
+```bash
+fdisk --help # pour demander l'aide et la liste des commandes
+fdisk -l # pour lister les partitions et disques
+fdisk /dev/sdbx # pour les informations sur un disque en particulier
+```
+
+Une fois dans les informations du disque sélectionner : 
+- Tapez n pour ajouter une nouvelle partition.
+- Sélectionnez p pour une partition primaire.
+- Choisissez le numéro de partition (1 est généralement correct).
+- Acceptez les valeurs par défaut pour le début et la fin de la partition.
+- Tapez w pour écrire les modifications et quitter.
+
+
+Une fois les partitions créées : 
+
+- Créer un PV (Physical Volume) 
+```bash
+pvcreate /dev/sdbx
+```
+
+- Créer un VG (Volume Group)
+```bash
+vgcreate big1 /dev/sdbx
+```
+
+
+## Configuration LVM + RAID
+
+mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sd[abc]
+
+
+
+
+
+
+
+
+
+
+
+Une fois dans les informations du disque sélectionner : 
+- Tapez n pour ajouter une nouvelle partition.
+- Sélectionnez p pour une partition primaire.
+- Choisissez le numéro de partition (1 est généralement correct).
+- Acceptez les valeurs par défaut pour le début et la fin de la partition.
+- Tapez t pour changer le type de partition, et entrez fd pour définir le type à "Linux RAID autodetect".
+- Tapez w pour écrire les modifications et quitter.
 
 
 <!-- Installation d'un Serveur Dédié chez OVH avec Proxmox et OpenMediaVault
