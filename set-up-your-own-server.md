@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-06-14T14:53:32.900Z
+date: 2024-08-23T17:44:11.968Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -147,7 +147,7 @@ sudo ifup vmbr1
 sgdisk --zap-all /dev/sdX
 ```
 
-### Préparer les disques
+### Préparer les disques (Création de partition)
 
 Pour identifier les disques utilisez la commande : 
 
@@ -176,17 +176,24 @@ Une fois dans les informations du disque sélectionner :
 Une fois les partitions créées : 
 
 - Créer un PV (Physical Volume) 
+> Vulgairement, un PV, c'est un moyen d'indiquer à LVM que le disque est utilisable et peut stocker des informations.
+{.is-success}
 ```bash
 pvcreate /dev/sdbx
 ```
 
 - Créer un VG (Volume Group)
+> Un VG, est un moyen d'aggréger (combiner l'espace) des PVs entre eux pour en créer un seul et unique espace de stockage logique.
+{.is-success}
 ```bash
 vgcreate big1 /dev/sdbx
 ```
 
 
 ## Configuration LVM + RAID
+
+> Pour plus de sécuriter.
+{.is-success}
 
 mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sd[abc]
 
