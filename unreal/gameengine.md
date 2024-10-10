@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-10T17:56:05.759Z
+date: 2024-10-10T17:56:34.586Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -49,7 +49,7 @@ L’exécution de l’application se fait à partir des boutons suivants :
 
 ![unreal-04-play_button.png](/images/videogames/unreal/unreal-05-play_button.png){.align-center}
 
-> Astuce : En tout temps, vous pouvez modifier la disposition des “Layouts” en cliquant sur Window > Layouts. Ou les déplacer à la façon d’onglets.
+> Astuce : En tout temps, vous pouvez modifier la disposition des “Layouts” en cliquant sur Window > Load Layout. Ou les déplacer à la façon d’onglets.
 {.is-info}
 
 
