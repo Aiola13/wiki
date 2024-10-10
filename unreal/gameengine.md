@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-10T17:49:13.152Z
+date: 2024-10-10T17:55:15.699Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -41,13 +41,13 @@ L’interface se présente comme ceci :
 
 Les interactions dans l’éditeur graphique peuvent se faire à partir des boutons suivants : 
 
-![unity-03.gif](/images/videogames/unity/unity-03.gif){.align-center}
+![unreal-04-move_button.png](/images/videogames/unreal/unreal-04-move_button.png){.align-center}
 
 Dans l’ordre : Déplacement, Translation, Rotation, Echelle
 
 L’exécution de l’application se fait à partir des boutons suivants :
 
-![unity-04.png](/images/videogames/unity/unity-04.png)
+![unreal-04-play_button.png](/images/videogames/unreal/unreal-05-play_button.png){.align-center}
 
 > Astuce : En tout temps, vous pouvez modifier la disposition des “Layouts” en cliquant sur Window > Layouts. Ou les déplacer à la façon d’onglets.
 {.is-info}
