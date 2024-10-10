@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-10T17:43:30.442Z
+date: 2024-10-10T17:49:13.152Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -31,12 +31,13 @@ L’interface se présente comme ceci :
 
 ![unreal-03-interface.png](/images/videogames/unreal/unreal-03-interface.png)
 
-1.	Hierarchy : C’est la vue qui indique l’ensemble des objets (GameObject) et leurs relation.
-2.	Inspector : Ce sont les paramètres (Component) de l’objet (GameObject) sélectionné.
-3.	Scene : C’est la vue d’édition d’Unity (réglages positions, orientations, ajout d’objets …).
-4.	Game : Exécution de l’application, c’est la vue de la Camera.
-5.	Project : C’est l’explorateur de votre projet.
-6.	Console : La console affiche les erreurs relatives à votre projet. (Erreur de compilation)
+1.	Scene : C’est la vue d’édition d'Unreal (réglages positions, orientations, ajout d’objets …).
+2.	Outliner : Affiche tous les acteurs de la scène dans une arborescence hiérarchique (les objets peuvent y être sélectionnés)
+3.	Details : Ce sont les paramètres (Détails) de l’objet (Actor) sélectionné.
+4. 	Section comprennant : 
+	- Content Drawer : C’est l’explorateur de votre projet.
+	- Output Log : La console affiche les erreurs relatives à votre projet. (Erreur de compilation)
+  	- Cmd : Permet d'éxécuter des commandes dans l'éditeur
 
 Les interactions dans l’éditeur graphique peuvent se faire à partir des boutons suivants : 
 
