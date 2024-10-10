@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-10T09:36:23.588Z
+date: 2024-10-10T09:36:44.273Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -21,7 +21,7 @@ Download : https://store.epicgames.com/fr/
 
 # Unreal Launcher
 
-> Unreal lAUNCHER nous permet de lancer des projets à partir de templates prédéfinis, avec des plugins et configurations déjà paramétrés pour faciliter la création.
+> Unreal Launcher nous permet de lancer des projets à partir de templates prédéfinis, avec des plugins et configurations déjà paramétrés pour faciliter la création.
 {.is-success}
 
 ![unreal-02-unreal_launcher.png](/images/videogames/unreal/unreal-02-unreal_launcher.png)
