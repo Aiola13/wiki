@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-10T17:58:29.592Z
+date: 2024-10-10T18:09:00.239Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -55,3 +55,6 @@ L’exécution de l’application se fait à partir des boutons suivants :
 
 > Astuce : Vous pouvez également générer des primitives à l’écran (Cube, Sphere …), en appuyant sur le bouton  ![unreal-06-add_button.png](/images/videogames/unreal/unreal-06-add_button.png).
 {.is-info}
+
+
+# Actors & Details
