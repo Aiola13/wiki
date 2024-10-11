@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:36:57.828Z
+date: 2024-10-11T05:38:45.352Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -69,6 +69,7 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 > Pour plus de détail, rendez-vous directement sur la doc de Epic Games : https://dev.epicgames.com/documentation/fr-fr/unreal-engine/unreal-editor-interface
 {.is-info}
 
+# Focus : Content Drawer
 
 # Terminologie : Actors / Details / Pawn
 
