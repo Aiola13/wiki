@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:12:42.505Z
+date: 2024-10-11T05:20:17.232Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -15,8 +15,13 @@ dateCreated: 2024-10-02T16:06:39.314Z
 
 ![unreal-01-epic_launcher.png](/images/videogames/unreal/unreal-01-epic_launcher.png)
  
-Pour l'installer, il suffit de se rendre sur le site officiel d'Epic Games et de créer un compte.
-Download : https://store.epicgames.com/fr/
+> Pour l'installer, il suffit de se rendre sur le site officiel d'Epic Games et de créer un compte.
+> Download : https://store.epicgames.com/fr/
+{.is-success}
+
+
+> Pour plus de détail, rendez-vous directement sur la doc de Epic Games : https://dev.epicgames.com/documentation/fr-fr/unreal-engine/installing-unreal-engine
+{.is-info}
 
 # Unreal Launcher
 
@@ -31,10 +36,10 @@ L’interface se présente comme ceci :
 
 ![unreal-03-interface.png](/images/videogames/unreal/unreal-03-interface.png)
 
-1.	Scene : C’est la vue d’édition d'Unreal (réglages positions, orientations, ajout d’objets …).
+1.	Level Viewport : C’est la vue d’édition d'Unreal (réglages positions, orientations, ajout d’objets …).
 2.	Outliner : Affiche tous les acteurs de la scène dans une arborescence hiérarchique (les objets peuvent y être sélectionnés)
-3.	Details : Ce sont les paramètres (Détails) de l’objet (Actor) sélectionné.
-4. 	Section comprennant : 
+3.	Details Panel : Ce sont les paramètres (Détails) de l’objet (Actor) sélectionné.
+4. 	Bottom Toolbar : 
 	- Content Drawer : C’est l’explorateur de votre projet. C'est une fenêtre qui affiche tous les assets, matériaux et autres fichiers contenus dans votre projet.
 	- Output Log : La console affiche les erreurs relatives à votre projet. (Erreur de compilation)
   	- Cmd : Permet d'éxécuter des commandes dans l'éditeur
@@ -56,5 +61,12 @@ L’exécution de l’application se fait à partir des boutons suivants :
 > Astuce : Vous pouvez également générer des primitives à l’écran (Cube, Sphere …), en appuyant sur le bouton  ![unreal-06-add_button.png](/images/videogames/unreal/unreal-06-add_button.png).
 {.is-info}
 
+> Pour plus de détail, rendez-vous directement sur la doc de Epic Games : https://dev.epicgames.com/documentation/fr-fr/unreal-engine/unreal-editor-interface
+{.is-info}
+
 
 # Actors & Details
+
+Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs).
+Ils contiennent des propriétés (Details) appelées Components.
+
