@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T06:28:56.005Z
+date: 2024-10-11T06:38:02.718Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -81,7 +81,7 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 ![unreal-07-content_drawer.png](/images/videogames/unreal/unreal-07-content_drawer.png)
 
-#  Convention de nommage | Nommenclature
+#  Convention de nommage
 
 > Dans Unreal (et pas seulement), il existe pour tous les objets des conventions de nommage. 
 {.is-success}
@@ -114,6 +114,8 @@ En se positionnant dans le dossier **StarterContent**, dossier importé au déma
 | Texture                  | T_     |
 {.align-center}
 
+> Ne pas utiliser d'espace dans le nom de vos objets
+{.is-warning}
 
 
 # Terminologie
