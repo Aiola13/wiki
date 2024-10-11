@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:27:29.654Z
+date: 2024-10-11T05:36:57.828Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -34,19 +34,22 @@ dateCreated: 2024-10-02T16:06:39.314Z
 {.is-warning}
 
 
-# Interface
+# Interface générale
 
 L’interface se présente comme ceci : 
 
 ![unreal-03-interface.png](/images/videogames/unreal/unreal-03-interface.png)
 
-1.	Level Viewport : C’est la vue d’édition d'Unreal (réglages positions, orientations, ajout d’objets …).
-2.	Outliner : Affiche tous les acteurs de la scène dans une arborescence hiérarchique (les objets peuvent y être sélectionnés)
-3.	Details Panel : Ce sont les paramètres (Détails) de l’objet (Actor) sélectionné.
-4. 	Bottom Toolbar : 
-	- Content Drawer : C’est l’explorateur de votre projet. C'est une fenêtre qui affiche tous les assets, matériaux et autres fichiers contenus dans votre projet.
-	- Output Log : La console affiche les erreurs relatives à votre projet. (Erreur de compilation)
-  	- Cmd : Permet d'éxécuter des commandes dans l'éditeur
+| N° | Panel Name | Description                                                        |
+|---|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Level Viewport | C’est la vue d’édition d'Unreal (réglages positions, orientations, ajout d’objets …).                                                        |
+| 2 | Outliner       | Affiche tous les acteurs de la scène dans une arborescence hiérarchique (les objets peuvent y être sélectionnés)                             |
+| 3 | Details Panel  | Ce sont les paramètres (Détails) de l’objet (Actor) sélectionné.                                                                             |
+| 4 | Bottom Toolbar |                                                                                                                                              |
+|   | Content Drawer | C’est l’explorateur de votre projet. C'est une fenêtre qui affiche tous les assets, matériaux et autres fichiers contenus dans votre projet. |
+|   | Output Log     | La console affiche les erreurs relatives à votre projet. (Erreur de compilation)                                                             |
+|   | Cmd            | Permet d'éxécuter des commandes dans l'éditeur          
+
 
 Les interactions dans l’éditeur graphique peuvent se faire à partir des boutons suivants : 
 
@@ -54,9 +57,7 @@ Les interactions dans l’éditeur graphique peuvent se faire à partir des bout
 
 Dans l’ordre : Déplacement, Translation, Rotation, Echelle
 
-L’exécution de l’application se fait à partir des boutons suivants :
-
-![unreal-04-play_button.png](/images/videogames/unreal/unreal-05-play_button.png){.align-center}
+L’exécution de l’application se fait à partir des boutons suivants : ![unreal-04-play_button.png](/images/videogames/unreal/unreal-05-play_button.png)
 
 > Astuce : En tout temps, vous pouvez modifier la disposition des “Layouts” en cliquant sur Window > Load Layout. Ou les déplacer à la façon d’onglets.
 {.is-info}
