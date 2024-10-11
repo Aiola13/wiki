@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:47:34.591Z
+date: 2024-10-11T05:53:58.348Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -83,9 +83,53 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 # Terminologie | Convention de nommage
 
-> Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs).
+## Projet
+> Un projet Unreal Engine 5 contient tout le contenu de votre jeu, avec des dossiers tels que Blueprints et Materials. Les dossiers peuvent être organisés à votre convenance. Chaque projet est associé à un fichier .uproject, qui permet de créer, ouvrir et enregistrer le projet.
 {.is-success}
 
+
+## Blueprint (le fameux)
+> Le Blueprint est un système de scripting visuel qui utilise une interface par nœuds pour créer des éléments de gameplay. Il est utilisé pour définir des classes ou objets orientés objet (OO) dans l'éditeur Unreal.
+{.is-success}
+
+
+## Actors
+> Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs). Un acteur est donc un objet pouvant être placé dans un niveau, comme une caméra ou un joueur. Il peut être transformé en 3D et manipulé via le code.
+{.is-success}
+
+
+## Pawn
+Un pawn (pion) est un acteur représentant les personnages du jeu. Ils peuvent être contrôlés par le joueur ou l'IA.
+
+Personnage
+Un personnage est un type de pion avec des fonctionnalités supplémentaires pour le mouvement et les collisions.
+
+Contrôleur de joueur
+Il traduit les commandes du joueur en interactions dans le jeu, surtout en multijoueur où il gère les interactions réseau.
+
+Contrôleur IA
+Comme le contrôleur de joueur, mais pour les personnages non joueurs (PNJ).
+
+État du joueur
+Représente l'état d'un participant au jeu, avec des informations comme le score ou la santé. Il est synchronisé sur toutes les machines en multijoueur.
+
+Mode de jeu
+Le mode de jeu définit les règles du jeu (conditions de victoire, pause, etc.). En multijoueur, il n'existe que sur le serveur.
+
+État du jeu
+Contient les informations synchronisées pour tous les joueurs, comme le score ou l'état d'une partie.
+
+Brosse
+Une brosse est un acteur représentant une forme 3D, utilisée pour définir la géométrie du niveau.
+
+Volume
+Un volume est un espace 3D utilisé pour des effets variés, comme bloquer les acteurs ou infliger des dégâts.
+
+Niveau
+Un niveau est une zone de jeu définie, enregistrée sous forme de fichier .umap, contenant les acteurs et la géométrie.
+
+Monde
+Le monde est un conteneur pour tous les niveaux du jeu, gérant le streaming de niveaux et le spawn d'acteurs dynamiques.
 
 
 
