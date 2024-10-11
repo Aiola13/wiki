@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:38:45.352Z
+date: 2024-10-11T05:42:32.483Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -69,9 +69,11 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 > Pour plus de détail, rendez-vous directement sur la doc de Epic Games : https://dev.epicgames.com/documentation/fr-fr/unreal-engine/unreal-editor-interface
 {.is-info}
 
-# Focus : Content Drawer
+# Focus : Content Drawer & Browser
 
-# Terminologie : Actors / Details / Pawn
+![unreal-07-content_drawer.png](/images/videogames/unreal/unreal-07-content_drawer.png)
+
+# Terminologie
 
 > Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs).
 {.is-success}
