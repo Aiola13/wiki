@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:12:34.827Z
+date: 2024-10-11T05:12:42.505Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -35,7 +35,7 @@ L’interface se présente comme ceci :
 2.	Outliner : Affiche tous les acteurs de la scène dans une arborescence hiérarchique (les objets peuvent y être sélectionnés)
 3.	Details : Ce sont les paramètres (Détails) de l’objet (Actor) sélectionné.
 4. 	Section comprennant : 
-	- Content Drawer : C’est l’explorateur de votre projet. c'est une fenêtre qui affiche tous les assets, matériaux et autres fichiers contenus dans votre projet.
+	- Content Drawer : C’est l’explorateur de votre projet. C'est une fenêtre qui affiche tous les assets, matériaux et autres fichiers contenus dans votre projet.
 	- Output Log : La console affiche les erreurs relatives à votre projet. (Erreur de compilation)
   	- Cmd : Permet d'éxécuter des commandes dans l'éditeur
 
