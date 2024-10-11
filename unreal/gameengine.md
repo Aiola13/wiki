@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:56:07.175Z
+date: 2024-10-11T06:09:24.437Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -81,7 +81,21 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 ![unreal-07-content_drawer.png](/images/videogames/unreal/unreal-07-content_drawer.png)
 
-#  Convention de nommage
+#  Convention de nommage | Nommenclature
+
+> Dans Unreal (et pas seulement), il existe pour tous les objets des conventions de nommage. 
+{.is-success}
+
+En se positionnant dans le dossier **StarterContent**, dossier importé au démarrage d'un projet (si la case a été coché), on s'apperçoit qu'il y a une nommenclature.
+![unreal-08-namming-01.png](/images/videogames/unreal/unreal-08-namming-01.png)
+
+![unreal-08-namming-02.png](/images/videogames/unreal/unreal-08-namming-02.png)
+
+> La forme générale est : **[AssetTypePrefix]\_[AssetName]\_[Descriptor]\_[OptionalVariantLetterOrNumber]**
+{.is-success}
+
+
+
 
 # Terminologie
 
