@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:55:00.048Z
+date: 2024-10-11T05:55:47.031Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -103,35 +103,13 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 {.is-success}
 
 
-## Charactere
-Un personnage est un type de pion avec des fonctionnalités supplémentaires pour le mouvement et les collisions.
+## Character
+> Un personnage est un type de pion avec des fonctionnalités supplémentaires pour le mouvement et les collisions.
+{.is-success}
 
-Player Controller
-Il traduit les commandes du joueur en interactions dans le jeu, surtout en multijoueur où il gère les interactions réseau.
 
-Contrôleur IA
-Comme le contrôleur de joueur, mais pour les personnages non joueurs (PNJ).
-
-État du joueur
-Représente l'état d'un participant au jeu, avec des informations comme le score ou la santé. Il est synchronisé sur toutes les machines en multijoueur.
-
-Mode de jeu
-Le mode de jeu définit les règles du jeu (conditions de victoire, pause, etc.). En multijoueur, il n'existe que sur le serveur.
-
-État du jeu
-Contient les informations synchronisées pour tous les joueurs, comme le score ou l'état d'une partie.
-
-Brosse
-Une brosse est un acteur représentant une forme 3D, utilisée pour définir la géométrie du niveau.
-
-Volume
-Un volume est un espace 3D utilisé pour des effets variés, comme bloquer les acteurs ou infliger des dégâts.
-
-Niveau
-Un niveau est une zone de jeu définie, enregistrée sous forme de fichier .umap, contenant les acteurs et la géométrie.
-
-Monde
-Le monde est un conteneur pour tous les niveaux du jeu, gérant le streaming de niveaux et le spawn d'acteurs dynamiques.
-
+## Player Controller
+> Il traduit les commandes du joueur en interactions dans le jeu, surtout en multijoueur où il gère les interactions réseau.
+{.is-success}
 
 
