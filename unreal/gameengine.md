@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:20:17.232Z
+date: 2024-10-11T05:22:38.267Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -29,6 +29,10 @@ dateCreated: 2024-10-02T16:06:39.314Z
 {.is-success}
 
 ![unreal-02-unreal_launcher.png](/images/videogames/unreal/unreal-02-unreal_launcher.png)
+
+> Si vous avez une carte graphique récente supportant le RayTracing (RTX), je vous recommande vivement de cocher la case RayTracing avant de lancer un projet, cela aura pour effet d'activer dans les paramètres du projet tout en relation avec la  gestion de la lumière (Lumen, nous reviendrons dessus plus tard).
+{.is-warning}
+
 
 # Interface
 
