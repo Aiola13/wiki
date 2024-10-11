@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T06:27:03.673Z
+date: 2024-10-11T06:28:56.005Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -107,7 +107,6 @@ En se positionnant dans le dossier **StarterContent**, dossier importé au déma
 | HDRI                     | HDR_   |
 | Material                 | M_     |
 | Material Instance        | MI_    |
-| Physics Asset            | PHYS_  |
 | Physics Material         | PM_    |
 | Post Process Material    | PPM_   |
 | Skeletal Mesh            | SK_    |
