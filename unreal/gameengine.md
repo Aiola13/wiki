@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:42:43.410Z
+date: 2024-10-11T05:46:07.723Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -70,6 +70,14 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 {.is-info}
 
 # Focus : Content Drawer & Browser
+
+> Vous pouvez ouvrir votre explorateur de fichier de deux manières. 
+> - Windows > Content Browser, qui ouvrira une fenêtre indépendante, déplaçable comme un onglet.
+> - En cliquant sur Content Drawer dans le **Bottom Panel**, ou en utilisant le raccourcie clavier **Ctrl + Esp**
+> 
+> ‎
+{.is-success}
+
 
 ![unreal-07-content_drawer.png](/images/videogames/unreal/unreal-07-content_drawer.png)
 
