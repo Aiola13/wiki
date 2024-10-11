@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:46:07.723Z
+date: 2024-10-11T05:47:34.591Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -71,9 +71,9 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 # Focus : Content Drawer & Browser
 
-> Vous pouvez ouvrir votre explorateur de fichier de deux manières. 
-> - Windows > Content Browser, qui ouvrira une fenêtre indépendante, déplaçable comme un onglet.
-> - En cliquant sur Content Drawer dans le **Bottom Panel**, ou en utilisant le raccourcie clavier **Ctrl + Esp**
+> Elément central de votre projet, vous pouvez ouvrir votre explorateur de fichier de deux manières.
+> - **Windows > Content Browser**, qui ouvrira une fenêtre indépendante, déplaçable comme un onglet.
+> - En cliquant sur **Content Drawer** dans le **Bottom Panel**, ou en utilisant le raccourcie clavier **Ctrl + Esp**
 > 
 > ‎
 {.is-success}
