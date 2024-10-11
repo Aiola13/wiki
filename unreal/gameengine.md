@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:53:58.348Z
+date: 2024-10-11T05:55:00.048Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -99,12 +99,14 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 
 ## Pawn
-Un pawn (pion) est un acteur représentant les personnages du jeu. Ils peuvent être contrôlés par le joueur ou l'IA.
+> Un pawn (pion) est un acteur représentant les personnages du jeu. Ils peuvent être contrôlés par le joueur ou l'IA.
+{.is-success}
 
-Personnage
+
+## Charactere
 Un personnage est un type de pion avec des fonctionnalités supplémentaires pour le mouvement et les collisions.
 
-Contrôleur de joueur
+Player Controller
 Il traduit les commandes du joueur en interactions dans le jeu, surtout en multijoueur où il gère les interactions réseau.
 
 Contrôleur IA
