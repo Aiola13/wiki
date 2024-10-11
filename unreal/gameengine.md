@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:42:32.483Z
+date: 2024-10-11T05:42:43.410Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -73,7 +73,7 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 ![unreal-07-content_drawer.png](/images/videogames/unreal/unreal-07-content_drawer.png)
 
-# Terminologie
+# Terminologie | Convention de nommage
 
 > Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs).
 {.is-success}
