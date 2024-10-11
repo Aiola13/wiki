@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:22:38.267Z
+date: 2024-10-11T05:27:29.654Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -69,8 +69,11 @@ L’exécution de l’application se fait à partir des boutons suivants :
 {.is-info}
 
 
-# Actors & Details
+# Terminologie : Actors / Details / Pawn
 
-Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs).
-Ils contiennent des propriétés (Details) appelées Components.
+> Tous les objets utilisés dans Unreal sont appelés des Actors (Acteurs).
+{.is-success}
+
+
+
 
