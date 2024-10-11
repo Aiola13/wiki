@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T05:55:47.031Z
+date: 2024-10-11T05:56:07.175Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -81,7 +81,9 @@ L’exécution de l’application se fait à partir des boutons suivants : ![unr
 
 ![unreal-07-content_drawer.png](/images/videogames/unreal/unreal-07-content_drawer.png)
 
-# Terminologie | Convention de nommage
+#  Convention de nommage
+
+# Terminologie
 
 ## Projet
 > Un projet Unreal Engine 5 contient tout le contenu de votre jeu, avec des dossiers tels que Blueprints et Materials. Les dossiers peuvent être organisés à votre convenance. Chaque projet est associé à un fichier .uproject, qui permet de créer, ouvrir et enregistrer le projet.
