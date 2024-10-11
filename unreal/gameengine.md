@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T06:09:24.437Z
+date: 2024-10-11T06:24:30.880Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -91,11 +91,28 @@ En se positionnant dans le dossier **StarterContent**, dossier importé au déma
 
 ![unreal-08-namming-02.png](/images/videogames/unreal/unreal-08-namming-02.png)
 
-> La forme générale est : **[AssetTypePrefix]\_[AssetName]\_[Descriptor]\_[OptionalVariantLetterOrNumber]**
+> La forme générale est : **[AssetTypePrefix]\_[AssetName]\_[Suffix]\_[OptionalVariantLetterOrNumber]**
 {.is-success}
 
+> - AssetTypePrefix : Identifie le type de ressource (ex. : texture, modèle).
+> - AssetName : Nom propre de la ressource.
+> - Suffix : Fournit des informations supplémentaires sur la ressource (ex. : carte de normal ou carte d'opacité pour une texture).
+> - OptionalVariantLetterOrNumber : Permet de différencier les versions ou variantes d'une ressource.
+> 
+> ‎
+{.is-info}
 
-
+| Asset                    | Prefix |
+|--------------------------|--------|
+| HDRI                     | HDR_   |
+| Material                 | M_     |
+| Material Instance        | MI_    |
+| Physics Asset            | PHYS_  |
+| Physics Material         | PM_    |
+| Post Process Material    | PPM_   |
+| Skeletal Mesh            | SK_    |
+| Static Mesh              | SM_    |
+| Texture                  | T_     |
 
 # Terminologie
 
