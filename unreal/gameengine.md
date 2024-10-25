@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-25T20:55:50.654Z
+date: 2024-10-25T20:56:02.172Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -154,7 +154,7 @@ En se positionnant dans le dossier **StarterContent**, dossier importé au déma
 {.is-success}
 
 ## Lumen
-> Lumen est un système de global illumination dynamique qui calcule en temps réel (sans baking) la lumière indirecte et les réflexions. Il repose sur une combinaison de techniques de ray tracing et d'illumination voxelisée pour simuler la lumière rebondissante et les réflexions multi-bounces.
+> **Lumen** est un système de global illumination dynamique qui calcule en temps réel (sans baking) la lumière indirecte et les réflexions. Il repose sur une combinaison de techniques de ray tracing et d'illumination voxelisée pour simuler la lumière rebondissante et les réflexions multi-bounces.
 {.is-success}
 
 
