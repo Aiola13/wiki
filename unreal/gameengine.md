@@ -2,7 +2,7 @@
 title: Les bases de Unreal
 description: 
 published: 1
-date: 2024-10-11T06:38:02.718Z
+date: 2024-10-25T20:55:50.654Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-02T16:06:39.314Z
@@ -148,5 +148,18 @@ En se positionnant dans le dossier **StarterContent**, dossier importé au déma
 ## Player Controller
 > Il traduit les commandes du joueur en interactions dans le jeu, surtout en multijoueur où il gère les interactions réseau.
 {.is-success}
+
+## Nanite
+> **Nanite** est une technologie de rendu de géométrie virtuelle qui utilise un **système de micropolygones adaptatifs**. Elle permet de gérer et de rendre en temps réel des modèles avec des milliards de triangles (polygones), en optimisant dynamiquement les niveaux de détail (**LOD**) sans intervention manuelle (en utilisant un streaming adaptatif). Nanite optimise les ressources GPU en ne rendant que les polygones visibles à l'écran. Pour cela, il utilise un culling hiérarchique à base de clusters et un streaming efficace de données géométriques, réduisant ainsi l'impact sur la mémoire et le GPU tout en maintenant une qualité visuelle optimale.
+{.is-success}
+
+## Lumen
+> Lumen est un système de global illumination dynamique qui calcule en temps réel (sans baking) la lumière indirecte et les réflexions. Il repose sur une combinaison de techniques de ray tracing et d'illumination voxelisée pour simuler la lumière rebondissante et les réflexions multi-bounces.
+{.is-success}
+
+
+
+
+
 
 
