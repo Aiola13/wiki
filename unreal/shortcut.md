@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:26:00.960Z
+date: 2024-10-26T12:26:13.969Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -46,3 +46,5 @@ dateCreated: 2024-10-25T21:08:31.298Z
 ## Viewport Navigation Shortcuts
 
 ## Level Editor Shortcuts
+
+## Level Editor Modes
