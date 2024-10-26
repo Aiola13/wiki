@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:27:23.688Z
+date: 2024-10-26T12:28:34.220Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -14,7 +14,7 @@ dateCreated: 2024-10-25T21:08:31.298Z
 
 |            Action           |      Commandes      |Video|
 |-----------------------------|---------------------|---|
-| **Copy**                   	| Ctrl + C            |   |
+| **Copy**                   	| <kbd>Ctrl</kbd> + <kbd>C</kbd>            |   |
 | **Cut**                     | Ctrl + X            |   |
 | **Paste**                   | Ctrl + V            |   |
 | **Save in Blueprint**       | Ctrl + S            |   |
