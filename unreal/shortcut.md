@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:26:58.035Z
+date: 2024-10-26T12:27:08.479Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -10,7 +10,7 @@ dateCreated: 2024-10-25T21:08:31.298Z
 
 # Les Shortcuts
 
-## Commandes basiques
+## Basics Commands
 
 |            Action           |      Commandes      |Video|
 |-----------------------------|---------------------|---|
