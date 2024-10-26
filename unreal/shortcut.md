@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:36:20.384Z
+date: 2024-10-26T12:38:21.855Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -28,12 +28,13 @@ dateCreated: 2024-10-25T21:08:31.298Z
 | **Move Selection**          | <kbd>Arrows</kbd>                                                        |   |
 | **Open File**               | <kbd>F1</kbd>                                                            |   |
 | **Rename**                  | <kbd>F2</kbd>                                                            |   |
-| **Find in Content Browser** | <kbd>Ctrl</kbd> + <kbd>B                                           |   |
-| **Browse Tabs**             | <kbd>Ctrl</kbd> + <kbd>Tab                                         |   |
-| **Open Level**              | <kbd>Ctrl</kbd> + <kbd>O                                           |   |
+| **Find in Content Browser** | <kbd>Ctrl</kbd> + <kbd>B</kbd>                                           |   |
+| **Browse Tabs**             | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                                         |   |
+| **Open Level**              | <kbd>Ctrl</kbd> + <kbd>O</kbd>                                           |   |
 | **Play/Simulate**           | <kbd>Alt</kbd> + <kbd>P</kbd> / <kbd>Alt</kbd> + <kbd>S</kbd> |   |
 | **Show Nav Mesh**           | <kbd>P</kbd>                                                  |   |
 | **Zoom**                    | Mouse Wheel Up/Down                                           |   |
+| **Focus on Object**  				| <kbd>F</kbd>                                   |   |
 
 
 
