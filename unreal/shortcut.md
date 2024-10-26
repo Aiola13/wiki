@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:35:11.942Z
+date: 2024-10-26T12:36:07.058Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -14,23 +14,23 @@ dateCreated: 2024-10-25T21:08:31.298Z
 
 |                             |                                                               |   |
 |-----------------------------|---------------------------------------------------------------|---|
-| **Copy**                   	| <kbd>Ctrl</kbd> + C                                           |   |
-| **Cut**                     | <kbd>Ctrl</kbd> + X                                           |   |
-| **Paste**                   | <kbd>Ctrl</kbd> + V                                           |   |
-| **Save in Blueprint**       | <kbd>Ctrl</kbd> + S                                           |   |
-| **Find within Blueprint**   | <kbd>Ctrl</kbd> + F                                           |   |
-| **Find in all Blueprints**  | <kbd>Ctrl</kbd> + Shift + F                                   |   |
+| **Copy**                   	| <kbd>Ctrl</kbd> + <kbd>C</kbd>                                           |   |
+| **Cut**                     | <kbd>Ctrl</kbd> + <kbd>X</kbd>                                           |   |
+| **Paste**                   | <kbd>Ctrl</kbd> + <kbd>V</kbd>                                           |   |
+| **Save in Blueprint**       | <kbd>Ctrl</kbd> + <kbd>S</kbd>                                           |   |
+| **Find within Blueprint**   | <kbd>Ctrl</kbd> + <kbd>F</kbd>                                             |   |
+| **Find in all Blueprints**  | <kbd>Ctrl</kbd> + <kbd>Shift + <kbd>F</kbd>                                   |   |
 | **Delete or Backspace**     | Delete                                                        |   |
-| **Undo**                    | <kbd>Ctrl</kbd> + Z                                           |   |
-| **Redo**                    | <kbd>Ctrl</kbd> + Y                                           |   |
-| **Select All**              | <kbd>Ctrl</kbd> + A                                           |   |
-| **Clear Selection**         | Esc                                                           |   |
-| **Move Selection**          | Arrows                                                        |   |
-| **Open File**               | F1                                                            |   |
-| **Rename**                  | F2                                                            |   |
-| **Find in Content Browser** | <kbd>Ctrl</kbd> + B                                           |   |
-| **Browse Tabs**             | <kbd>Ctrl</kbd> + Tab                                         |   |
-| **Open Level**              | <kbd>Ctrl</kbd> + O                                           |   |
+| **Undo**                    | <kbd>Ctrl</kbd> + <kbd>Z</kbd>                                           |   |
+| **Redo**                    | <kbd>Ctrl</kbd> + <kbd>Y</kbd>                                           |   |
+| **Select All**              | <kbd>Ctrl</kbd> + <kbd>A</kbd>                                           |   |
+| **Clear Selection**         | <kbd>Esc</kbd>                                                           |   |
+| **Move Selection**          | <kbd>Arrows</kbd>                                                        |   |
+| **Open File**               | <kbd>F1</kbd>                                                            |   |
+| **Rename**                  | <kbd>F2</kbd>                                                            |   |
+| **Find in Content Browser** | <kbd>Ctrl</kbd> + <kbd>B                                           |   |
+| **Browse Tabs**             | <kbd>Ctrl</kbd> + <kbd>Tab                                         |   |
+| **Open Level**              | <kbd>Ctrl</kbd> + <kbd>O                                           |   |
 | **Play/Simulate**           | <kbd>Alt</kbd> + <kbd>P</kbd> / <kbd>Alt</kbd> + <kbd>S</kbd> |   |
 | **Show Nav Mesh**           | <kbd>P</kbd>                                                  |   |
 | **Zoom**                    | Mouse Wheel Up/Down                                           |   |
