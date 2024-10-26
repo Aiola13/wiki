@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:40:37.984Z
+date: 2024-10-26T12:44:09.410Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -25,14 +25,18 @@ dateCreated: 2024-10-25T21:08:31.298Z
 | **Redo**                    | <kbd>Ctrl</kbd> + <kbd>Y</kbd>                                           |   |
 | **Select All**              | <kbd>Ctrl</kbd> + <kbd>A</kbd>                                           |   |
 | **Clear Selection**         | <kbd>Esc</kbd>                                                           |   |
-| **Move Selection**          | <kbd>Arrows</kbd>                                                        |   |
+| **Move Selection**          | <kbd>Up</kbd>/<kbd>Down</kbd> /<kbd>Left</kbd> /<kbd>Right</kbd>  Arrow Keys                                                       |   |
 | **Find in Content Browser** | <kbd>Ctrl</kbd> + <kbd>B</kbd>                                           |   |
 | **Browse Tabs**             | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                                         |   |
 | **Open Level**              | <kbd>Ctrl</kbd> + <kbd>O</kbd>                                           |   |
 | **Play/Simulate**           | <kbd>Alt</kbd> + <kbd>P</kbd> / <kbd>Alt</kbd> + <kbd>S</kbd> |   |
 | **Show Nav Mesh**           | <kbd>P</kbd>                                                  |   |
 | **Zoom**                    | Mouse Wheel Up/Down                                           |   |
+| **Group/Ungroup**  					| <kbd>Ctrl</kbd> + <kbd>G</kbd> / <kbd>Shift</kbd> + <kbd>G</kbd>                                   |   |
 | **Focus on Object**  				| <kbd>F</kbd>                                   |   |
+
+  
+
 
 ## F-key shortcuts
 |                             |                                                               |   |
