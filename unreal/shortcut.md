@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:36:07.058Z
+date: 2024-10-26T12:36:20.384Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -20,7 +20,7 @@ dateCreated: 2024-10-25T21:08:31.298Z
 | **Save in Blueprint**       | <kbd>Ctrl</kbd> + <kbd>S</kbd>                                           |   |
 | **Find within Blueprint**   | <kbd>Ctrl</kbd> + <kbd>F</kbd>                                             |   |
 | **Find in all Blueprints**  | <kbd>Ctrl</kbd> + <kbd>Shift + <kbd>F</kbd>                                   |   |
-| **Delete or Backspace**     | Delete                                                        |   |
+| **Delete or Backspace**     | <kbd>Delete</kbd>                                                        |   |
 | **Undo**                    | <kbd>Ctrl</kbd> + <kbd>Z</kbd>                                           |   |
 | **Redo**                    | <kbd>Ctrl</kbd> + <kbd>Y</kbd>                                           |   |
 | **Select All**              | <kbd>Ctrl</kbd> + <kbd>A</kbd>                                           |   |
