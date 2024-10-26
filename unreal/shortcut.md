@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:26:13.969Z
+date: 2024-10-26T12:26:58.035Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
