@@ -2,7 +2,7 @@
 title: Shortcut
 description: 
 published: 1
-date: 2024-10-26T12:38:21.855Z
+date: 2024-10-26T12:40:37.984Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-25T21:08:31.298Z
@@ -26,8 +26,6 @@ dateCreated: 2024-10-25T21:08:31.298Z
 | **Select All**              | <kbd>Ctrl</kbd> + <kbd>A</kbd>                                           |   |
 | **Clear Selection**         | <kbd>Esc</kbd>                                                           |   |
 | **Move Selection**          | <kbd>Arrows</kbd>                                                        |   |
-| **Open File**               | <kbd>F1</kbd>                                                            |   |
-| **Rename**                  | <kbd>F2</kbd>                                                            |   |
 | **Find in Content Browser** | <kbd>Ctrl</kbd> + <kbd>B</kbd>                                           |   |
 | **Browse Tabs**             | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                                         |   |
 | **Open Level**              | <kbd>Ctrl</kbd> + <kbd>O</kbd>                                           |   |
@@ -36,7 +34,15 @@ dateCreated: 2024-10-25T21:08:31.298Z
 | **Zoom**                    | Mouse Wheel Up/Down                                           |   |
 | **Focus on Object**  				| <kbd>F</kbd>                                   |   |
 
-
+## F-key shortcuts
+|                             |                                                               |   |
+|-----------------------------|---------------------------------------------------------------|---|
+| **Open File**               | <kbd>F1</kbd>                                                            |   |
+| **Rename**                  | <kbd>F2</kbd>                                                            |   |
+| **Actor Details**        	  | <kbd>F4</kbd>                                                            |   |
+| **Possess**                 | <kbd>F8</kbd>                                                            |   |
+| **Shot Break**              | <kbd>F9</kbd>                                                            |   |
+| **Full Screen**             | <kbd>F11</kbd>                                                            |   |
 
 
 ## Viewport Transformation Shortcuts
