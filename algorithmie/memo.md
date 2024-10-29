@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-10-29T19:31:10.298Z
+date: 2024-10-29T19:34:10.148Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T19:28:13.800Z
