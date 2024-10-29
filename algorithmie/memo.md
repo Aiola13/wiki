@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-10-29T19:28:13.800Z
+date: 2024-10-29T19:28:55.452Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T19:28:13.800Z
@@ -110,6 +110,7 @@ Fin
 ### Les opérateurs arithmétiques
 
 <center>
+  
 | Signe |               Opération               |Exemple|
 | :---: | :-----------------------------------: |:-----:|
 |  `+`  |               Addition                |`2 + 3`|
@@ -117,6 +118,7 @@ Fin
 |  `*`  |            Multiplication             |`2 * 3`|
 |  `/`  |               Division                |`2 / 3`|
 |  `%`  | Modulo (reste de la division entière) |`2 % 3`|
+  
 </center>
 
 ### Les opérateurs de comparaisons
@@ -125,10 +127,11 @@ Fin
 | :---: | :--------------------------: |:-----:|
 | `==`  |           Egalité            |`a == b`|
 | `!=`  |          Différent           |`a != b`|
-|  ``  |    Strictement Inférieur     |`a  b`|
-| `=`  |      Inférieur ou égal       |`a = b`|
+|  `<`  |    Strictement Inférieur     |`a < b`|
+| `<=`  |      Inférieur ou égal       |`a <= b`|
 |  `>`  |    Strictement Supérieur     |`a > b`|
 | `>=`  |      Supérieur ou égal       |`a >= b`|
+  
 </center>
 
 ### Les opérateurs logiques
