@@ -2,13 +2,17 @@
 title: Algorithmie
 description: La conception d'un code
 published: 1
-date: 2024-10-29T19:45:52.993Z
+date: 2024-10-29T19:46:22.037Z
 tags: algo, algorithmie, code
 editor: markdown
 dateCreated: 2023-01-16T00:21:44.775Z
 ---
 
 # On The Road To Algo 💪
+## Mémo
+- [Mémo *Un mémo sur l'algorithmie*](/algorithmie/memo)
+{.links-list}
+
 ## Plan de cours
 <!--- [Notions de base *Vous allez devenir le nouveau PDG de Skynet*](/algorithmie/notion)-->
 - [Un Pseudo-Code *Pourquoi pseudo ? 🤔*](/algorithmie/pseudocode)
@@ -20,7 +24,6 @@ dateCreated: 2023-01-16T00:21:44.775Z
 - [:construction:Compléxité d'un algorithme *Oui, parce qu'un algo peut être plus ou moins complexe !:construction:*](/alhorithmie/complex)
 - [Slide du cours *:computer:*](https://hedgedoc.monserveurprive.ovh/p/v1QsrLq-K#/)
 - [Exercices *:banana:*](/algorithmie/exercices)
-- [Mémo *Un mémo sur l'algorithmie*](/algorithmie/memo)
 {.links-list}
 
 ## Mais finalement qu'est-ce que c'est ? 🤔
