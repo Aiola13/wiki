@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-10-29T19:29:09.329Z
+date: 2024-10-29T19:31:10.298Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T19:28:13.800Z
@@ -150,28 +150,32 @@ Fin
 # Les Structures Algorithmiques
 Il existe trois structures fondamentales utilisées pour construire un algorithme :
 
-Séquence : exécution d'instructions les unes après les autres.
+## Séquence : exécution d'instructions les unes après les autres.
 
-pseudo
-Copier le code
+```arduino
 Lire A
 Lire B
 C ← A + B
 Afficher C
-Condition (ou sélection) : choix entre plusieurs alternatives.
+```
 
-pseudo
-Copier le code
+## Condition (ou sélection) : choix entre plusieurs alternatives.
+
+```arduino
 Si (A > B) Alors
     Afficher "A est plus grand"
+Sinon Si (A < B) Alors
+		Afficher "B est plus grand"
 Sinon
-    Afficher "B est plus grand"
+    Afficher "B est égal à A"
 Fin Si
-Boucle (ou répétition) : exécution répétée d’instructions.
+```
 
-pseudo
-Copier le code
+## Boucle (ou répétition) : exécution répétée d’instructions.
+
+```arduino
 Tant que (i ≤ 10) faire
     Afficher i
     i ← i + 1
 Fin Tant que
+```
