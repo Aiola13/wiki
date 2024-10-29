@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-10-29T19:28:55.452Z
+date: 2024-10-29T19:29:09.329Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T19:28:13.800Z
@@ -122,7 +122,9 @@ Fin
 </center>
 
 ### Les opérateurs de comparaisons
+
 <center>
+  
 | Signe |          Opération           |Exemple|
 | :---: | :--------------------------: |:-----:|
 | `==`  |           Egalité            |`a == b`|
@@ -135,11 +137,14 @@ Fin
 </center>
 
 ### Les opérateurs logiques
+
 <center>
+  
 |   Signe    |      Opération      |Exemple|
 | :--------: | :-----------------: |:-----:|
 | `ET` |     ET logique      | `a == b ET b == c`|
 | `OU`  |     OU logique      |`a == b OU b == c`|
+  
 </center>
 
 # Les Structures Algorithmiques
