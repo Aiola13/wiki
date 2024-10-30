@@ -2,7 +2,7 @@
 title: Challenge 1
 description: 
 published: 1
-date: 2024-10-30T12:07:10.327Z
+date: 2024-10-30T12:08:35.723Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-24T11:21:35.176Z
@@ -40,9 +40,10 @@ Password : "iop"-->
 ## 2 - CREATION DE COMPTES
 
 Objectifs :
-- Savoir gérer les comptes utilisateurs : création, modification, suppression
-- Savoir gérer les groupes : création, modification, suppression
-- Savoir gérer les fichiers liés aux utilisateurs : /etc/skel, /etc/profile, $HOME/.bashrc, …
+> - Savoir gérer les comptes utilisateurs : création, modification, suppression
+> - Savoir gérer les groupes : création, modification, suppression
+> - Savoir gérer les fichiers liés aux utilisateurs : /etc/skel, /etc/profile, $HOME/.bashrc, … 
+{.is-info}
 
 
 ### 2.1 - PARAMETRER L'ENVIRONNEMENT PAR DEFAUT
