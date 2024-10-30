@@ -2,7 +2,7 @@
 title: Challenge 1
 description: 
 published: 1
-date: 2024-09-24T11:21:35.176Z
+date: 2024-10-30T08:47:14.886Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-24T11:21:35.176Z
@@ -12,13 +12,13 @@ dateCreated: 2024-09-24T11:21:35.176Z
 
 
 > Table des matières
-[1 Information système](#h-1-identifiants-de-connexion)
-[2 Créer des utilisateurs](#h-2-creation-de-comptes)
-[3 Installer des applications](#h-3-installer-des-applications)
-[4 Gestion des disques et partitions](#h-4-gestion-des-disques-et-partitions)
-[5 Gestion des permissions et droits](#h-5-gestion-des-permissions-et-droits)
-[6 Surveillance des serveurs](#h-6-surveillance-des-permissions-et-droits)
-[7 Diagnostique et résolution de problèmes](#h-7-diagnostique-et-resolution-de-problemes)
+> [1 Information système](#h-1-identifiants-de-connexion)
+> [2 Créer des utilisateurs](#h-2-creation-de-comptes)
+> [3 Installer des applications](#h-3-installer-des-applications)
+> [4 Gestion des disques et partitions](#h-4-gestion-des-disques-et-partitions)
+> [5 Gestion des permissions et droits](#h-5-gestion-des-permissions-et-droits)
+> [6 Surveillance des serveurs](#h-6-surveillance-des-permissions-et-droits)
+> [7 Diagnostique et résolution de problèmes](#h-7-diagnostique-et-resolution-de-problemes)
 
 
 ## 1 - IDENTIFIANTS DE CONNEXION
