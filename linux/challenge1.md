@@ -2,7 +2,7 @@
 title: Challenge 1
 description: 
 published: 1
-date: 2024-10-30T08:47:14.886Z
+date: 2024-10-30T12:07:10.327Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-24T11:21:35.176Z
@@ -19,14 +19,22 @@ dateCreated: 2024-09-24T11:21:35.176Z
 > [5 Gestion des permissions et droits](#h-5-gestion-des-permissions-et-droits)
 > [6 Surveillance des serveurs](#h-6-surveillance-des-permissions-et-droits)
 > [7 Diagnostique et résolution de problèmes](#h-7-diagnostique-et-resolution-de-problemes)
+{.is-info}
+
 
 
 ## 1 - IDENTIFIANTS DE CONNEXION
 Vous devez créer une machine virtuelle sous ALMA LINUX / ROCKY LINUX (basées toutes 2 sur CentOS) - installation minimale, avec ces informations :
-Login : "stag"
+
+| Identifiant | Mot de passe | Role |
+|-------------|--------------|------|
+| stag        | iop          | Utilisateur|
+| root        | iop          | Super Admin |
+
+<!--Login : "stag"
 Password: "iop"
 Login : "root"
-Password : "iop"
+Password : "iop"-->
 
 
 ## 2 - CREATION DE COMPTES
