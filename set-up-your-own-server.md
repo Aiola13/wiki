@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T16:23:58.062Z
+date: 2024-11-25T16:24:17.630Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -384,7 +384,7 @@ sudo ifup vmbr1    # Et on la rallume
 {.is-warning}
 
 ```bash
-sgdisk --zap-all /dev/sdX
+sgdisk --zap-all /dev/sdX # Où X est le disque dur en question
 ```
 
 <!--
