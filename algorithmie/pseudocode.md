@@ -2,7 +2,7 @@
 title: Un Pseudo-code
 description: 
 published: 1
-date: 2024-11-25T00:46:32.912Z
+date: 2024-11-25T00:56:44.237Z
 tags: code, pseudo, pseudocode
 editor: markdown
 dateCreated: 2023-01-16T00:24:34.269Z
@@ -85,6 +85,8 @@ Exemple, un identifiant contenant la largeur d'une image :
 
 Liste des principaux mots clés du langage et leurs équivalent en anglais:
 
+<div style="display:flex; justify-content:space-around ">
+
 |Français|Anglais|
 |:------:|:-----:|
 |ALGORITHME|ALGORITHM|
@@ -93,7 +95,11 @@ Liste des principaux mots clés du langage et leurs équivalent en anglais:
 |VARIABLES|VARIABLES|
 |DÉBUT|BEGIN|
 |FIN|END|
-|FONCTION|ALGORITHM|
+|FONCTION|ALGORITHM|  
+ 
+  
+|Français|Anglais|
+|:------:|:-----:|
 |SI|IF|
 |ALORS|THEN|
 |SINON|ELSE|
@@ -102,6 +108,10 @@ Liste des principaux mots clés du langage et leurs équivalent en anglais:
 |RÉPÉTER|REPEAT|
 |JUSQU’À|UNTIL|
 |SELON|CASE|
+  
+  
+|Français|Anglais|
+|:------:|:-----:|
 |BOOLÉEN|BOOLEAN|
 |ENTIER|INTEGER|
 |RÉEL|FLOAT|
@@ -110,14 +120,19 @@ Liste des principaux mots clés du langage et leurs équivalent en anglais:
 |ET|AND|
 |ECRIRE ou AFFICHER|PRINT or DISPLAY|
 |LIRE|READ|
+  
+</div>
 
 ### Les symboles spéciaux
 
 Voici la liste des caractères spéciaux utilisés en Pseudo-Code :
 
-| ← | ^ | . | , | : | { } | [ ] | <= | >= | <> | = | + | - | \* | / | () | \` | 
+<center>
+
+| ← | ^ | . | , | : | `{ }` | [ ] | `<=` | >= | <> | = | + | - | \* | / | () | \` | 
 |---|---|---|---|---|-----|-----|----|----|----|---|---|---|----|--|---|----|
 
+</center>
 
 ### Les commentaires
 
