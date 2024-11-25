@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-08-23T17:44:11.968Z
+date: 2024-11-25T09:19:00.439Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -10,57 +10,84 @@ dateCreated: 2024-06-10T13:18:25.873Z
 
 # Introduction : Pourquoi vouloir créer son propre serveur ?
 
-Outre que cela soit un beau projet et intérésant pour développer ses connaissances perosnnelles, il a ammène aussi un vrai plus auprès des professionnels pour témoigner de vos connaissances ainsi que de vos motivations. Mais il existe plusieurs autres avantages : 
+> Eh bien, pourquoi pas ? C’est un super projet pour se lancer, apprendre plein de trucs, et montrer aux pros que vous n’êtes pas là pour rigoler. En plus, c’est carrément stylé de dire : "Oui, j’ai mon propre serveur." Mais ce n’est pas juste pour se la raconter, il y a plein d’avantages à faire ça. Allez, on vous explique tout :
+{.is-info}
+
+
 
 1. Contrôle Total
-	- Personnalisation : Vous pouvez configurer votre serveur exactement comme vous le souhaitez, installer les logiciels de votre choix, et ajuster les paramètres selon vos besoins spécifiques.
-	- Gestion des Ressources : Vous avez le contrôle total sur l'allocation des ressources (CPU, RAM, stockage), ce qui vous permet d'optimiser les performances pour vos applications.
-2. Flexibilité
-	- Multiples Services : Avec votre propre serveur, vous pouvez héberger plusieurs services et applications, comme des sites web, des bases de données, des applications métier, des serveurs de messagerie, etc.
-	- Virtualisation : Utiliser des technologies comme Proxmox permet de créer plusieurs machines virtuelles sur un seul serveur physique, offrant une grande flexibilité pour tester et déployer différentes configurations et environnements.
-3. Sécurité
-	- Contrôle de la Sécurité : Vous pouvez mettre en œuvre vos propres politiques de sécurité, pare-feu, et mesures de protection des données.
-	- Isolation : Les machines virtuelles permettent d'isoler les différentes applications et services, réduisant le risque qu'un problème sur une application n'affecte les autres.
-4. Performances
-	- Pas de Ressources Partagées : Contrairement à l'hébergement mutualisé, vous ne partagez pas les ressources avec d'autres utilisateurs, ce qui garantit des performances stables.
+	- Faites ce que vous voulez ! (Personnalisation) : Vous pouvez configurer votre serveur exactement comme vous l’aimez, installer les applis qui vous plaisent, et bidouiller jusqu’à ce que tout soit parfait pour vos besoins.
+	- Des ressources rien que pour vous (Gestion des Ressources) : Besoin de plus de puissance ? Moins ? C’est vous le patron ! CPU, RAM, stockage : vous gérez tout comme un pro (ou un gamer exigeant).
+
+2. Flexibilité à gogo
+	- Multi-tâches au max : Hébergez un site, une base de données, un serveur de jeu, ou même un serveur mail. Pourquoi choisir quand on peut tout faire ?
+	- La magie de la virtualisation : Avec des outils comme Proxmox, vous transformez un serveur en plusieurs petits serveurs virtuels. Ça veut dire plus d’expériences, plus de tests, et encore plus de fun.
+
+3. La sécurité, comme un boss
+	- Zéro stress : C’est vous qui gérez la sécurité. Firewall, mots de passe béton, et politique maison, tout est sous votre contrôle.
+	- Chacun chez soi (Isolation) : Avec les machines virtuelles, chaque service est isolé. Si quelque chose plante, le reste continue de tourner tranquille.
+
+4. Des performances au top
+	- Pas de coloc relou : Contrairement à l’hébergement mutualisé, vous ne partagez rien avec personne, pas de Ressources Partagées . Tout est à vous, et vos applis tournent à fond tout le temps. Parfait pour les performances !
   
   
   
-# Choix d'un serveur dédié
+# Choisir un serveur dédié
+
+## Pourquoi et comment ?
+
+
+> Alors, pourquoi opter pour un serveur dédié hébergé plutôt qu’un petit serveur qui trône fièrement à côté de votre box internet ? Voici les raisons évidentes :
+> 
+> - Pas de place chez moi : Votre appart est déjà un Tetris géant. Pas envie de rajouter une tour bruyante.
+> - Le prix de l’électricité : Spoiler : ça monte. Héberger un serveur chez soi, c’est un peu comme garder une lampe allumée en permanence, sauf que la lampe consomme comme un chauffage.
+> - Les pannes coûtent cher : Disque dur qui claque ? Alim qui rend l’âme ? Ce n’est pas donné, et ça tombe toujours au mauvais moment.
+> 
+> ‎
+{.is-success}
+
+
+## Les hébergeurs à considérer
+> Une fois convaincu que déléguer l’hébergement, c’est plus cool, il faut choisir son hébergeur. Voici quelques options bien connues :
+> 
+> - Scaleway
+> - OVH
+> - Ikoula
+> - Hostinger
+> - PlanetHoster
+> - Infomaniak
+> - IONOS by 1&1
+>
+> ‎
+{.is-success}
+
+
+De mon côté, j’ai choisi l’offre Low Cost Kimsufi d’OVH, qui propose un excellent rapport qualité/prix pour démarrer sans exploser le budget.
+https://eco.ovhcloud.com/fr/kimsufi/
+
+# Installation de Promox sur un serveur Dédié
+
+Et maintenant, passons aux choses sérieuses : l’installation de Proxmox. Pas de panique, c’est simple comme bonjour. Voici les étapes :
+
+1. Accéder au serveur via KVM ou IPMI :
+	- Connectez-vous à l’interface de gestion OVH.
+	-	Allez dans l’onglet Bare Metal Cloud, puis dans Serveur Dédié > Tous mes serveurs.
+
+2. Installer Proxmox
+	- Dans la vue de droite, cliquez sur Système d’exploitation (OS).
+	- Ouvrez le menu à trois petits points (les fameux "…" qu’on adore) et choisissez Installer.![install-proxmox-01.png](/images/myownserver/install-proxmox-01.png)
+	- Suivez les instructions affichées à l’écran pour installer Proxmox VE.  ![install-proxmox-02.png](/images/myownserver/install-proxmox-02.png)
   
-Pourquoi un serveur dédié herbergé ? Tout simplement parce que : 
+3. Configurer le réseau
+	- Une fois l’installation terminée, configurez le réseau pour que votre serveur soit accessible via l’interface web.
 
-- Je n'ai pas de place chez moi
-- Le prix de l'éléctricité augmente
-- Prix des pièces de rechange si une panne quelconque arrive
+4. Accéder à l’interface web de Proxmox
+- Dans votre navigateur préféré, tapez : https://<ip-du-serveur>:8006.
 
-Une fois ces avantages mis en avant, il faut choisir un hébergeur pour son serveur dédié ? Il en existe plusieurs : 
+  
+Admirez votre Proxmox tout beau, prêt à être configuré.
 
-- Scaleway
-- OVH
-- Ikoula
-- Hostinger
-- PlanetHoster
-- Infomaniak
-- IONOS by 1&1
-
-J'ai personnellement choisi l'offre Low Cost de OVH, Kimsufi, pour son rapport qualité/prix.
-LIEN
-
-# Installation de Promox sur le serveur Dédié
-
-Accéder au serveur via KVM ou IPMI :
-
-Connectez-vous à l'interface de gestion OVH et rendez-vous dans l'onglet Bare Metal Cloud puis sur le menu Serveur Dédié > Tous mes serveurs.
-
-Pour installer Promox, sélectionner dans la vue de droite Système d'exploitation (OS) et dans le menu à 3 points choisisser Installer.
-Suivez les instructions à l'écran pour installer Proxmox VE.
-
-Configurer le réseau :
-Une fois Proxmox installé, configurez le réseau pour accéder à l'interface web de Proxmox.
-
-Accéder à l'interface web de Proxmox :
-Utilisez un navigateur pour accéder à l'interface web de Proxmox : `https://<ip-du-serveur>:8006`.
+![install-proxmox-03.png](/images/myownserver/install-proxmox-03.png)
   
 # Configuration de Promox
 
