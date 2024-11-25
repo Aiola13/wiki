@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T16:00:31.874Z
+date: 2024-11-25T16:02:18.924Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -358,9 +358,9 @@ sudo ifup vmbr1    # Et on la rallume
 
 
 
-<!--
-# Configuration des disques LVM (Logical Volume Manager)
 
+# Configuration des disques LVM (Logical Volume Manager)
+<!--
 > LVM, ou Gestionnaire de Volumes Logiques, est une technologie de gestion de stockage pour les systèmes d'exploitation Linux. Elle permet aux administrateurs système de regrouper et de gérer l'espace disque de manière plus flexible que les partitions classiques.
 {.is-success}
 
