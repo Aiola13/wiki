@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T15:26:09.858Z
+date: 2024-11-25T15:26:48.352Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -71,8 +71,8 @@ Et maintenant, passons aux choses sérieuses : l’installation de Proxmox. Pas 
 
 # Tabs {.tabset}
 ## Accéder au serveur via KVM ou IPMI
-	- Connectez-vous à l’interface de gestion OVH.
-	-	Allez dans l’onglet Bare Metal Cloud, puis dans Serveur Dédié > Tous mes serveurs.
+- Connectez-vous à l’interface de gestion OVH.
+-	Allez dans l’onglet Bare Metal Cloud, puis dans Serveur Dédié > Tous mes serveurs.
 
 ## Installer Proxmox
 - Dans la vue de droite, cliquez sur Système d’exploitation (OS).
