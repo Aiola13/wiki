@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T16:13:05.755Z
+date: 2024-11-25T16:23:58.062Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -142,7 +142,7 @@ Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03
 
 Allez, voici la recette pas à pas :
 
-**1. Créer l’utilisateur dans Linux**
+### Etape 1 : Créer l’utilisateur dans Linux
 On commence par créer l’utilisateur directement dans le système à partir de la fenêtre SHELL. Par exemple, pour un utilisateur appelé marcel :
 
 ```bash
@@ -150,25 +150,26 @@ sudo adduser marcel
 ```
 Tu suis les instructions (nom, mot de passe, etc.), et hop, l’utilisateur est prêt.
 
-**2. Lier cet utilisateur à Proxmox**
+### Etape 2 : Lier cet utilisateur à Proxmox
+
 Maintenant, direction l’interface web de Proxmox :
-	*1. Connexion à l’interface :* Connecte-toi en tant que root (ou un utilisateur qui a les droits admin).
-	*2. Aller dans la gestion des utilisateurs :*
+**1. Connexion à l’interface :** Connecte-toi en tant que root (ou un utilisateur qui a les droits admin).
+**2. Aller dans la gestion des utilisateurs :** 
 		Menu "Datacenter" > "Permissions" > "Users".
-	*3. Ajouter l’utilisateur PAM :*
-    - Clique sur "Add" (le bouton magique).
-    - Renseigne :
-    	- ID utilisateur : Mets le même que celui que tu as créé (marcel dans notre exemple).
-    	- Realm : Choisis PAM (pour que Proxmox sache que cet utilisateur est géré par Linux).
-    - Valide. 🎉
+**3. Ajouter l’utilisateur PAM :**
+- Clique sur "Add" (le bouton magique).
+- Renseigne :
+	- ID utilisateur : Mets le même que celui que tu as créé (marcel dans notre exemple).
+  - Realm : Choisis PAM (pour que Proxmox sache que cet utilisateur est géré par Linux).
+- Valide. 🎉
     
-**3. Attribuer des permissions**
+### Etape 3 : Attribuer des permissions**
 Un utilisateur sans permissions, c’est comme un joueur sans manette : il ne peut rien faire. Donc, il faut lui donner des droits :
-	*1. Toujours dans "Permissions", va sur l’onglet "Roles".*
-	*2. Ajoute une permission pour ton utilisateur :*
-		- Sélectionne un rôle (par exemple, PVEAdmin pour qu’il puisse gérer les VM, ou PVEDatastoreUser pour accéder au stockage).
-		- Associe-lui une ressource (par exemple, tout le datacenter ou une VM en particulier).
-		- Valide. 🎯
+**1. Toujours dans "Permissions", va sur l’onglet "Roles".**
+**2. Ajoute une permission pour ton utilisateur :**
+- Sélectionne un rôle (par exemple, PVEAdmin pour qu’il puisse gérer les VM, ou PVEDatastoreUser pour accéder au stockage).
+- Associe-lui une ressource (par exemple, tout le datacenter ou une VM en particulier).
+- Valide. 🎯
 
 
 
@@ -368,22 +369,25 @@ sudo ifup vmbr1    # Et on la rallume
 
 
 # Configuration des disques LVM (Logical Volume Manager)
-<!--
-> LVM, ou Gestionnaire de Volumes Logiques, est une technologie de gestion de stockage pour les systèmes d'exploitation Linux. Elle permet aux administrateurs système de regrouper et de gérer l'espace disque de manière plus flexible que les partitions classiques.
+
+> LVM, alias le Gestionnaire de Volumes Logiques, c'est un peu comme un Tetris pour vos disques sous Linux. Besoin de jongler avec de l'espace disque sans casser vos partitions ? LVM est là pour rendre votre vie plus simple et plus flexible que les bonnes vieilles partitions rigides. 🎮
 {.is-success}
 
 
 ![lvm.png](/images/divers/lvm.png)
+  
 
 ## Effacer les disques (facultatif mais recommandé)
 
-> Si les disques contiennent des données précédentes, il est conseillé de les effacer pour éviter tout conflit.
+
+> Si vos disques contiennent des données précédentes, mieux vaut tout effacer. Ça évite les conflits et les bugs du genre « Mais pourquoi ce disque me déteste ? ». 😅
 {.is-warning}
 
 ```bash
 sgdisk --zap-all /dev/sdX
 ```
 
+<!--
 ## Préparer les disques (Création de partition)
 
 Pour identifier les disques utilisez la commande : 
@@ -457,15 +461,6 @@ Une fois dans les informations du disque sélectionner :
 - Acceptez les valeurs par défaut pour le début et la fin de la partition.
 - Tapez t pour changer le type de partition, et entrez fd pour définir le type à "Linux RAID autodetect".
 - Tapez w pour écrire les modifications et quitter.
-
-
-
-
-## Ajout d'un administrateur et des utilisateurs
-
-### Qu'est-ce que PAM (Pluggable Authentication Module) ?
-
-PAM est la méthode d'authentification native de linux. Elle permet entre autre de pouvoir recuillir toutes sortes d'information à propos d'un tuilisateur mais également de rajouter cet utilisateur à la gestion du PVE.
 
 
 <!-- Installation d'un Serveur Dédié chez OVH avec Proxmox et OpenMediaVault
