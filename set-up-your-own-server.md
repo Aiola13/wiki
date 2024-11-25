@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T15:39:59.016Z
+date: 2024-11-25T15:45:15.937Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -91,10 +91,15 @@ Et maintenant, passons aux choses sérieuses : l’installation de Proxmox. Pas 
 	- Dans votre navigateur préféré, tapez : https://<ip-du-serveur>:8006.	
 
   
-# Résultat
+## Résultat
   
 Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03.png](/images/myownserver/install-proxmox-03.png)
 
+
+# Créer un utilisateur PAM dans Proxmox : C'est qui PAM ? 🤔
+Alors là, on parle d’un petit classique dans le monde de Proxmox : créer un utilisateur PAM. Mais d’abord, un petit cours express sur PAM (Pluggable Authentication Modules). En gros, PAM, c’est le système qui gère les connexions utilisateurs dans Linux. Si tu te connectes avec ton mot de passe habituel, c’est PAM qui vérifie. 🔐
+
+Dans Proxmox, PAM est bien pratique, parce qu’il permet de créer des utilisateurs directement liés au système Linux sous-jacent. Ça veut dire que ton utilisateur PAM peut aussi se connecter via SSH, si tu veux, et pas juste à l’interface web de Proxmox.
 
 # Configuration Réseau de Promox
 
