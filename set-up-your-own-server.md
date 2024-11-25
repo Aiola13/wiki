@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T10:35:13.487Z
+date: 2024-11-25T10:43:05.050Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -132,23 +132,24 @@ Là-dedans, tu vas trouver un fichier ressemblant à une recette de cuisine tech
 # configuration from sourced files, so do not attempt to move any of
 # the PVE managed interfaces into external files!
 
-auto lo
-iface lo inet loopback
+auto lo 
+iface lo inet loopback  # Boucle locale : elle est toujours là, elle fait son job.
 
-iface eno1 inet manual
+iface eno1 inet manual # Ton interface physique principale. On lui dit : "Reste cool, on s'occupe de toi."
 
+# Interface vmbr0 : ton lien vers l’extérieur (WAN)
 auto vmbr0
 iface vmbr0 inet static
-        address <ip-du-serveur>/24
-        gateway <ip-passerelle>
-        bridge-ports eno1
-        bridge-stp off
-        bridge-fd 0
-        hwaddress <adresse-mac-serveur>
+        address <ip-du-serveur>/24 # Ton IP publique
+        gateway <ip-passerelle> # La porte de sortie vers Internet
+  			bridge-ports eno1          # On lie ça à l'interface physique eno1
+        bridge-stp off             # Désactive STP (on n'en a pas besoin ici)
+        bridge-fd 0                # Pas de délai sur le bridge
+        hwaddress <adresse-mac-serveur> # Adresse MAC statique (optionnel)
 
 iface vmbr0 inet6 static
-        address <ipV6-du-serveur>/128
-        gateway <ipV6-passerelle>
+        address <ipV6-du-serveur>/128 # Une IPv6 pour ceux qui en ont besoin
+        gateway <ipV6-passerelle> # Et sa passerelle
   
 ```
   
@@ -156,9 +157,10 @@ iface vmbr0 inet6 static
 {.is-success}
 
 ```bash
+# Interface vmbr1 : le réseau interne (LAN)
 auto vmbr1
 iface vmbr1 inet static
-        address 192.168.1.1/24   # Une IP pour le réseau interne (à adapter si besoin)
+        address 192.168.1.1/24   # Une IP locale pour le réseau interne (LAN) (à adapter si besoin)
         bridge-ports none         # Pas de ports physiques associés, c’est un bridge "virtuel"
         bridge-stp off            # Pas de spanning tree (inutile ici)
         bridge-fd 0               # Pas de délai
