@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T16:07:48.781Z
+date: 2024-11-25T16:13:05.755Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -142,7 +142,7 @@ Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03
 
 Allez, voici la recette pas à pas :
 
-1. Créer l’utilisateur dans Linux
+**1. Créer l’utilisateur dans Linux**
 On commence par créer l’utilisateur directement dans le système à partir de la fenêtre SHELL. Par exemple, pour un utilisateur appelé marcel :
 
 ```bash
@@ -150,24 +150,22 @@ sudo adduser marcel
 ```
 Tu suis les instructions (nom, mot de passe, etc.), et hop, l’utilisateur est prêt.
 
-2. Lier cet utilisateur à Proxmox
+**2. Lier cet utilisateur à Proxmox**
 Maintenant, direction l’interface web de Proxmox :
-
-	1. Connexion à l’interface : Connecte-toi en tant que root (ou un utilisateur qui a les droits admin).
-	2. Aller dans la gestion des utilisateurs :
+	*1. Connexion à l’interface :* Connecte-toi en tant que root (ou un utilisateur qui a les droits admin).
+	*2. Aller dans la gestion des utilisateurs :*
 		Menu "Datacenter" > "Permissions" > "Users".
-	3. Ajouter l’utilisateur PAM :
+	*3. Ajouter l’utilisateur PAM :*
     - Clique sur "Add" (le bouton magique).
     - Renseigne :
     	- ID utilisateur : Mets le même que celui que tu as créé (marcel dans notre exemple).
     	- Realm : Choisis PAM (pour que Proxmox sache que cet utilisateur est géré par Linux).
     - Valide. 🎉
     
-3. Attribuer des permissions
+**3. Attribuer des permissions**
 Un utilisateur sans permissions, c’est comme un joueur sans manette : il ne peut rien faire. Donc, il faut lui donner des droits :
-
-	1. Toujours dans "Permissions", va sur l’onglet "Roles".
-	2. Ajoute une permission pour ton utilisateur :
+	*1. Toujours dans "Permissions", va sur l’onglet "Roles".*
+	*2. Ajoute une permission pour ton utilisateur :*
 		- Sélectionne un rôle (par exemple, PVEAdmin pour qu’il puisse gérer les VM, ou PVEDatastoreUser pour accéder au stockage).
 		- Associe-lui une ressource (par exemple, tout le datacenter ou une VM en particulier).
 		- Valide. 🎯
