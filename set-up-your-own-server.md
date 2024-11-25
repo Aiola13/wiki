@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T15:38:13.034Z
+date: 2024-11-25T15:39:59.016Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -96,7 +96,7 @@ Et maintenant, passons aux choses sérieuses : l’installation de Proxmox. Pas 
 Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03.png](/images/myownserver/install-proxmox-03.png)
 
 
-# Configuration de Promox
+# Configuration Réseau de Promox
 
 > Proxmox, c’est notre chef d’orchestre pour gérer les machines virtuelles (VM). Mais Proxmox lui-même ne fait pas grand-chose d’autre que superviser. Donc, si on veut qu’une de nos VM joue le rôle de serveur (par exemple, un serveur web), il faut que les requêtes qui arrivent sur Proxmox soient redirigées vers cette fameuse VM. 🎯
 > 
@@ -280,8 +280,8 @@ sudo ifup vmbr1    # Et on la rallume
 
 
 
-
-## Configuration des disques LVM (Logical Volume Manager)
+<!--
+# Configuration des disques LVM (Logical Volume Manager)
 
 > LVM, ou Gestionnaire de Volumes Logiques, est une technologie de gestion de stockage pour les systèmes d'exploitation Linux. Elle permet aux administrateurs système de regrouper et de gérer l'espace disque de manière plus flexible que les partitions classiques.
 {.is-success}
@@ -289,7 +289,7 @@ sudo ifup vmbr1    # Et on la rallume
 
 ![lvm.png](/images/divers/lvm.png)
 
-### Effacer les disques (facultatif mais recommandé)
+## Effacer les disques (facultatif mais recommandé)
 
 > Si les disques contiennent des données précédentes, il est conseillé de les effacer pour éviter tout conflit.
 {.is-warning}
@@ -298,7 +298,7 @@ sudo ifup vmbr1    # Et on la rallume
 sgdisk --zap-all /dev/sdX
 ```
 
-### Préparer les disques (Création de partition)
+## Préparer les disques (Création de partition)
 
 Pour identifier les disques utilisez la commande : 
 
@@ -397,6 +397,7 @@ Accès SSH au serveur.
 Connaissance de base en administration Linux et réseau.
 Étapes de l'installation -->
 
+<!--
 # Création d'une VM OMV
 
 2. Création d'une VM sous Proxmox pour OMV
