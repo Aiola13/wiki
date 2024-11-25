@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T16:02:18.924Z
+date: 2024-11-25T16:04:19.570Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -105,12 +105,17 @@ Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03
 {.is-success}
 
 
-1. Limiter les risques
+**1. Limiter les risques**
+
 - Si quelqu’un met la main sur les identifiants de root, il peut littéralement tout casser, et pas qu’un peu. En créant un utilisateur avec des permissions limitées, tu réduis la casse en cas de pépin. 🚧
-2. Respecter les bonnes pratiques
+
+**2. Respecter les bonnes pratiques**
+
 - Séparer les tâches : Un utilisateur admin pour les grosses manips, et un utilisateur normal pour les petites actions du quotidien. C’est comme porter une blouse quand tu fais de la chimie : mieux vaut prévenir que guérir. 🧪
-- Traçabilité : Avec plusieurs utilisateurs, tu sais qui a fait quoi (pratique pour éviter les disputes avec ton collègue Jean). 📜
-3. Gérer les permissions intelligemment
+- Traçabilité : Avec plusieurs utilisateurs, tu sais qui a fait quoi (pratique pour éviter les disputes avec ton collègue marcel). 📜
+
+**3. Gérer les permissions intelligemment**
+
 - Tu peux donner à chaque utilisateur exactement les droits qu’il lui faut : pas plus, pas moins. Par exemple, un collègue peut gérer uniquement ses VM sans avoir accès à tout le système. 🎯
 - En gros, créer un utilisateur autre que root, c’est comme avoir plusieurs clés adaptées à chaque porte, plutôt qu’une seule clé qui ouvre tout (et que tu pourrais perdre). Maintenant, passons à l’action avec PAM pour faire ça proprement ! 💪
 
