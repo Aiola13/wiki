@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T15:45:15.937Z
+date: 2024-11-25T16:00:31.874Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -96,10 +96,83 @@ Et maintenant, passons aux choses sérieuses : l’installation de Proxmox. Pas 
 Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03.png](/images/myownserver/install-proxmox-03.png)
 
 
-# Créer un utilisateur PAM dans Proxmox : C'est qui PAM ? 🤔
-Alors là, on parle d’un petit classique dans le monde de Proxmox : créer un utilisateur PAM. Mais d’abord, un petit cours express sur PAM (Pluggable Authentication Modules). En gros, PAM, c’est le système qui gère les connexions utilisateurs dans Linux. Si tu te connectes avec ton mot de passe habituel, c’est PAM qui vérifie. 🔐
+# Créer un utilisateur autre que ROOT sans PROXMOX
 
-Dans Proxmox, PAM est bien pratique, parce qu’il permet de créer des utilisateurs directement liés au système Linux sous-jacent. Ça veut dire que ton utilisateur PAM peut aussi se connecter via SSH, si tu veux, et pas juste à l’interface web de Proxmox.
+> Pourquoi créer un utilisateur autre que ROOT, vous allez me dire ? 🤔
+{.is-info}
+
+> Bonne question ! Utiliser root pour tout, c’est un peu comme utiliser une clé passe-partout pour chaque porte de ta maison. Pratique, mais carrément risqué. 😬 Voici pourquoi il vaut mieux éviter de toujours jouer les super admins :
+{.is-success}
+
+
+1. Limiter les risques
+- Si quelqu’un met la main sur les identifiants de root, il peut littéralement tout casser, et pas qu’un peu. En créant un utilisateur avec des permissions limitées, tu réduis la casse en cas de pépin. 🚧
+2. Respecter les bonnes pratiques
+- Séparer les tâches : Un utilisateur admin pour les grosses manips, et un utilisateur normal pour les petites actions du quotidien. C’est comme porter une blouse quand tu fais de la chimie : mieux vaut prévenir que guérir. 🧪
+- Traçabilité : Avec plusieurs utilisateurs, tu sais qui a fait quoi (pratique pour éviter les disputes avec ton collègue Jean). 📜
+3. Gérer les permissions intelligemment
+- Tu peux donner à chaque utilisateur exactement les droits qu’il lui faut : pas plus, pas moins. Par exemple, un collègue peut gérer uniquement ses VM sans avoir accès à tout le système. 🎯
+- En gros, créer un utilisateur autre que root, c’est comme avoir plusieurs clés adaptées à chaque porte, plutôt qu’une seule clé qui ouvre tout (et que tu pourrais perdre). Maintenant, passons à l’action avec PAM pour faire ça proprement ! 💪
+
+> En gros, créer un utilisateur autre que root, c’est comme avoir plusieurs clés adaptées à chaque porte, plutôt qu’une seule clé qui ouvre tout (et que tu pourrais perdre). Maintenant, passons à l’action avec PAM pour faire ça proprement ! 💪
+{.is-warning}
+
+# Créer un utilisateur PAM dans Proxmox : C'est qui PAM ? 🤔
+
+> Alors là, on parle d’un petit classique dans le monde de Proxmox : créer un utilisateur PAM. Mais d’abord, un petit cours express sur PAM (Pluggable Authentication Modules). En gros, PAM, c’est le système qui gère les connexions utilisateurs dans Linux. Si tu te connectes avec ton mot de passe habituel, c’est PAM qui vérifie. 🔐
+{.is-info}
+
+
+> Dans Proxmox, PAM est bien pratique, parce qu’il permet de créer des utilisateurs directement liés au système Linux sous-jacent. Ça veut dire que ton utilisateur PAM peut aussi se connecter via SSH, si tu veux, et pas juste à l’interface web de Proxmox.
+{.is-success}
+
+
+## Pourquoi créer un utilisateur PAM dans Proxmox ?
+> - Pour éviter d’utiliser root tout le temps : Sérieusement, utiliser root partout, c’est comme laisser les clés de la maison sous le paillasson. Avec un utilisateur dédié, tu limites les dégâts en cas de pépin. 🛡️
+> - Pour créer des accès spécifiques : Tu peux donner à ton pote/ton collègue un accès limité à certaines ressources sans lui filer les pleins pouvoirs.
+> - Pour mieux organiser les permissions : Les utilisateurs PAM peuvent être liés à des rôles et permissions dans Proxmox, ce qui te permet de garder un contrôle total. 🎯
+{.is-success}
+
+## Comment créer un utilisateur PAM dans Proxmox ?
+
+Allez, voici la recette pas à pas :
+
+1. Créer l’utilisateur dans Linux
+On commence par créer l’utilisateur directement dans le système à partir de la fenêtre SHELL. Par exemple, pour un utilisateur appelé marcel :
+
+```bash
+sudo adduser marcel
+```
+Tu suis les instructions (nom, mot de passe, etc.), et hop, l’utilisateur est prêt.
+
+2. Lier cet utilisateur à Proxmox
+Maintenant, direction l’interface web de Proxmox :
+
+	1. Connexion à l’interface : Connecte-toi en tant que root (ou un utilisateur qui a les droits admin).
+	2. Aller dans la gestion des utilisateurs :
+		Menu "Datacenter" > "Permissions" > "Users".
+	3. Ajouter l’utilisateur PAM :
+    - Clique sur "Add" (le bouton magique).
+    - Renseigne :
+    	- ID utilisateur : Mets le même que celui que tu as créé (marcel dans notre exemple).
+    	- Realm : Choisis PAM (pour que Proxmox sache que cet utilisateur est géré par Linux).
+    - Valide. 🎉
+    
+3. Attribuer des permissions
+Un utilisateur sans permissions, c’est comme un joueur sans manette : il ne peut rien faire. Donc, il faut lui donner des droits :
+
+	1. Toujours dans "Permissions", va sur l’onglet "Roles".
+	2. Ajoute une permission pour ton utilisateur :
+		- Sélectionne un rôle (par exemple, PVEAdmin pour qu’il puisse gérer les VM, ou PVEDatastoreUser pour accéder au stockage).
+		- Associe-lui une ressource (par exemple, tout le datacenter ou une VM en particulier).
+		- Valide. 🎯
+
+
+
+> Et voilà, ton utilisateur PAM est prêt à l’emploi ! 🕹️
+> Maintenant, marcel peut se connecter à l’interface web de Proxmox (et potentiellement via SSH) avec les permissions que tu lui as données. Tu peux aussi utiliser ça pour créer un accès temporaire à un collègue ou restreindre un utilisateur à une seule VM. Bref, c’est propre, sécurisé, et sous contrôle. 💪
+{.is-success}
+
 
 # Configuration Réseau de Promox
 
