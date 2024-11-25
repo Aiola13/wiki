@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T15:29:11.294Z
+date: 2024-11-25T15:31:01.171Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -64,7 +64,7 @@ dateCreated: 2024-06-10T13:18:25.873Z
 {.is-success}
 
 
-De mon côté, j’ai choisi l’offre Low Cost Kimsufi d’OVH, qui propose un excellent rapport qualité/prix pour démarrer sans exploser le budget.
+De mon côté, j’ai choisi l’offre Low Cost **Kimsufi** d’OVH, qui propose un excellent rapport qualité/prix pour démarrer sans exploser le budget et le système de **virtualisation Proxmox** qui me permettra si je le souhaite de me créer plusieurs machines (VM) au sein d'une seule et unique machine.
 https://eco.ovhcloud.com/fr/kimsufi/
 
 # Installation de Promox sur un serveur Dédié
