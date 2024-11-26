@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T22:02:08.380Z
+date: 2024-11-26T22:03:23.759Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -542,13 +542,13 @@ curl -fsSL https://get.casaos.io | sudo bash
 1. **Télécharge l’ISO :**
 - Va sur [le github d'UmbrelOS](https://github.com/getumbrel/umbrel/wiki/Install-umbrelOS-on-a-Linux-VM).
   
-2. Crée une VM dans Proxmox :
+2. **Crée une VM dans Proxmox :**
 - Clique sur « Créer une VM ».
 - Donne un nom à ta VM (ex : VM-UMBREL).
 - Ajoute l’image ISO téléchargée.
 - Alloue des ressources (CPU, RAM, disque dur).
 
-3. Lance UmbrelOS :
+3. **Lance UmbrelOS :**
 - Une fois installé, accède à l’interface web pour commencer à configurer tes services.
 
   
