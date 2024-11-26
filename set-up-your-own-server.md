@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-25T16:24:17.630Z
+date: 2024-11-26T18:35:43.689Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -387,31 +387,59 @@ sudo ifup vmbr1    # Et on la rallume
 sgdisk --zap-all /dev/sdX # Où X est le disque dur en question
 ```
 
-<!--
-## Préparer les disques (Création de partition)
+## Préparer les disques (Créer des partitions comme un boss)
 
-Pour identifier les disques utilisez la commande : 
-
-```
+### Trouver vos disques
+Avant de commencer, il faut repérer vos disques comme un détective. 🕵️‍♀️ Utilisez une des commandes magiques :
+  
+```bash
 fdisk
 ```
 ou
-```
+```bash
 lsblk
 ```
+  
+  
+Quelques commandes utiles :
+
+- `fdisk --help` : Obtenez la liste des commandes (parce que personne ne peut tout retenir 💡).
+- `fdisk -l `: Liste les disques et partitions.
+- `fdisk /dev/sdbx` : Zoom sur un disque en particulier.
+  
+  
+### Créer une partition
+Une fois dans le menu de fdisk, suivez le guide :
+
+- **Tapez <kbd>n</kbd>** : Ajoutez une nouvelle partition.
+- **Choisissez <kbd>p</kbd>** : Pour une partition primaire (simple et efficace).
+- **Sélectionnez le numéro de partition** : En général, 1 fait le taf.
+- **Début et fin de partition** : Appuyez sur Entrée pour accepter les valeurs par défaut.
+- **Tapez <kbd>w</kbd>** : Sauvegardez vos changements et sortez.
+  
+🎉 Bravo, vous venez de créer une partition ! 🎉
+  
+## Passez à LVM (parce qu'on ne fait pas les choses à moitié)
+  
+1. Créer un PV (Physical Volume)
+> Vulgairement, un PV, c'est un moyen d'indiquer à LVM que le disque est utilisable et peut stocker des informations.
+> Imaginez un PV comme une étiquette disant à LVM : « Hey, ce disque est prêt à stocker des trucs. » 🏷️
+{.is-success}
+
+{.is-success}
 
 ```bash
-fdisk --help # pour demander l'aide et la liste des commandes
-fdisk -l # pour lister les partitions et disques
-fdisk /dev/sdbx # pour les informations sur un disque en particulier
+pvcreate /dev/sdbx
 ```
+  
+2. Créer un VG (Volume Group)
+> Un VG, est un moyen d'aggréger (combiner l'espace) des PVs entre eux pour créer un seul et unique espace de stockage logique. 🛠️
+{.is-success}
 
-Une fois dans les informations du disque sélectionner : 
-- Tapez n pour ajouter une nouvelle partition.
-- Sélectionnez p pour une partition primaire.
-- Choisissez le numéro de partition (1 est généralement correct).
-- Acceptez les valeurs par défaut pour le début et la fin de la partition.
-- Tapez w pour écrire les modifications et quitter.
+```bash
+vgcreate big1 /dev/sdbx
+```
+<!--
 
 
 Une fois les partitions créées : 
@@ -424,7 +452,7 @@ pvcreate /dev/sdbx
 ```
 
 - Créer un VG (Volume Group)
-> Un VG, est un moyen d'aggréger (combiner l'espace) des PVs entre eux pour en créer un seul et unique espace de stockage logique.
+> Un VG, est un moyen d'aggréger (combiner l'espace) des PVs entre eux pour créer un seul et unique espace de stockage logique.
 {.is-success}
 ```bash
 vgcreate big1 /dev/sdbx
