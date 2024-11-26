@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-26T19:39:11.757Z
+date: 2024-11-26T19:41:39.611Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -478,18 +478,9 @@ Lors de la création de partitions pour un disque RAID :
   
 Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳  
   
-<!--
-
-
-Une fois dans les informations du disque sélectionner : 
-- Tapez n pour ajouter une nouvelle partition.
-- Sélectionnez p pour une partition primaire.
-- Choisissez le numéro de partition (1 est généralement correct).
-- Acceptez les valeurs par défaut pour le début et la fin de la partition.
-- Tapez t pour changer le type de partition, et entrez fd pour définir le type à "Linux RAID autodetect".
-- Tapez w pour écrire les modifications et quitter.
-
-
+ 
+# Monter un serveur chez OVH avec Proxmox et OpenMediaVault, façon chill 😎   
+  
 <!-- Installation d'un Serveur Dédié chez OVH avec Proxmox et OpenMediaVault
 Cette procédure décrit les étapes nécessaires pour installer un serveur dédié chez OVH, y configurer Proxmox pour la gestion des machines virtuelles (VM), et créer une machine virtuelle sous OpenMediaVault (OMV) pour la gestion du stockage et des services courants tels que Jellyfin et Wiki.js, exécutés dans des conteneurs Docker. Un reverse proxy (swag) sera également configuré pour faciliter l'accès aux services via des sous-domaines.
 
