@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2024-11-26T22:55:21.607Z
+date: 2024-11-26T22:57:59.478Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -77,9 +77,9 @@ Par exemple :
 {.is-info}
 
 
-- Chaque MTA est composé de deux agents :
-    - Agent de routage des messages : détermine le chemin du message en fonction de l'adresse du destinataire.
-    - Agent de transport des messages : reçoit un message et un chemin, et le transporte à l'endroit indiqué via le protocole SMTP (sur TCP/IP).
+- ***Chaque MTA est composé de deux agents :***
+    - **Agent de routage des messages :** détermine le chemin du message en fonction de l'adresse du destinataire.
+    - **Agent de transport des messages :** reçoit un message et un chemin, et le transporte à l'endroit indiqué via le protocole SMTP (sur TCP/IP).
 
 
 L'agent de transport des messages ne prend donc pas de décision de routage. Elle lui est indiquée par l'agent de routage qui lui transmet le message et le chemin.
