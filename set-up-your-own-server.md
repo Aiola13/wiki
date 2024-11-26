@@ -1,9 +1,9 @@
 ---
-title: Créer son propre serveur
+title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T19:41:39.611Z
-tags: 
+date: 2024-11-26T19:43:07.359Z
+tags: proxmox, ovh, vm, virtualisation, hyperviseur
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
 ---
