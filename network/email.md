@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2024-11-26T22:57:59.478Z
+date: 2024-11-26T22:59:45.587Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -469,9 +469,11 @@ Subject: rue de Charonne
   
 <!-- MIME (Multipurpose Internet Mail Extensions) : Extension du format de base pour inclure des pièces jointes, du texte au format HTML, etc. -->
   
-Le MIME, acronyme de **Multipurpose Internet Mail Extensions**, est une norme qui a été développée dans le but d'étendre les capacités des e-mails pour permettre le transport de contenus autres que du texte brut ASCII, comme des fichiers binaires, des images et des caractères non-ASCII. 
+> Le MIME, acronyme de **Multipurpose Internet Mail Extensions**, est une norme qui a été développée dans le but d'étendre les capacités des e-mails pour permettre le transport de contenus autres que du texte brut ASCII, comme des fichiers binaires, des images et des caractères non-ASCII. 
+> 
+> Avant l'introduction de MIME, les e-mails étaient limités à des caractères ASCII simples, ce qui rendait difficile le transfert d'autres types de données.
+{.is-success}
 
-Avant l'introduction de MIME, les e-mails étaient limités à des caractères ASCII simples, ce qui rendait difficile le transfert d'autres types de données.
 
 Voici quelques points clés concernant MIME:
 
