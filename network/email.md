@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2024-11-26T23:08:05.104Z
+date: 2024-11-26T23:08:09.533Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
