@@ -2,7 +2,7 @@
 title: Protocoles du courrier électronique
 description: 
 published: 1
-date: 2024-11-26T22:59:45.587Z
+date: 2024-11-26T23:08:05.104Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-31T23:11:52.729Z
@@ -24,7 +24,7 @@ dateCreated: 2023-01-31T23:11:52.729Z
 
 # Architecture générale
 
-![protocol-min.png](/images/network/email/protocol-min.png){.align-center}
+![protocol-email.png](/images/network/email/protocol-email.png){.align-center}
 
 # Histoire & évolution de la messagerie
 
@@ -121,7 +121,7 @@ inutilement le contenu du message -->
 
 # Architecture
 
-![architecture-systeme-messagerie-electronique.jpg](/images/network/email/architecture-systeme-messagerie-electronique.jpg){.align-center}
+![architecture-system-electronic-mail.jpg](/images/network/email/architecture-system-electronic-mail){.align-center}
   
 ---
 
