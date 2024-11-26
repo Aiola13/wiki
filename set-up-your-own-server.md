@@ -2,7 +2,7 @@
 title: Créer son propre serveur
 description: 
 published: 1
-date: 2024-11-26T18:35:43.689Z
+date: 2024-11-26T19:39:11.757Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -439,47 +439,46 @@ pvcreate /dev/sdbx
 ```bash
 vgcreate big1 /dev/sdbx
 ```
-<!--
+  
+## Bonus : LVM + RAID (parce qu’on aime dormir tranquille)
 
-
-Une fois les partitions créées : 
-
-- Créer un PV (Physical Volume) 
-> Vulgairement, un PV, c'est un moyen d'indiquer à LVM que le disque est utilisable et peut stocker des informations.
+> Envie de dormir sur vos deux oreilles avec un stockage résistant aux pannes ? Activez le RAID. 🚨
 {.is-success}
+
+### Créer un RAID
+Créez un RAID 5 sur 3 disques avec la commande suivante :
+
 ```bash
-pvcreate /dev/sdbx
+mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sd[abc]  
 ```
 
-- Créer un VG (Volume Group)
-> Un VG, est un moyen d'aggréger (combiner l'espace) des PVs entre eux pour créer un seul et unique espace de stockage logique.
-{.is-success}
+### Suivre l'avancement du RAID
+  
+Parce qu'on aime bien savoir où on en est :
+  
 ```bash
-vgcreate big1 /dev/sdbx
-```
-
-
-## Configuration LVM + RAID
-
-> Pour plus de sécuriter.
-{.is-success}
-
-mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sd[abc]
-
-
-
-### Voir l'état d'avancement du raid 
-
 mdadm --detail /dev/md0
-
+```
+ou 
+  
+```bash
 cat /proc/mdstat
+```
+  
+## Astuce RAID-friendly
+Lors de la création de partitions pour un disque RAID :
 
-
-
-
-
-
-
+1. Tapez <kbd>n</kbd> : Ajoutez une nouvelle partition.
+1. Tapez <kbd>p</kbd> : Partition primaire.
+1. Sélectionnez le numéro partition : 1 fait encore l’affaire.
+1. Début et fin departition : Entrée pour les valeurs par défaut.
+1. Tapez <kbd>t</kbd> : Changez le type de partition, puis entrez <kbd>fd</kbd> pour définir le type (Linux RAID autodetect).
+1. Tapez <kbd>w</kbd> : Sauvegardez et quittez.
+  
+  
+Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳  
+  
+<!--
 
 
 Une fois dans les informations du disque sélectionner : 
