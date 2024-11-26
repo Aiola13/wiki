@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T19:44:18.788Z
+date: 2024-11-26T20:04:34.305Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -479,22 +479,40 @@ Lors de la création de partitions pour un disque RAID :
 Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳  
   
  
-# Monter un serveur chez OVH avec Proxmox et OpenMediaVault, façon chill 😎   
+# Choisir et créer une VM
   
-<!-- Installation d'un Serveur Dédié chez OVH avec Proxmox et OpenMediaVault
-Cette procédure décrit les étapes nécessaires pour installer un serveur dédié chez OVH, y configurer Proxmox pour la gestion des machines virtuelles (VM), et créer une machine virtuelle sous OpenMediaVault (OMV) pour la gestion du stockage et des services courants tels que Jellyfin et Wiki.js, exécutés dans des conteneurs Docker. Un reverse proxy (swag) sera également configuré pour faciliter l'accès aux services via des sous-domaines.
+Maintenant que Proxmox est paramétré, tu peux choisir quel système installer dans ta VM. Selon tes besoins, voici quatre options cool et pratiques : OMV, CasaOS, UmbrelOS et Cosmos Cloud. Fais ton choix ! 🔥
+  
+## Option 1 : Installer OpenMediaVault (OMV) 🗄️
+  
+> OMV, c’est la référence pour transformer ton serveur en solution de stockage réseau (NAS) et préparer le terrain pour Docker de manière user-friendly. Si tu veux gérer du stockage, des sauvegardes et des services en mode solide, c’est pour toi.
+{.is-success}
 
-Objectif
-Installer Proxmox sur un serveur dédié OVH.
-Créer une VM sous Proxmox pour OMV.
-Configurer Docker sur OMV pour gérer Jellyfin, Wiki.js et d'autres services.
-Mettre en place un reverse proxy swag pour accéder aux services via des sous-domaines.
-Pré-requis
-Un serveur dédié chez OVH.
-Un nom de domaine configuré pour pointer vers l'IP du serveur dédié.
-Accès SSH au serveur.
-Connaissance de base en administration Linux et réseau.
-Étapes de l'installation -->
+
+**1. Télécharge l’ISO :**
+- Va sur le site officiel d’OMV et récupère l’image ISO (basée sur Debian).
+  
+**2. Crée une VM dans Proxmox :**
+- Clique sur « Créer une VM ».
+- Donne un nom à ta VM (ex : VM-OMV).
+- Ajoute l’image ISO téléchargée.
+- Alloue des ressources (CPU, RAM, disque dur).
+  
+**3. Installe Debian/OMV :**
+- Lance l’installation et suis les instructions comme un installateur Debian classique.
+  
+  
+> Pourquoi OMV ?
+> 
+> C’est stable et axé sur la gestion des fichiers et services de stockage.
+> Parfait pour gérer Docker et des outils comme Jellyfin.
+{.is-info}
+
+## Option 2 : Installer CasaOS 🏡
+  
+## Option 3 : Installer UmbrelOS 🌐
+  
+## Option 4 : Installer Cosmos Cloud 🌌
 
 <!--
 # Création d'une VM OMV
