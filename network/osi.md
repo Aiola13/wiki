@@ -2,13 +2,13 @@
 title: Le modèle OSI
 description: 
 published: 1
-date: 2024-11-26T23:05:01.644Z
+date: 2024-11-26T23:05:54.313Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-10T22:23:48.843Z
 ---
 
-![logo-osi.png](/images/network/osi/osi.png){.align-center}
+![logo-osi.png](/images/network/osi/logo-osi.png){.align-center}
 
 # Présentation
 
@@ -26,7 +26,7 @@ Le principe du modèle OSI est de cadrer le protocole TCP/IP. Il est basé sur 7
 - Présentation
 - Application
 
-![osi_model_v1.png](/images/network/osi/osi_model_v1.png){.align-center}
+![model-osi-v1.png](/images/network/osi/model-osi-v1.png){.align-center}
 
 > Les couches ne peuvent communiquer qu’entre elles (réseau / réseau, liaison / liaison mais pas liaison / transport).
 {.is-info}
