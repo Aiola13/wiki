@@ -2,13 +2,13 @@
 title: Le modèle OSI
 description: 
 published: 1
-date: 2024-11-26T22:53:13.390Z
+date: 2024-11-26T23:05:01.644Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-10T22:23:48.843Z
 ---
 
-![osi.png](/images/network/osi/osi.png){.align-center}
+![logo-osi.png](/images/network/osi/osi.png){.align-center}
 
 # Présentation
 
