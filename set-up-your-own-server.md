@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T20:20:18.697Z
+date: 2024-11-26T22:02:08.380Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -489,16 +489,16 @@ Maintenant que Proxmox est paramétré, tu peux choisir quel système installer 
 {.is-success}
 
 
-**1. Télécharge l’ISO :**
+1. **Télécharge l’ISO :**
 - Va sur [le site officiel d’OMV](https://www.openmediavault.org) et récupère l’image ISO (basée sur Debian).
   
-**2. Crée une VM dans Proxmox :**
+2. **Crée une VM dans Proxmox :**
 - Clique sur « Créer une VM ».
 - Donne un nom à ta VM (ex : VM-OMV).
 - Ajoute l’image ISO téléchargée.
 - Alloue des ressources (CPU, RAM, disque dur).
   
-**3. Installe Debian/OMV :**
+3. **Installe Debian/OMV :**
 - Lance l’installation et suis les instructions comme un installateur Debian classique.
   
   
@@ -513,15 +513,87 @@ Maintenant que Proxmox est paramétré, tu peux choisir quel système installer 
 >   CasaOS, c’est l’option user-friendly pour ceux qui veulent un serveur à la maison sans prise de tête. Interface sexy, simple à utiliser, et idéale pour gérer des médias ou des apps courantes sans le stress des configs compliquées.
 {.is-success}
 
+1. **Télécharge l’ISO de Debian et utilise leur script :**
+- CasaOS ne fournit pas d’ISO direct, mais tu peux installer [une base Debian](https://www.debian.org/distrib/index.fr.html) et ajouter CasaOS ensuite avec leur script magique.
+```bash
+curl -fsSL https://get.casaos.io | sudo bash
+```
+2. **Crée une VM dans Proxmox :**
+- Ajoute l’ISO de Debian (ou Ubuntu).
+- Donne un nom à ta VM (ex : VM-CASA).
+- Configure les ressources de la VM.
+- Lance Debian et connecte-toi en SSH.
+  
+3. **Installe CasaOS :**
+- Exécute le script mentionné plus haut pour installer CasaOS.
+
+> Pourquoi CasaOS ?
+> 
+> Simple et accessible, parfait pour débuter.
+> Une interface moderne avec des apps pré-intégrées pour la gestion de médias et plus (Docker, gestion des médias, etc.).
+{.is-info}
 
   
 ## Option 3 : Installer UmbrelOS 🌐
   
 >   UmbrelOS, c’est l’option pour les fans de décentralisation et de projets comme Bitcoin, Lightning Network, ou d’apps privées type Nextcloud. Mais ça peut aussi gérer des apps basiques !
 {.is-success}
+  
+1. **Télécharge l’ISO :**
+- Va sur [le github d'UmbrelOS](https://github.com/getumbrel/umbrel/wiki/Install-umbrelOS-on-a-Linux-VM).
+  
+2. Crée une VM dans Proxmox :
+- Clique sur « Créer une VM ».
+- Donne un nom à ta VM (ex : VM-UMBREL).
+- Ajoute l’image ISO téléchargée.
+- Alloue des ressources (CPU, RAM, disque dur).
+
+3. Lance UmbrelOS :
+- Une fois installé, accède à l’interface web pour commencer à configurer tes services.
+
+  
+> Pourquoi UmbrelOS ?
+> 
+> Focus sur les outils décentralisés (Bitcoin, Nextcloud, etc.).
+> Idéal pour explorer l’univers des clouds privés.  
+{.is-info}
 
   
 ## Option 4 : Installer Cosmos Cloud 🌌
+  
+>   Cosmos Cloud, est une autre solution qui te permet de gérer un cloud personnel hyper intuitif. Il se concentre sur une interface claire et des fonctionnalités collaboratives.
+{.is-success}
+  
+1. **Télécharge l’ISO de Debian :**
+- Cosmos Cloud ne fournit pas d’ISO direct, mais tu peux installer une base Debian et ajouter Cosmos Cloud ensuite via docker.
+  
+2. **Crée une VM dans Proxmox :**
+- Ajoute l’ISO de Debian (ou Ubuntu).
+- Donne un nom à ta VM (ex : VM-COSMOS).
+- Configure les ressources de la VM.
+- Lance Debian et connecte-toi en SSH.
+  
+3. **Installe Docker :**
+- Tu peux aisement installer docker grâce au script suivant. 
+  
+```bash
+curl -fsSL https://get.docker.com | sudo sh
+```
+4. **Installe Cosmos Cloud :**
+Exécute la commande docker suivante pour installer Cosmos Cloud.
+  
+```bash
+sudo docker run -d --network host  --privileged --name cosmos-server -h cosmos-server --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket -v /:/mnt/host -v /var/lib/cosmos:/config azukaar/cosmos-server:latest
+```
+
+> Pourquoi Cosmos Cloud ?
+> 
+> Une alternative open-source aux clouds mainstream.
+> Idéal pour les particuliers ou petites équipes cherchant un espace collaboratif.
+> Le seul avec OMV a être multi-utilisateur.
+{.is-info}
+
+  
 
 <!--
 # Création d'une VM OMV
