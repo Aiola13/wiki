@@ -2,8 +2,8 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T19:43:07.359Z
-tags: proxmox, ovh, vm, virtualisation, hyperviseur
+date: 2024-11-26T19:44:18.788Z
+tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
 ---
