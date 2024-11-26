@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T20:04:34.305Z
+date: 2024-11-26T20:20:18.697Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -481,16 +481,16 @@ Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳
  
 # Choisir et créer une VM
   
-Maintenant que Proxmox est paramétré, tu peux choisir quel système installer dans ta VM. Selon tes besoins, voici quatre options cool et pratiques : OMV, CasaOS, UmbrelOS et Cosmos Cloud. Fais ton choix ! 🔥
+Maintenant que Proxmox est paramétré, tu peux choisir quel système installer dans ta VM. Selon tes besoins, voici quatre options cool et pratiques que je te propose : OMV, CasaOS, UmbrelOS et Cosmos Cloud. Fais ton choix ! 🔥
   
 ## Option 1 : Installer OpenMediaVault (OMV) 🗄️
   
-> OMV, c’est la référence pour transformer ton serveur en solution de stockage réseau (NAS) et préparer le terrain pour Docker de manière user-friendly. Si tu veux gérer du stockage, des sauvegardes et des services en mode solide, c’est pour toi.
+> OMV, c’est la référence pour transformer ton serveur en solution de stockage réseau (NAS) et préparer le terrain pour Docker avec un interface graphique. Si tu veux gérer du stockage, des sauvegardes et des services en mode solide, c’est pour toi.
 {.is-success}
 
 
 **1. Télécharge l’ISO :**
-- Va sur le site officiel d’OMV et récupère l’image ISO (basée sur Debian).
+- Va sur [le site officiel d’OMV](https://www.openmediavault.org) et récupère l’image ISO (basée sur Debian).
   
 **2. Crée une VM dans Proxmox :**
 - Clique sur « Créer une VM ».
@@ -510,7 +510,16 @@ Maintenant que Proxmox est paramétré, tu peux choisir quel système installer 
 
 ## Option 2 : Installer CasaOS 🏡
   
+>   CasaOS, c’est l’option user-friendly pour ceux qui veulent un serveur à la maison sans prise de tête. Interface sexy, simple à utiliser, et idéale pour gérer des médias ou des apps courantes sans le stress des configs compliquées.
+{.is-success}
+
+
+  
 ## Option 3 : Installer UmbrelOS 🌐
+  
+>   UmbrelOS, c’est l’option pour les fans de décentralisation et de projets comme Bitcoin, Lightning Network, ou d’apps privées type Nextcloud. Mais ça peut aussi gérer des apps basiques !
+{.is-success}
+
   
 ## Option 4 : Installer Cosmos Cloud 🌌
 
