@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-26T22:03:23.759Z
+date: 2024-11-27T00:19:57.043Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -198,8 +198,15 @@ Un utilisateur sans permissions, c’est comme un joueur sans manette : il ne pe
 > Bon, on va mettre les mains dans le cambouis pour configurer le réseau de notre Proxmox. Respire un bon coup, et c'est parti ! 🔧
 {.is-info}
 
+## Étape 1 : Créer une interface réseau
 
-## Étape 1 : Modifier les interfaces réseau
+1. On va débuter par créer une interface réseau dans proxmox :
+	- Dans l'onglet System > Network > Create > Linux Bridge
+	![install-proxmox-04.png](/images/myownserver/install-proxmox-04.png)
+	- Ensuite, on va enregistrer les informations.
+  ![install-proxmox-05.png](/images/myownserver/install-proxmox-05.png)
+
+## Étape 2 : Modifier les interfaces réseau
 
 1. Pour commencer, on édite le fichier de configuration des interfaces réseau avec notre fidèle commande :
 
@@ -264,7 +271,7 @@ sudo ifup vmbr1    # Relancer pour activer les nouvelles configs
 ```
 
   
-## Étape 2 : Configurer les règles réseau (iptables)
+## Étape 3 : Configurer les règles réseau (iptables)
   
 > C’est là qu’on rigole un peu avec les règles NAT et de redirection. Regarde ces lignes :
 {.is-info}
@@ -351,7 +358,7 @@ post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 22000 -j DNAT --
 </details>
 
 
-## Étape 3 : Redémarrer les interfaces
+## Étape 4 : Redémarrer les interfaces
   
 > Une fois que tout est prêt, tu peux relancer les interfaces. Hop, deux petites commandes magiques :
 {.is-info}
