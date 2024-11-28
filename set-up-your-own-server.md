@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T15:17:14.582Z
+date: 2024-11-28T15:24:56.453Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -509,7 +509,7 @@ mkfs.xfs /dev/nom_vg/nom_lv # formattez en xfs
   
 Aller dans stockage > Add > LVM
   
-### Etape Bonus : LVM + RAID (parce qu’on aime dormir tranquille)
+### Etape Bonus : LVM + RAID Natif (parce qu’on aime dormir tranquille)
   
 > Envie de dormir sur vos deux oreilles avec un stockage résistant aux pannes ? Activez le RAID. 🚨
 {.is-success}
