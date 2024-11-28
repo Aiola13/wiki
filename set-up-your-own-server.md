@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T11:59:39.425Z
+date: 2024-11-28T14:46:16.037Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -410,29 +410,31 @@ sudo ifup vmbr1    # Et on la rallume
 
 
 
-
-# Configuration des disques LVM (Logical Volume Manager)
-
-> LVM, alias le Gestionnaire de Volumes Logiques, c'est un peu comme un Tetris pour vos disques sous Linux. Besoin de jongler avec de l'espace disque sans casser vos partitions ? LVM est là pour rendre votre vie plus simple et plus flexible que les bonnes vieilles partitions rigides. 🎮
+# Configuration des disques : LVM ou ZFS ? À vous de choisir !
+  
+>   **LVM** et **ZFS** sont deux outils puissants pour gérer vos disques. LVM est parfait pour les besoins classiques de gestion flexible de partitions et d’espace disque, tandis que ZFS va plus loin avec des fonctionnalités avancées comme les snapshots, la compression native et une gestion simplifiée du RAID. 🚀
+> 
+> Vous ne savez pas encore lequel choisir ? Pas de panique : on vous explique les deux. Suivez le guide ! 🎮
 {.is-success}
 
-
-![lvm.png](/images/divers/lvm.png)
+## Option 1 : LVM (Logical Volume Manager)
+  > **LVM, alias le Gestionnaire de Volumes Logiques**, c'est un peu comme un Tetris pour vos disques sous Linux. Besoin de jongler avec de l'espace disque sans casser vos partitions ? LVM est là pour rendre votre vie plus simple et plus flexible que les bonnes vieilles partitions rigides. 🎮
+{.is-success}
   
-
-## Effacer les disques (facultatif mais recommandé)
-
-
-> Si vos disques contiennent des données précédentes, mieux vaut tout effacer. Ça évite les conflits et les bugs du genre « Mais pourquoi ce disque me déteste ? ». 😅
+  ![lvm.png](/images/divers/lvm.png)
+ 
+ 
+### Etape 1 : Effacer les disques (facultatif mais recommandé)
+  > Si vos disques contiennent des données précédentes, mieux vaut tout effacer. Ça évite les conflits et les bugs du genre « Mais pourquoi ce disque me déteste ? ». 😅
 {.is-warning}
 
 ```bash
-sgdisk --zap-all /dev/sdX # Où X est le disque dur en question
+sgdisk --zap-all /dev/sdX # X est le disque dur en question
 ```
-
-## Préparer les disques (Créer des partitions comme un boss)
-
-### Trouver vos disques
+   
+  
+### Etape 2 : Préparer les disques et partitions
+  #### Trouver vos disques
 Avant de commencer, il faut repérer vos disques comme un détective. 🕵️‍♀️ Utilisez une des commandes magiques :
   
 ```bash
@@ -443,15 +445,13 @@ ou
 lsblk
 ```
   
-  
 Quelques commandes utiles :
 
 - `fdisk --help` : Obtenez la liste des commandes (parce que personne ne peut tout retenir 💡).
 - `fdisk -l `: Liste les disques et partitions.
-- `fdisk /dev/sdbx` : Zoom sur un disque en particulier.
+- `fdisk /dev/sdbx` : Zoom sur un disque en particulier.  
   
-  
-### Créer une partition
+#### Créer une partition
 Une fois dans le menu de fdisk, suivez le guide :
 
 - **Tapez <kbd>n</kbd>** : Ajoutez une nouvelle partition.
@@ -459,10 +459,11 @@ Une fois dans le menu de fdisk, suivez le guide :
 - **Sélectionnez le numéro de partition** : En général, 1 fait le taf.
 - **Début et fin de partition** : Appuyez sur Entrée pour accepter les valeurs par défaut.
 - **Tapez <kbd>w</kbd>** : Sauvegardez vos changements et sortez.
+
+  🎉 Bravo, vous venez de créer une partition ! 🎉
   
-🎉 Bravo, vous venez de créer une partition ! 🎉
   
-## Passez à LVM (parce qu'on ne fait pas les choses à moitié)
+### Etape 3 : Passez à LVM (parce qu'on ne fait pas les choses à moitié)  
   
 1. Créer un PV (Physical Volume)
 > Vulgairement, un PV, c'est un moyen d'indiquer à LVM que le disque est utilisable et peut stocker des informations.
@@ -472,30 +473,45 @@ Une fois dans le menu de fdisk, suivez le guide :
 {.is-success}
 
 ```bash
-pvcreate /dev/sdbx
+pvcreate /dev/sdbX /dev/sdbY
 ```
+ > 💡 Astuce : Si vous avez plusieurs disques, effacez-les tous (par exemple /dev/sdX, /dev/sdY, etc.).
+{.is-info}
   
 2. Créer un VG (Volume Group)
 > Un VG, est un moyen d'aggréger (combiner l'espace) des PVs entre eux pour créer un seul et unique espace de stockage logique. 🛠️
 {.is-success}
 
 ```bash
-vgcreate big1 /dev/sdbx
+vgcreate nom_vg /dev/sdbx 
 ```
   
-## Bonus : LVM + RAID (parce qu’on aime dormir tranquille)
-
+3. Ajoutez un volume logique  :
+```bash
+lvcreate -L 100G -n nom_lv nom_vg # par exemple, pour 100 Go
+lvcreate -l 100%FREE -n nom_lv nom_vg # par exemple, pour tout l'espace libre
+```
+  
+4. Formatez le volume logique :
+```bash
+mkfs.ext4 /dev/nom_vg/nom_lv # formattez en ext4
+mkfs.xfs /dev/nom_vg/nom_lv # formattez en xfs
+```
+  
+### Etape Bonus : LVM + RAID (parce qu’on aime dormir tranquille)
+  
 > Envie de dormir sur vos deux oreilles avec un stockage résistant aux pannes ? Activez le RAID. 🚨
 {.is-success}
 
-### Créer un RAID
+  
+  #### Créer un RAID
 Créez un RAID 5 sur 3 disques avec la commande suivante :
 
 ```bash
 mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sd[abc]  
 ```
 
-### Suivre l'avancement du RAID
+#### Suivre l'avancement du RAID
   
 Parce qu'on aime bien savoir où on en est :
   
@@ -508,7 +524,7 @@ ou
 cat /proc/mdstat
 ```
   
-## Astuce RAID-friendly
+### Astuce RAID-friendly
 Lors de la création de partitions pour un disque RAID :
 
 1. Tapez <kbd>n</kbd> : Ajoutez une nouvelle partition.
@@ -520,8 +536,89 @@ Lors de la création de partitions pour un disque RAID :
   
   
 Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳  
+  <!--
+## Option 2 : ZFS (Zettabyte File System)
   
- 
+>   Vous cherchez une solution tout-en-un, moderne et performante ? ZFS, c’est le chef d’orchestre des systèmes de fichiers. Avec ZFS, pas besoin de LVM ou de RAID séparé : tout est intégré. Il offre la compression, les snapshots, et une gestion impeccable du stockage. ✨
+> 
+> Voici comment configurer vos disques avec ZFS.
+{.is-success}
+
+  
+  
+### Étape 1 : Préparer les disques
+ZFS aime partir d’une base propre, donc effaçons tout !
+
+```bash
+wipefs -a /dev/sdX  # X est le disque cible
+> 💡 Astuce : Si vous avez plusieurs disques pour ZFS, effacez-les tous (par exemple /dev/sdX, /dev/sdY, etc.).
+{.is-info}
+
+
+Étape 2 : Créer un pool ZFS
+Un pool ZFS est une sorte de super-volume qui regroupe un ou plusieurs disques. Voici les configurations les plus courantes :
+
+1. Pool simple (1 disque)
+Si vous voulez un stockage de base sur un seul disque :
+
+bash
+Copier le code
+zpool create mypool /dev/sdX
+2. Pool avec RAID-Z (RAID 5 façon ZFS)
+Pour protéger vos données avec un RAID-Z sur 3 disques :
+
+bash
+Copier le code
+zpool create mypool raidz /dev/sdX /dev/sdY /dev/sdZ
+3. Pool en miroir (RAID 1 façon ZFS)
+Pour doubler vos données sur 2 disques :
+
+bash
+Copier le code
+zpool create mypool mirror /dev/sdX /dev/sdY
+Étape 4 : Vérifier l’état du pool
+Une fois le pool créé, vérifiez qu’il est opérationnel avec :
+
+bash
+Copier le code
+zpool status
+Vous verrez une sortie détaillée qui confirme que votre pool est actif et sain. 🎉
+
+Étape 5 : Monter automatiquement le pool
+ZFS monte automatiquement les pools créés sous /mypool (le nom que vous avez donné). Si vous voulez un autre point de montage :
+
+bash
+Copier le code
+zfs set mountpoint=/mnt/mypool mypool
+Étape 6 : Activer des options avancées (facultatif mais stylé)
+Activer la compression pour économiser de l’espace :
+
+bash
+Copier le code
+zfs set compression=on mypool
+Créer un dataset (sous-volume logique) :
+
+bash
+Copier le code
+zfs create mypool/dataset1
+Faire un snapshot (sauvegarde instantanée) :
+
+bash
+Copier le code
+zfs snapshot mypool/dataset1@sauvegarde1
+Lister vos snapshots :
+
+bash
+Copier le code
+zfs list -t snapshot  
+  
+  
+  
+  -->
+  
+  
+  
+  
 # Choisir et créer une VM
   
 Maintenant que Proxmox est paramétré, tu peux choisir quel système installer dans ta VM. Selon tes besoins, voici quatre options cool et pratiques que je te propose : OMV, CasaOS, UmbrelOS et Cosmos Cloud. Fais ton choix ! 🔥
