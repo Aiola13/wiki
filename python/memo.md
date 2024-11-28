@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-11-28T10:42:12.909Z
+date: 2024-11-28T10:44:28.485Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T23:58:27.349Z
@@ -14,14 +14,14 @@ Mémo Syntaxe Python
 Récapitulation des principales syntaxes Python
 ----------------------------------------------
 
-### Demander et afficher des informations
+# Demander et afficher des informations
 
 | Syntaxe | Description |
 | --- | --- |
 | `print("message")` | Affiche “message” dans la console |
 | `v = input("message")` | Demande une valeur et la stocke dans `v` |
 
-### Calculs
+# Calculs
 
 | Syntaxe | Description |
 | --- | --- |
@@ -34,7 +34,7 @@ Récapitulation des principales syntaxes Python
 
 Toutes ces opérations peuvent être appliquées directement sur une variable via la syntaxe du type `a += b` (additionner b à a et directement modifier la valeur de a avec le résultat).
 
-### Types de variable et conversion
+# Types de variable et conversion
 
 | Syntaxe | Description |
 | --- | --- |
@@ -43,7 +43,7 @@ Toutes ces opérations peuvent être appliquées directement sur une variable vi
 | `float(v)` | Converti `v` en float |
 | `str(v)` | Converti `v` en string |
 
-### Chaînes de caractères
+# Chaînes de caractères
 
 | Syntaxe | Description |
 | --- | --- |
@@ -56,7 +56,7 @@ Toutes ces opérations peuvent être appliquées directement sur une variable vi
 | `chaine.strip()` | “Nettoie” `chaine` en supprimant les espaces et `\n` au début et à la fin |
 | `\n` | Représentation du caractère ‘nouvelle ligne’ |
 
-### Fonctions
+# Fonctions
 
 ```python=
     def ma_fonction(toto, tutu=3):
@@ -72,7 +72,7 @@ Cette fonction :
 * `une_valeur` est une variable locale à la fonction ;
 * elle retourne `une_valeur` ;
 
-### Conditions
+# Conditions
 
 ```python=
     if condition:
@@ -87,7 +87,7 @@ Cette fonction :
         instruction6
 ``` 
 
-#### Opérateurs de conditions
+## Opérateurs de conditions
 
 | Syntaxe | Description |
 | --- | --- |
@@ -102,13 +102,13 @@ Cette fonction :
 | `not cond` | négation de la condition `cond` |
 | `a in b` | `a` est dans `b` (chaîne, liste, set..) |
 
-#### Inline `ifs`
+## Inline `ifs`
 
 ```python=
     parite = "pair" if n % 2 == 0 else "impair"
 ```  
 
-### Exception, assertions
+# Exception, assertions
 
 `try`/`except` permettent de tenter des instructions et d’attraper les exceptions qui peuvent survenir pour ensuite les gérer de manière spécifique :
 
@@ -129,7 +129,7 @@ Les assertions permettent d’expliciter et de vérifier des suppositions faites
        assert isinstance(n, int) and is_prime(n), "Cette fonction fonctionne seulement pour des entiers premiers !"
 ```  
 
-### Boucles
+# Boucles
 
 | Syntaxe | Description |
 | --- | --- |
@@ -157,9 +157,9 @@ while i < 5:
 ```
 
 
-### Structures de données
+# Structures de données
 
-#### Types de structure
+## Types de structure
 |Nom | Syntaxe | Description |
 | --- | --- | --- |
 | Liste | `L = ["a", 2, 3.14 ]` | Suite ordonnée d’élément |
@@ -167,7 +167,7 @@ while i < 5:
 | Dictionnaire | `D = { "a": 2, "b": 4 }` | Ensemble de clé-valeurs, avec clés uniques) |
 | Tuple | `T = (1,2,3)` | Suite d’élément non-mutables |
 
-#### Exemple d'utilisation
+## Exemple d'utilisation
 | Syntaxe | Description |
 | --- | --- |
 | `L[i]` | `i`-eme element d’une liste ou d’une tuple |
@@ -209,7 +209,7 @@ resultat = chaine.join(L)  # Résultat: "a-b-c"
 print(resultat)
 
 ```
-### Fichiers
+# Fichiers
 
 Ouvrir et lire un fichier :
 
@@ -235,3 +235,96 @@ Ecrire dans un fichier :
     
 
 (Le mode `'a'` (append) au lieu de `'w'` permet d’ouvrir le fichier pour ajouter du contenu à la fin plutôt que de le ré-écrire)
+
+
+# Complexité des algorithmes
+La complexité d'un algorithme mesure la quantité de ressources (temps et mémoire) qu'il nécessite pour résoudre un problème. Il existe deux types principaux de complexité :
+
+Complexité temporelle : le temps d'exécution par rapport à la taille de l'entrée.
+Complexité spatiale : la quantité de mémoire requise par rapport à la taille de l'entrée.
+La notation Big-O est utilisée pour exprimer la complexité en fonction de la taille de l'entrée :
+
+O(1) : Complexité constante.
+O(n) : Complexité linéaire.
+O(n²) : Complexité quadratique.
+O(log n) : Complexité logarithmique.
+O(n log n) : Complexité quasi-linéaire.
+
+
+<!--
+
+1. Définition de l'algorithmie
+L'algorithmie est la science des algorithmes, c'est-à-dire l'étude des méthodes de résolution de problèmes de manière structurée et logique. Un algorithme est une suite d'instructions précises permettant d'accomplir une tâche ou de résoudre un problème.
+
+2. Propriétés d'un algorithme
+Un bon algorithme doit respecter certaines propriétés :
+
+Finitude : l'algorithme doit se terminer après un nombre fini d'étapes.
+Précision : chaque étape doit être définie de manière claire et non ambiguë.
+Entrées : il doit recevoir des données en entrée.
+Sorties : il doit fournir des résultats attendus.
+Efficacité : il doit être optimisé en termes de temps d'exécution et d'utilisation des ressources.
+3. Représentation des algorithmes
+Les algorithmes peuvent être représentés de différentes manières :
+
+Pseudo-code : une description textuelle proche du langage naturel, facilitant la compréhension et l'écriture.
+Organigrammes (ou flowcharts) : des diagrammes représentant graphiquement la suite d'instructions et les flux de contrôle.
+Code : l'algorithme peut être directement traduit dans un langage de programmation (Python, C++, Java, etc.).
+4. Types d'algorithmes
+Il existe plusieurs types d'algorithmes selon la méthode utilisée :
+
+Algorithmes séquentiels : les instructions sont exécutées dans l'ordre où elles sont écrites.
+Algorithmes conditionnels : les instructions sont choisies selon une condition (si ... alors ... sinon ...).
+Algorithmes itératifs : certaines instructions sont répétées un certain nombre de fois (boucles).
+Algorithmes récursifs : l'algorithme s'appelle lui-même pour résoudre un sous-problème similaire.
+5. Complexité des algorithmes
+La complexité d'un algorithme mesure la quantité de ressources (temps et mémoire) qu'il nécessite pour résoudre un problème. Il existe deux types principaux de complexité :
+
+Complexité temporelle : le temps d'exécution par rapport à la taille de l'entrée.
+Complexité spatiale : la quantité de mémoire requise par rapport à la taille de l'entrée.
+La notation Big-O est utilisée pour exprimer la complexité en fonction de la taille de l'entrée :
+
+O(1) : Complexité constante.
+O(n) : Complexité linéaire.
+O(n²) : Complexité quadratique.
+O(log n) : Complexité logarithmique.
+O(n log n) : Complexité quasi-linéaire.
+6. Structures de données courantes
+Les algorithmes travaillent souvent avec des structures de données. Quelques-unes des structures les plus courantes :
+
+Tableaux (array) : contiennent des éléments de même type, accessibles par leur index.
+Listes chaînées (linked list) : chaque élément contient une référence vers l'élément suivant.
+Piles (stack) : structure LIFO (Last In, First Out).
+Files (queue) : structure FIFO (First In, First Out).
+Arbres (tree) : structure hiérarchique avec des nœuds connectés par des arêtes.
+Graphes (graph) : ensemble de nœuds reliés par des arêtes, avec ou sans orientation.
+7. Exemples d'algorithmes célèbres
+Tri : Tri à bulles (bubble sort), Tri rapide (quick sort), Tri fusion (merge sort).
+Recherche : Recherche linéaire, Recherche dichotomique (ou binaire).
+Parcours de graphes : Parcours en largeur (BFS), Parcours en profondeur (DFS).
+Algorithmes de plus court chemin : Dijkstra, Bellman-Ford.
+8. Pseudo-code d'exemple : Recherche binaire
+Voici un exemple de pseudo-code pour un algorithme de recherche binaire dans un tableau trié :
+
+text
+Copier le code
+Fonction RechercheBinaire(tableau, valeur) :
+    Début = 0
+    Fin = longueur(tableau) - 1
+
+    Tant que Début ≤ Fin :
+        Milieu = (Début + Fin) / 2
+        Si tableau[Milieu] == valeur :
+            Retourner Milieu
+        Sinon Si tableau[Milieu] < valeur :
+            Début = Milieu + 1
+        Sinon :
+            Fin = Milieu - 1
+
+    Retourner -1 // valeur non trouvée
+9. Conseils pour concevoir un algorithme
+Décomposer le problème en sous-problèmes plus simples.
+Écrire un pseudo-code avant de coder.
+Tester l'algorithme avec des cas simples, puis avec des cas complexes.
+Optimiser les performances si nécessaire (en fonction de la complexité).
+-->
