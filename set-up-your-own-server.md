@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T15:30:19.974Z
+date: 2024-11-28T15:37:29.547Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -389,6 +389,8 @@ post-up iptables -t nat -A PREROUTING -i vmbr0 -p udp --dport 22000 -j DNAT --to
 post-down iptables -t nat -D PREROUTING -i vmbr0 -p udp --dport 22000 -j DNAT --to 192.168.50.2:22000
 post-up iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 22000 -j DNAT --to 192.168.50.2:22000
 post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 22000 -j DNAT --to 192.168.50.2:22000
+post-up iptables -t nat -A PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to 192.168.50.2:51820
+post-down iptables -t nat -D PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to 192.168.50.2:51820
 ```
   
 </details>
