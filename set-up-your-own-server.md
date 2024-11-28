@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T16:25:41.012Z
+date: 2024-11-28T16:48:48.621Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -249,8 +249,16 @@ Le port par défaut de SSH est 22, mais rien ne vous oblige à le garder. On peu
 Pour éviter de modifier directement le fichier principal et risquer une erreur, on va créer une surcharge propre dans le dossier dédié à SSH :
 
 ```bash
-sudo nano /etc/ssh/sshd_config.d/custom_port.conf
+sudo nano /etc/ssh/sshd_config.d/99-custom-config.conf
 ```
+
+> 💡 Pourquoi un numéro en début de nom ? Dans le dossier /etc/ssh/sshd_config.d/, vous trouverez peut-être un fichier nommé 50-cloud-init.conf. Ce fichier a été créé automatiquement. Le 50 au début indique l’ordre de priorité lorsque SSH applique ses configurations : les fichiers sont lus dans l’ordre croissant des numéros.
+>
+> En créant un fichier avec un numéro plus élevé, comme 99-custom-port.conf, vous garantissez que votre configuration surchargera celle de 50-cloud-init.conf ou tout autre fichier avec un numéro plus bas.
+{.is-info}
+
+> ⚠️ Attention : Assurez-vous que votre nouveau fichier contient uniquement les directives nécessaires (comme le port), pour éviter de surcharger accidentellement d'autres configurations importantes. 
+{.is-warning}
 
 ### Étape 2 : Ajouter une directive pour le nouveau port
 Dans ce fichier, ajoutez la ligne suivante :
@@ -261,7 +269,7 @@ Port 2222
 AllowGroups sshusers # Et on accepte seulement les membres du groupe sshusers à se connecter
 ```
 
-> 💡 Conseil : Remplacez 2222 par le port de votre choix (au-dessus de 1024, de préférence).
+> 💡 Conseil : Vous pouvez remplacer le port 2222 par le port de votre choix (au-dessus de 1024, de préférence).
 {.is-warning}
 
 Enregistrez et fermez le fichier (Ctrl + O pour enregistrer, Ctrl + X pour quitter).
@@ -279,6 +287,7 @@ sudo systemctl restart sshd
 ```
 ### Étape 4 : Tester la connexion SSH avec le nouveau port
 Ouvrez une autre fenêtre de terminal et essayez de vous connecter avec le nouveau port :
+
 
 ```bash
 ssh utilisateur@votre-ip -p 2222
