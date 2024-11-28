@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-11-28T10:46:45.008Z
+date: 2024-11-28T10:47:49.505Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T23:58:27.349Z
@@ -332,4 +332,92 @@ Décomposer le problème en sous-problèmes plus simples.
 Écrire un pseudo-code avant de coder.
 Tester l'algorithme avec des cas simples, puis avec des cas complexes.
 Optimiser les performances si nécessaire (en fonction de la complexité).
+-->
+
+
+
+
+
+<!--
+1. Définition de l'Algorithmie
+L'algorithmie est la science qui consiste à concevoir et analyser des algorithmes. Un algorithme est une suite finie et ordonnée d'instructions permettant de résoudre un problème ou d'effectuer une tâche. Les algorithmes sont à la base de l'informatique, qu'il s'agisse de programmation, de traitement de données, de calculs ou de prise de décision automatique.
+
+2. Propriétés d’un Algorithme
+Un bon algorithme doit respecter plusieurs critères :
+
+Finitude : l’algorithme doit avoir une fin.
+Défini : chaque étape doit être clairement exprimée.
+Efficace : il doit résoudre le problème en un temps raisonnable.
+Lisibilité : il doit être compréhensible par les autres.
+3. Les Structures Algorithmiques
+Il existe trois structures fondamentales utilisées pour construire un algorithme :
+
+Séquence : exécution d'instructions les unes après les autres.
+
+pseudo
+Copier le code
+Lire A
+Lire B
+C ← A + B
+Afficher C
+Condition (ou sélection) : choix entre plusieurs alternatives.
+
+pseudo
+Copier le code
+Si (A > B) Alors
+    Afficher "A est plus grand"
+Sinon
+    Afficher "B est plus grand"
+Fin Si
+Boucle (ou répétition) : exécution répétée d’instructions.
+
+pseudo
+Copier le code
+Tant que (i ≤ 10) faire
+    Afficher i
+    i ← i + 1
+Fin Tant que
+4. Notions de Base : Variables, Types et Opérations
+Variable : espace de stockage pour une donnée.
+Type de données : nature de la valeur (entier, réel, caractère, booléen).
+Opérations : arithmétiques (+, -, *, /), comparaisons (=, >, <, etc.), logiques (ET, OU, NON).
+5. Les Structures de Données
+Les algorithmes s’appuient souvent sur des structures de données pour manipuler des informations :
+
+Tableaux : ensemble d’éléments de même type.
+Listes : ensemble dynamique d’éléments.
+Piles : collection avec insertion et suppression en dernier entré premier sorti (LIFO).
+Files : collection avec insertion en premier entré premier sorti (FIFO).
+6. Les Algorithmes de Recherche
+Recherche Séquentielle : parcours linéaire des éléments, utile pour les petites collections non triées.
+Recherche Dichotomique : recherche rapide dans une liste triée. L'algorithme divise la liste par deux à chaque étape pour trouver l'élément.
+7. Les Algorithmes de Tri
+Les algorithmes de tri permettent d’organiser des données de manière ordonnée :
+
+Tri par Insertion : insertion d'un élément à sa place correcte.
+Tri par Sélection : recherche du plus petit élément pour l’insérer à sa place.
+Tri à Bulles : échange successif des éléments adjacents mal placés.
+Tri Rapide (QuickSort) : division de la liste autour d’un pivot.
+8. Les Algorithmes Récursifs
+La récursion consiste à résoudre un problème en le décomposant en sous-problèmes plus petits de même nature. Exemples classiques : factorielle, Fibonacci, recherche binaire récursive.
+
+Exemple : Factorielle
+
+pseudo
+Copier le code
+Fonction Factorielle(n)
+    Si (n = 0) Alors
+        Retourner 1
+    Sinon
+        Retourner n * Factorielle(n - 1)
+    Fin Si
+Fin Fonction
+9. Complexité d’un Algorithme
+Complexité temporelle : mesure le temps d’exécution en fonction de la taille des données (notation O() par exemple : O(n), O(log n), O(n²)).
+Complexité spatiale : mesure la mémoire utilisée.
+10. Conseils Pratiques
+Décomposer le problème : divisez le problème en sous-problèmes simples.
+Pseudo-code : écrivez l'algorithme sous forme de pseudo-code avant de coder.
+Tester les cas limites : vérifiez le comportement pour les entrées extrêmes.
+Analyser la complexité : considérez les aspects de performance dès la conception.
 -->
