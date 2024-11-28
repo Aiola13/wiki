@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T10:17:15.930Z
+date: 2024-11-28T11:52:06.598Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -88,15 +88,52 @@ Et maintenant, passons aux choses sérieuses : l’installation de Proxmox. Pas 
 - Une fois l’installation terminée, configurez le réseau pour que votre serveur soit accessible via l’interface web.
 
 ## Accéder à l’interface web de Proxmox
-	- Dans votre navigateur préféré, tapez : https://<ip-du-serveur>:8006.	
-
+- Dans votre navigateur préféré, tapez : 
+```
+https://<ip-du-serveur>:8006
+```
   
 ## Résultat
   
 Admirez votre Proxmox tout beau, prêt à être configuré. ![install-proxmox-03.png](/images/myownserver/install-proxmox-03.png)
 
+# Mise à jour de Proxmox : Gardez votre serveur au top ! 👍
 
-# Créer un utilisateur autre que ROOT sans PROXMOX
+> Votre Proxmox est installé, tout beau, tout neuf. Mais si vous voulez qu’il reste au top, il va falloir le mettre à jour régulièrement. Pourquoi ? Parce que les mises à jour, c’est un peu comme les vitamines pour votre serveur : ça corrige les bugs, ça améliore les performances, et surtout, ça comble les failles de sécurité. Bref, c’est obligatoire pour un admin sérieux (et vous en êtes un, non ? 😉). Bon point, Proxmox nous permet de tout faire via son interface web.
+{.is-success}
+
+## Étape 1 : Vérifiez les mises à jour disponibles
+
+> Une fois connecté, cliquez sur le noeud au dessous de "Datacenter" dans le menu de gauche. (proxmox sur capture d'écran)
+> 1. Dans la vue principale, repérez l’onglet "Updates". Cliquez dessus.
+> 2. Vous verrez une liste des paquets installés sur votre serveur. Proxmox vérifiera automatiquement si des mises à jour sont disponibles. Si ce n’est pas le cas, vous pouvez forcer une vérification en cliquant sur le bouton "Refresh".
+{.is-info}
+
+![update-proxmox-01.png](/images/myownserver/update-proxmox-01.png)
+
+> 💡 Astuce : Si rien ne s’affiche et si vous utilisez l’offre gratuite de Proxmox (sans abonnement), assurez-vous que le dépôt pve-no-subscription est activé. Vous pouvez vérifier ça dans la configuration des dépôts (voir ci-après).
+
+
+## Étape 2 : Installer les mises à jour
+
+> 1. Une fois que Proxmox a identifié les paquets à mettre à jour, cliquez sur le bouton "Upgrade".
+> 2. Une fenêtre pop-up s’ouvrira pour afficher les détails des mises à jour (ce qui va être installé, mis à jour ou supprimé). Confirmez en cliquant sur "Upgrade" dans cette fenêtre.
+{.is-info}
+
+> Proxmox va maintenant télécharger et appliquer les mises à jour. Vous verrez une barre de progression. Pas besoin de toucher quoi que ce soit : laissez-le travailler tranquillement !
+> {.is-info}
+{.is-info}
+
+
+![update-proxmox-01.png](/images/myownserver/update-proxmox-02.png)
+
+> Une nouvelle fenêtre va peut être apparaître et il suffira de faire <kbd>Entrée/Enter</kbd> avec la touche de votre clavier. Une fois la mise à jour terminée, fermez la fenêtre.
+{.is-warning}
+
+
+![update-proxmox-01.png](/images/myownserver/update-proxmox-03.png)
+
+# Créer un utilisateur autre que ROOT dans PROXMOX
 
 > Pourquoi créer un utilisateur autre que ROOT, vous allez me dire ? 🤔
 {.is-info}
