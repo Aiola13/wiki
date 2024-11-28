@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T16:54:37.993Z
+date: 2024-11-28T23:20:56.441Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -207,7 +207,6 @@ Un utilisateur sans permissions, c’est comme un joueur sans manette : il ne pe
 - Sélectionne un rôle (par exemple, PVEAdmin pour qu’il puisse gérer les VM, ou PVEDatastoreUser pour accéder au stockage).
 - Associe-lui une ressource (par exemple, tout le datacenter ou une VM en particulier).
 - Valide. 🎯
-
 
 
 > Et voilà, ton utilisateur PAM est prêt à l’emploi ! 🕹️
@@ -573,7 +572,7 @@ pvdisplay # Pour vérifier les PV
 vgcreate nom_vg /dev/sdbX /dev/sdcX 
 vgdisplay # Pour vérifier les VG
 ```
-  
+  <!--
 3. Ajoutez un volume logique  :
 ```bash
 lvcreate -L 100G -n nom_lv nom_vg # par exemple, pour 100 Go
@@ -581,17 +580,17 @@ lvcreate -l 100%FREE -n nom_lv nom_vg # par exemple, pour tout l'espace libre
 lvcreate --type raid5 -l 100%FREE -n nom_lv nom_vg # Pour créer un lvm raid5
 ```
 
-  <!--
+
 https://serverfault.com/questions/1164668/lvm-raid5-replacerebuild
--->
+
   
 4. Formatez le volume logique :
 ```bash
 mkfs.ext4 /dev/nom_vg/nom_lv # formattez en ext4
 mkfs.xfs /dev/nom_vg/nom_lv # formattez en xfs
 ```
-  
-5. Ajouter votre stockage au noeud
+  -->
+3. Ajouter votre stockage au noeud
   
 Aller dans stockage > Add > LVM
   
