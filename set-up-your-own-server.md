@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T11:52:06.598Z
+date: 2024-11-28T11:59:39.425Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -332,7 +332,6 @@ post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 443 -j DNAT --to
 > Post-down : "À l’arrêt, enlève ça proprement" 🔴
 {.is-info}
 
-
 <details>
     <summary>Finalement mon fichier ressemble à : </summary>
   
@@ -394,7 +393,7 @@ post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 22000 -j DNAT --
   
 </details>
 
-
+  
 ## Étape 4 : Redémarrer les interfaces
   
 > Une fois que tout est prêt, tu peux relancer les interfaces. Hop, deux petites commandes magiques :
