@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T14:46:16.037Z
+date: 2024-11-28T15:11:26.978Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -474,6 +474,7 @@ Une fois dans le menu de fdisk, suivez le guide :
 
 ```bash
 pvcreate /dev/sdbX /dev/sdbY
+pvdisplay # Pour vérifier les PV
 ```
  > 💡 Astuce : Si vous avez plusieurs disques, effacez-les tous (par exemple /dev/sdX, /dev/sdY, etc.).
 {.is-info}
@@ -483,14 +484,20 @@ pvcreate /dev/sdbX /dev/sdbY
 {.is-success}
 
 ```bash
-vgcreate nom_vg /dev/sdbx 
+vgcreate nom_vg /dev/sdbX /dev/sdcX 
+vgdisplay # Pour vérifier les VG
 ```
   
 3. Ajoutez un volume logique  :
 ```bash
 lvcreate -L 100G -n nom_lv nom_vg # par exemple, pour 100 Go
 lvcreate -l 100%FREE -n nom_lv nom_vg # par exemple, pour tout l'espace libre
+lvcreate --type raid5 -l 100%FREE --name nom_lv nom_vg # Pour créer un lv raid5
 ```
+
+  <!--
+https://serverfault.com/questions/1164668/lvm-raid5-replacerebuild
+-->
   
 4. Formatez le volume logique :
 ```bash
