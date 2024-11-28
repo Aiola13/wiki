@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T16:48:48.621Z
+date: 2024-11-28T16:54:37.993Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -601,7 +601,7 @@ Aller dans stockage > Add > LVM
 {.is-success}
 
   
-  #### Créer un RAID
+  #### Créer un RAID mdadm
 Créez un RAID 5 sur 3 disques avec la commande suivante :
 
 ```bash
@@ -631,7 +631,23 @@ Lors de la création de partitions pour un disque RAID :
 1. Tapez <kbd>t</kbd> : Changez le type de partition, puis entrez <kbd>fd</kbd> pour définir le type (Linux RAID autodetect).
 1. Tapez <kbd>w</kbd> : Sauvegardez et quittez.
   
-Vous pouvez suivre les étapes pour mettre en place un LVM sur un RAID si vous souhaitez rester flexible tout en bénéficiant d'un raid performant.
+> Une fois votre RAID fait, vous pouvez suivre les étapes pour mettre en place un LVM si vous souhaitez rester flexible tout en bénéficiant d'un raid performant.
+{.is-info}
+
+> Attention, il y a une différence entre le LVM RAID et mdadm RAID : 
+> |        Critère        |              LVM RAID 5             |           mdadm RAID 5          |
+> |:---------------------:|:-----------------------------------:|:-------------------------------:|
+> | Performance           | Moins performant pour les écritures | Performances optimales          |
+> | Gestion               | Unifiée avec LVM                    | RAID séparé, gestion RAID + LVM |
+> | Flexibilité RAID      | Moins flexible                      | Options RAID avancées           |
+> | Snapshots             | Intégrés dans LVM                   | Doit utiliser LVM au-dessus     |
+> | Complexité            | Plus simple (RAID + LVM unifiés)    | Plus complexe                   |
+> | Stabilité et maturité | Plus récente                        | Solution éprouvée               |
+> 
+> ‎
+{.is-warning}
+
+  
 Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳  
   <!--
 ## Option 2 : ZFS (Zettabyte File System)
