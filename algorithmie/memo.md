@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-11-28T23:48:14.568Z
+date: 2024-11-28T23:48:46.338Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T19:28:13.800Z
@@ -24,12 +24,16 @@ dateCreated: 2024-10-29T19:28:13.800Z
 {.is-success}
 
 # Types d'algorithmes
-Il existe plusieurs types d'algorithmes selon la méthode utilisée :
+> Il existe plusieurs types d'algorithmes selon la méthode utilisée :
+> 
+> - Algorithmes séquentiels : les instructions sont exécutées dans l'ordre où elles sont écrites.
+> - Algorithmes conditionnels : les instructions sont choisies selon une condition (si ... alors ... sinon ...).
+> - Algorithmes itératifs : certaines instructions sont répétées un certain nombre de fois (boucles).
+> - Algorithmes récursifs : l'algorithme s'appelle lui-même pour résoudre un sous-problème similaire.
+> 
+> ‎
+{.is-info}
 
-Algorithmes séquentiels : les instructions sont exécutées dans l'ordre où elles sont écrites.
-Algorithmes conditionnels : les instructions sont choisies selon une condition (si ... alors ... sinon ...).
-Algorithmes itératifs : certaines instructions sont répétées un certain nombre de fois (boucles).
-Algorithmes récursifs : l'algorithme s'appelle lui-même pour résoudre un sous-problème similaire.
 
 
 
