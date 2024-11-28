@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-11-28T10:44:28.485Z
+date: 2024-11-28T10:46:45.008Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T23:58:27.349Z
@@ -238,17 +238,22 @@ Ecrire dans un fichier :
 
 
 # Complexité des algorithmes
-La complexité d'un algorithme mesure la quantité de ressources (temps et mémoire) qu'il nécessite pour résoudre un problème. Il existe deux types principaux de complexité :
+> La complexité d'un algorithme mesure la quantité de ressources (temps et mémoire) qu'il nécessite pour résoudre un problème. Il existe deux types principaux de complexité :
+> - **Complexité temporelle** : le temps d'exécution par rapport à la taille de l'entrée.
+> - **Complexité spatiale** : la quantité de mémoire requise par rapport à la taille de l'entrée.
+> 
+> ‎
+{.is-success}
 
-Complexité temporelle : le temps d'exécution par rapport à la taille de l'entrée.
-Complexité spatiale : la quantité de mémoire requise par rapport à la taille de l'entrée.
-La notation Big-O est utilisée pour exprimer la complexité en fonction de la taille de l'entrée :
+> La notation Big-O est utilisée pour exprimer la complexité en fonction de la taille de l'entrée :
+{.is-info}
 
-O(1) : Complexité constante.
-O(n) : Complexité linéaire.
-O(n²) : Complexité quadratique.
-O(log n) : Complexité logarithmique.
-O(n log n) : Complexité quasi-linéaire.
+
+- **O(1)** : Complexité constante.
+- **O(n)** : Complexité linéaire.
+- **O(n²)** : Complexité quadratique.
+- **O(log n)** : Complexité logarithmique.
+- **O(n log n)** : Complexité quasi-linéaire.
 
 
 <!--
