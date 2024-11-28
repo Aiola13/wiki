@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T15:11:26.978Z
+date: 2024-11-28T15:17:14.582Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -504,6 +504,10 @@ https://serverfault.com/questions/1164668/lvm-raid5-replacerebuild
 mkfs.ext4 /dev/nom_vg/nom_lv # formattez en ext4
 mkfs.xfs /dev/nom_vg/nom_lv # formattez en xfs
 ```
+  
+5. Ajouter votre stockage au noeud
+  
+Aller dans stockage > Add > LVM
   
 ### Etape Bonus : LVM + RAID (parce qu’on aime dormir tranquille)
   
