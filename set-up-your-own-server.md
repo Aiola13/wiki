@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T15:37:29.547Z
+date: 2024-11-28T16:25:41.012Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -213,6 +213,81 @@ Un utilisateur sans permissions, c’est comme un joueur sans manette : il ne pe
 > Et voilà, ton utilisateur PAM est prêt à l’emploi ! 🕹️
 > Maintenant, marcel peut se connecter à l’interface web de Proxmox (et potentiellement via SSH) avec les permissions que tu lui as données. Tu peux aussi utiliser ça pour créer un accès temporaire à un collègue ou restreindre un utilisateur à une seule VM. Bref, c’est propre, sécurisé, et sous contrôle. 💪
 {.is-success}
+
+# Sécuriser SSH : Changer le port et installer Fail2Ban 🚀
+
+> Vous avez installé votre serveur, vous y accédez via SSH, et tout roule. Mais attendez… Avez-vous laissé le port SSH par défaut ? Si oui, il y a un souci. Pourquoi ? Parce que le port 22, c’est le point d’entrée de toutes les attaques automatisées (botnet). C’est un peu comme laisser la porte d’entrée de votre maison grande ouverte avec un panneau "Bienvenue". 😅 Heureusement, on peut sécuriser ça en quelques étapes simples : changer le port par défaut et installer un petit garde du corps nommé Fail2Ban. Allez, on y va !
+{.is-success}
+
+> ⚠️ **Attention**, si vous comptez créer un cluster sur Proxmox, ignorer cette étape, en effet Proxmox utilise le port 22 pour créer ses clusters.
+{.is-warning}
+
+
+> ⚠️ **Attention**, Changer le port SSH n'est pas une mesure de sécurité en soi. Cela ne fait qu'ajouter une couche d'obscurité qui complique légèrement la tâche des attaquants, notamment les scripts automatisés. Cependant, un attaquant sérieux pourra toujours trouver votre nouveau port en scannant votre serveur, via la commande **nmap** par exemple.
+> 
+> Cette pratique reste utile pour :
+> 
+> - Réduire les attaques triviales.
+> - Alléger les journaux système.
+> 
+> Pour ajouter une couche de sécurité, privilégiez l’utilisation de clés SSH, un pare-feu (iptables), et un outil comme Fail2Ban. Changer le port ne remplace pas ces mesures ! Considérez cela comme un complément, pas une solution magique.
+{.is-warning}
+
+> Pour une sécurité maximale, une des meilleures pratiques consiste à protéger l'accès SSH derrière un VPN. Avec cette méthode :
+> 
+> - Votre port SSH n'est pas accessible directement depuis l'extérieur.
+> - Seuls les utilisateurs connectés au VPN peuvent tenter d'accéder à SSH.
+> - Port du VPN masqué pour les cans externes.
+> 
+> Configurer un VPN comme WireGuard ou OpenVPN sur votre serveur est une approche bien plus sécurisée, particulièrement si vous gérez des environnements sensibles. Cela ajoute une véritable barrière supplémentaire contre les intrusions.
+{.is-info}
+
+## Partie 1 : Changer le port par défaut de SSH 🚪
+Le port par défaut de SSH est 22, mais rien ne vous oblige à le garder. On peut le changer en toute simplicité, grâce au fichier de configuration sshd_config.
+
+### Étape 1 : Créer un fichier de configuration dédié
+Pour éviter de modifier directement le fichier principal et risquer une erreur, on va créer une surcharge propre dans le dossier dédié à SSH :
+
+```bash
+sudo nano /etc/ssh/sshd_config.d/custom_port.conf
+```
+
+### Étape 2 : Ajouter une directive pour le nouveau port
+Dans ce fichier, ajoutez la ligne suivante :
+
+```bash
+PermitRootLogin no # On évite la connexion en root directement (d'ou la création d'un autre utilisateur)
+Port 2222
+AllowGroups sshusers # Et on accepte seulement les membres du groupe sshusers à se connecter
+```
+
+> 💡 Conseil : Remplacez 2222 par le port de votre choix (au-dessus de 1024, de préférence).
+{.is-warning}
+
+Enregistrez et fermez le fichier (Ctrl + O pour enregistrer, Ctrl + X pour quitter).
+
+### Étape 3 : Appliquer et tester la configuration
+Avant de relancer le service SSH, vérifiez que tout est OK :
+
+```bash
+sudo sshd -t
+```
+Si tout est bon, redémarrez le service :
+
+```bash
+sudo systemctl restart sshd
+```
+### Étape 4 : Tester la connexion SSH avec le nouveau port
+Ouvrez une autre fenêtre de terminal et essayez de vous connecter avec le nouveau port :
+
+```bash
+ssh utilisateur@votre-ip -p 2222
+```
+> 
+> ⚠️ **Attention** : Ne fermez pas votre session SSH actuelle tant que vous n’avez pas confirmé que la connexion fonctionne avec le nouveau port ! Sinon, vous risquez de vous bloquer hors du serveur. 😬
+{.is-warning}
+
+
 
 
 # Configuration Réseau de Promox
