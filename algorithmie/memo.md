@@ -2,7 +2,7 @@
 title: Mémo
 description: 
 published: 1
-date: 2024-10-29T19:34:10.148Z
+date: 2024-11-28T23:48:14.568Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T19:28:13.800Z
@@ -14,11 +14,14 @@ dateCreated: 2024-10-29T19:28:13.800Z
 
 
 # Représentation des algorithmes
-Les algorithmes peuvent être représentés de différentes manières :
-
+> Les algorithmes peuvent être représentés de différentes manières :
+> 
 > - Pseudo-code : une description textuelle proche du langage naturel, facilitant la compréhension et l'écriture.
 > - Organigrammes (ou flowcharts) : des diagrammes représentant graphiquement la suite d'instructions et les flux de contrôle.
 > - Code : l'algorithme peut être directement traduit dans un langage de programmation (Python, C++, Java, etc.).
+> 
+> ‎
+{.is-success}
 
 # Types d'algorithmes
 Il existe plusieurs types d'algorithmes selon la méthode utilisée :
