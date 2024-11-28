@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T15:24:56.453Z
+date: 2024-11-28T15:25:16.646Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -492,7 +492,7 @@ vgdisplay # Pour vérifier les VG
 ```bash
 lvcreate -L 100G -n nom_lv nom_vg # par exemple, pour 100 Go
 lvcreate -l 100%FREE -n nom_lv nom_vg # par exemple, pour tout l'espace libre
-lvcreate --type raid5 -l 100%FREE --name nom_lv nom_vg # Pour créer un lv raid5
+lvcreate --type raid5 -l 100%FREE -n nom_lv nom_vg # Pour créer un lv raid5
 ```
 
   <!--
