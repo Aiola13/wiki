@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-27T00:19:57.043Z
+date: 2024-11-28T10:17:15.930Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -517,14 +517,15 @@ Maintenant que Proxmox est paramétré, tu peux choisir quel système installer 
 
 ## Option 2 : Installer CasaOS 🏡
   
->   CasaOS, c’est l’option user-friendly pour ceux qui veulent un serveur à la maison sans prise de tête. Interface sexy, simple à utiliser, et idéale pour gérer des médias ou des apps courantes sans le stress des configs compliquées.
+>   [CasaOS](https://casaos.io), c’est l’option user-friendly pour ceux qui veulent un serveur à la maison sans prise de tête. Interface sexy, simple à utiliser, et idéale pour gérer des médias ou des apps courantes sans le stress des configs compliquées.
 {.is-success}
 
 1. **Télécharge l’ISO de Debian et utilise leur script :**
-- CasaOS ne fournit pas d’ISO direct, mais tu peux installer [une base Debian](https://www.debian.org/distrib/index.fr.html) et ajouter CasaOS ensuite avec leur script magique.
+- CasaOS ne fournit pas d’ISO direct, mais tu peux installer [une base Debian](https://www.debian.org/distrib/index.fr.html) et ajouter [CasaOS](https://casaos.io) ensuite avec leur script magique.
 ```bash
 curl -fsSL https://get.casaos.io | sudo bash
 ```
+
 2. **Crée une VM dans Proxmox :**
 - Ajoute l’ISO de Debian (ou Ubuntu).
 - Donne un nom à ta VM (ex : VM-CASA).
@@ -543,7 +544,7 @@ curl -fsSL https://get.casaos.io | sudo bash
   
 ## Option 3 : Installer UmbrelOS 🌐
   
->   UmbrelOS, c’est l’option pour les fans de décentralisation et de projets comme Bitcoin, Lightning Network, ou d’apps privées type Nextcloud. Mais ça peut aussi gérer des apps basiques !
+>   [UmbrelOS](https://umbrel.com/umbrelos), c’est l’option pour les fans de décentralisation et de projets comme Bitcoin, Lightning Network, ou d’apps privées type Nextcloud. Mais ça peut aussi gérer des apps basiques !
 {.is-success}
   
 1. **Télécharge l’ISO :**
@@ -568,7 +569,7 @@ curl -fsSL https://get.casaos.io | sudo bash
   
 ## Option 4 : Installer Cosmos Cloud 🌌
   
->   Cosmos Cloud, est une autre solution qui te permet de gérer un cloud personnel hyper intuitif. Il se concentre sur une interface claire et des fonctionnalités collaboratives.
+>   [Cosmos Cloud](https://cosmos-cloud.io), est une autre solution qui te permet de gérer un cloud personnel hyper intuitif. Il se concentre sur une interface claire et des fonctionnalités collaboratives.
 {.is-success}
   
 1. **Télécharge l’ISO de Debian :**
