@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T15:25:16.646Z
+date: 2024-11-28T15:30:19.974Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -492,7 +492,7 @@ vgdisplay # Pour vérifier les VG
 ```bash
 lvcreate -L 100G -n nom_lv nom_vg # par exemple, pour 100 Go
 lvcreate -l 100%FREE -n nom_lv nom_vg # par exemple, pour tout l'espace libre
-lvcreate --type raid5 -l 100%FREE -n nom_lv nom_vg # Pour créer un lv raid5
+lvcreate --type raid5 -l 100%FREE -n nom_lv nom_vg # Pour créer un lvm raid5
 ```
 
   <!--
@@ -509,7 +509,7 @@ mkfs.xfs /dev/nom_vg/nom_lv # formattez en xfs
   
 Aller dans stockage > Add > LVM
   
-### Etape Bonus : LVM + RAID Natif (parce qu’on aime dormir tranquille)
+### Etape Bonus : LVM + RAID mdadm (parce qu’on aime dormir tranquille)
   
 > Envie de dormir sur vos deux oreilles avec un stockage résistant aux pannes ? Activez le RAID. 🚨
 {.is-success}
@@ -545,7 +545,7 @@ Lors de la création de partitions pour un disque RAID :
 1. Tapez <kbd>t</kbd> : Changez le type de partition, puis entrez <kbd>fd</kbd> pour définir le type (Linux RAID autodetect).
 1. Tapez <kbd>w</kbd> : Sauvegardez et quittez.
   
-  
+Vous pouvez suivre les étapes pour mettre en place un LVM sur un RAID si vous souhaitez rester flexible tout en bénéficiant d'un raid performant.
 Et voilà, vous êtes maintenant un pro du LVM et du RAID. 🥳  
   <!--
 ## Option 2 : ZFS (Zettabyte File System)
