@@ -2,7 +2,7 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: 1
-date: 2024-11-28T23:20:56.441Z
+date: 2024-11-29T11:47:51.120Z
 tags: hyperviseur, ovh, proxmox, virtualisation, vm
 editor: markdown
 dateCreated: 2024-06-10T13:18:25.873Z
@@ -558,7 +558,7 @@ Une fois dans le menu de fdisk, suivez le guide :
 {.is-success}
 
 ```bash
-pvcreate /dev/sdbX /dev/sdbY
+pvcreate /dev/sdbX
 pvdisplay # Pour vérifier les PV
 ```
  > 💡 Astuce : Si vous avez plusieurs disques, effacez-les tous (par exemple /dev/sdX, /dev/sdY, etc.).
