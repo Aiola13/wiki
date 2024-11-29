@@ -2,7 +2,7 @@
 title: Notions de base
 description: 
 published: 1
-date: 2024-11-29T00:38:08.729Z
+date: 2024-11-29T00:41:16.425Z
 tags: base, notion, php
 editor: markdown
 dateCreated: 2023-01-18T21:06:55.552Z
@@ -25,15 +25,19 @@ dateCreated: 2023-01-18T21:06:55.552Z
 
 # Fonctionnement
 
-L’interpréteur lit un fichier source .php puis génère un flux de sortie avec les règles suivantes :
+> L’interpréteur lit un fichier source .php puis génère un flux de sortie avec les règles suivantes :
+> 
+> - toute ligne située à l’extérieur d’un bloc PHP ( entre <?php et ?>) est recopiée inchangée dans le flux de sortie
+> 
+> - le code PHP est interprété et génère éventuellement des résultats intégrés eux aussi au flux de sortie
+> 
+> - les erreurs éventuelles donnent lieu à des messages d’erreurs qu’on retrouve également dans le flux de sortie (selon la configuration du serveur)
+> 
+> - une page html pure sauvegardée avec l’extension .php sera donc non modifiée et renvoyée telle quelle …
+> 
+> ‎
+{.is-info}
 
-- toute ligne située à l’extérieur d’un bloc PHP ( entre <?php et ?>) est recopiée inchangée dans le flux de sortie
-
-- le code PHP est interprété et génère éventuellement des résultats intégrés eux aussi au flux de sortie
-
-- les erreurs éventuelles donnent lieu à des messages d’erreurs qu’on retrouve également dans le flux de sortie (selon la configuration du serveur)
-
-- une page html pure sauvegardée avec l’extension .php sera donc non modifiée et renvoyée telle quelle …
 
 ![fonctionnement_php.png](/images/php/fonctionnement_php.png){.align-center}
 
@@ -49,13 +53,15 @@ L’interpréteur lit un fichier source .php puis génère un flux de sortie ave
 | un interpréteur de script PHP | Zend Engine ou autre                                        |
 | un serveur de base de donnée  | MySQL, MariaDB, PostGres ...                                              |
 
-Heureusement, 
+> Heureusement, nous avons de la chance ... 💡, il existe une solution simplifiée : des logiciels tout-en-un qui incluent à la fois :
+> 
+> - un serveur web
+> - un interpréteur de script PHP
+> - un serveur de base de donnée 
+> 
+> ‎
+{.is-info}
 
-Nous avons de la chance ... 💡, il existe une solution simplifiée : des logiciels tout-en-un qui incluent à la fois :
-
-- un serveur web
-- un interpréteur de script PHP
-- un serveur de base de donnée 
 
 Voici une liste des options disponibles selon votre système d'exploitation :
 
@@ -70,15 +76,19 @@ Voici une liste des options disponibles selon votre système d'exploitation :
 
 
 ## Utiliser Docker
-L’utilisation de Docker permet de spécifier très précisément les dépendances souhaitées pour un projet et aussi de tester ce projet sur différentes plateformes et avec différentes versions de PHP.
+> L’utilisation de Docker permet de spécifier très précisément les dépendances souhaitées pour un projet et aussi de tester ce projet sur différentes plateformes et avec différentes versions de PHP.
+{.is-success}
 
-Voir par exemple le site Formation Docker qui propose des docker-compose pour des environnements de développement en PHP.
+> Cette partie la, sera développée plus tard.
+{.is-warning}
 
 # Notions de bases
 
 ## Intégration d'un script dans une page
 
-Les pages contenant du php doivent porter l'extension **.php**. Voici comment insérer du code PHP dans du HTML : `<?php ... ?>`
+> Les pages contenant du php doivent porter l'extension **.php**. Voici comment insérer du code PHP dans du HTML : `<?php ... ?>`
+{.is-success}
+
 
 ```php
 <?php
@@ -102,7 +112,9 @@ Les pages contenant du php doivent porter l'extension **.php**. Voici comment in
 
 ## Les commentaires
 
-Un script PHP se commente comme dans beaucoup de langage, tels que C ou javascript :
+> Un script PHP se commente comme dans beaucoup de langage, tels que C ou javascript :
+{.is-success}
+
 
 ```php
 <?php
