@@ -2,7 +2,7 @@
 title: Les instructions
 description: 
 published: 1
-date: 2024-11-29T00:08:24.140Z
+date: 2024-11-29T00:09:23.740Z
 tags: algo, algorithmie, instructions
 editor: markdown
 dateCreated: 2023-01-18T21:17:22.884Z
@@ -31,6 +31,7 @@ dateCreated: 2023-01-18T21:17:22.884Z
 > - **un Opérateur Logique** (ce que nos appelons <span style="color:#D7BA7D">Expression Booléenne</span>)
 > 
 > ‎
+{.is-info}
 
 
 
@@ -126,12 +127,16 @@ Classement par ordre décroissant :
 - opérateurs arithmétiques
 - opérateurs relationnels
 
-![mon image](<../images/regles-priorite-operateurs_(Small).png>)
+![regles-priorite-operateurs_(small).png](/images/php/regles-priorite-operateurs_(small).png)
 
-N.B :
+> N.B :
+> 
+> - ⬅ Si nous avons une suite d'opérateurs binaires de la même classe, l'évaluation se fait en passant de la gauche vers la droite dans l'expression.
+> - ➡ Pour les opérateurs unaires (!,++,--) et pour les opérateurs d'affectation (=,+=,-=,\*=,/=,%=), l'évaluation se fait de droite à gauche dans l'expression.
+> 
+> ‎
+{.is-warning}
 
-- ⬅ Si nous avons une suite d'opérateurs binaires de la même classe, l'évaluation se fait en passant de la gauche vers la droite dans l'expression.
-- ➡ Pour les opérateurs unaires (!,++,--) et pour les opérateurs d'affectation (=,+=,-=,\*=,/=,%=), l'évaluation se fait de droite à gauche dans l'expression.
 
 ## L’affectation
 
