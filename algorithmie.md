@@ -2,7 +2,7 @@
 title: Algorithmie
 description: La conception d'un code
 published: 1
-date: 2024-10-29T19:46:22.037Z
+date: 2024-11-29T00:20:46.275Z
 tags: algo, algorithmie, code
 editor: markdown
 dateCreated: 2023-01-16T00:21:44.775Z
@@ -21,7 +21,7 @@ dateCreated: 2023-01-16T00:21:44.775Z
 - [Les procédures et les fonctions *🐱‍🏍*](/algorithmie/functions)
 - [Les tableaux](/algorithmie/arrays)
 - [Le tri *parce qu'il faut bien ranger ;)*](/algorithmie/tri)
-- [:construction:Compléxité d'un algorithme *Oui, parce qu'un algo peut être plus ou moins complexe !:construction:*](/alhorithmie/complex)
+- [:construction:Compléxité d'un algorithme *Oui, parce qu'un algo peut être plus ou moins complexe !:construction:*](/algorithmie/complex)
 - [Slide du cours *:computer:*](https://hedgedoc.monserveurprive.ovh/p/v1QsrLq-K#/)
 - [Exercices *:banana:*](/algorithmie/exercices)
 {.links-list}
