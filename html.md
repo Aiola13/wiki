@@ -2,14 +2,13 @@
 title: HTML
 description: 
 published: 1
-date: 2024-11-29T00:21:39.210Z
+date: 2024-11-29T00:21:44.661Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-09T22:19:44.210Z
 ---
 
-> En cours de rédactio
->
+> En cours de rédaction
 {.is-warning}
 
 # Le HTMLEUH <i class="fab fa-html5"></i>
