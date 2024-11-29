@@ -2,7 +2,7 @@
 title: Exercices
 description: 
 published: 1
-date: 2024-11-29T00:27:14.475Z
+date: 2024-11-29T00:28:35.681Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-29T00:27:14.475Z
@@ -16,3 +16,9 @@ dateCreated: 2024-11-29T00:27:14.475Z
 1. Ajouter un commentaire.
 1. Enregistrer de nouveau.
 1. Afficher le commentaire dans la console.
+
+# Exercice 2
+
+1. Créer un tableau, avec un header, un body, un footer.
+1. Insérer des information.
+1. Rechercher dans la documentation à quoi servent les balises de tableau caption, colgroup et col.
