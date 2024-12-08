@@ -2,7 +2,7 @@
 title: Exercices
 description: 
 published: true
-date: 2024-12-08T10:23:10.114Z
+date: 2024-12-08T10:25:24.326Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:10.114Z
