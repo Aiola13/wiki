@@ -2,7 +2,7 @@
 title: Algorithmie
 description: La conception d'un code
 published: true
-date: 2024-12-06T22:42:10.161Z
+date: 2024-12-08T10:18:34.625Z
 tags: algo, algorithmie, code, pseudo-code, pseudo, pseudo code
 editor: markdown
 dateCreated: 2024-12-06T22:42:10.161Z
