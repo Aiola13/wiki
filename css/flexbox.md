@@ -2,8 +2,8 @@
 title: Flexbox
 description: 
 published: true
-date: 2024-12-08T10:33:16.595Z
-tags: 
+date: 2024-12-08T10:33:39.611Z
+tags: responsive, flexbox
 editor: markdown
 dateCreated: 2024-12-08T10:33:02.533Z
 ---
