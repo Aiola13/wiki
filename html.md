@@ -2,7 +2,7 @@
 title: HTML
 description: 
 published: true
-date: 2024-12-08T10:26:05.389Z
+date: 2024-12-08T10:52:06.173Z
 tags: html, web, balise, balises
 editor: markdown
 dateCreated: 2024-12-06T22:48:50.837Z
