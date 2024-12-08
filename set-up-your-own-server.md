@@ -2,13 +2,13 @@
 title: Monter son propre serveur, façon chill 😎
 description: 
 published: true
-date: 2024-12-08T11:26:03.424Z
+date: 2024-12-08T11:38:43.270Z
 tags: serveur, homelab
 editor: markdown
 dateCreated: 2024-12-06T23:03:06.652Z
 ---
 
-# Monter son propre serveur
+<!-- # Monter son propre serveur
 
 - [Introduction : Pourquoi vouloir créer son propre serveur ? *Une envie d'indépendance ou de contrôle total ?*](/set-up-your-own-server/#introduction)
 - [Choisir un serveur dédié *Un choix stratégique crucial 🤔*](/set-up-your-own-server/choose-serveur)
@@ -18,7 +18,7 @@ dateCreated: 2024-12-06T23:03:06.652Z
 - [Configuration réseau de Proxmox *Le nerf de la guerre 🌐*](/set-up-your-own-server/network-config)
 - [Configuration des disques *LVM ou ZFS ? Choisissez votre camp !*](/set-up-your-own-server/disk-config)
 - [Choisir et créer une VM *Parce que tout commence par une machine virtuelle 🖥️*](/set-up-your-own-server/create-vm)
-{.links-list}
+{.links-list} -->
 
 # Introduction : Pourquoi vouloir créer son propre serveur ?
 
