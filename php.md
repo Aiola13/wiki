@@ -2,7 +2,7 @@
 title: PHP
 description: Ce qu'il y a à savoir sur le PHP
 published: true
-date: 2024-12-06T22:51:10.543Z
+date: 2024-12-10T20:34:47.058Z
 tags: php, back, backend, back end, back-end, serveur
 editor: markdown
 dateCreated: 2024-12-06T22:51:10.543Z
