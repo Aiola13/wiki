@@ -2,7 +2,7 @@
 title: Python
 description: 
 published: true
-date: 2024-12-06T22:52:13.642Z
+date: 2024-12-11T08:29:40.888Z
 tags: code, back, backend, back end, back-end, serveur, python, script
 editor: markdown
 dateCreated: 2024-12-06T22:52:13.642Z
