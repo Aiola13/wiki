@@ -2,7 +2,7 @@
 title: Challenge 1
 description: 
 published: true
-date: 2024-12-11T09:02:41.129Z
+date: 2024-12-11T09:03:19.954Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-11T09:02:41.129Z
