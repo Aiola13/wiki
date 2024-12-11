@@ -1,8 +1,8 @@
 ---
-title: Les instructions
+title: Les instructions de base | Opérateurs
 description: 
 published: true
-date: 2024-12-11T08:25:13.563Z
+date: 2024-12-11T08:25:58.147Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-11T08:25:13.563Z
