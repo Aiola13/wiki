@@ -2,7 +2,7 @@
 title: Effets visuels et lumières
 description: 
 published: true
-date: 2024-12-13T11:28:06.022Z
+date: 2024-12-13T12:58:49.503Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-13T11:11:11.968Z
@@ -15,3 +15,10 @@ dateCreated: 2024-12-13T11:11:11.968Z
 
 
 <center><div class="sketchfab-embed-wrapper"> <iframe title="Scaphandre "pieds lourds" US NAVY" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/36d7ef8a455d4aaea080263250631ae8/embed?autostart=1&ui_hint=2"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/scaphandre-pieds-lourds-us-navy-36d7ef8a455d4aaea080263250631ae8?utm_medium=embed&utm_campaign=share-popup&utm_content=36d7ef8a455d4aaea080263250631ae8" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Scaphandre "pieds lourds" US NAVY </a> by <a href="https://sketchfab.com/PHIO?utm_medium=embed&utm_campaign=share-popup&utm_content=36d7ef8a455d4aaea080263250631ae8" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> PHIO </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=36d7ef8a455d4aaea080263250631ae8" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div></center>
+
+<center><div class="sketchfab-embed-wrapper"> <iframe title="Post-Processing Demo: Vivi Ornitier" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/5f75aaec31754ec981fcadbefc1441ed/embed?autostart=1&ui_hint=2&dnt=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/post-processing-demo-vivi-ornitier-5f75aaec31754ec981fcadbefc1441ed?utm_medium=embed&utm_campaign=share-popup&utm_content=5f75aaec31754ec981fcadbefc1441ed" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Post-Processing Demo: Vivi Ornitier </a> by <a href="https://sketchfab.com/Sketchfab?utm_medium=embed&utm_campaign=share-popup&utm_content=5f75aaec31754ec981fcadbefc1441ed" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Sketchfab </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=5f75aaec31754ec981fcadbefc1441ed" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div><center>
+  
+Via sketchfab, vous pouvez voir l'ensemble des modèles et des textures corredpondantes. Voici un apperçu des textures de Vivi (Final fantasy 9) : 
+  
+  
+  
