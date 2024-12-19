@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-19T13:04:30.125Z
+date: 2024-12-19T13:06:03.142Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -36,3 +36,14 @@ Peut-on concevoir plusieurs algorithmes équivalents menant à ce résultat ?
 Ecrire un algorithme qui demande **a l’utilisateur de taper un chiffre et qui l'ecrit ensuite en toute lettre** a l’ecran. 
 Par exemple, si l’utilisateur tape le chiffre 9, le programme affichera neuf.
 Note : on ne s’occupera que des chiffres et pas de nombres en dehors de l’intervalle [0 − 9]
+
+# Exercice 2.8
+Ecrire un algorithme qui permet d'identifier si une année est bisextille ou non.
+Si l’année A n’est pas divisible par 4, alors elle n’est pas bissextile Si A est divisible par 4, l’année est bissextile sauf si
+A est divisible par 100 et pas par 400.
+Exemples :
+– 1901 n’est pas bissextile car non divisible par 4
+– 2004 est bissextile car divisible par 4 et pas par 100
+– 2100 n’est pas bissextile car divisible par 4, divisible par 100 mais pas par 400
+– 2000 est bissextile car divisible par 4, par 100 et par 400
+Ecrire un programme qui d´etermine si une ann´ee est bissextile ou non.
