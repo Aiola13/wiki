@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-19T13:16:12.575Z
+date: 2024-12-19T13:39:11.294Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -47,6 +47,11 @@ Exemples :
 – 2100 n’est pas bissextile car divisible par 4, divisible par 100 mais pas par 400
 – 2000 est bissextile car divisible par 4, par 100 et par 400
 Ecrire un programme qui d´etermine si une ann´ee est bissextile ou non.
+
+
+> Année bissextile c'est une année spéciale contenant un jour supplémentaire, soit un total de 366 jours dans une année. Une année est considérée comme une année bissextile si l'année est exactement divisible par 4 mais non divisible par 100. L'année est également une année bissextile si elle est exactement divisible par 400.
+{.is-success}
+
 
 # Exercice 2.9
 Ecrire un algorithme qui permet a l’utilisateur de saisir une valeur d’échelle et qui en réponse affichera **a l’écran la description associée** a ce nombre. Vous n’oublierez pas de gérer le cas où le nombre tapé par l’utilisateur est ”hors-échelle”.
