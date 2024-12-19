@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-08T10:23:59.220Z
+date: 2024-12-19T13:02:52.408Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -31,3 +31,8 @@ dateCreated: 2024-12-08T10:23:59.220Z
 "Cadet" après 12 ans
 
 Peut-on concevoir plusieurs algorithmes équivalents menant à ce résultat ?
+
+# Exercice 2.7
+Ecrire un algorithme qui demande **a l’utilisateur de taper un chiffre et qui l’´ecrit ensuite en toute lettre** a l’ecran. 
+Par exemple, si l’utilisateur tape le chiffre 9, le programme affichera neuf.
+Note : on ne s’occupera que des chiffres et pas de nombres en dehors de l’intervalle [0 − 9]
