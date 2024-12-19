@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-19T13:13:37.537Z
+date: 2024-12-19T13:13:57.885Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -64,6 +64,5 @@ L’échelle de Richter permet de d´ecrire la magnitude des tremblements de ter
 |8| Important. Dommages s´erieux dans des zones à des centaines de kilomètres à la ronde|
 |9| Dévastateur. Dévaste des zones sur des milliers de kilomètres à la ronde|
 
-Si le nombre n’est pas compris entre 1 et 9 c’est qu’il y a erreur de saisie (si inf´erieur `a 1) ou que c’est l’appocalypse (si
-sup´erieur `a 9).
-Vous ´ecrirez un programme permettant `
+Si le nombre n’est pas compris entre 1 et 9 c’est qu’il y a erreur de saisie (si inférieur à 1) ou que c’est l’appocalypse (si
+supérieur à 9).
