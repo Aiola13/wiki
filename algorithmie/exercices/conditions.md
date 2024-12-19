@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-19T13:06:03.142Z
+date: 2024-12-19T13:13:37.537Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -47,3 +47,23 @@ Exemples :
 – 2100 n’est pas bissextile car divisible par 4, divisible par 100 mais pas par 400
 – 2000 est bissextile car divisible par 4, par 100 et par 400
 Ecrire un programme qui d´etermine si une ann´ee est bissextile ou non.
+
+# Exercice 2.10
+Ecrire un algorithme qui permet a l’utilisateur de saisir une valeur d’échelle et qui en réponse affichera **a l’écran la description associée** a ce nombre. Vous n’oublierez pas de gérer le cas où le nombre tapé par l’utilisateur est ”hors-échelle”.
+
+L’échelle de Richter permet de d´ecrire la magnitude des tremblements de terre :
+| Echelle| Description                                                           |
+|-|-------------------------------------------------------------------------------------------------------|
+| 1| Micro tremblement de terre, non ressenti                                                             |
+| 2| Très mineur. non ressenti mais détecté                                                            |
+| 3| Mineur. causant rarement des dommages                                                                |
+| 4| Léger. Secousses notables d’objets à l’intérieur des maisons                                      |
+| 5| Modéée. Légers dommages aux édifices bien construits                                             |
+| 6| Fort. Destructeur dans des zones allant jusqu’à 180 kilomètres à la ronde si elles sont peuplées |
+| 7| Majeur. Dommages modérés à sévères dans des zones plus vastes.                                  |
+|8| Important. Dommages s´erieux dans des zones à des centaines de kilomètres à la ronde|
+|9| Dévastateur. Dévaste des zones sur des milliers de kilomètres à la ronde|
+
+Si le nombre n’est pas compris entre 1 et 9 c’est qu’il y a erreur de saisie (si inf´erieur `a 1) ou que c’est l’appocalypse (si
+sup´erieur `a 9).
+Vous ´ecrirez un programme permettant `
