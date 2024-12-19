@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-19T13:13:57.885Z
+date: 2024-12-19T13:15:49.410Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -66,3 +66,12 @@ L’échelle de Richter permet de d´ecrire la magnitude des tremblements de ter
 
 Si le nombre n’est pas compris entre 1 et 9 c’est qu’il y a erreur de saisie (si inférieur à 1) ou que c’est l’appocalypse (si
 supérieur à 9).
+
+# Exercice 2.11
+Ecrire un algorithme qui permet de récupérer les touches tapées par l’utilisateur pour savoir dans quelle direction
+déplacer un personnage de jeu. Demander à l’utilisateur de saisir un nombre puis qui en fonction du nombre saisi :
+– 6 : affiche ”le personnage va à droite”.
+– 4 : affiche ”le personnage va à gauche”.
+– 8 : affiche ”le personnage va en haut”.
+– 2 : affiche ”le personnage va en bas”.
+– dans le cas d’un autre caractère, affiche : ”erreur de saisie, le personnage ne bouge pas”.
