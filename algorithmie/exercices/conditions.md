@@ -2,7 +2,7 @@
 title: Exercices : Les conditions
 description: 
 published: true
-date: 2024-12-19T13:15:49.410Z
+date: 2024-12-19T13:16:12.575Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:23:59.220Z
@@ -48,7 +48,7 @@ Exemples :
 – 2000 est bissextile car divisible par 4, par 100 et par 400
 Ecrire un programme qui d´etermine si une ann´ee est bissextile ou non.
 
-# Exercice 2.10
+# Exercice 2.9
 Ecrire un algorithme qui permet a l’utilisateur de saisir une valeur d’échelle et qui en réponse affichera **a l’écran la description associée** a ce nombre. Vous n’oublierez pas de gérer le cas où le nombre tapé par l’utilisateur est ”hors-échelle”.
 
 L’échelle de Richter permet de d´ecrire la magnitude des tremblements de terre :
@@ -67,7 +67,7 @@ L’échelle de Richter permet de d´ecrire la magnitude des tremblements de ter
 Si le nombre n’est pas compris entre 1 et 9 c’est qu’il y a erreur de saisie (si inférieur à 1) ou que c’est l’appocalypse (si
 supérieur à 9).
 
-# Exercice 2.11
+# Exercice 2.10
 Ecrire un algorithme qui permet de récupérer les touches tapées par l’utilisateur pour savoir dans quelle direction
 déplacer un personnage de jeu. Demander à l’utilisateur de saisir un nombre puis qui en fonction du nombre saisi :
 – 6 : affiche ”le personnage va à droite”.
