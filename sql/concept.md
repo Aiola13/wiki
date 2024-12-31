@@ -2,7 +2,7 @@
 title: Conceptualiser ses bases
 description: 
 published: true
-date: 2024-12-31T12:03:02.011Z
+date: 2024-12-31T12:05:17.059Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-31T12:03:02.011Z
