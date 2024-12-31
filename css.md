@@ -2,7 +2,7 @@
 title: CSS
 description: 
 published: true
-date: 2024-12-31T11:56:42.346Z
+date: 2024-12-31T11:57:41.625Z
 tags: css, règles, regles, regle, règle, conteneurs, conteneur
 editor: markdown
 dateCreated: 2024-12-06T22:49:58.995Z
@@ -14,8 +14,8 @@ dateCreated: 2024-12-06T22:49:58.995Z
 # Le CSS <i class="fab fa-css3-alt"></i>
 ## Plan de cours
 - [Cours](/css/course)
-- [Slide CSS de base *Youhouuuu*](https://hedgedoc.privatehomelab.ovh/p/qveFIVoCQ#/)
-- [Slide CSS avancé](https://hedgedoc.privatehomelab.ovh/p/DjV5MR_38#/)
+- [Slide Introduction au CSS *💻 La base*](https://hedgedoc.privatehomelab.ovh/p/qveFIVoCQ#/)
+- [Slide CSS avancé *💻 CSS avancé - Flexbox*](https://hedgedoc.privatehomelab.ovh/p/DjV5MR_38#/)
 - [Responsive Design](/css/responsive)
 - [Flexbox](/css/flexbox)
 - [Grid](/css/grid)
