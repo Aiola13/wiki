@@ -2,7 +2,7 @@
 title: HTML
 description: 
 published: true
-date: 2024-12-08T10:52:06.173Z
+date: 2024-12-31T11:43:33.523Z
 tags: html, web, balise, balises
 editor: markdown
 dateCreated: 2024-12-06T22:48:50.837Z
@@ -14,7 +14,9 @@ dateCreated: 2024-12-06T22:48:50.837Z
 # Le HTMLEUH <i class="fab fa-html5"></i>
 ## Plan de cours
 - [Aide mémoire](/html/summary)
-- [Slide du cours *Youhouuuu*](https://hedgedoc.monserveurprive.ovh/p/vIvvqXX2W#/)
+- [Mais c'est quoi un site internet ?? *La Base de base*](/html/base)
+- [La structure *Pas d'pierre, pas d'construction. Pas d'construction, pas d'palais. Pas d'palais... pas d'palais.*](/html/structure)
+- [Slide du cours *:computer:*](https://hedgedoc.privatehomelab.ovh/p/hwcCbNrZF#/)
 - [Exercices](/html/exercices)
 - [TP1 *TP1*](/html/tp1)
 {.links-list}
