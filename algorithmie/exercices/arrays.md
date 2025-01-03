@@ -2,7 +2,7 @@
 title: Exercice : Les tableaux | listes
 description: 
 published: true
-date: 2024-12-08T10:25:14.454Z
+date: 2025-01-03T13:05:51.838Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T10:25:14.454Z
@@ -82,10 +82,6 @@ Fin
 
 # Exercice 5.9
 Écrivez un algorithme calculant la somme des valeurs d’un tableau (on suppose que le tableau a été préalablement saisi).
-
-# Exercice 5.10
-Écrivez un algorithme constituant un tableau, à partir de deux tableaux de même longueur préalablement saisis. Le nouveau tableau sera la somme des éléments des deux tableaux de départ.
-
 
 # Exercice 5.10
 Écrivez un algorithme constituant un tableau, à partir de deux tableaux de même longueur préalablement saisis. Le nouveau tableau sera la somme des éléments des deux tableaux de départ.
