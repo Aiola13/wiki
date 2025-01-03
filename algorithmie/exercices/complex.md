@@ -2,7 +2,7 @@
 title: La complexité
 description: 
 published: true
-date: 2025-01-03T14:38:04.633Z
+date: 2025-01-03T14:39:15.994Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-03T14:37:19.025Z
@@ -12,7 +12,9 @@ dateCreated: 2025-01-03T14:37:19.025Z
 
 # Complexité
 
-Calculer la complexité des fonctions ci-dessous :
+Calculer :
+- le nombre d'opérations max et min
+- la complexité des fonctions ci-dessous
 
 ```
 fonction conversion(n : entier):
