@@ -2,7 +2,7 @@
 title: La complexité
 description: 
 published: true
-date: 2025-01-03T14:37:19.026Z
+date: 2025-01-03T14:38:04.633Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-03T14:37:19.025Z
@@ -10,9 +10,11 @@ dateCreated: 2025-01-03T14:37:19.025Z
 
 
 
-Complexité
+# Complexité
+
 Calculer la complexité des fonctions ci-dessous :
 
+```
 fonction conversion(n : entier):
     variable h, m, s, t : entier
 
@@ -21,6 +23,9 @@ fonction conversion(n : entier):
     s ← n % 60
     RETOURNE t[h,m,s]
 FF
+```
+
+```
 fonction puissanceMoinsUn(n):
   variable h, m, s : entier
 
@@ -32,6 +37,9 @@ fonction puissanceMoinsUn(n):
 
    RETOURNE res
 FF
+```
+
+```
 fonction sommeEntiers(tableau, n):
   variable somme, i : entier
 
@@ -43,6 +51,9 @@ fonction sommeEntiers(tableau, n):
 
   RETOURNE somme
 FF
+```
+
+```
 fonction factorielle(n):
   variable fact, i : entier
 
@@ -56,6 +67,9 @@ fonction factorielle(n):
 
   RETOURNE fact
 FF
+```
+
+```
 Procedure triSelection(tableau[], tailleTableau : entier)
   variables passage, compteur, indexMin, stock : entiers
 
@@ -78,3 +92,4 @@ Procedure triSelection(tableau[], tailleTableau : entier)
         FPOUR
     FIN
 FP
+```
