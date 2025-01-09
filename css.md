@@ -2,7 +2,7 @@
 title: CSS
 description: 
 published: true
-date: 2024-12-31T11:57:41.625Z
+date: 2025-01-09T14:49:44.627Z
 tags: css, règles, regles, regle, règle, conteneurs, conteneur
 editor: markdown
 dateCreated: 2024-12-06T22:49:58.995Z
@@ -26,4 +26,8 @@ dateCreated: 2024-12-06T22:49:58.995Z
 ## Outils & Ressources
 - [📜 Overapi *Cheat Sheet des balises HTML existantes*](https://overapi.com/css)
 - [📜 Mémo CSS *PixelCréation*](https://www.pixelcrea.com/ressources/memo-css3.pdf)
+- [📜 Image Placeholder *Moyen rapide de placer des images*](https://placehold.co)
+- [📜 Universe.io *Une librairie d'UI (CSS) libre*](https://uiverse.io)
 {.links-list}
+
+
