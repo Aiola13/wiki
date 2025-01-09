@@ -2,7 +2,7 @@
 title: CSS
 description: 
 published: true
-date: 2025-01-09T14:49:44.627Z
+date: 2025-01-09T14:58:24.686Z
 tags: css, règles, regles, regle, règle, conteneurs, conteneur
 editor: markdown
 dateCreated: 2024-12-06T22:49:58.995Z
@@ -28,6 +28,11 @@ dateCreated: 2024-12-06T22:49:58.995Z
 - [📜 Mémo CSS *PixelCréation*](https://www.pixelcrea.com/ressources/memo-css3.pdf)
 - [📜 Image Placeholder *Moyen rapide de placer des images*](https://placehold.co)
 - [📜 Universe.io *Une librairie d'UI (CSS) libre*](https://uiverse.io)
+- [📜 CSS Layout Generator *Générateur de Layout*](https://layout.bradwoods.io)
+- [📜 CSS Shadow Generator *Générateur d'ombre*](https://shadows.brumm.af)
+- [📜 Haikei *Créer des svg*](https://haikei.app)
+- [📜 Omatsuri *Ressources CSS*](https://omatsuri.app)
 {.links-list}
+
 
 
