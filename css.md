@@ -2,7 +2,7 @@
 title: CSS
 description: 
 published: true
-date: 2025-01-09T14:58:24.686Z
+date: 2025-01-09T15:16:53.169Z
 tags: css, règles, regles, regle, règle, conteneurs, conteneur
 editor: markdown
 dateCreated: 2024-12-06T22:49:58.995Z
