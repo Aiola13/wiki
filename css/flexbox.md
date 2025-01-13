@@ -2,7 +2,7 @@
 title: Flexbox
 description: 
 published: true
-date: 2024-12-08T10:33:39.611Z
+date: 2025-01-13T09:40:32.550Z
 tags: responsive, flexbox
 editor: markdown
 dateCreated: 2024-12-08T10:33:02.533Z
@@ -47,8 +47,13 @@ dateCreated: 2024-12-08T10:33:02.533Z
     flex-direction: row |row-reverse | column | column-reverse;
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/21251d1d-c35f-46b7-95e5-69b86ec6a5f9.svg)
+![](https://hedgedoc.privatehomelab.ovh/uploads/21251d1d-c35f-46b7-95e5-69b86ec6a5f9.svg)
 
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="raBvNzo" data-pen-title="Flex | flex-direction" data-user="aiola" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/aiola/pen/raBvNzo">
+  Flex | flex-direction</a> by aiola (<a href="https://codepen.io/aiola">@aiola</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 ## justify-content
 
