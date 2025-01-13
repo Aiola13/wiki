@@ -2,7 +2,7 @@
 title: Flexbox
 description: 
 published: true
-date: 2025-01-13T09:40:32.550Z
+date: 2025-01-13T09:44:20.614Z
 tags: responsive, flexbox
 editor: markdown
 dateCreated: 2024-12-08T10:33:02.533Z
@@ -65,7 +65,14 @@ dateCreated: 2024-12-08T10:33:02.533Z
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/ae3126e3-c262-48a7-94eb-163b9f2c4781.svg =300x)
+![](https://hedgedoc.privatehomelab.ovh/uploads/ae3126e3-c262-48a7-94eb-163b9f2c4781.svg =300x)
+
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="mybLdxO" data-pen-title="Flex | justify-content" data-user="aiola" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/aiola/pen/mybLdxO">
+  Flex | justify-content</a> by aiola (<a href="https://codepen.io/aiola">@aiola</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 ## align-items
 
