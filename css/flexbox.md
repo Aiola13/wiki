@@ -2,7 +2,7 @@
 title: Flexbox
 description: 
 published: true
-date: 2025-01-13T09:44:20.614Z
+date: 2025-01-13T09:54:45.597Z
 tags: responsive, flexbox
 editor: markdown
 dateCreated: 2024-12-08T10:33:02.533Z
@@ -12,7 +12,7 @@ dateCreated: 2024-12-08T10:33:02.533Z
 
 > Le Principe :
 > **Un conteneur et des éléments à l'intérieur.**
-> ![](https://hedgedoc.monserveurprive.ovh/uploads/e1596f36-50f3-4ac9-bf48-a2a1c31a8b0e.png)
+> ![](https://hedgedoc.privatehomelab.ovh/uploads/e1596f36-50f3-4ac9-bf48-a2a1c31a8b0e.png)
 {.is-success}
 
 ```html
@@ -84,7 +84,9 @@ dateCreated: 2024-12-08T10:33:02.533Z
   align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/3f6f663f-9126-418f-b09d-d1ab4c4aef83.svg =300x)
+![](https://hedgedoc.privatehomelab.ovh/uploads/3f6f663f-9126-418f-b09d-d1ab4c4aef83.svg =300x)
+
+
 
 # Propriétés des éléments enfants (items)
 
@@ -99,9 +101,13 @@ dateCreated: 2024-12-08T10:33:02.533Z
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/dbd870e9-300a-40f3-b8b6-e7af84174565.svg)
+![](https://hedgedoc.privatehomelab.ovh/uploads/dbd870e9-300a-40f3-b8b6-e7af84174565.svg)
 
-
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="EaYLxpB" data-pen-title="Flex | align-self" data-user="aiola" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/aiola/pen/EaYLxpB">
+  Flex | align-self</a> by aiola (<a href="https://codepen.io/aiola">@aiola</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 
 ## flex-grow
@@ -137,7 +143,7 @@ dateCreated: 2024-12-08T10:33:02.533Z
 }
 ```
 
-![](https://hedgedoc.monserveurprive.ovh/uploads/9a3f23d9-85c2-4563-b135-d0f89b8146a9.png)
+![](https://hedgedoc.privatehomelab.ovh/uploads/9a3f23d9-85c2-4563-b135-d0f89b8146a9.png)
 
 
 ## flex-basis
@@ -173,7 +179,7 @@ dateCreated: 2024-12-08T10:33:02.533Z
   order: 5; /* default is 0 */
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/2273b7a1-104e-466e-b5a2-8b6b5cf1ca6c.svg =500x)
+![](https://hedgedoc.privatehomelab.ovh/uploads/2273b7a1-104e-466e-b5a2-8b6b5cf1ca6c.svg =500x)
 
 # Propriétés spéciales
 
@@ -189,7 +195,7 @@ dateCreated: 2024-12-08T10:33:02.533Z
     flex-wrap: nowrap | wrap | wrap-reverse;
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/2c67878c-ac4a-4d7c-8ab3-a903365f78a2.svg)
+![](https://hedgedoc.privatehomelab.ovh/uploads/2c67878c-ac4a-4d7c-8ab3-a903365f78a2.svg)
 
 
 ## align-content
@@ -204,7 +210,7 @@ dateCreated: 2024-12-08T10:33:02.533Z
   /* Fonctionne seulement si `flex-wrap: wrap` */
 }
 ```
-![](https://hedgedoc.monserveurprive.ovh/uploads/c19ab45f-aa47-49f6-9ec2-e253c98f5f38.svg =300x)
+![](https://hedgedoc.privatehomelab.ovh/uploads/c19ab45f-aa47-49f6-9ec2-e253c98f5f38.svg =300x)
 
 
 ## flex
