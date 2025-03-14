@@ -2,7 +2,7 @@
 title: Les notions supplémentaires indispensables
 description: 
 published: true
-date: 2024-12-11T08:22:25.922Z
+date: 2025-03-14T08:22:42.556Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-11T08:22:25.922Z
@@ -63,6 +63,7 @@ Vous pouvez tester vos RegEx sur le site [https://regex101.com/](https://regex10
 
 La fonction preg_match() vous indique si une chaîne de caractères contient des correspondances avec un motif.
 
+```php
 <?php
 
 $str = "I am Toto, best of all Asticots, destroyer of the Apples, and bringer of Fate !";
@@ -72,6 +73,7 @@ $pattern = "/toto/i";
 echo  preg_match($pattern, $str); // Outputs 1
 
 ?>
+```
 
   
 
@@ -89,6 +91,7 @@ Consigne : faîtes un lorem ipsum et tentez de trouver avec une regex en faisant
 
 La fonction preg_match_all() vous indique combien de correspondances ont été trouvées pour un motif dans une chaîne.
 
+```php
 <?php
 
 $str = "Si ton tonton tond ton tonton, alors ton tonton sera tondu par ton tonton.";
@@ -98,6 +101,7 @@ $pattern = "/ton/i";
 echo  preg_match_all($pattern, $str); // Outputs 14
 
 ?>
+```
 
 ### Utilisation de preg_replace()
 
@@ -105,6 +109,7 @@ La fonction preg_replace() remplace toutes les correspondances du motif dans une
 
   
 
+```php
 <?php
 
 $str = "Visit Microsoft, before Microsoft visits you !";
@@ -114,6 +119,7 @@ $pattern = "/microsoft/i";
 echo  preg_replace($pattern, "Moria", $str); // Outputs "Visit Moria, before Moria visits you !"
 
 ?>
+```
 
 # Modificateurs d'expressions régulières
 
@@ -151,6 +157,7 @@ Comment ça marche ?
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -168,6 +175,7 @@ echo  preg_match_all($pattern, $example);
 */
 
 ?>
+```
 
   
 
@@ -187,6 +195,7 @@ Prenons un exemple :
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -196,13 +205,14 @@ $pattern = '/[a-z]+/i';
 echo  preg_match_all($pattern, $example);
 
 ?>
-
+```
   
 
 A votre avis, que signifie le `+` ? Et quelle est la différence entre l'exemple ci-dessus et celui ci-dessous ?
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -212,7 +222,7 @@ $pattern = '/\w+/i';
 echo  preg_match_all($pattern, $example);
 
 ?>
-
+```
   
 
 Aucune ! Les 2 font la même chose. La manière de les écrire est différente : dans un cas je manipule un ensemble de lettre (a à z par exemple) et dans l'autre je cherche des mots avec le `\w` (w pour word).
@@ -277,6 +287,7 @@ Ce `+` dans l'exemple précédent n'est pas là pour rien, en effet voilà une l
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -288,7 +299,7 @@ echo  preg_match_all($pattern, $example);
 // en sortie 8. Car il compte aussi les espaces
 
 ?>
-
+```
   
   
 
@@ -296,6 +307,7 @@ echo  preg_match_all($pattern, $example);
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -307,7 +319,7 @@ echo  preg_match_all($pattern, $example);
 // en sortie 4. Pour les 4 mots
 
 ?>
-
+```
   
   
 
@@ -315,6 +327,7 @@ echo  preg_match_all($pattern, $example);
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -326,7 +339,7 @@ echo  preg_match_all($pattern, $example);
 // en sortie 17. Pour chaques lettres et chaques espaces
 
 ?>
-
+```
   
   
 
@@ -334,6 +347,7 @@ echo  preg_match_all($pattern, $example);
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -345,7 +359,7 @@ echo  preg_match_all($pattern, $example);
 // en sortie 2. Car j'ai 2 mots qui sont composés de 4 lettres
 
 ?>
-
+```
   
   
 
@@ -353,6 +367,7 @@ echo  preg_match_all($pattern, $example);
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -364,7 +379,7 @@ echo  preg_match_all($pattern, $example);
 // en sortie 3. Car j'ai au minimum 3 mots qui sont composés de 3 lettres
 
 ?>
-
+```
   
   
 
@@ -372,6 +387,7 @@ echo  preg_match_all($pattern, $example);
 
   
 
+```php
 <?php
 
 $example = 'Ceci est un test';
@@ -383,7 +399,7 @@ echo  preg_match_all($pattern, $example);
 // en sortie 3. Car j'ai au 3 mots qui sont composés de 3 lettres et de 4 lettres
 
 ?>
-
+```
   
 
 ## Regroupement
@@ -392,6 +408,7 @@ Vous pouvez utiliser des parenthèses ( ) pour appliquer des quantificateurs à 
 
   
 
+```php
 <?php
 
 $str = "Apples and bananas.";
@@ -401,7 +418,7 @@ $pattern = "/ba(na){2}/i";
 echo  preg_match($pattern, $str); // Outputs 1
 
 ?>
-
+```
   
 
 # Exercices
