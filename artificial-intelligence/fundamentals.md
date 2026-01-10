@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:03:07.499Z
+date: 2026-01-10T21:09:09.436Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -169,22 +169,47 @@ Pour reprendre notre exemple du chat :
     
 ## Histoire de l'IA
 
+> L'IA n'est pas née avec ChatGPT en 2022. Son histoire remonte à plus de 70 ans, avec des hauts spectaculaires et des bas tout aussi impressionnants.
+{.is-info}
+
 
 ![ai.history_1.png](/ai_ml/ai.history_1.png)
 ![ai.history_2.png](/ai_ml/ai.history_2.png)
 
-### Des machines qui pensent
+### 1950 : Des machines qui pensent
 
-> **Alan Turing** (Elu scientifique du 20 siecle en 2029), considéré comme le père de l'IA et de l'informatique théorique pour avoir formalisé le concept d'algorithme avec sa Machine de Turing (1936). Au-delà de son rôle clé dans le décryptage d'Enigma lors de la Seconde Guerre Mondiale, il pose dès 1950 les fondements de l'IA moderne. Son célèbre **Test de Turing** (ou **"Jeu de l'imitation"**) reste la référence pour évaluer la capacité d'une machine à imiter une conversation humaine de manière indiscernable.
+Tout commence avec un génie britannique : **Alan Turing**.
+> 
+> 💡 **Qui est Alan Turing ?**
+> 
+> Élu scientifique du 20ème siècle en 2019, Alan Turing est considéré comme le père de l'IA et de l'informatique théorique. Il a formalisé le concept d'algorithme avec sa "Machine de Turing" (1936) et joué un rôle crucial dans le décryptage de la machine Enigma pendant la Seconde Guerre Mondiale.
 {.is-success}
+
+
+> En 1950, Turing publie un article fondateur où il pose une question révolutionnaire : **"Les machines peuvent-elles penser ?"**
+> 
+> Pour y répondre, il propose le fameux **Test de Turing** (aussi appelé "Jeu de l'imitation") :
+> 
+>    1. Un humain discute par écrit avec deux interlocuteurs cachés
+>    2. L'un est un humain, l'autre une machine
+>    3. Si l'humain n'arrive pas à distinguer la machine de l'humain, alors la machine "pense"
+> 
+> Ce test reste aujourd'hui une référence, même si on sait qu'il a ses limites !
+{.is-info}
+
 
 Source : Test de turing
 
 
-### Conférence de Dartmouth
+### 1956 : La Conférence de Dartmouth
 
-> **La Conférence de Dartmout** (été 1956) marque la naissance officielle de l'Intelligence Artificielle en tant que discipline scientifique autonome. C'est lors de cet événement que le terme "Intelligence Artificielle" est inventé. Organisée par quatre pionniers dont John McCarthy et Marvin Minsky, elle réunit durant deux mois des chercheurs pour tester une hypothèse audacieuse : « tout aspect de l'apprentissage ou de l'intelligence peut être décrit si précisément qu'une machine peut le simuler ». 
-{.is-success}
+L'été 1956 marque un tournant historique. À la **Conférence de Dartmouth**, quatre pionniers (dont John McCarthy et Marvin Minsky) inventent officiellement le terme **"Intelligence Artificielle"**.
+
+   Leur hypothèse de départ était audacieuse :
+
+   > *"Tout aspect de l'apprentissage ou de l'intelligence peut être décrit si précisément qu'une machine peut le simuler."*
+
+   L'aventure pouvait commencer !
 
 
 ### 1956 - 1974 : "Les années dorées"
