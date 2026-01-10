@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:17:27.490Z
+date: 2026-01-10T21:21:08.441Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -245,20 +245,25 @@ Les chercheurs se concentrent sur des "micro-mondes" : des environnements simpli
 
 ### 1974 - 1980 : "Hiver de l'IA" - La désillusion
 
-> Après l'euphorie, la désillusion. Au milieu des années 70, les financeurs (comme la DARPA) réalisent que les promesses de l'IA ont été exagérées. C'est le début de l'Hiver de l'IA : une période de coupes budgétaires drastiques et de scepticisme, déclenchée notamment par le critique Rapport Lighthill (1973).
-> 
-> Trois murs techniques ont stoppé les recherches :
->
-> - Limitations : La puissance de calcul était trop limitée. Le matériel n'était tout simplement pas prêt pour traiter les informations nécessaires à une "vraie" intelligence.
->      
-> - L'explosion combinatoire : Les chercheurs découvrent que résoudre des problèmes simples ne suffit pas. Dès qu'on augmente la complexité, le temps de calcul augmente de façon exponentielle, dépassant les capacités des ordinateurs de l'époque.
-> 
-> - Manques de données: Pas assez de données, ce qui entravait le processus de test, de développement et de raffinement des algorithmes.
->     
-> - Critiques philosophiques : En 1980, John Searle contre-attaque le Test de Turing avec l'expérience de la "Chambre Chinoise". Il prouve q'une machine peut donner les bonnes réponses sans rien comprendre à ce qu'elle dit. Elle maitrise la syntaxe mais pas la sémantique.
-> 
-> Enfin, une guerre interne divise la communauté : les "Scruffies" (bricoleurs de code intuitif, comme pour SHRDLU) s'opposent aux "Neats" (partisans de la logique formelle et rigoureuse). C'est finalement l'approche "Neat" qui l'emportera pour garantir des résultats explicables et scientifiques.
-{.is-success}
+Après l'euphorie, la douche froide. Les financeurs réalisent que les promesses étaient... comment dire... un peu exagérées.
+
+   Le **Rapport Lighthill** (1973) assène le coup de grâce en Grande-Bretagne : les fonds sont coupés.
+
+   **Pourquoi cet échec ?**
+
+   Trois murs techniques ont stoppé net les recherches :
+
+   1. **Puissance de calcul insuffisante** : Les ordinateurs de l'époque étaient tout simplement trop faibles pour les ambitions de l'IA.
+
+   2. **L'explosion combinatoire** : Résoudre un problème simple, OK. Mais dès qu'on augmente la complexité, le temps de calcul explose de façon exponentielle. Impossible à gérer !
+
+   3. **Manque de données** : Pas de Big Data à l'époque. Comment apprendre sans exemples ?
+
+   En 1980, le philosophe **John Searle** enfonce le clou avec son expérience de pensée de la **"Chambre Chinoise"** : il démontre qu'une machine peut donner les bonnes réponses sans rien comprendre à ce qu'elle dit. Elle maîtrise la **syntaxe** mais pas la **sémantique**.
+
+   > ℹ️ **L'expérience de la Chambre Chinoise**
+   > 
+   > Imagine-toi enfermé dans une pièce avec un livre de règles. Des Chinois te passent des questions en chinois sous la porte. Tu suis les règles du livre pour écrire des réponses en chinois. De l'extérieur, tu sembles parler chinois... mais tu n'as rien compris ! Tu manipules des symboles sans en saisir le sens.
 
 
 ### Années 1980 : L'ère des Systèmes Experts 
