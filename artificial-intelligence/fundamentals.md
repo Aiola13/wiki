@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:09:14.785Z
+date: 2026-01-10T21:17:27.490Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -213,24 +213,34 @@ L'été 1956 marque un tournant historique. À la **Conférence de Dartmouth**, 
 
 ### 1956 - 1974 : "Les années dorées"
 
-> Cette période est marquée par un optimisme débordant et des financements massifs (notamment gouvernementaux). Les chercheurs pensaient alors toucher au but, comme l'illustre la célèbre prédiction de Marvin Minsky en 1967 : « Dans une génération... le problème de la création de l'intelligence artificielle sera substantiellement résolu ».
->
-> La recherche se concentre alors sur des "micro-mondes" : des environnements simplifiés où l'IA peut raisonner sans la complexité du monde réel. C'est l'essor des premiers algorithmes de résolution de problèmes et du Traitement du Langage Naturel (NLP), illustré par trois projets cultes :
->
-> - ELIZA (1966) : Le premier "chatbot" capable de simuler un psychothérapeute, bluffant les utilisateurs par de simples reformulations.
->
->![ai.eliza.png](/ai_ml/ai.eliza.png){.align-center}
->
-> - SHRDLU et le "Blocks World" : Un programme capable de manipuler des blocs virtuels en comprenant des ordres complexes en langage naturel.
->
->![ai.blocks_world.jpg](/ai_ml/ai.blocks_world.jpg){.align-center}
->
-> - Shakey le robot (1972) : La première machine mobile capable de percevoir son environnement et de planifier ses actions pour se déplacer intelligemment.
->
->![ai.shakey_robot.jpg](/ai_ml/ai.shakey_robot.jpg){.align-center}
->
-> ‎ 
-{.is-success}
+C'est l'euphorie ! Les financements (notamment gouvernementaux) pleuvent, l'optimisme est à son comble. En 1967, Marvin Minsky déclare même :
+
+> *"Dans une génération... le problème de la création de l'intelligence artificielle sera substantiellement résolu."*
+
+> **Spoiler alert :** il se trompait.
+{.is-danger}
+
+Les chercheurs se concentrent sur des "micro-mondes" : des environnements simplifiés où l'IA peut raisonner sans la complexité du monde réel. C'est l'essor des premiers algorithmes de résolution de problèmes et du Traitement du Langage Naturel (NLP). Trois projets marquent cette époque :
+   
+   
+  
+#### ELIZA (1966) - Le premier chatbot
+
+![ai.eliza.png](/ai_ml/ai.eliza.png){.align-center}
+
+> ELIZA simulait un psychothérapeute en reformulant simplement les phrases de l'utilisateur. Malgré sa simplicité, les gens étaient bluffés et se confiaient à "elle" !
+
+#### SHRDLU et le Blocks World
+
+![ai.blocks_world.jpg](/ai_ml/ai.blocks_world.jpg){.align-center}
+
+> Un programme capable de manipuler des blocs virtuels en comprenant des ordres en langage naturel. "Pose le cube rouge sur le bloc bleu" ? Pas de problème !
+
+#### Shakey le robot (1972)
+
+![ai.shakey_robot.jpg](/ai_ml/ai.shakey_robot.jpg){.align-center}
+
+> Le premier robot mobile capable de percevoir son environnement et de planifier ses déplacements. Un ancêtre des robots aspirateurs d'aujourd'hui !
 
 
 ### 1974 - 1980 : "Hiver de l'IA" - La désillusion
