@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:09:09.436Z
+date: 2026-01-10T21:09:14.785Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -209,7 +209,6 @@ L'été 1956 marque un tournant historique. À la **Conférence de Dartmouth**, 
 
    > *"Tout aspect de l'apprentissage ou de l'intelligence peut être décrit si précisément qu'une machine peut le simuler."*
 
-   L'aventure pouvait commencer !
 
 
 ### 1956 - 1974 : "Les années dorées"
