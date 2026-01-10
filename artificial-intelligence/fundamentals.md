@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:31:19.049Z
+date: 2026-01-10T21:33:08.143Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -353,8 +353,7 @@ Agis comme un formateur en IA expliquant les LLM à un apprenant curieux. Struct
 
 Les LLM sont de plus en plus performants. Ce n'est pas de la magie, mais une convergence de plusieurs avancées mathématiques et techniques.
 
-Cf. [https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance](https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance)
-
+> Le rapport de Stanford sur l'IA (2025) détaille ces avancées : [https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance](https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance)
 
 ### La vectorisation du langages (Embeddings) (Word2Vec et al.)
 
