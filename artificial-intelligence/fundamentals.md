@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:21:08.441Z
+date: 2026-01-10T21:25:05.114Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -283,10 +283,14 @@ Après l'euphorie, la douche froide. Les financeurs réalisent que les promesses
 
 ### 1987 - 1993 : Le deuxième "Hiver de l'IA" (La chute du Hardware)
 
-> La crise des machines spécialisées La bulle des Systèmes Experts éclate à la fin des années 80. Le problème est économique : ces logiciels tournaient sur des ordinateurs très coûteux et spécialisés (comme les "Lisp Machines").
->
-> Soudainement, les ordinateurs personnels (PC et Apple), bien moins chers, deviennent assez puissants pour les concurrencer. Les entreprises abandonnent les solutions spécialisées coûteuses. C'est un nouvel hiver budgétaire, mais qui prépare le terrain : la démocratisation des PC va bientôt permettre de collecter des données partout.
+
+> La bulle des Systèmes Experts éclate. Le problème ? Ces logiciels tournaient sur des ordinateurs ultra-coûteux et spécialisés (les "Lisp Machines").
+> 
+> Soudain, les PC et les Mac deviennent assez puissants... et beaucoup moins chers. Pourquoi investir des fortunes dans du matériel spécialisé ?
+> 
+> Nouvel hiver budgétaire. Mais cette fois, quelque chose de crucial se met en place : la **démocratisation des ordinateurs personnels**. Des millions de machines vont bientôt générer des tonnes de données...
 {.is-success}
+
 
 ### 1993 - 2011 : Le triomphe de la Data (L'IA probabiliste)
 
