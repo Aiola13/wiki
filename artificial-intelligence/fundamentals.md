@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:50:25.524Z
+date: 2026-01-10T21:55:33.268Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -440,40 +440,33 @@ Une fois les mots transformés en chiffres, ils passent dans le "cerveau" du mod
 {.is-success}
 
 
-### Le renforcement par l'humain / Reinforcement Learning from Human Feedback (RLHF)
+### 4. Le renforcement par l'humain / Reinforcement Learning from Human Feedback (RLHF)
 
-Une fois le modèle entraîné sur tout Internet, il sait parler, mais il peut être grossier, raciste ou inutile. Il faut l'éduquer.
+ À ce stade, le modèle a été entraîné sur tout Internet. Il sait parler, mais... il peut être impoli, raconter n'importe quoi, ou donner des conseils dangereux.
 
-**Pour cela, la dernière étape consiste à rendre le modèle plus performant en lui fournissant des récompenses pour les actions appropriées et des punitions pour les actions inappropriées.**
+   Il faut l'**éduquer**. C'est le rôle du **RLHF** (Reinforcement Learning from Human Feedback).
 
-![ai.fundamentals.fine-tuning-llm-with-rlhf.png](/ai_ml/ai.fundamentals.fine-tuning-llm-with-rlhf.png)
+   ![Fine-tuning avec RLHF](/ai_ml/ai.fundamentals.fine-tuning-llm-with-rlhf.png)
 
+   **Comment ça marche ?**
 
+   1. Le modèle génère plusieurs réponses possibles
+   2. Des humains classent ces réponses (de la meilleure à la pire)
+   3. Le modèle ajuste ses paramètres pour maximiser la "récompense" (la satisfaction humaine)
 
-Le RLHF est donc l'étape d'**alignement** du comportement du modèle. On récompense le modèle pour les bonnes réponses et on le "punit" pour les mauvaises.
+   C'est cette étape qui transforme un simple "compléteur de texte" en un **assistant conversationnel utile** comme ChatGPT ou Claude.
 
-1. Le modèle génère plusieurs réponses.
+> 💡 **C'est l'alignement !**
+> 
+> Le RLHF "aligne" le comportement du modèle sur les valeurs humaines. Sans cette étape, le modèle pourrait générer du contenu offensant ou dangereux.
+{.is-warning}
 
-2. Des humains classent ces réponses de la meilleure à la pire.
-
-3. Le modèle ajuste ses paramètres pour maximiser la "récompense" (satisfaction humaine).
-
-
-Cette dernière étape optimise le réseau neuronal brut via une approche de fine-tuning et transforme un "compléteur de texte" brut en un "assistant conversationnel" utile (comme ChatGPT).
 
 
 
 ## Panorama actuel des modèles (Juin 2025)
 
-![ai.llm.benchmark.2025-06-04.png](/ai_ml/ai.llm.benchmark.2025-06-04.png)
-
-Il existe des benchmarks automatisés :
-
-- [https://www.vellum.ai/llm-leaderboard](https://www.vellum.ai/llm-leaderboard)
-- [https://artificialanalysis.ai/leaderboards/models](https://artificialanalysis.ai/leaderboards/models)
-- [https://bigcode-bench.github.io/](https://bigcode-bench.github.io/)
-- [https://llm-stats.com/](https://llm-stats.com/)
-- [https://aider.chat/docs/leaderboards/](https://aider.chat/docs/leaderboards/)
+   ![Benchmark LLM Juin 2025](/ai_ml/ai.llm.benchmark.2025-06-04.png)
 
 
 ## Quelques modèles et entreprises du LLM
@@ -482,34 +475,80 @@ Il existe des benchmarks automatisés :
 
 En janvier 2025 :
 
-- DeepSeek / DeepSeek (Open Source)
-- ChatGPT / OpenAI (Propriétaire)
-- Llama / Meta (Open Source)
-- Claude / Anthropic (Propriétaire)
-- Qwen / Alibaba (Open Weight / Source)
-- Codestral / Mistral (Open Source)
-- Gemini / Google (Propriétaire)
-- Gemma / Google (Open Weight)
+ | Modèle                  | Entreprise | Type           |
+   | ----------------------- | ---------- | -------------- |
+   | **DeepSeek**            | DeepSeek   | Open Source 🔓  |
+   | **ChatGPT (GPT-4, o1)** | OpenAI     | Propriétaire 🔒 |
+   | **Llama**               | Meta       | Open Source 🔓  |
+   | **Claude**              | Anthropic  | Propriétaire 🔒 |
+   | **Qwen**                | Alibaba    | Open Weight 🔓  |
+   | **Codestral**           | Mistral    | Open Source 🔓  |
+   | **Gemini**              | Google     | Propriétaire 🔒 |
+   | **Gemma**               | Google     | Open Weight 🔓  |
+
+### Où suivre les benchmarks ?
+
+   Les performances des modèles évoluent très vite ! Voici quelques ressources pour rester à jour :
+
+   - [Vellum LLM Leaderboard](https://www.vellum.ai/llm-leaderboard)
+   - [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)
+   - [BigCode Bench](https://bigcode-bench.github.io/)
+   - [LLM Stats](https://llm-stats.com/)
+   - [Aider Leaderboards](https://aider.chat/docs/leaderboards/) (pour le code)
 
 
-## Les contraintes de choix
+## Comment choisir son modèle ? 🤔
 
-**Comment choisir un modèle adapté à ses besoins ?**
+   Face à cette jungle de modèles, comment faire le bon choix ? Voici les critères à considérer :
 
-Il y a différents paramètres à considérer dans l'absolu :
+### Les critères essentiels
 
-- Efficacité pour les tâches demandées
-- Coûts
-- Open Source
-- Exécution locale
-- Taille
-- Privacy
-- Sécurité
-- Performance
+   | Critère              | Questions à se poser                                               |
+   | -------------------- | ------------------------------------------------------------------ |
+   | **Efficacité**       | Le modèle est-il bon pour MA tâche ? (code, rédaction, analyse...) |
+   | **Coûts**            | Quel est le prix par token ? Mon budget le permet-il ?             |
+   | **Open Source**      | Ai-je besoin d'accéder au code ? De le modifier ?                  |
+   | **Exécution locale** | Puis-je le faire tourner sur mes serveurs ?                        |
+   | **Taille**           | Ai-je le matériel pour faire tourner un gros modèle ?              |
+   | **Confidentialité**  | Mes données sont-elles sensibles ?                                 |
+   | **Sécurité**         | Le modèle a-t-il des garde-fous suffisants ?                       |
+   | **Performance**      | Vitesse de réponse acceptable ?                                    |
 
-Souvent, les développeurs sont dépendants des modèles disponibles dans leur organisation.
+ ## QCM : Teste tes connaissances ! 🧠
 
-**Il est néanmoins utile d'avoir une idée des modèles disponibles et de leur efficacité, si l'on considère qu'il s'agit d'outils de développement essentiels.**
+   **Question 1** : Quelle est la mission principale d'un LLM ?
+   - A) Stocker des connaissances comme une encyclopédie
+   - B) Prédire le mot suivant le plus probable
+   - C) Comprendre le sens profond des textes
+   - D) Remplacer les humains
+
+   **Question 2** : Qu'est-ce que l'hallucination dans le contexte des LLM ?
+   - A) Un bug logiciel
+   - B) Le fait de générer des informations fausses avec assurance
+   - C) Un problème de connexion internet
+   - D) Une fonctionnalité désactivée
+
+   **Question 3** : Que permet le mécanisme d'Attention ?
+   - A) De rendre l'IA plus polie
+   - B) De traiter tous les mots d'une phrase simultanément
+   - C) D'accélérer les calculs
+   - D) De réduire la consommation électrique
+
+   **Question 4** : À quoi sert le RLHF ?
+   - A) À rendre le modèle plus rapide
+   - B) À aligner le comportement du modèle sur les attentes humaines
+   - C) À réduire la taille du modèle
+   - D) À traduire le modèle en français
+
+   <details>
+   <summary>📖 Voir les réponses</summary>
+
+   1. **B** - Prédire le mot suivant le plus probable
+   2. **B** - Le fait de générer des informations fausses avec assurance
+   3. **B** - De traiter tous les mots d'une phrase simultanément
+   4. **B** - À aligner le comportement du modèle sur les attentes humaines
+
+   </details>
 
 
 <!--
