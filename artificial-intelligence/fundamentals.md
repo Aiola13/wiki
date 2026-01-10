@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:02:53.123Z
+date: 2026-01-10T21:03:07.499Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -154,18 +154,16 @@ Le modèle choisit généralement le mot le plus probable ("des croquettes"). Et
 {.is-warning}
 
 >  Tu as peut-être entendu parler de la **température** dans le contexte des LLM. C'est un paramètre qui contrôle le niveau de "prise de risque" du modèle.
-> 
->    | Température | Comportement |
->    |-------------|--------------|
->    | **0** (basse) | Le modèle choisit toujours le mot le plus probable. Réponses prévisibles et "sûres". |
->    | **0.7-0.8** (moyenne) | Un bon équilibre entre créativité et cohérence. |
->    | **1.0+** (haute) | Le modèle prend des risques, peut choisir des mots moins probables. Plus créatif, mais aussi plus susceptible de partir dans tous les sens ! |
-> 
-> Pour reprendre notre exemple du chat :
-> - Si la température est à 0, l'IA choisira toujours "des croquettes" (le plus probable).
-> - Si la température est élevée (ex: 0.8), l'IA prendra des risques et pourra choisir "sa pâtée" ou même "le canapé" pour être plus créative.
-> 
-{.is-info}
+
+   | Température | Comportement |
+   |-------------|--------------|
+   | **0** (basse) | Le modèle choisit toujours le mot le plus probable. Réponses prévisibles et "sûres". |
+   | **0.7-0.8** (moyenne) | Un bon équilibre entre créativité et cohérence. |
+   | **1.0+** (haute) | Le modèle prend des risques, peut choisir des mots moins probables. Plus créatif, mais aussi plus susceptible de partir dans tous les sens ! |
+
+Pour reprendre notre exemple du chat :
+- Si la température est à 0, l'IA choisira toujours "des croquettes" (le plus probable).
+- Si la température est élevée (ex: 0.8), l'IA prendra des risques et pourra choisir "sa pâtée" ou même "le canapé" pour être plus créative.
 
 
     
