@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:25:05.114Z
+date: 2026-01-10T21:26:47.456Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -294,16 +294,20 @@ Après l'euphorie, la douche froide. Les financeurs réalisent que les promesses
 
 ### 1993 - 2011 : Le triomphe de la Data (L'IA probabiliste)
 
-> La convergence : Puissance de calcul + Big Data Cette période marque le retour en grâce de l'IA, portée par trois facteurs techniques qui résolvent les blocages passés :
->
-> La Loi de Moore : La puissance de calcul explose, permettant enfin de traiter des algorithmes lourds.
->
-> Le Big Data : Avec internet et l'arrivée du smartphone (2007), la quantité de données disponibles devient gigantesque.
->
-> L'apprentissage statistique : On arrête d'essayer de coder des règles logiques parfaites. On laisse les algorithmes "deviner" et apprendre des probabilités à partir de ces immenses bases de données. L'IA devient une discipline scientifique mature et rigoureuse.
-{.is-success}
 
-Cette époque a vu une nouvelle ère pour l'apprentissage automatique et l'IA, permettant de résoudre certains des problèmes causés auparavant par le manque de données et de puissance de calcul. La quantité de données a commencé à augmenter rapidement et à devenir plus largement disponible, pour le meilleur et pour le pire, notamment avec l'avènement du smartphone vers 2007. La puissance de calcul a augmenté de manière exponentielle, et les algorithmes ont évolué en parallèle. Le domaine a commencé à gagner en maturité à mesure que les jours libres du passé se cristallisaient en une véritable discipline.
+Trois facteurs vont relancer la machine :
+
+   **1. La Loi de Moore**
+   La puissance de calcul double tous les 18 mois environ. Ce qui était impossible hier devient trivial demain.
+
+   **2. Le Big Data**
+   Internet explose. Le smartphone arrive (2007). Soudain, on génère des **quantités astronomiques de données**.
+
+   **3. L'apprentissage statistique**
+   Changement de philosophie : on arrête d'essayer de coder des règles parfaites. On laisse les algorithmes **apprendre des probabilités** à partir des données.
+
+   L'IA devient enfin une discipline scientifique mature et rigoureuse.
+
 
 ### Aujourd'hui : L'Ère de l'Ubiquité et de l'Éthique
 
