@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:29:37.179Z
+date: 2026-01-10T21:30:39.517Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -326,9 +326,10 @@ Comme le dit Brad Smith de Microsoft : la technologie touche désormais aux droi
 
 ## Quickstart : L'IA en action
 
-Maintenant que vous en savez plus sur la théorie, passons à la pratique. Prenez une IA (ChatGPT, Claude, Mistral, Gemini...) et entrez le prompt suivant.
 
-Objectif : Observer comment l'IA se "perçoit" et tester sa capacité à structurer une réponse complexe.
+**Objectif** : Observer comment l'IA se "perçoit" et tester sa capacité à structurer une réponse complexe.
+
+**Consigne** : Rends-toi sur une IA de ton choix (ChatGPT, Claude, Mistral, Gemini...) et entre le prompt suivant :
 
 ```text
 Agis comme un formateur en IA expliquant les LLM à un apprenant curieux. Structure ta réponse en 4 couches :  
