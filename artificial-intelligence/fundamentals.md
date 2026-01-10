@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:42:06.194Z
+date: 2026-01-10T21:50:25.524Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -392,25 +392,14 @@ Grâce à des techniques comme **Word2Vec**, chaque mot devient un point dans un
 
 ### 2. Les réseaux neuronaux profonds (Deep Learning)
 
-**La taille des IA dites "Connexionistes" a grandement évoluée depuis quelques années.**
-
-![ai.fundamentals.nn-size.png](/ai_ml/ai.fundamentals.nn-size.png){.align-center}
-
-Une fois les mots transformés en chiffres, ils passent dans le "cerveau" du modèle.
-
-Chaque neurone artificiel applique une transformation affine (combinaison linéaire pondérée des entrées) suivie d'une fonction d'activation non linéaire (comme ReLU ou Sigmoïde).
-
-L'empilement de ces couches (d'où le terme "Deep" Learning) permet d'approximer des fonctions extrêmement complexes. Plus le réseau est profond, plus il est capable de comprendre des nuances subtiles et des abstractions (ironie, code complexe, raisonnement logique).
-
-
 Une fois les mots transformés en chiffres, ils passent dans le "cerveau" du modèle : un **réseau de neurones artificiels**. On parle d'IA "Connexionistes".
 
-   ![Taille des réseaux de neurones](/ai_ml/ai.fundamentals.nn-size.png)
-   *La taille des réseaux a explosé ces dernières années !*
+![Taille des réseaux de neurones](/ai_ml/ai.fundamentals.nn-size.png)
+*La taille des réseaux a explosé ces dernières années !*
 
    Chaque neurone fait deux choses :
-   1. Une **transformation mathématique** des entrées (combinaison linéaire)
-   2. Une **fonction d'activation** qui introduit de la non-linéarité
+   1. Une **transformation affine** (transformation mathématique) des entrées (combinaison linéaire pondérée)
+   2. Une **fonction d'activation** qui introduit de la non-linéarité (comme ReLU ou Sigmoïde)
 
    C'est cette non-linéarité qui permet d'apprendre des choses complexes. Sans elle, empiler des couches ne servirait à rien !
 
@@ -419,25 +408,37 @@ Une fois les mots transformés en chiffres, ils passent dans le "cerveau" du mod
    > Plus le réseau a de couches (= plus il est "profond"), plus il peut comprendre des concepts abstraits. Les premières couches détectent des patterns simples, les dernières comprennent des notions complexes comme l'ironie ou le raisonnement logique.
 
 
-### L'attention et les transformers
+### 3. L'attention et les Transformers (La révolution de 2017)
 
-**Le concept d'attention a permis des progrès considérables dans le traitement du langage naturel via la prise en compte des séquences de mots et phrases au lieu de mot à mot*.*
+> En 2017, une équipe de Google publie un article au titre évocateur : **"Attention Is All You Need"** (L'attention, c'est tout ce qu'il vous faut).
+> 
+>    C'est LA révolution qui a rendu les LLM modernes possibles.
+{.is-success}
 
-![ai.fundamentals.llm-schema.png](/ai_ml/ai.fundamentals.llm-schema.png)
 
-Le mécanisme d'Attention permet au modèle de pondérer dynamiquement l'importance des éléments d'une séquence.
+   ![Schéma LLM](/ai_ml/ai.fundamentals.llm-schema.png)
 
-C'est un mécanisme qui permet de calculer des poids d'importance pour chaque élément d'une séquence lors du traitement d'une cible.
+>    **Le problème des anciennes approches**
+> 
+>    Avant les Transformers, les modèles traitaient le texte mot par mot, dans l'ordre. Pour une longue phrase, le modèle "oubliait" le début quand il arrivait à la fin.
+{.is-info}
 
-C'est ainsi que les LLM peuvent produire des phrases cohérentes avec le contexte.
 
-Prenons la phrase : "L'animal n'a pas traversé la rue car il était trop fatigué."
+>    **La solution : le mécanisme d'Attention**
+> 
+>    L'Attention permet au modèle de regarder **tous les mots en même temps** et de décider lesquels sont importants pour comprendre chaque partie.
+> 
+>    Prenons un exemple :
+> 
+>    > *"L'animal n'a pas traversé la rue car **il** était trop fatigué."*
+> 
+>    - Pour un humain, "il" désigne clairement "l'animal"
+>    - Pour une ancienne IA, c'était ambigu : la rue ? l'animal ?
+>    - Grâce à l'Attention, le modèle connecte fortement "il" à "animal" et faiblement à "rue"
+> 
+>    C'est ce mécanisme qui permet de générer des textes longs et cohérents !
+{.is-success}
 
-    Pour un humain, "il" désigne "l'animal".
-
-    Pour une ancienne IA, c'était ambigu (la rue ? l'animal ?).
-
-    Grâce à l'Attention, le modèle connecte fortement le mot "il" au mot "animal" et faiblement au mot "rue". C'est ce qui permet de générer des textes longs et cohérents.
 
 ### Le renforcement par l'humain / Reinforcement Learning from Human Feedback (RLHF)
 
