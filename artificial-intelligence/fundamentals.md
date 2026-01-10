@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:38:18.088Z
+date: 2026-01-10T21:42:06.194Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -269,7 +269,7 @@ Après l'euphorie, la douche froide. Les financeurs réalisent que les promesses
 ### Années 1980 : L'ère des Systèmes Experts 
 
 
-> L'IA sort des laboratoires pour entrer dans les entreprises. C'est la première grande réussite commerciale de la discipline grâce aux Systèmes Experts. Ces logiciels visent à reproduire le raisonnement d'un spécialiste humain (un médecin, un garagiste).
+> L'IA sort des laboratoires (on parle d'IA symbolique) pour entrer dans les entreprises. C'est la première grande réussite commerciale de la discipline grâce aux Systèmes Experts. Ces logiciels visent à reproduire le raisonnement d'un spécialiste humain (un médecin, un garagiste).
 > 
 > Leur fonctionnement est simple et repose sur deux piliers :
 >
@@ -355,7 +355,7 @@ Les LLM sont de plus en plus performants. Ce n'est pas de la magie, mais une con
 
 > Le rapport de Stanford sur l'IA (2025) détaille ces avancées : [https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance](https://hai.stanford.edu/ai-index/2025-ai-index-report/technical-performance)
 
-### La vectorisation du langages (Embeddings) (Word2Vec et al.)
+### 1. La vectorisation du langages (Embeddings) (Word2Vec et al.)
 
 
 Premier défi : comment faire comprendre le langage humain à une machine qui ne comprend que des chiffres ?
@@ -390,7 +390,7 @@ Grâce à des techniques comme **Word2Vec**, chaque mot devient un point dans un
 
 
 
-### Les réseaux neuronaux profonds (Deep Learning)
+### 2. Les réseaux neuronaux profonds (Deep Learning)
 
 **La taille des IA dites "Connexionistes" a grandement évoluée depuis quelques années.**
 
@@ -402,6 +402,21 @@ Chaque neurone artificiel applique une transformation affine (combinaison linéa
 
 L'empilement de ces couches (d'où le terme "Deep" Learning) permet d'approximer des fonctions extrêmement complexes. Plus le réseau est profond, plus il est capable de comprendre des nuances subtiles et des abstractions (ironie, code complexe, raisonnement logique).
 
+
+Une fois les mots transformés en chiffres, ils passent dans le "cerveau" du modèle : un **réseau de neurones artificiels**. On parle d'IA "Connexionistes".
+
+   ![Taille des réseaux de neurones](/ai_ml/ai.fundamentals.nn-size.png)
+   *La taille des réseaux a explosé ces dernières années !*
+
+   Chaque neurone fait deux choses :
+   1. Une **transformation mathématique** des entrées (combinaison linéaire)
+   2. Une **fonction d'activation** qui introduit de la non-linéarité
+
+   C'est cette non-linéarité qui permet d'apprendre des choses complexes. Sans elle, empiler des couches ne servirait à rien !
+
+   > ℹ️ **Pourquoi "profond" ?**
+   > 
+   > Plus le réseau a de couches (= plus il est "profond"), plus il peut comprendre des concepts abstraits. Les premières couches détectent des patterns simples, les dernières comprennent des notions complexes comme l'ironie ou le raisonnement logique.
 
 
 ### L'attention et les transformers
