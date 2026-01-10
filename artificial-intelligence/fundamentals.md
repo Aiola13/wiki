@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:33:08.143Z
+date: 2026-01-10T21:38:18.088Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -357,22 +357,37 @@ Les LLM sont de plus en plus performants. Ce n'est pas de la magie, mais une con
 
 ### La vectorisation du langages (Embeddings) (Word2Vec et al.)
 
-La première étape pour qu'une machine comprenne le langage, c'est de transformer les mots en mathématiques.
 
-La vectorisation (ou Word2Vec et successeurs) permet de représenter les mots par des vecteurs numériques dans un espace multidimensionnel.
+Premier défi : comment faire comprendre le langage humain à une machine qui ne comprend que des chiffres ?
 
-![ai.fundamentals.word2vec.general.png](/ai_ml/ai.fundamentals.word2vec.general.png){.align-center}
-![ai.fundamentals.word2vec.vectors.jpg](/ai_ml/ai.fundamentals.word2vec.vectors.jpg){.align-center}
+La réponse : Les mathématiques, **transformer les mots en vecteurs** (des listes de nombres).
 
-Cette capacité permet de calculer des distances entre les mots :
+![Word2Vec général](/ai_ml/ai.fundamentals.word2vec.general.png){.align-center}
 
-    Le mot "Roi" est mathématiquement proche de "Reine".
 
-    Le mot "Paris" est proche de "France" de la même manière que "Rome" est proche de "Italie".
+Grâce à des techniques comme **Word2Vec**, chaque mot devient un point dans un espace mathématique à plusieurs dimensions.
 
-Au fur et à mesure de son entraînement, le modèle n'apprend pas juste des mots, il cartographie des concepts.
+![Vecteurs Word2Vec](/ai_ml/ai.fundamentals.word2vec.vectors.jpg){.align-center}
 
-    À retenir : Pour l'IA, le sens d'un mot est défini par sa position dans cet espace mathématique.
+
+>  **Pourquoi c'est génial ?**
+> 
+>    Dans cet espace, les mots qui ont des sens proches sont... géographiquement proches ! On peut calculer des "distances" entre les mots :
+> 
+>    - "Roi" est proche de "Reine"
+>    - "Paris" est à "France" ce que "Rome" est à "Italie"
+> 
+>    On peut même faire des "calculs" avec les mots :
+>    ```
+>   Roi - Homme + Femme ≈ Reine
+>   ```
+{.is-info}
+
+> 💡 **À retenir**
+> 
+> Pour l'IA, le sens d'un mot est défini par sa **position** dans cet espace mathématique. Le modèle n'apprend pas juste des mots, il **cartographie des concepts**.
+{.is-info}
+
 
 
 ### Les réseaux neuronaux profonds (Deep Learning)
