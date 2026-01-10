@@ -2,7 +2,7 @@
 title: Accueil
 description: Bienvenue sur le wiki de mes cours
 published: true
-date: 2026-01-10T21:57:37.076Z
+date: 2026-01-10T21:58:04.303Z
 tags: accueil, bienvenue, home
 editor: markdown
 dateCreated: 2025-11-06T13:14:49.851Z
@@ -65,8 +65,8 @@ Un grand merci à :
 	* Loïc Pilet [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white  =56x14)](https://fr.linkedin.com/in/loic-pilet)
 	* Anthony Gorski [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/GorskiAnthony) [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
   * [Gilbert Demorgny](http://dreamtogo.fr)
-  * Lionel Cicala
   * Béatrice Dupuy
+  * Lionel Cicala
 
 Ainsi qu'aux sources suivantes : 
 * [Mickael Asseline](https://ch.linkedin.com/in/mickael-asseline)
