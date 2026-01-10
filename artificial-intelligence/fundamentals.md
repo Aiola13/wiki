@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T20:46:34.650Z
+date: 2026-01-10T21:02:53.123Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -120,35 +120,54 @@ Mais attention, ne sous-estime pas cette tâche apparemment simple. Pour prédir
    - Et bien plus encore...
 
 
+### Comment ça marche concrètement ?
 ![ai.fundamentals.token-guessing.jpg](/ai_ml/ai.fundamentals.token-guessing.jpg){.align-center}
+
+
+
+
 ![ai.fundamentals.tokenization.jpg](/ai_ml/ai.fundamentals.tokenization.jpg){.align-center}
 
-Il est important de comprendre qu'un modèle ne lit pas des mots à partir de votre prompt, mais des Tokens, ou en tout cas une séquence de Tokens (morceaux de mots). (Pour simplification et abus de langage, on parle effectivement de mots).
+> Le Modèle ne voit pas vraiment des "mots". Il voit des séquences de **tokens** (des morceaux de mots). Mais pour simplifier, restons avec les mots.
+{.is-success}
+
 
 Prenons l'exemple du Prompt : 
 > Le chat mange → [Le], [chat], [mange]
 
 Le modèle calcule les probabilités du mot suivant (Token) :
-- des croquettes (Probabilité : 42%) → Choix le plus prudent
-- une souris (Probabilité : 25%)
-- du poisson (Probabilité : 15%)
-- sa pâtée (Probabilité : 10%)
-- une pizza (Probabilité : 0.01%) → Peu probable, sauf contexte spécifique
+   | Mot suivant | Probabilité |
+   |-------------|-------------|
+   | des croquettes | 42% ✅ |
+   | une souris | 25% |
+   | du poisson | 15% |
+   | sa pâtée | 10% |
+   | une pizza | 0.01% 🍕 |
 
-Et peut donc générer une réponse avec une séquence de tokens qui correspond à une phrase cohérente en rapport avec le contexte (votre prompt).
+Le modèle choisit généralement le mot le plus probable ("des croquettes"). Et ensuite ? Il recommence ! Il prend "Le chat mange des croquettes" et prédit le mot suivant. Et ainsi de suite... c'est ce que l'on appelle l'**Auto-régression**.
 
-Au fur et à mesure de la production du texte, le modèle réutilise le prompt et le texte déjà produit pour prédire le token suivant, c'est ce que l'on appelle l'**Auto-régression**.
+> ⚠️ **Attention !**
+> 
+> Un LLM est une **machine statistique**, pas une encyclopédie. Il cherche le "probable", pas le "vrai". C'est pour ça qu'il peut parfois inventer des informations avec un aplomb déconcertant !
+> 
+> Ce phénomène s'appelle l'**hallucination**. Le modèle ne "sait" pas qu'il dit des bêtises. Il génère simplement la suite de texte la plus probable selon ses calculs. Si cette suite probable est fausse... tant pis pour lui (et pour toi si tu ne vérifies pas) !
+{.is-warning}
 
-C'est pourquoi il est dit qu'un LLM est une "machine statistique", pas une encyclopédie.
+>  Tu as peut-être entendu parler de la **température** dans le contexte des LLM. C'est un paramètre qui contrôle le niveau de "prise de risque" du modèle.
+> 
+>    | Température | Comportement |
+>    |-------------|--------------|
+>    | **0** (basse) | Le modèle choisit toujours le mot le plus probable. Réponses prévisibles et "sûres". |
+>    | **0.7-0.8** (moyenne) | Un bon équilibre entre créativité et cohérence. |
+>    | **1.0+** (haute) | Le modèle prend des risques, peut choisir des mots moins probables. Plus créatif, mais aussi plus susceptible de partir dans tous les sens ! |
+> 
+> Pour reprendre notre exemple du chat :
+> - Si la température est à 0, l'IA choisira toujours "des croquettes" (le plus probable).
+> - Si la température est élevée (ex: 0.8), l'IA prendra des risques et pourra choisir "sa pâtée" ou même "le canapé" pour être plus créative.
+> 
+{.is-info}
 
-C'est pour celà aussi que l'on dit qu'une IA peut subir le concept d'**Hallucination**.
 
-C'est la conséquence directe des probabilités : comme il cherche le "probable" et non le "vrai", il peut inventer des faits avec aplomb.
-
-Un petit plus pour aller plus loin. Dans certains cas on entends aussi parler de la notion de **Température** :
-
-- Si la température est à 0, l'IA choisira toujours "des croquettes" (le plus probable).
-- Si la température est élevée (ex: 0.8), l'IA prendra des risques et pourra choisir "sa pâtée" ou même "le canapé" pour être plus créative.
     
 ## Histoire de l'IA
 
