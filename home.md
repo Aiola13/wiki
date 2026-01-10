@@ -2,10 +2,10 @@
 title: Accueil
 description: Bienvenue sur le wiki de mes cours
 published: true
-date: 2024-12-06T23:43:23.145Z
+date: 2026-01-10T21:57:37.076Z
 tags: accueil, bienvenue, home
 editor: markdown
-dateCreated: 2024-12-06T22:16:31.269Z
+dateCreated: 2025-11-06T13:14:49.851Z
 ---
 
 ![logo-wiki-2.png](/logo/logo-wiki-2.png){.align-center}
@@ -60,6 +60,7 @@ Un grand merci à :
   * M. Gilles Gesquiere
   * M. Laurent Carmignac
   * M. Sébastien Thon
+  * M. Brett Desbenoit
 * Greta et Indépendants 
 	* Loïc Pilet [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white  =56x14)](https://fr.linkedin.com/in/loic-pilet)
 	* Anthony Gorski [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/GorskiAnthony) [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
