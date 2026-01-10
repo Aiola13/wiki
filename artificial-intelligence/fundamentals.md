@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T20:44:54.472Z
+date: 2026-01-10T20:46:34.650Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -100,8 +100,24 @@ Tu as sûrement entendu parler d'Intelligence Artificielle partout ces derniers 
 
 ## Qu'est ce qu'un LLM ?
 
-> Un LLM (Large Language Model) est un modèle de langage capable de générer du texte à partir d'un prompt donné. Il est basé sur du Deep Learning et entraîné sur une immense partie d'Internet, avec pour objectif principal de prédire le mot suivant le plus probable dans une phrase.
+   Maintenant qu'on a posé les bases, parlons de ce qui fait le buzz : les **LLM** (Large Language Models, ou Grands Modèles de Langage).
+
+   ChatGPT, Claude, Gemini, Mistral... Tous ces assistants IA que tu utilises peut-être déjà sont des LLM.
+
+> 💡 **Définition simple**
+> Un **LLM** (Large Language Model) est un modèle de langage capable de générer du texte à partir d'un prompt donné. Il est basé sur du Deep Learning et entraîné sur une immense partie d'Internet, avec pour objectif principal de prédire le mot suivant le plus probable dans une phrase.
 {.is-success}
+
+### Attends... "Prédire le mot suivant" ? C'est tout ?
+
+Eh oui ! Aussi impressionnants qu'ils paraissent, les LLM sont fondamentalement des **machines à prédire le mot suivant**. C'est leur seule mission dans la vie.
+
+Mais attention, ne sous-estime pas cette tâche apparemment simple. Pour prédire correctement le mot suivant, le modèle doit comprendre :
+   - La grammaire
+   - Le contexte
+   - Les concepts
+   - Les relations logiques
+   - Et bien plus encore...
 
 
 ![ai.fundamentals.token-guessing.jpg](/ai_ml/ai.fundamentals.token-guessing.jpg){.align-center}
