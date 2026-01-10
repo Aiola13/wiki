@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:30:39.517Z
+date: 2026-01-10T21:31:19.049Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -340,7 +340,11 @@ Agis comme un formateur en IA expliquant les LLM à un apprenant curieux. Struct
 4. **Métacognition** : "Pourquoi cette explication en couches fonctionne-t-elle ? Parce que les LLM apprennent le savoir *hiérarchiquement* – reflétant la manière dont je viens de vous l'enseigner."  
 ```
 
-> Analyse : Comparez les réponses. Vous remarquerez que l'IA est capable de "métacognition simulée" (expliquer son propre fonctionnement), ce qui est une excellente démonstration de ses capacités de synthèse.
+> 💡 **Analyse tes résultats**
+> 
+> Compare les réponses de différentes IA. Tu remarqueras qu'elles sont capables de "métacognition simulée" (expliquer leur propre fonctionnement). C'est une excellente démonstration de leurs capacités de synthèse !
+> 
+> Mais rappelle-toi : elles ne "comprennent" pas vraiment. Elles génèrent la suite de texte la plus probable. Nuance importante !
 {.is-warning}
 
 
