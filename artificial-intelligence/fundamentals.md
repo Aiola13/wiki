@@ -2,7 +2,7 @@
 title: Les Fondamentaux
 description: 
 published: true
-date: 2026-01-10T21:26:47.456Z
+date: 2026-01-10T21:29:37.179Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-27T12:34:46.295Z
@@ -311,11 +311,20 @@ Trois facteurs vont relancer la machine :
 
 ### Aujourd'hui : L'Ère de l'Ubiquité et de l'Éthique
 
-> Grands pouvoirs, grandes responsabilités L'IA est désormais invisible mais omniprésente (smartphones, réseaux sociaux, banques). La question n'est plus "Est-ce que ça marche ?", mais "Est-ce que c'est juste ?".
->
-> Cette ère est marquée par une prise de conscience des risques sociétaux : biais algorithmiques, protection de la vie privée et manipulation de l'opinion. Comme le souligne Brad Smith (Microsoft), la technologie touche désormais aux droits humains fondamentaux. L'enjeu actuel est donc la régulation et la création d'une IA éthique et explicable.
+L'IA est partout. Dans ton téléphone, tes réseaux sociaux, ta banque, ta voiture...
 
-## �Quickstart : L'IA en action
+La question n'est plus "Est-ce que ça marche ?" mais **"Est-ce que c'est juste ?"**
+
+   > ⚠️ **Les nouveaux défis**
+   > 
+   > - **Biais algorithmiques** : Une IA entraînée sur des données biaisées reproduit ces biais
+   > - **Protection de la vie privée** : Qui a accès à tes données ?
+   > - **Manipulation de l'opinion** : Fake news, deepfakes...
+   > - **Impact environnemental** : Entraîner un gros modèle consomme énormément d'énergie
+
+Comme le dit Brad Smith de Microsoft : la technologie touche désormais aux droits humains fondamentaux. L'enjeu actuel est la **régulation** et la création d'une **IA éthique et explicable**.
+
+## Quickstart : L'IA en action
 
 Maintenant que vous en savez plus sur la théorie, passons à la pratique. Prenez une IA (ChatGPT, Claude, Mistral, Gemini...) et entrez le prompt suivant.
 
