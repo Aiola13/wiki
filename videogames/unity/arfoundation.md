@@ -2,7 +2,7 @@
 title: Réalité Augmentée | ARFoundation
 description: 
 published: true
-date: 2026-01-11T14:32:24.116Z
+date: 2026-01-11T14:32:49.865Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-11T21:33:02.353Z
@@ -313,7 +313,7 @@ public class ARObjectPlacement : MonoBehaviour
 	- Dans le dossier Project, clic droit > Create > XR > Reference Image Library.
 	- Nommez-la (par exemple "MyImageLibrary").
 
-![arfoundation-09.jpg](/images/videogames/unity/arfoundation/arfoundation-09.png)
+![arfoundation-09.jpg](/videogames/arfoundation/arfoundation-09.png)
 
 3. Créer une Reference Image Library :
 	- Sélectionnez votre Reference Image Library.
@@ -322,7 +322,7 @@ public class ARObjectPlacement : MonoBehaviour
 	- Donnez un nom à l'image.
 	- Optionnel : Spécifiez les dimensions physiques réelles de l'image (en mètres) pour améliorer la précision.
 
-![arfoundation-10.jpg](/images/videogames/unity/arfoundation/arfoundation-10.png)
+![arfoundation-10.jpg](/videogames/arfoundation/arfoundation-10.png)
 
 > Il est fortement recommandé de spécifier la taille physique réelle de l'image pour un meilleur tracking.
 {.is-warning}
@@ -334,7 +334,7 @@ public class ARObjectPlacement : MonoBehaviour
 	- Sélectionnez le GameObject XR Origin.
 	- Dans l'Inspector, ajoutez le composant AR Tracked Image Manager.
 
-![arfoundation-11.jpg](/images/videogames/unity/arfoundation/arfoundation-11.png)
+![arfoundation-11.jpg](/videogames/arfoundation/arfoundation-11.png)
 
 2. Configurer le Manager :
 	- Dans Serialized Library, assignez votre Reference Image Library créée précédemment.
