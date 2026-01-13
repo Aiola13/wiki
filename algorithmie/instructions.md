@@ -2,10 +2,10 @@
 title: Les instructions
 description: 
 published: true
-date: 2024-12-07T14:38:14.153Z
+date: 2026-01-13T10:18:47.830Z
 tags: algo, algorithmie, instructions
 editor: markdown
-dateCreated: 2024-12-07T14:38:14.153Z
+dateCreated: 2025-11-06T13:15:26.252Z
 ---
 
 # Les instructions
@@ -177,7 +177,7 @@ ECRIRE("Nombre de voitures : ", x)
 OU
 
 ```
-AFFICHE(12+a)
+AFFICHER(12+a)
 
 "affiche la valeur de l’expression12+a."
 ```
@@ -186,7 +186,7 @@ AFFICHE(12+a)
 <p align="right">(En anglais : READ)</p>
 
 ```
-LIRE(x)
+LIRE x
 
 affecte à la variable x la valeur saisie (sur le clavier ou dans un fichier).
 ```
@@ -311,12 +311,12 @@ Début
     stop ← -1
     totalValeurs ← 0
     afficher("Donner une valeur, " ,stop, " pour fini.")
-    lire(valeur)
+    lire valeur
 
     TANT_QUE valeur <> stop faire
         totalValeurs ← totalValeurs + valeur
         afficher("Donner une autre valeur, " ,stop, " pour fini.")
-        lire(valeur) {relance}
+        lire valeur {relance}
     FTQ
 
     afficher("Le total des valeurs saisies est ", totalValeurs)
@@ -339,13 +339,13 @@ Début
     nbVal ← 0
     totalValeurs ← 0
     afficher("Donner une valeur, " ,stop, " pour fini.")
-    lire(valeur) {saisie de la 1ère donnée}
+    lire valeur {saisie de la 1ère donnée}
 
-    TANT_QUE valeur <> stop ET nbVal < max faire
+    TANT_QUE valeur != stop ET nbVal < max faire
         totalValeurs ← totalValeurs + valeur
         nbVal ← nbVal + 1
         afficher("Donner une autre valeur, " ,stop, " pour fini.")
-        lire(valeur) {relance}
+        lire valeur {relance}
     FTQ
 
     afficher("Le total des valeurs saisies est ", totalValeurs, " pour, ", nbVal, "  itérations.")
@@ -391,15 +391,15 @@ variables   nbVal, cpt : entiers
 Début
 
     afficher("Combien de valeurs voulez-vous saisir ?")
-    lire(nbVal)
+    lire nbVal
     totalVal ← 0
 
     REPETER
         afficher("Donner une autre valeur, " ,stop, " pour fini.")
-        lire(valeur) {relance}
+        lire valeur {relance}
         totalValeurs ← totalValeurs + valeur
         nbVal ← nbVal + 1
-    TANT_QUE valeur <> stop ET nbVal < max
+    TANT_QUE valeur != stop ET nbVal < max
 
     afficher("Le total des ", nbVal, "valeurs est ", totalValeurs)
 Fin
@@ -452,14 +452,14 @@ variables   nbVal, cpt : entiers
 Début
     {initialisation du traitement}
     afficher("Combien de valeurs voulez-vous saisir ?")
-    lire(nbVal)
+    lire nbVal
     {initialisation du total à 0 avant cumul}
     totalVal ← 0
 
     {traitement qui se répète nbVal fois}
     POUR cpt ← 1 à nbVal [faire par pas de 1]
         afficher("Donner une valeur : ")
-        lire(valeur)
+        lire valeur
         totalValeurs ← totalValeurs + valeur {Cumul}
     FPOUR
     {édition des résultats}
