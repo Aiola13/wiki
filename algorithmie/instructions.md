@@ -2,7 +2,7 @@
 title: Les instructions
 description: 
 published: true
-date: 2026-01-13T10:18:47.830Z
+date: 2026-01-13T10:19:13.324Z
 tags: algo, algorithmie, instructions
 editor: markdown
 dateCreated: 2025-11-06T13:15:26.252Z
@@ -112,7 +112,7 @@ L’opérateur « + » peut être utilisé avec les chaînes de caractères et l
 
 ```
 a ← 5
-afficher("Ma variable est a = " + a)
+afficher("Ma variable est a = ", a)
 
 $ Ma variable est a = 5
 ```
