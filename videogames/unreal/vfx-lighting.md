@@ -2,7 +2,7 @@
 title: Effets visuels et lumières
 description: 
 published: true
-date: 2026-01-14T20:49:31.375Z
+date: 2026-01-14T21:00:27.567Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T13:18:38.015Z
@@ -267,6 +267,26 @@ Dans les prochains chapitres, vous découvrirez :
 
 **Bon courage, et amusez-vous bien !** 🚀 -->
 
-  
+ Material landscape
+ 
+ Importer vos textures, makematerialattributes, relier les bonnes colonnes, 
+ texcoordinate, multiply, tilling (param), relier canaux UV des textures, 
+ 
+ répéter actions nombres de cpouches (layer) différentes sur landscape, 
+ 
+ créer lanscapelayerblend, renommer corectement les layers et relier les attributs aux layer.
+ 
+ Cocher USE MATERIAL ATTRIBUTE
+ 
+ Créer une material instance et appliquer le material au lanscape.
+ 
+ cliquer sur le plus pour créer le layer whiteblend
+ 
+ cocher dans le material instance le tiling
+ 
+ 
+ Activer le displacement, dans defaultengine.ini, coller : 
+ r.Nanite.AllowTessellation=1
+ r.Nanite.Tessellation=1
   
   
