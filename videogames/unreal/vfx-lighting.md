@@ -2,7 +2,7 @@
 title: Effets visuels et lumières
 description: 
 published: true
-date: 2026-01-14T20:38:46.066Z
+date: 2026-01-14T20:46:39.738Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T13:18:38.015Z
@@ -46,7 +46,7 @@ Ah, la Normal Map ! C'est un peu la magicienne des textures. Elle permet d'ajout
 
 Vous voulez des rides sur un visage, des rayures sur du métal, ou des joints entre les briques ? La Normal Map simule tout ça en jouant avec la lumière. Génial, non ?
 
-> **À retenir** : Dans Unreal, quand vous importez une Normal Map, veillez à ce que le **Compression Settings** soit bien sur **Normalmap** dans les propriétés de la texture. Sinon, ça ne marchera pas correctement !
+> **À retenir** : Dans Unreal, quand vous importez une Normal Map, veillez à ce que le **Compression Settings** soit bien sur **Normalmap** (normalement c'est déjà la cas dans UNREAL 5) dans les propriétés de la texture. Sinon, ça ne marchera pas correctement !
 {.is-success}
 
 #### 3. Metallic (Métal ou pas métal ?)
@@ -90,6 +90,11 @@ Cette texture ne reçoit pas de lumière, elle en produit ! Parfaite pour créer
 {.is-info}
 
 Le Specular contrôle comment la lumière **rebondit** sur la surface. C'est surtout utilisé dans des workflows plus anciens.
+
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*7O2NbLfvMZQeUOSQfeb-4Q.jpeg)
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*dLrSFVXBSoI5yH7-2KQHtw.jpeg)
 
 ---
 ## Comprendre les textures
