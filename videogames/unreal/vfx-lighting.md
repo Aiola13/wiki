@@ -2,7 +2,7 @@
 title: Effets visuels et lumières
 description: 
 published: true
-date: 2026-01-14T21:59:00.393Z
+date: 2026-01-14T22:08:22.285Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T13:18:38.015Z
@@ -489,28 +489,6 @@ Maintenant que tout est en place, vous pouvez ajuster le tiling de vos textures 
 
 ---
 
-### Récapitulatif du Workflow
-
-Voici un résumé de la méthode complète :
-
-1. ✅ **Importer les textures** (Base Color, Normal, Roughness, AO)
-2. ✅ **Créer le Material Master** et activer "Use Material Attributes"
-3. ✅ **Créer le système de Tiling** (TextureCoordinate → Multiply → Scalar Parameter)
-4. ✅ **Relier les textures aux UV** (sortie du Multiply vers les UV de toutes les textures)
-5. ✅ **Créer les MakeMaterialAttributes** (un par layer)
-6. ✅ **Relier les textures aux bonnes colonnes** du MakeMaterialAttributes
-7. ✅ **Répéter pour chaque layer** (Grass, Dirt, Rock, Sand...)
-8. ✅ **Créer le Landscape Layer Blend** et renommer les layers correctement
-9. ✅ **Connecter les Material Attributes aux layers** du Layer Blend
-10. ✅ **Connecter le Layer Blend au Material Result**
-11. ✅ **Créer une Material Instance**
-12. ✅ **Appliquer la Material Instance au Landscape**
-13. ✅ **Créer les Layer Info** (Weight-Blended) via le bouton +
-14. ✅ **Cocher/ajuster le Tiling** dans la Material Instance
-15. ✅ **Peindre sur le terrain** !
-
----
-
 ### Schéma complet du workflow
 
 ```
@@ -622,27 +600,3 @@ Dans les prochains chapitres, vous découvrirez :
 
 
 **Bon courage, et amusez-vous bien !** 🚀 -->
-
- Material landscape
- 
- Importer vos textures, makematerialattributes, relier les bonnes colonnes, 
- texcoordinate, multiply, tilling (param), relier canaux UV des textures, 
- 
- répéter actions nombres de cpouches (layer) différentes sur landscape, 
- 
- créer lanscapelayerblend, renommer corectement les layers et relier les attributs aux layer.
- 
- Cocher USE MATERIAL ATTRIBUTE
- 
- Créer une material instance et appliquer le material au lanscape.
- 
- cliquer sur le plus pour créer le layer whiteblend
- 
- cocher dans le material instance le tiling
- 
- 
- Activer le displacement, dans defaultengine.ini, coller : 
- r.Nanite.AllowTessellation=1
- r.Nanite.Tessellation=1
-  
-  
