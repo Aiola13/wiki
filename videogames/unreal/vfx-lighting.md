@@ -2,7 +2,7 @@
 title: Effets visuels et lumières
 description: 
 published: true
-date: 2026-01-14T22:08:22.285Z
+date: 2026-01-14T22:10:44.851Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T13:18:38.015Z
