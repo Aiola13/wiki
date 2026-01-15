@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Évolution des outils de développement (1980-2025)">
+  <defs>
+    <style>
+      :root{
+        --ink:#1f2a44;
+        --muted:#64748b;
+        --axis:#8b8ff5;
+        --dot:#6b6ff0;
+
+        --c1980:#5b7cfa;
+        --c1990:#6d4bb6;
+        --c2000:#f09aa6;
+        --c2010:#4fb5ff;
+        --c2020:#34c38f;
+        --c2025:#ff7a8b;
+
+        --cardText:#ffffff;
+        --bodyText:#2c3e50;
+      }
+      text{ font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+      .title{ font-size:26px; font-weight:800; fill:var(--ink); }
+      .subtitle{ font-size:14px; font-style:italic; fill:var(--muted); }
+
+      .axis{ stroke:var(--axis); stroke-width:4; stroke-linecap:round; }
+      .stem{ stroke:var(--axis); stroke-width:2; stroke-linecap:round; opacity:.95; }
+      .dot{ fill:var(--dot); }
+
+      .card{ filter:url(#shadow); }
+      .year{ font-size:14px; font-weight:800; fill:var(--cardText); text-anchor:middle; dominant-baseline:middle; }
+      .label{ font-size:12.5px; fill:var(--bodyText); text-anchor:middle; }
+    </style>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <fedropshadow dx="0" dy="3" stdDeviation="3" flood-color="#0b1220" flood-opacity=".18"></fedropshadow>
+    </filter>
+
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="var(--axis)"></polygon>
+    </marker>
+  </defs>
+
+  
+  <rect x="0" y="0" width="1200" height="420" fill="#ffffff"></rect>
+
+  
+  <text class="title" x="600" y="54" text-anchor="middle">Évolution des outils de développement (1980–2025)</text>
+
+  
+  <line class="axis" x1="90" y1="220" x2="1110" y2="220"></line>
+  <line class="axis" x1="1110" y1="220" x2="1130" y2="220" marker-end="url(#arrowHead)"></line>
+
+  
+  <g opacity=".55">
+    <line x1="120" y1="212" x2="120" y2="228" stroke="var(--axis)" stroke-width="2"></line>
+    <line x1="290" y1="212" x2="290" y2="228" stroke="var(--axis)" stroke-width="2"></line>
+    <line x1="460" y1="212" x2="460" y2="228" stroke="var(--axis)" stroke-width="2"></line>
+    <line x1="630" y1="212" x2="630" y2="228" stroke="var(--axis)" stroke-width="2"></line>
+    <line x1="800" y1="212" x2="800" y2="228" stroke="var(--axis)" stroke-width="2"></line>
+    <line x1="970" y1="212" x2="970" y2="228" stroke="var(--axis)" stroke-width="2"></line>
+  </g>
+
+  
+  <g transform="translate(120 220)">
+    <circle class="dot" r="12"></circle>
+    <line class="stem" x1="0" y1="0" x2="0" y2="-86"></line>
+
+    <g class="card" transform="translate(-78,-150)">
+      <rect width="156" height="44" rx="10" fill="var(--c1980)"></rect>
+      <text class="year" x="78" y="22">1980</text>
+    </g>
+
+    <text class="label" x="0" y="34">Éditeur texte</text>
+    <text class="label" x="0" y="52">+ Compilateur</text>
+  </g>
+
+  
+  <g transform="translate(290 220)">
+    <circle class="dot" r="12"></circle>
+    <line class="stem" x1="0" y1="0" x2="0" y2="86"></line>
+
+    <g class="card" transform="translate(-78,106)">
+      <rect width="156" height="44" rx="10" fill="var(--c1990)"></rect>
+      <text class="year" x="78" y="22">1990</text>
+    </g>
+
+    <text class="label" x="0" y="-34">IDE graphique</text>
+    <text class="label" x="0" y="-16">Debugging</text>
+  </g>
+
+  
+  <g transform="translate(460 220)">
+    <circle class="dot" r="12"></circle>
+    <line class="stem" x1="0" y1="0" x2="0" y2="-86"></line>
+
+    <g class="card" transform="translate(-78,-150)">
+      <rect width="156" height="44" rx="10" fill="var(--c2000)"></rect>
+      <text class="year" x="78" y="22">2000</text>
+    </g>
+
+    <text class="label" x="0" y="34">Git + CI/CD</text>
+    <text class="label" x="0" y="52">Tests locaux</text>
+  </g>
+
+  
+  <g transform="translate(630 220)">
+    <circle class="dot" r="12"></circle>
+    <line class="stem" x1="0" y1="0" x2="0" y2="86"></line>
+
+    <g class="card" transform="translate(-78,106)">
+      <rect width="156" height="44" rx="10" fill="var(--c2010)"></rect>
+      <text class="year" x="78" y="22">2010</text>
+    </g>
+
+    <text class="label" x="0" y="-34">Allègement</text>
+    <text class="label" x="0" y="-16">Sublime, Atom</text>
+  </g>
+
+  
+  <g transform="translate(800 220)">
+    <circle class="dot" r="12"></circle>
+    <line class="stem" x1="0" y1="0" x2="0" y2="-86"></line>
+
+    <g class="card" transform="translate(-78,-150)">
+      <rect width="156" height="44" rx="10" fill="var(--c2020)"></rect>
+      <text class="year" x="78" y="22">2020</text>
+    </g>
+
+    <text class="label" x="0" y="34">Cloud IDEs</text>
+    <text class="label" x="0" y="52">Collaboration</text>
+  </g>
+
+  
+  <g transform="translate(970 220)">
+    <circle class="dot" r="12"></circle>
+    <line class="stem" x1="0" y1="0" x2="0" y2="86"></line>
+
+    <g class="card" transform="translate(-88,106)">
+      <rect width="176" height="44" rx="10" fill="var(--c2025)"></rect>
+      <text class="year" x="88" y="22">2025</text>
+    </g>
+
+    <text class="label" x="0" y="-34">IA intégrée</text>
+    <text class="label" x="0" y="-16">Agents autonomes</text>
+  </g>
+
+  
+  <text class="subtitle" x="600" y="392" text-anchor="middle">
+    De l’éditeur de texte à l’assistant IA : 45 ans d’évolution continue
+  </text>
+</svg>
