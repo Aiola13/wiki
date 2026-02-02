@@ -2,25 +2,25 @@
 title: La compléxité d'un algorithme
 description: 
 published: true
-date: 2024-12-08T10:22:38.628Z
+date: 2026-02-02T13:24:19.353Z
 tags: complex, complexité
 editor: markdown
-dateCreated: 2024-12-08T10:22:38.628Z
+dateCreated: 2025-11-06T13:15:15.244Z
 ---
 
 # Introduction à la Complexité d'un algorithme
 
 > Voici une petite introduction (informelle) à la joie du calcul de la complexité algorithmique.
 > 
-> Le calcul de la complexité d'un algorithme permet de meurer sa **performance**. Il en existe deux types :
->   - complexité spatiale
->   - complexité temporelle
+> Le calcul de la complexité d'un algorithme permet de meurer sa **performance** de manière objective. Il en existe deux types :
+>   - Complexité spatiale (Space Complexity)
+>   - Complexité temporelle (Time Complexity)
 > 
 > ‎
 {.is-success}
 
 
-> La complexité temporelle d'un algorithme est une mesure du temps (nombre d'étapes) requis par l'algorithme pour accomplir sa tâche (arriver à la solution), en fonction de la taille (nombre d'éléments) de l'échantillon à traiter.
+> La complexité temporelle d'un algorithme est une mesure du temps (nombre d'opérations élémentaires) requis par l'algorithme pour accomplir sa tâche (arriver à la solution), en fonction de la taille (nombre d'éléments) de l'échantillon à traiter.
 {.is-success}
 
 
@@ -36,16 +36,20 @@ dateCreated: 2024-12-08T10:22:38.628Z
 > Puisqu'il s'agit seulement de comparer des algorithmes, les règles de ce calcul doivent être indépendantes : 
 > - du langage de programmation utilisé
 > - du processuer de lordinateur sur lequel sera exécuté le code
-> - de l'éventuel compulateur employé
+> - de l'éventuel compilateur employé
 > 
 > ‎
 {.is-success}
 
 
 
-> Par soucis de simplicité, on fera l’hypothèse que toutes les opérations élémentaires sont à égalité de coût, soit 1 « unité » de temps.
+> Par soucis de simplicité, On considère que les opérations suivantes coûtent 1 "unité" de temps :
+> - Une affectation (a = b)
+> - Une opération arithmétique simple (+, -, *, /)
+> - Une comparaison (if a < b)
+> - L'accès à un élément d'un tableau (tab[i])
 > 
-> Exemple : `a = b * 3`  : 1 multiplication + 1 affectation = 2 « unités »
+> ‎
 {.is-warning}
 
 
@@ -61,10 +65,11 @@ dateCreated: 2024-12-08T10:22:38.628Z
 
 
 > Cette remarque nous conduit à préciser un peu notre définition de la complexité en temps. En toute rigueur, on peut en effet distinguer deux formes de complexité en temps :
-> - la complexité dans le meilleur des cas : c’est la situation la plus favorable,
+> - **la complexité dans le meilleur des cas :** c’est la situation la plus favorable,
 > par exemple : recherche d’un élément situé à la première position d’un tableau.
-> - la complexité dans le pire des cas : c’est la situation la plus défavorable,
+> - **la complexité dans le pire des cas :** c’est la situation la plus défavorable,
 > par exemple : recherche d’un élément dans une liste alors qu’il n’y figure pas
+>
 > On calculera le plus souvent la complexité dans le pire des cas, car elle est la plus pertinente. Il vaut mieux en effet toujours envisager le pire.
 > 
 > ‎
@@ -83,16 +88,12 @@ dateCreated: 2024-12-08T10:22:38.628Z
 {.is-success}
 
 
-#### Un peu de Mathématique ?
+#### Un peu de Mathématique ? (pour les curieux)
 
 Pour comparere des algorithmes, il n'est pas nécessaire d'utiliser la fonction $T$, mais seulement l'ordre de grandeur asymptotique noté $O$.
 
-Une fonction $T(n)$ est en $O(f(n))$ (en grand O de f(n)) si : 
-$∃n_0 ∈ N,∃c ∈ R, ∀n ≥ n_0 : |T(n)| ≤ c|f(n)|$
-
-autrement dit : 
-
-$T(n)$ est en $O(f(n))$ s'il exxiste un seuil $n_0$ à partir duquel la fonction $T$ est toujours dominée par la fonction $f$, ç une constant multiplicative fixée $c$ près.
+> Une fonction T(n) est en O(f(n)) s'il existe un seuil n0​ et une constante c tels que pour tout n≥n0​, on a ∣T(n)∣≤c⋅∣f(n)∣. 
+**En résumé :** À partir d'un certain point, votre algorithme ne dépassera jamais une certaine courbe définie par f(n).
 
 Exemples :
 
@@ -104,18 +105,18 @@ Exemples :
 
 ### Classes de complexité
 
-|       $O$       | Type de complexité |
-| :-------------: | :----------------: |
-|     $O(1)$      |     Constante      |
-|   $O(log(n))$   |   Logarithmique    |
-|     $O(√n)$     |      Racinaire     |
-|     $O(n)$      |     Linéaire       |
-| $O(n * log(n))$ |   Quasi-linéaire   |
-|    $O(n^2)$     |    Quadratique     |
-|    $O(n^3)$     |      Cubique       |
-|    $O(n^k)$     |    Polynomiale     |
-|    $O(a^n)$     |   Exponentielle    |
-|     $O(n!)$     |    Factorielle     |
+|       $O$       | Type de complexité | Exemple typique |
+| :-------------: | :----------------: |:---------------- |
+|     $O(1)$      |     Constante      |     Accès à un tableau, calcul mathématique simple      |
+|   $O(log(n))$   |   Logarithmique    |     Recherche dichotomique (Binary Search)      |
+|     $O(√n)$     |      Racinaire     |     Recherche de diviseurs d'un nombre, algorithme de factorisation naïf, recherche dans une liste triée par blocs (Jump Search)      |
+|     $O(n)$      |     Linéaire       |     Parcours simple d'une liste      |
+| $O(n * log(n))$ |   Quasi-linéaire   |     Tris rapides (Merge Sort, Quick Sort)      |
+|    $O(n^2)$     |    Quadratique     |     Boucles imbriquées (Bubblesort)      |
+|    $O(n^3)$     |      Cubique       |     Multiplication de matrices naïve, algorithme de Floyd-Warshall (plus courts chemins), résolution de systèmes d'équations (élimination de Gauss)      |
+|    $O(n^k)$     |    Polynomiale     |     Boucles imbriquées à k niveaux, certains algorithmes de graphes selon le degré k      |
+|    $O(a^n)$     |   Exponentielle    |     Problèmes récursifs complexes (Fibonacci naïf)      |
+|     $O(n!)$     |    Factorielle     |     Problème du voyageur de commerce (brute force), génération de toutes les permutations, résolution naïve du puzzle des n-reines      |
 
 
 
